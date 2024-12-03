@@ -27,13 +27,13 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
+      "name": "Sidekick Documentation",
       "url": "api-reference"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Editor Documentation",
       "icon": "book-open-cover",
       "url": "https://mintlify.com/docs"
     },
