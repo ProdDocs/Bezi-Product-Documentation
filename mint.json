@@ -58,7 +58,7 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Editor Basics",
       "pages": [
         "essentials/markdown",
         "essentials/code",
