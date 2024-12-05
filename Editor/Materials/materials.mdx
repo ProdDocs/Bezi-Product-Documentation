@@ -43,13 +43,15 @@ Materials share a set of properties, depending on the type of material:
   <Accordion title="Unlit material" defaultOpen={false}>
     A unlit material is not affected by its surrounding lights. It’s usually used to create UI that doesn’t need to respond to light, or to produce a flat-shading appearance.&#x20;
 
-    Unlit materials only share color and opacity.&#x20;
+    Unlit materials only share color and opacity properties.&#x20;
 
     \[asset]
   </Accordion>
 
   <Accordion title="Toon material" defaultOpen={false}>
+    A toon material is stylized, non-photorealistic and gives objects a cartoon-like look. Toon Material have strange artifacts if both **Cast Shadows** and Receive Shadows are toggled on. Try turning off one of them to improve the look:
 
+    Toon materials only share color (shadow), opacity, and normal properties.&#x20;
   </Accordion>
 
   <Accordion title="Shadow material" defaultOpen={false}>
