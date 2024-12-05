@@ -9,7 +9,7 @@ Materials share a set of properties, depending on the type of material:
 
 <AccordionGroup>
   <Accordion title="Color" defaultOpen={false}>
-    Control the color of the material.
+    Control the color of the material or the material's shadow.
   </Accordion>
 
   <Accordion title="Opacity" defaultOpen={false}>
@@ -60,10 +60,20 @@ Materials share a set of properties, depending on the type of material:
 
   <Accordion title="Shadow material" defaultOpen={false}>
     A shadow material can receive shadows and is otherwise completely transparent.
+
+    The shadow color applied to the shadow material dictates the color of the shadow. For example, if a white color is used for the shadow material, it will have a white shadow.
+
+    Shadow materials only share color (shadow) and opacity properties.&#x20;
+
+    \[asset]
   </Accordion>
 
   <Accordion title="Occluder material" defaultOpen={false}>
+    An occluder material is invisible and hide any objects rendered behind it.
 
+    Occluder materials are often used to create portal-like effects.&#x20;
+
+    Occluder materials only share color (shadow) and opacity properties. For occluder materials opacity is a toggle, not a smooth transition.&#x20;
   </Accordion>
 
   <Accordion title="Physical material" defaultOpen={false}>
