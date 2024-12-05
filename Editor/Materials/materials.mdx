@@ -79,6 +79,24 @@ Materials share a set of properties, depending on the type of material:
   <Accordion title="Physical material" defaultOpen={false}>
     A physical material provide more advanced physically-based rendering properties and can have advanced properties applied to them.&#x20;
 
+    Physical materials share all of the material properties, as well as the following advanced properties:
 
+    **Glass**: create the look of glass or frosted glass.&#x20;
+
+    * Thickness: control the thickness of volume beneath the surface
+
+    * Transmission: control how transparent it is
+
+    * Index of refraction (Ior): control the refraction of light inside the object
+
+    **Sheen**: create the look of cloth and fabric materials.&#x20;
+
+    * Color: control the color of the sheen layer
+
+    * Roughness: control how rough or glossy the sheen is
+
+    Clearcoat: create the look of car paint, carbon fiber, and wet surfaces by adding a reflective layer on top of another layer.
+
+    * Roughness: control how rough or glossy the reflective layer is
   </Accordion>
 </AccordionGroup>
