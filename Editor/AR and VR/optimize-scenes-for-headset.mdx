@@ -72,3 +72,25 @@ Most VR headsets run at 90 Hz. To have a comfortable experience in-headset, VR s
     Area lights don't perform well in headset. If there are area lights in your scene, try replacing them with other light objects.
   </Accordion>
 </AccordionGroup>
+
+## VR optimization checklist
+
+* Are the models in the scene low-poly or built for VR?
+
+* Have primitives replaced models wherever possible?
+
+* Are baked normal maps being used instead of geometry wherever possible?
+
+* Have unnecessary objects been removed from the scene?
+
+* Have sub-meshes been combined wherever possible?
+
+* Are image texture sizes as small as possible?
+
+* Have the number of materials used been minimized?&#x20;
+
+* Is a material atlas being used?&#x20;
+
+* Have the number of lights been minimized?
+
+* Are global shadows (i.e. environment lights) turned off?
