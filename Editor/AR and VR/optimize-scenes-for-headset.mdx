@@ -10,24 +10,18 @@ Most VR headsets run at 90 Hz. To have a comfortable experience in-headset, VR s
 ## Optimizing a VR scene for headset
 
 <AccordionGroup>
-  <Accordion title="Turn off shadows" defaultOpen={false}>
+  <Accordion title="Turn off shadows" defaultOpen={false} />
 
-  </Accordion>
+  <Accordion title="Reduce polygon count for 3D models" defaultOpen={false} />
 
-  <Accordion title="Reduce polygon count for 3D models" defaultOpen={false}>
-
-  </Accordion>
-
-  <Accordion title="Reduce the number of objects" defaultOpen={false}>
-
-  </Accordion>
+  <Accordion title="Reduce the number of objects" defaultOpen={false} />
 
   <Accordion title="Reduce the size and number of materials" defaultOpen={false}>
-
+    Large texture file sizes or too many materials can affect VR performance.
   </Accordion>
 
   <Accordion title="Reduce number of lights" defaultOpen={false}>
-    Having too many lights in the scene can affect VR performance.
+    Too many lights in the scene can affect VR performance.
 
     If modeling in another program, bake lights in there and import them in with textures instead of using light objects.
 
