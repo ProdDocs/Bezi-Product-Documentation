@@ -17,7 +17,29 @@ Most VR headsets run at 90 Hz. To have a comfortable experience in-headset, VR s
   <Accordion title="Reduce polygon count for 3D models" defaultOpen={false}>
     Models with high poly counts, often downloaded from external sources to be rendered as photorealistic images, are too big for VR scenes and real-time rendering.
 
-    Instead, use models that are low-poly or created for VR. When using models from Sketchfab and Turbosquid, always check the polygon count before downloading.&#x20;
+    Non-destructive methods to reduce polygon count:&#x20;
+
+    * Use models that are low-poly or created for VR&#x20;
+
+    * Check the polygon count before downloading models from Sketchfab and Turbosquid
+
+    * Avoid using too much subdivision, which increases poly count
+
+    * Run models through these tools to minimize polygon count without affecting the shape:
+
+      * MeshLab: [Polygon reduction with MeshLab](https://support.shapeways.com/hc/en-us/articles/360022742294-Polygon-reduction-with-MeshLab)
+
+      * Blender: [How to reduce the polygons count](https://help.augment.com/en/articles/2666702-blender-2-7-how-to-reduce-the-polygons-count)
+
+      * Unity: [Mesh Optimizer](https://styly.cc/tips/assets%CC%B2-unity-3dcg-mesh-polygon/)
+
+    * Use primitives (ex. box, cylinder, cone, plane, etc.) wherever possible, as they're less burdensome on VR performance&#x20;
+
+    * Bake high-poly model details into a lower-poly model to generate a normal map that  *looks* more realistic but doesn’t add to the geometry itself
+
+    * **Retopologize your heavy meshes** to bring down the polycount.
+
+
   </Accordion>
 
   <Accordion title="Reduce the number of objects" defaultOpen={false}>
