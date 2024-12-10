@@ -3,6 +3,32 @@ title: "Camera Animations"
 description: "Enhance a scene with guided path animations, a dolly zoom, and other camera effects."
 ---
 
-## Animating cameras with interactions
+## Animating cameras with interactions \[missing asset]
 
-The State Machine \[link to page] is used to create auto-animations and animations that are triggered by an interaction.&#x20;
+Use the State Machine \[link to page] to create auto-animations and animations that are triggered by an interaction.&#x20;
+
+1. Go to the **Hierarchy** panel
+
+2. Select the desired camera
+
+3. Open the **state machine** \[link to page] in the bottom bar
+
+4. Move the camera around and add states to dictate where the camera should to move to&#x20;
+
+5. Drag the arrow from one state to another to connect them
+
+6. Open the interactions popover by clicking the **arrow inside a circle** icon
+
+7. Adjust trigger object, timing, and curve from within the interactions popover
+
+8. Enter **play mode** to view the results
+
+\[asset]
+
+## Using the body rig for movement in VR
+
+The body rig \[link to doc page] comes with a camera, positioned where the user's head would be when they spawn in VR. Like camera objects, the body rig's position in VR can be adjusted with the state machine. This is often used to emulate instant teleportation or rollercoaster experiences.
+
+<Info>
+  Proceed with caution when using the body rig for movement in VR. Certain movements in VR that the user doesn’t control can cause motion sickness.&#x20;
+</Info>
