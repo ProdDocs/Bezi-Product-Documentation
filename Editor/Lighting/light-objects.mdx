@@ -59,7 +59,7 @@ description: "Use different types of Light objects to make your scene more reali
 
 ## Light object settings \[missing assets]
 
-All light objects share these common settings.
+All Light objects share these common settings.
 
 <AccordionGroup>
   <Accordion title="Color" defaultOpen={false}>
@@ -77,19 +77,19 @@ All light objects share these common settings.
 
 ## Light object properties
 
-Some light objects have additional properties that can be used to customize them.
+Some Light objects have additional properties that can be used to customize them.
 
 <AccordionGroup>
   <Accordion title="Range" defaultOpen={false}>
-    Control the maximum range of the light. If distance is zero, light does not reduce. If distance is non-zero, light will reduce linearly from maximum intensity (at the light's position) to zero (at the distance from the light).
+    Control the maximum range of the light. If distance is zero, light does not reduce. If distance is non-zero, light will reduce linearly from maximum intensity (at the Light object's position) to zero (at the distance from the Light object).
   </Accordion>
 
   <Accordion title="Rate of decay" defaultOpen={false}>
-    Control the amount the light dims along the distance of the light.
+    Control the amount the light dims along the distance of the Light object.
   </Accordion>
 
   <Accordion title="Dimension" defaultOpen={false}>
-    Control the size of the area light.
+    Control the size of the Area Light.
   </Accordion>
 
   <Accordion title="Angle" defaultOpen={false}>
@@ -97,6 +97,6 @@ Some light objects have additional properties that can be used to customize them
   </Accordion>
 
   <Accordion title="Softness" defaultOpen={false}>
-    Control the percent of the spotlight cone that is reduced due to penumbra.
+    Control the percent of the Spot Light cone that is reduced due to penumbra.
   </Accordion>
 </AccordionGroup>
