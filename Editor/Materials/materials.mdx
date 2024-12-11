@@ -37,7 +37,7 @@ description: "Use materials to define the appearance of 3D objects. Control prop
 
 <AccordionGroup>
   <Accordion title="Standard material" defaultOpen={false}>
-    A standard Physically Based Rendering material (PBR) provides a more accurate representation of how light interacts with material properties.&#x20;
+    A Standard Physically Based Rendering material (PBR) provides a more accurate representation of how light interacts with material properties.&#x20;
 
     Standard materials share all of the material properties outlined above.
 
@@ -45,7 +45,7 @@ description: "Use materials to define the appearance of 3D objects. Control prop
   </Accordion>
 
   <Accordion title="Unlit material" defaultOpen={false}>
-    A unlit material is not affected by its surrounding lights. It’s usually used to create UI that doesn’t need to respond to light, or to produce a flat-shading appearance.&#x20;
+    An Unlit material is not affected by its surrounding lights. It’s usually used to create UI that doesn’t need to respond to light, or to produce a flat-shading appearance.&#x20;
 
     Unlit materials only share color and opacity properties.&#x20;
 
@@ -53,9 +53,9 @@ description: "Use materials to define the appearance of 3D objects. Control prop
   </Accordion>
 
   <Accordion title="Toon material" defaultOpen={false}>
-    A toon material is stylized, non-photorealistic and gives objects a cartoon-like look.&#x20;
+    A Toon material is stylized, non-photorealistic and gives objects a cartoon-like look.&#x20;
 
-    Toon materials may have strange artifacts if both **Cast Shadows** and **Receive Shadows** are toggled on. We recommend turning one of them off to improve the look.
+    Toon materials may have strange artifacts if both **Cast shadows** and **Receive shadows** are toggled on. We recommend turning one of them off to improve the look.
 
     Toon materials only share color (shadow), opacity, and normal properties.&#x20;
 
@@ -63,9 +63,9 @@ description: "Use materials to define the appearance of 3D objects. Control prop
   </Accordion>
 
   <Accordion title="Shadow material" defaultOpen={false}>
-    A shadow material can receive shadows and is otherwise completely transparent.
+    A Shadow material can receive shadows and is otherwise completely transparent.
 
-    The shadow color applied to the shadow material dictates the color of the shadow. For example, if a white color is used for the shadow material, it will have a white shadow.
+    The shadow color applied to the Shadow material dictates the color of the shadow. For example, if a white color is used for the shadow material, it will have a white shadow.
 
     Shadow materials only share color (shadow) and opacity properties.&#x20;
 
@@ -73,15 +73,15 @@ description: "Use materials to define the appearance of 3D objects. Control prop
   </Accordion>
 
   <Accordion title="Occluder material" defaultOpen={false}>
-    An occluder material is invisible and hide any objects rendered behind it. Occluder materials are often used to create portal-like effects.&#x20;
+    An Occluder material is invisible and hide any objects rendered behind it. Occluder materials are often used to create portal-like effects.&#x20;
 
-    Occluder materials only share color (shadow) and opacity properties. For occluder materials opacity is a toggle, not a smooth transition.&#x20;
+    Occluder materials only share color (shadow) and opacity properties. For Occluder materials opacity is a toggle, not a smooth transition.&#x20;
 
     \[asset]
   </Accordion>
 
   <Accordion title="Physical material" defaultOpen={false}>
-    A physical material provide more advanced physically-based rendering properties and can have advanced properties applied to them.&#x20;
+    A Physical material provide more advanced physically-based rendering properties and can have advanced properties applied to them.&#x20;
 
     Physical materials share all of the material properties, as well as the following advanced properties:
 
@@ -101,9 +101,7 @@ description: "Use materials to define the appearance of 3D objects. Control prop
 
     **Clearcoat**: create the look of car paint, carbon fiber, and wet surfaces by adding a reflective layer on top of another layer.
 
-    * Roughness: control how rough or glossy the reflective layer is
-
-      \[asset]
+    * Roughness: control how rough or glossy the reflective layer is\[asset]
   </Accordion>
 </AccordionGroup>
 
