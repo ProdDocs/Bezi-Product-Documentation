@@ -51,15 +51,17 @@ There are two ways to can add Audio object to a scene. Once added, Audio objects
 
 Spatial Audio is often used to make prototypes feel more immersive. Dictate what spot in a scene the Audio object is heard from, how much space the Audio takes up, and how the track decays as it gets further away.&#x20;
 
-## Audio object properties
+## Audio object properties \[missing assets & clarification]
 
 <AccordionGroup>
   <Accordion title="Playback mode" defaultOpen={false}>
     The playback mode dictates how a sound should behave on any given state. All Audio tracks are set to **Stopped** by default, so it's important to review playback modes for each track before testing a prototype.&#x20;
 
+    **Playing**: the Audio track will automatically play on the specified state.
+
+    **Paused**: the Audio track will not&#x20;
+
     **Stopped**: the Audio track will not automatically play when viewing a prototype.
-
-
   </Accordion>
 
   <Accordion title="Playback type" defaultOpen={false} />
