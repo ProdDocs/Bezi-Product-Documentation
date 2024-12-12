@@ -51,6 +51,14 @@ There are two ways to can add Audio object to a scene. Once added, Audio objects
 
 Spatial Audio is often used to make prototypes feel more immersive. Dictate what spot in a scene the Audio object is heard from, how much space the Audio takes up, and how the track decays as it gets further away.&#x20;
 
+To transform an Audio object into a Spatial Audio object, follow these steps:&#x20;
+
+1. Select the desired Audio object
+
+2. Go to the Audio section in the Properties Panel
+
+3. Check the **Spatial** checkbox &#x20;
+
 ## Audio object properties \[missing assets & clarification]
 
 All Audio object properties are managed in the Audio section of the Properties Panel.&#x20;
@@ -86,6 +94,8 @@ All Audio object properties are managed in the Audio section of the Properties P
 
   <Accordion title="Sound range (Spatial Audio only)" defaultOpen={false}>
     Sound range controls the radius of the Audio object at its full volume. If the viewer is outside of the set radius, the Audio volume will start to decay.
+
+    Sound range properties only apply to Spatial Audio objects
   </Accordion>
 
   <Accordion title="Decay (Spatial Audio only)" defaultOpen={false} />
