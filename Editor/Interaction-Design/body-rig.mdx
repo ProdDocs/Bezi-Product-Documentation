@@ -35,6 +35,54 @@ Ability to parent and/or add behaviors objects to your the rig to create human-c
 
 ## Body Rig elements
 
-The Body Rig consists of three elements: the Body, the Hand, and the Head. Each element has their own properties.
+The Body Rig consists of four core elements: the Body, the Hand, the Head and the Camera. Each element has their own properties.
 
-/
+### Body properties
+
+The Body is the parent of different attribute rigs, such as the Head and Arms.&#x20;
+
+<AccordionGroup>
+  <Accordion title="Parent and Children" defaultOpen={false}>
+
+  </Accordion>
+
+  <Accordion title="Transform" defaultOpen={false}>
+
+  </Accordion>
+
+  <Accordion title="Height" defaultOpen={false}>
+
+  </Accordion>
+
+  <Accordion title="Controller preview" defaultOpen={false}>
+
+  </Accordion>
+
+  <Accordion title="Show controller on headset" defaultOpen={false}>
+
+  </Accordion>
+
+  <Accordion title="Colliders" defaultOpen={false}>
+
+  </Accordion>
+</AccordionGroup>
+
+### Hands (left and right) properties
+
+Hands essentially house the controls for the Body Rig. While their aesthetic can be changed in Editor to represent a number of different controller types, it is up to the headset to define what is displayed.
+
+Again, hands can be targeted by behaviors or parented to for deep and dynamic design. So try it out!
+
+### Head properties
+
+The head, in a nutshell, is where the position in which the user will view the world. Inside the head lies a body rig camera. This camera represents what the user will see.
+
+Please view the body rig camera for more information about FOV.
+
+
+
+### Camera properties
+
+The Body Rig Camera, in a nutshell, is where the user will view the world. Like the human eye, the camera has a FOV, which can be adapted to the users preference.
+
+Please note the FOV/Focal Length will differ from headset to headset. Changing the FOV will emulate the FOV in the editor.
