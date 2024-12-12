@@ -65,7 +65,7 @@ All Audio object properties are managed in the Audio section of the Properties P
 
 <AccordionGroup>
   <Accordion title="Playback mode" defaultOpen={false}>
-    The playback mode dictates how a sound should behave on a given state. All Audio tracks are set to **Stopped** by default, so it's important to review playback modes for each track before testing a prototype.&#x20;
+    Control how a sound behaves on any given state. All Audio tracks are set to **Stopped** by default, so it's important to review playback modes for each track before testing a prototype.&#x20;
 
     **Playing**: the Audio track will automatically play on the specified state.
 
@@ -77,7 +77,7 @@ All Audio object properties are managed in the Audio section of the Properties P
   </Accordion>
 
   <Accordion title="Playback type" defaultOpen={false}>
-    Playback types control how many times an Audio track plays in a prototype. &#x20;
+    Control how many times an Audio track plays in a prototype. &#x20;
 
     **Play Once** means the Audio track will play all the way through one time. After that it will stop and reset.&#x20;
 
@@ -87,13 +87,13 @@ All Audio object properties are managed in the Audio section of the Properties P
   </Accordion>
 
   <Accordion title="Volume" defaultOpen={false}>
-    This sets the volume of a specific Audio object. Adjusting volume does not affect the volume of the entire scene.
+    Control the volume of a specific Audio object. Adjusting volume does not affect the volume of the entire scene.
 
     \[asset]
   </Accordion>
 
   <Accordion title="Sound range (Spatial Audio only)" defaultOpen={false}>
-    Sound range controls the radius of the Audio object at its full volume. If the viewer is outside of the set radius, the Audio volume will start to decay.
+    Controls the radius of the Audio object at its full volume. If the viewer is outside of the set radius, the Audio volume will start to decay.
 
     Only Spatial Audio objects can be customized using sound range properties.
   </Accordion>
