@@ -3,11 +3,9 @@ title: "Input Objects"
 description: "Control and interact with prototypes using gamepads, keyboards, or XR controllers."
 ---
 
-*NOT FINISHED - NEEDS MORE TIME & WORK*
-
 ## Using Input objects \[missing assets]
 
-Input objects are used to define the input device and keys/buttons will be used to trigger an event created in the State Machine.&#x20;
+Input objects define the input device and keys/buttons attached to an action. Actions are used in the State Machine \[prod doc link] to trigger an event.
 
 <AccordionGroup>
   <Accordion title="Input object device types" defaultOpen={false}>
@@ -35,12 +33,30 @@ Input objects are used to define the input device and keys/buttons will be used 
 
 ## Input object properties \[missing assets]
 
-Specific actions that device keys/buttons are bound to can trigger events through the state machine.&#x20;
-
 <AccordionGroup>
-  <Accordion title="Setting Input objects to corresponding actions " defaultOpen={false}>
-    Once an Input object is selected in the scene, you can set actions in the Input properties panel. By default, there are 4 actions available and three platforms: Desktop, gamepad, and XR.
+  <Accordion title="Attaching Input objects to actions " defaultOpen={false}>
+    1. Select an Input object in the scene
+
+    2. Go to the Input section in the Properties Panel
+
+    3. Set the desired action(s) for the Input object
+
+    By default, there are three platforms (Desktop, Gamepad, XR) available for each Input object.&#x20;
+
+    Toggle between the platforms by selecting the names and use the dropdown to assign the Input object for each action.
+
+
+
+    \[asset]
   </Accordion>
 
-  <Accordion title="Triggering state machine events using input actions" defaultOpen={false} />
+  <Accordion title="Triggering State Machine events using Input actions" defaultOpen={false} />
 </AccordionGroup>
+
+
+
+Add a new action using the **+** icon.&#x20;
+
+Remove an action using&#x20;
+
+Disable inputs using the power icon&#x20;
