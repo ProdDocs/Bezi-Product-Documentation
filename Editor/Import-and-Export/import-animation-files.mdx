@@ -9,16 +9,14 @@ description: "Bring a prototype to life with animations. "
   <Accordion title="Supported file formats" defaultOpen={false}>
     The Editor supports importing GLB and FBX file formats. When importing a model from an external library such as Sketchfab, it's best practice to download the converted GLB format.
 
-
-
     Skeleton animations and non-skeleton keyframe animations are supported.
-
-
 
     Animations with morph targets are not well supported and may not play after page reload. Using models with skeleton animations work better in these cases.&#x20;
   </Accordion>
 
-  <Accordion title="Editing materials" defaultOpen={false} />
+  <Accordion title="Editing materials" defaultOpen={false}>
+    Materials on imported animated models cannot be edited in the Editor.
+  </Accordion>
 </AccordionGroup>
 
 ##
