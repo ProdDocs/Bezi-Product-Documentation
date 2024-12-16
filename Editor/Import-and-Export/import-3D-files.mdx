@@ -9,12 +9,24 @@ description: "Expedite design and create continuity across past and future proto
   <Accordion title="Supported file formats and weights" defaultOpen={false}>
     The Editor currently supports GLB, FBX, and OBJ file formats. All files must be in one of these three formats in order to be imported.&#x20;
 
-
-
     All imported files should be under 100k polys, if at all possible. Any files over this limit risk affecting the speed and performance of a scene.
   </Accordion>
 
-  <Accordion title="Textures" defaultOpen={false} />
+  <Accordion title="Textures" defaultOpen={false}>
+    To have accurate textures applied, the models must be unwrapped.&#x20;
+
+
+
+    To have imported textures applied automatically, they must be packaged into a GLB file. Use this [free online tool](https://sbtron.github.io/makeglb/) to convert a GLTF file to a GLB file.&#x20;
+
+
+
+    If textures are in a separate folder, follow these steps:
+
+    1. Upload the geometry file&#x20;
+
+    2. Upload the image textures for the model, following the below instructions&#x20;
+  </Accordion>
 
   <Accordion title="Surfaces" defaultOpen={false} />
 </AccordionGroup>
