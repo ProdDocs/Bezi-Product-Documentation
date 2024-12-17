@@ -7,7 +7,7 @@ description: "Create dedicated workspaces for designing and managing files with 
 
 ##
 
-## Using teams \[moving files doesnt work]
+## Using teams \[drag/drop to move files doesn't work]
 
 <AccordionGroup>
   <Accordion title="Creating a team" defaultOpen={false}>
@@ -65,6 +65,10 @@ description: "Create dedicated workspaces for designing and managing files with 
   </Accordion>
 
   <Accordion title="Deleting a team" defaultOpen={false}>
+    <Warning>
+      Deleting a team will permanently delete the team and all its files. Before making this change, please make sure that all team members agree this is the desired outcome.
+    </Warning>
+
     Deleting a team will permanently delete the team and all its files. Before making this change, please make sure that all team members agree this is the desired outcome.
 
     1. Go to the Editor Home, aka the 'Files page'&#x20;
