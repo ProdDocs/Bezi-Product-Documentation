@@ -45,11 +45,25 @@ When sharing a file using its link, there are three file permission level option
 
   <Step title="Step 5">
     Adjust permission levels for each person using the dropdown next to their name.&#x20;
+
+    \[asset]
   </Step>
 </Steps>
 
 ## Permission levels for people added to the file \[missing asset]
 
+When sharing a file by adding people to it directly, there are three file permission level options:
 
+<AccordionGroup>
+  <Accordion title="Editor" defaultOpen={false}>
+    The person can edit the file.
+  </Accordion>
 
-##
+  <Accordion title="Viewer" defaultOpen={false}>
+    The person can view and comment on the file.&#x20;
+  </Accordion>
+
+  <Accordion title="Remove" defaultOpen={false}>
+    The person's access to the file is revoked. They will not be able to view, comment on, or edit the file.
+  </Accordion>
+</AccordionGroup>
