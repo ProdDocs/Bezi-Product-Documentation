@@ -22,8 +22,16 @@ Components are elements that can be reused across multiple Editor design files. 
 
   <Accordion title="Navigating to the main component from an instance" defaultOpen={false} />
 
-  <Accordion title="Restoring a deleted component" defaultOpen={false}>
-    Deleting a main component will not delete its instances.
+  <Accordion title="Restoring a deleted component (no UI for this - error)" defaultOpen={false}>
+    Deleting a main component will not delete its instances. This mean that, if a component gets deleted, it can be restored from one of its instances.&#x20;
+
+    1. Select the instance
+
+    2. Navigate to the 'Instance' section of the Properties Panel &#x20;
+
+    3. Select **Restore main component**
+
+    If the main component was in a separate file that's been deleted, the main component can be restored in the current file with the instance.&#x20;
   </Accordion>
 </AccordionGroup>
 
