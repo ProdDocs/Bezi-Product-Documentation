@@ -69,6 +69,18 @@ Components are elements that can be reused across multiple Editor design files. 
 
     If the main component was in a separate file that's been deleted, the main component can be restored in the current file with the instance.&#x20;
   </Accordion>
+
+  <Accordion title="Moving a main component to a different file" defaultOpen={false}>
+    This is currently not supported, however there is a workaround.&#x20;
+
+    1. Create an instance in the new file
+
+    2. Delete the file that contains the original main component
+
+    3. Return to the new file containing the instance
+
+    4. Follow the above instructions for restoring a deleted component. As long as the original file is deleted, the main component will be restored in the new file
+  </Accordion>
 </AccordionGroup>
 
 ## Creating shared component libraries
