@@ -36,13 +36,8 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
       "name": "Help Center",
-      "icon": "slack",
+      "icon": "book-open-cover",
       "url": "https://community.bezi.com/feed"
     },
     {
