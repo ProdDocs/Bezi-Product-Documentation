@@ -111,8 +111,8 @@
       "group": "Interaction Design",
       "pages": [
         "editor/interaction-design/state-machine-interactions",
-        "editor/lighting/environment-lighting-hdri",
-        "editor/lighting/shadows"
+        "editor/interaction-design/timeline-animations",
+        "editor/interaction-design/event-types-input-methods",
       ]
     },
     {
