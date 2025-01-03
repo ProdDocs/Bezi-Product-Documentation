@@ -71,12 +71,7 @@
         "editor/editor-basics/editor-text-objects",
         "editor/editor-basics/editor-modeling-tools",
         "editor/editor-basics/editor-asset-generation",
-        "editor/editor-basics/editor-version-history",
-        "editor/import-and-export/embed-prototypes",
-        "editor/interaction-design/play-mode",
-        "editor/library/asset-library",
-        "editor/performance/performance-panel",
-        "editor/sharing-and-permissions/file-permissions"
+        "editor/editor-basics/editor-version-history"
       ]
     },
      {
@@ -87,7 +82,7 @@
         "editor/ar-vr/start-view",
         "editor/ar-vr/hand-interactions",
         "editor/ar-vr/passthrough",
-        "editor/ar-vr/optimize-scenes-for-vr",
+        "editor/ar-vr/optimize-scenes-for-vr"
       ]
     },
      {
