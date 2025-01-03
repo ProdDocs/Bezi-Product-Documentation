@@ -67,7 +67,7 @@
     {
       "group": "Editor Basics",
       "pages": [
-        "editorbasics/editor-move-tool",
+        "Editor/AR-VR",
         "essentials/code",
         "essentials/images",
         "essentials/settings",
