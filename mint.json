@@ -63,11 +63,9 @@
     {
       "group": "Editor Basics",
       "pages": [
-        "editor/ar-vr/start-view",
-        "editor/cameras/cameras",
-        "editor/comments/manage-comments",
-        "editor/components/components",
         "editor/editor-basics/editor-hierarchy",
+        "editor/editor-basics/editor-parametric-objects",
+        "editor/editor-basics/editor-pen-and-line-tools",
         "editor/import-and-export/embed-prototypes",
         "editor/interaction-design/play-mode",
         "editor/library/asset-library",
