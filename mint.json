@@ -25,6 +25,9 @@
     "name": "Dashboard",
     "url": "https://dashboard.mintlify.com"
   },
+  "primaryTab": {
+    "name": "Sidekick"
+  },
   "tabs": [
     {
       "name": "API",
@@ -32,7 +35,7 @@
     },
     {
       "name": "Editor",
-      "url": "editor"
+      "url": "Editor"
     }
   ],
   "anchors": [
