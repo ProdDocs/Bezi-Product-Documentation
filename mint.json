@@ -75,7 +75,6 @@
         "editor/import-and-export/embed-prototypes",
         "editor/interaction-design/play-mode",
         "editor/library/asset-library",
-        "editor/lighting/shadows",
         "editor/performance/performance-panel",
         "editor/sharing-and-permissions/file-permissions"
       ]
@@ -103,6 +102,14 @@
       "pages": [
         "editor/cameras/camera-animations",
         "editor/cameras/cameras"
+      ]
+    },
+      {
+      "group": "Lighting",
+      "pages": [
+        "editor/lighting/light-objects",
+        "editor/lighting/environment-lighting-hdri",
+        "editor/lighting/shadows"
       ]
     },
     {
