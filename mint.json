@@ -139,6 +139,20 @@
       ]
     },
     {
+      "group": "Components",
+      "pages": [
+        "editor/components/components",
+        "editor/components/component-overrides"
+      ]
+    },
+    {
+      "group": "Comments",
+      "pages": [
+        "editor/comments/text-and-drawing-comments",
+        "editor/comments/manage-comments"
+      ]
+    },
+    {
       "group": "API Documentation",
       "pages": [
         "api-reference/introduction"
