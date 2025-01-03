@@ -113,6 +113,10 @@
         "editor/interaction-design/state-machine-interactions",
         "editor/interaction-design/timeline-animations",
         "editor/interaction-design/event-types-input-methods",
+        "editor/interaction-design/play-mode",
+        "editor/interaction-design/body-rig",
+        "editor/interaction-design/audio",
+        "editor/interaction-design/input-objects"
       ]
     },
     {
