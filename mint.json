@@ -76,7 +76,6 @@
         "editor/interaction-design/play-mode",
         "editor/library/asset-library",
         "editor/lighting/shadows",
-        "editor/materials/materials",
         "editor/performance/performance-panel",
         "editor/sharing-and-permissions/file-permissions"
       ]
@@ -95,6 +94,7 @@
      {
       "group": "Materials",
       "pages": [
+        "editor/materials/materials",
         "editor/cameras/camera-animations",
         "editor/cameras/cameras"
       ]
