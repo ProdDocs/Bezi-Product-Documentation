@@ -58,6 +58,7 @@
     {
       "group": "Get Started",
       "pages": [
+        "editor/editor-introduction",
         "editor/editor-get-started"
       ]
     },
