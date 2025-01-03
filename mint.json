@@ -95,8 +95,7 @@
       "group": "Materials",
       "pages": [
         "editor/materials/materials",
-        "editor/cameras/camera-animations",
-        "editor/cameras/cameras"
+        "editor/materials/material-library"
       ]
     },
     {
