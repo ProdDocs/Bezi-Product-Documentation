@@ -91,7 +91,7 @@
     {
       "group": "Cameras",
       "pages": [
-        "editor/cameras/camera-animations",
+        "editor/ar-vr/view-prototypes-headset",
         "editor/cameras/cameras"
       ]
     },
