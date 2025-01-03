@@ -35,7 +35,7 @@
     },
     {
       "name": "Editor",
-      "url": "snippets"
+      "url": "editor"
     }
   ],
   "anchors": [
@@ -67,7 +67,7 @@
     {
       "group": "Editor Basics",
       "pages": [
-        "Editor/AR-VR",
+        "editor/cameras",
         "essentials/code",
         "essentials/images",
         "essentials/settings",
