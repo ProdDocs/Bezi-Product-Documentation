@@ -63,7 +63,7 @@
     {
       "group": "Editor Basics",
       "pages": [
-        "editor/ar-vr/start-view",
+        "editor/ar-vr",
         "editor/cameras/cameras",
         "editor/comments/manage-comments",
         "editor/components/components",
