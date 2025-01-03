@@ -120,15 +120,22 @@
       ]
     },
     {
-      "group": "Interaction Design",
+      "group": "Import & Export",
       "pages": [
+        "editor/import-and-export/figma-integration",
+        "editor/import-and-export/embed-prototypes",
         "editor/import-and-export/import-3d-files",
-        "editor/interaction-design/timeline-animations",
-        "editor/interaction-design/event-types-input-methods",
-        "editor/interaction-design/play-mode",
-        "editor/interaction-design/body-rig",
-        "editor/interaction-design/audio",
-        "editor/interaction-design/input-objects"
+        "editor/import-and-export/import-animation-files",
+        "editor/import-and-export/export-editor-scenes"
+      ]
+    },
+    {
+      "group": "Sharing & Permissions",
+      "pages": [
+        "editor/sharing-and-permissions/file-permissions",
+        "editor/sharing-and-permissions/teams",
+        "editor/sharing-and-permissions/publish-public-links",
+        "editor/sharing-and-permissions/password-protected-files"
       ]
     },
     {
