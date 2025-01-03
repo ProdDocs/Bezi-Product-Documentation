@@ -81,6 +81,13 @@
         "editor/sharing-and-permissions/file-permissions"
       ]
     },
+     {
+      "group": "AR/VR",
+      "pages": [
+        "editor/cameras/camera-animations",
+        "editor/cameras/cameras"
+      ]
+    },
     {
       "group": "Cameras",
       "pages": [
