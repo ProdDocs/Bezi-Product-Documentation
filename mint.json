@@ -63,15 +63,18 @@
     {
       "group": "Editor Basics",
       "pages": [
+        "editor/ar-vr/start-view",
         "editor/cameras/cameras",
         "editor/comments/manage-comments",
         "editor/components/components",
         "editor/editor-basics/editor-hierarchy",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "editor/import-and-export/embed-prototypes",
+        "editor/interaction-design/play-mode",
+        "editor/library/asset-library",
+        "editor/lighting/shadows",
+        "editor/materials/materials",
+        "editor/performance/performance-panel",
+        "editor/sharing-and-permissions/file-permissions"
       ]
     },
     {
