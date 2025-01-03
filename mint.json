@@ -63,7 +63,7 @@
     {
       "group": "Editor Basics",
       "pages": [
-        "editor/ar-vr",
+        "editor/ar-vr/start-view",
         "editor/cameras/cameras",
         "editor/comments/manage-comments",
         "editor/components/components",
@@ -75,6 +75,13 @@
         "editor/materials/materials",
         "editor/performance/performance-panel",
         "editor/sharing-and-permissions/file-permissions"
+      ]
+    },
+    {
+      "group": "Cameras",
+      "pages": [
+        "editor/cameras/camera-animations",
+        "editor/cameras/cameras"
       ]
     },
     {
