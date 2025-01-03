@@ -61,6 +61,12 @@
       ]
     },
     {
+      "group": "Get Started",
+      "pages": [
+        "editor/editor-get-started"
+      ]
+    },
+    {
       "group": "Editor Basics",
       "pages": [
         "editor/editor-basics/editor-hierarchy",
@@ -150,6 +156,19 @@
       "pages": [
         "editor/comments/text-and-drawing-comments",
         "editor/comments/manage-comments"
+      ]
+    },
+    {
+      "group": "Library",
+      "pages": [
+        "editor/library/asset-library",
+        "editor/library/team-library"
+      ]
+    },
+    {
+      "group": "Performance",
+      "pages": [
+        "editor/performance/performance-panel"
       ]
     },
     {
