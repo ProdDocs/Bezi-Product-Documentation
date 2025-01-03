@@ -67,7 +67,7 @@
     {
       "group": "Editor Basics",
       "pages": [
-        "editor/cameras",
+        "editor/cameras/cameras.mdx",
         "essentials/code",
         "essentials/images",
         "essentials/settings",
