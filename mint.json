@@ -85,7 +85,11 @@
       "group": "AR/VR",
       "pages": [
         "editor/ar-vr/view-prototypes-headset",
-        "editor/cameras/cameras"
+        "editor/ar-vr/view-prototypes-mobile-ar",
+        "editor/ar-vr/start-view",
+        "editor/ar-vr/hand-interactions",
+        "editor/ar-vr/passthrough",
+        "editor/ar-vr/optimize-scenes-for-vr",
       ]
     },
     {
