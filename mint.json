@@ -27,8 +27,12 @@
   },
   "tabs": [
     {
-      "name": "Editor",
+      "name": "API",
       "url": "api-reference"
+    },
+    {
+      "name": "Editor",
+      "url": "editor"
     }
   ],
   "anchors": [
