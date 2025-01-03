@@ -30,10 +30,6 @@
   },
   "tabs": [
     {
-      "name": "API",
-      "url": "api-reference"
-    },
-    {
       "name": "Editor",
       "url": "editor"
     }
