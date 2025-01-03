@@ -21,10 +21,6 @@
       "url": "mailto:support@bezi.com"
     }
   ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
-  },
   "primaryTab": {
     "name": "Sidekick"
   },
