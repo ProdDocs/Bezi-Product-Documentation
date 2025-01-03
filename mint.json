@@ -84,14 +84,14 @@
      {
       "group": "AR/VR",
       "pages": [
-        "editor/cameras/camera-animations",
+        "editor/ar-vr/view-prototypes-headset",
         "editor/cameras/cameras"
       ]
     },
     {
       "group": "Cameras",
       "pages": [
-        "editor/ar-vr/view-prototypes-headset",
+        "editor/cameras/camera-animations",
         "editor/cameras/cameras"
       ]
     },
