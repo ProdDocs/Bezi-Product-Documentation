@@ -92,6 +92,13 @@
         "editor/ar-vr/optimize-scenes-for-vr",
       ]
     },
+     {
+      "group": "Materials",
+      "pages": [
+        "editor/cameras/camera-animations",
+        "editor/cameras/cameras"
+      ]
+    },
     {
       "group": "Cameras",
       "pages": [
