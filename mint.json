@@ -5,7 +5,7 @@
     "dark": "/logo/bezi-logo-light.svg",
     "light": "/logo/bezi-logo-light.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/bezi-logo-light.svg",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
