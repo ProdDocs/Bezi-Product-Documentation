@@ -3,7 +3,7 @@
   "name": "Bezi",
   "logo": {
     "dark": "/logo/dark.svg",
-    "light": "images/Bezi_logo_lockup_color_horizontal_alpha.svg"
+    "light": "/images/bezi-logo-light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
