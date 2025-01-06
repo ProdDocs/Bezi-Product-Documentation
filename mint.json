@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Bezi",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/images/bezi-logo-light.svg"
+    "dark": "/logo/bezi-logo-dark.svg",
+    "light": "/logo/bezi-logo-light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
