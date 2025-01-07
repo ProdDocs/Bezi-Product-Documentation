@@ -3,6 +3,10 @@ title: "Modeling Tools"
 description: "Access and use Modeling tools."
 ---
 
+<Info>
+  Parametric objects become ‘editable’ (bake its parameters) once you make edits with the Modeling tools.
+</Info>
+
 ## Accessing Modeling tools
 
 To access Modeling tools you must be enter **edit mode**. This can be done in two ways:
@@ -11,11 +15,11 @@ To access Modeling tools you must be enter **edit mode**. This can be done in tw
 
 2. Select an object and press `enter`
 
-<Info>
-  Parametric objects become ‘editable’ (bake its parameters) once you make edits with the Modeling tools.
-</Info>
+Once in edit mode, select the Mesh icon in the center of the top bar to access Modeling tools.
 
-## Using Modeling tools \[assets and tips missing]
+![](/images/open-modeling-tools.png)
+
+## Using Modeling tools&#x20;
 
 <AccordionGroup>
   <Accordion title="Supported modeling tools" defaultOpen={false}>
@@ -38,18 +42,34 @@ To access Modeling tools you must be enter **edit mode**. This can be done in tw
 
   <Accordion title="Adding geometry with loop cuts" defaultOpen={false}>
     Add geometry with loop cuts by selecting the tool and clicking on the desired spot.
+
+    <Tip>
+      Loop cuts snap at halfway points and at mirrored points from the other side if there is already a loop cut.
+    </Tip>
   </Accordion>
 
   <Accordion title="Extruding a face" defaultOpen={false}>
     Click and drag faces to extrude them in the same direction.
+
+    <Tip>
+      Once a face is extruded, single click on any other face to extrude the same exact amount.
+    </Tip>
   </Accordion>
 
   <Accordion title="Insetting a face" defaultOpen={false}>
     Click and drag to inset a face.
+
+    <Tip>
+      Once a face is inset, single click on any other face to inset the same exact amount.
+    </Tip>
   </Accordion>
 
   <Accordion title="Adjusting the subdivision level" defaultOpen={false}>
     Use the slider in the right sidebar to adjust the subdivision level of an object. This works in selection mode and edit mode.
+
+    <Tip>
+      Going over 3 levels can impact performance.
+    </Tip>
   </Accordion>
 </AccordionGroup>
 
