@@ -3,11 +3,9 @@ title: "Input Objects"
 description: "Control and interact with prototypes using gamepads, keyboards, or XR controllers."
 ---
 
-\[needs review/clarification from a member of Design team]
+## Using Input objects
 
-## Using Input objects \[missing assets]
-
-Input objects define the input device and keys/buttons attached to an action. These actions are used in the State Machine \[prod doc link] to trigger an event.
+Input objects define the input device and keys/buttons attached to an action. These actions are used in the [State Machine](https://docs.bezi.com/editor/interaction-design/state-machine-interactions) to trigger an event.
 
 <AccordionGroup>
   <Accordion title="Input object device types" defaultOpen={false}>
@@ -68,21 +66,35 @@ Input objects define the input device and keys/buttons attached to an action. Th
 ## Using Inputs in the State Machine \[missing assets]
 
 <Info>
-  Familiarize yourself with how to use the State Machine \[docs page link] before incorporating Inputs.&#x20;
+  Familiarize yourself with how to use the [State Machine](https://docs.bezi.com/editor/interaction-design/state-machine-interactions) before incorporating Inputs.&#x20;
 </Info>
 
 In the State Machine, use 'Input start' and 'Input end' to signify when an action in triggered.
 
-1. Select **State Machine** in the bottom bar to open the State Machine panel&#x20;
+<Steps>
+  <Step title="Step 1">
+    Select **State Machine** in the bottom bar to open the State Machine panel.
+  </Step>
 
-2. Click a State transition to open the Events popover
+  <Step title="Step 2">
+    Click a State transition to open the Events popover.
+  </Step>
 
-3. Click the dropdown and select 'Input start' or 'Input end'
+  <Step title="Step 3">
+    Click the dropdown and select 'Input start' or 'Input end'.
 
-   * 'Input start' signifies when a button is pressed down&#x20;
+    * 'Input start' signifies when a button is pressed down&#x20;
 
-   * 'Input end' signifies when a button is released
+    * 'Input end' signifies when a button is released
 
-4. If there are multiple Inputs in a scene, select the desired one from the 'Inputs' dropdown
+    asset
+  </Step>
 
-5. Select the desired action in the 'Action' dropdown
+  <Step title="Step 4">
+    If there are multiple Inputs in a scene, select the desired one from the 'Inputs' dropdown.
+  </Step>
+
+  <Step title="Step 5">
+    Select the desired action in the 'Action' dropdown.
+  </Step>
+</Steps>
