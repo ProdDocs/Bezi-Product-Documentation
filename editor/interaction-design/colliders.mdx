@@ -25,7 +25,17 @@ description: "Use colliders to make empties and meshes collide with objects or d
 
 ## Collider types
 
-In Bezi their are two types of colliders; solid colliders and trigger colliders. By default, colliders  default to the trigger collider. Click the **dotted circle** icon to switch collider types.&#x20;
+In Bezi their are two types of colliders; trigger colliders and solid colliders. By default, colliders  default to the trigger collider. Click the **dotted circle** icon to switch collider types.&#x20;
+
+<AccordionGroup>
+  <Accordion title="Trigger colliders" defaultOpen={false}>
+    Trigger colliders detect when another collider, trigger or solid, enters its space. These colliders can trigger actions in a scene.
+  </Accordion>
+
+  <Accordion title="Solid colliders" defaultOpen={false}>
+    Solid colliders will enable objects to collide with other solid colliders. As you notice up above solid colliders have mass, friction, and bounce. When physics are enabled you can change these parameters to change the effect of the collider.
+  </Accordion>
+</AccordionGroup>
 
 
 
