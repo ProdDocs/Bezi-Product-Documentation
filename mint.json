@@ -114,7 +114,9 @@
         "editor/interaction-design/play-mode",
         "editor/interaction-design/body-rig",
         "editor/interaction-design/audio",
-        "editor/interaction-design/input-objects"
+        "editor/interaction-design/input-objects",
+        "editor/interaction-design/colliders",
+        "editor/interaction-design/physics"
       ]
     },
     {
