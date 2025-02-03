@@ -68,11 +68,15 @@ Enable clipping on Frames to hide the children objects that extend beyond the Fr
 
 <AccordionGroup>
   <Accordion title="Enabling Frame clipping" defaultOpen={false}>
-
+    To enable clipping, select a Frame, go to the Properties Panel, and check the **Clip content** box.
   </Accordion>
 
-  <Accordion title="New Accordion" defaultOpen="false">
+  <Accordion title="Adding caps to clipped objects" defaultOpen={false}>
+    Enabling caps renders a solid color on a Frame’s nested objects where the Frame’s boundary and its nested objects intersect. Cap colors can be changed in the Properties Panel.
 
+    <Tip>
+      Each Frame renders its own caps and cap colors. If you need a different cap color inside a Frame, try nesting each object in its own Frame.
+    </Tip>
   </Accordion>
 </AccordionGroup>
 
