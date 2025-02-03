@@ -46,14 +46,6 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
-    },
-    {
-      "group": "Get Started",
-      "pages": [
         "editor/editor-introduction",
         "editor/editor-get-started"
       ]
