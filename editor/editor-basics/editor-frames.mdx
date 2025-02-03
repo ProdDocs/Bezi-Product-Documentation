@@ -88,7 +88,7 @@ Constraints dictate how nested objects behave when their parent Frame’s size c
   <Accordion title="Adding constraints" defaultOpen={false}>
     1. Confirm there are one or more objects nested in a Frame&#x20;
 
-    2. Select the Frame with nested objects
+    2. Select the nested objects
 
     3. Go to the Properties Panel and find the **Constraints** section&#x20;
 
@@ -119,6 +119,24 @@ Constraints dictate how nested objects behave when their parent Frame’s size c
 </AccordionGroup>
 
 ## Align and Distribute within Frames
+
+When one or more nested objects are selected, the align and distribute options appear at the top of the Properties Panel. Objects within their parent Frame can be aligned or distributed relative to to the Frame or each other, allowing for precise and efficient positioning.
+
+There are two align and distribute modes to choose between: Within Frame and Selected Objects.
+
+<AccordionGroup>
+  <Accordion title="Within Frame mode" defaultOpen={false}>
+    The Within Frame mode will align and distribute based on the parent Frame’s boundaries.
+  </Accordion>
+
+  <Accordion title="Selected Objects mode" defaultOpen={false}>
+    The Selected Objects mode will ignore the Frame and align and distribute the selected objects relative to each other.
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+  You can align and distribute nested objects within different Frames at the same time. The selected objects will always respect their own parent Frame.
+</Tip>
 
 ## Using Frames with the State Machine
 
