@@ -3,9 +3,13 @@ title: "Common Issues"
 description: "Description of your new file."
 ---
 
-## Unity x Sidekick connection &#x20;
+## How do I reinstate a lost connection between Unity and Sidekick?
 
-If the connection indicators in Unity and/or Sidekick are red, Sidekick cannot communicate with Unity. There are a few common reasons and easy fixes for this:&#x20;
+You'll be able to identify a lost connection by checking the connection indicators in Unity and Sidekick. If either are red, the apps cannot communicate.&#x20;
+
+![](/images/unity-bezi-connection.png)
+
+There are a few common reasons and fixes:&#x20;
 
 1. Check that you have reliable internet connection
 
@@ -15,8 +19,36 @@ If the connection indicators in Unity and/or Sidekick are red, Sidekick cannot c
 
 4. Check which version of Unity you're on. Sidekick supports the following:
 
-   * Best: **Unity 2022 LTS** (the latest LTS that Unity’s published)
+   * Best: 
 
-   * Supported: **2021 LTS**
+     **Unity 2022 LTS**
 
-   * Supported with risk: **Unity 6, version 6000.0.29f1** (in active development by Unity, which can impact external apps)
+      (the latest LTS that Unity’s published)
+
+   * Supported: 
+
+     **2021 LTS**
+
+   * Supported with risk: 
+
+     **Unity 6, version 6000.0.29f1**
+
+      (in active development by Unity, which can impact external apps)
+
+## What do Asset Sync errors mean? How do I resolve them?
+
+1. Do not sync while play mode is open in Unity
+
+2. Open the Asset Sync dialog (screenshot) in Sidekick and select the 
+
+   **Resync**
+
+    button
+
+3. Make sure only 1 Unity project is open at a time. Sidekick doesn’t support multiple projects open simultaneously yet. If you had multiple projects open, follow the below steps:
+
+   1. Close the second Unity project
+
+   2. Quit the entire Sidekick app (right click on the Sidekick app icon, select “Quit” from the dropdown)
+
+   3. Reopen the Sidekick app and log back in
