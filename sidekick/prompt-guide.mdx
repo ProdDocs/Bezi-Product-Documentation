@@ -1,4 +1,36 @@
 ---
 title: "Prompt Guide"
-description: "Description of your new file."
+description: "How to prompt Sidekick to get the best results! "
 ---
+
+### Explain the game&#x20;
+
+Start every project by giving Sidekick context on what you’re trying to create (this also lets it help you steer yourself in the right direction if you get off course!)
+
+```
+“I want to build a game like Portal, with a first-person character that can shoot two portals which tunnel to each other.”
+```
+
+### Specifics make a huge difference!&#x20;
+
+The clearer your prompt, the better the result. Including details like what buttons you want an action mapped to, scripts you want to update, and components you want to use make for results that are WAY more likely to fit what you’re looking for.
+
+```
+"Make my character jump” vs. “Update PlayerMovement so that my character jumps when I hit spacebar"
+```
+
+### Pin important or relevant information before you prompt
+
+Pinning allows you to get specific without writing a messy, asset-packed prompt. Select the objects you want in Unity and click the pin next to them in the Sidekick prompt bar to make sure they’re factored into the answer
+
+```
+Image
+```
+
+### Include negatives
+
+It's just as helpful for Sidekick to know what you *don’t* want to prevent noisy behavior and hallucinations. Sidekick may *think* it understands what your prompt means, but has misinterpreted it and is heading in the wrong direction. Negatives are also helpful for behavioral debugging!
+
+```
+“I want my character to move when I use WASD. I DO NOT want them to move when I use the arrow keys, so please use key presses and NOT horizontal/vertical axes for movement”
+```
