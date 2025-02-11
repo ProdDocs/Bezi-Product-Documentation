@@ -11,6 +11,17 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "Sidekick (coming soon)",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "sidekick/get-started"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Editor",
         "groups": [
           {
