@@ -16,12 +16,7 @@
           {
             "group": "Get Started",
             "pages": [
-              "sidekick/get-started"
-            ]
-          },
-          {
-            "group": "Prompt guide",
-            "pages": [
+              "sidekick/get-started",
               "sidekick/prompt-guide"
             ]
           },
