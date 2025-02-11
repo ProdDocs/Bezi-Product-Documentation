@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Sidekick (coming soon)",
+        "tab": "Sidekick (beta)",
         "groups": [
           {
             "group": "Get Started",
@@ -31,6 +31,16 @@
       {
         "tab": "Editor",
         "groups": [
+          {
+            "group": "Support resources",
+            "anchords": [
+              {
+                "anchor": "Help Center",
+                "href": "https://community.bezi.com/feed",
+                "icon": "book-open-cover"
+              }
+            ]
+          }
           {
             "group": "Get Started",
             "pages": [
