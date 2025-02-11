@@ -18,6 +18,18 @@
             "pages": [
               "sidekick/get-started"
             ]
+          },
+          {
+            "group": "Prompt guide",
+            "pages": [
+              "sidekick/prompt-guide"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "sidekick/troubleshooting/common-issues"
+            ]
           }
         ]
       },
