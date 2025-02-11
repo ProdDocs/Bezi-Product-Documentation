@@ -9,20 +9,6 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Help Center",
-          "href": "https://community.bezi.com/feed",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Bezi 101 Tutorials",
-          "href": "https://www.bezi.com/bezi-101",
-          "icon": "newspaper"
-        }
-      ],
-    },
     "tabs": [
       {
         "tab": "Sidekick (coming soon)",
