@@ -33,11 +33,10 @@
         "groups": [
           {
             "group": "Support resources",
-            "pages": [
+            "tabs": [
               {
-                "anchor": "Help Center",
-                "href": "https://community.bezi.com/feed",
-                "icon": "book-open-cover"
+                "tab": "Help Center",
+                "href": "https://community.bezi.com/feed"
               }
             ]
           },
