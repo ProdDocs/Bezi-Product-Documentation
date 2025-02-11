@@ -33,7 +33,7 @@
         "groups": [
           {
             "group": "Support resources",
-            "anchords": [
+            "pages": [
               {
                 "anchor": "Help Center",
                 "href": "https://community.bezi.com/feed",
