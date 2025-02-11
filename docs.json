@@ -32,15 +32,6 @@
         "tab": "Editor",
         "groups": [
           {
-            "group": "Support resources",
-            "tabs": [
-              {
-                "tab": "Help Center",
-                "href": "https://community.bezi.com/feed"
-              }
-            ]
-          },
-          {
             "group": "Get Started",
             "pages": [
               "editor/editor-introduction",
