@@ -25,6 +25,12 @@
             "pages": [
               "sidekick/troubleshooting/common-issues"
             ]
+          },
+            {
+            "group": "Security",
+            "pages": [
+              "sidekick/security/security"
+            ]
           }
         ]
       },
