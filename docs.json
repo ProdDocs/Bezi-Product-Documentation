@@ -154,9 +154,9 @@
         ]
       }
     ],
-    "global": {
-    {
-     "logo": {
+{
+  "global": {
+    "logo": {
       "light": "/logo/bezi-logo-light.svg",
       "dark": "/logo/bezi-logo-light.svg"
     },
@@ -172,5 +172,7 @@
       "socials": {
         "x": "https://x.com/bezi_ai",
         "linkedin": "https://linkedin.com/company/bezi-ai"
+      }
+    }
   }
 }
