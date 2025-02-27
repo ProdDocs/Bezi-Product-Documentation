@@ -154,7 +154,6 @@
         ]
       }
     ],
-{
   "global": {
     "logo": {
       "light": "/logo/bezi-logo-light.svg",
@@ -173,6 +172,5 @@
         "x": "https://x.com/bezi_ai",
         "linkedin": "https://linkedin.com/company/bezi-ai"
       }
-    }
   }
 }
