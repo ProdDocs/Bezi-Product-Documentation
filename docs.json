@@ -11,25 +11,25 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Sidekick (beta)",
+        "tab": "Bezi (alpha)",
         "groups": [
           {
             "group": "Get Started",
             "pages": [
-              "sidekick/get-started",
-              "sidekick/prompt-guide"
+              "bezi/get-started",
+              "bezi/prompt-guide"
             ]
           },
           {
             "group": "Troubleshooting",
             "pages": [
-              "sidekick/troubleshooting/common-issues"
+              "bezi/troubleshooting/common-issues"
             ]
           },
             {
             "group": "Security",
             "pages": [
-              "sidekick/security/security"
+              "bezi/security/security"
             ]
           }
         ]
