@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Bezi (alpha)",
+        "tab": "Bezi (beta)",
         "groups": [
           {
             "group": "Get Started",
@@ -33,7 +33,7 @@
             ]
           }
         ]
-      },
+      }
     ]
   }, 
   "global": {
