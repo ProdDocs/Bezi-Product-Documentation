@@ -36,11 +36,11 @@
       }
     ]
   }, 
+  "logo": {
+    "light": "/logo/bezi-logo-light.svg",
+    "dark": "/logo/bezi-logo-light.svg"
+  },
   "global": {
-    "logo": {
-      "light": "/logo/bezi-logo-light.svg",
-      "dark": "/logo/bezi-logo-light.svg"
-    },
     "navbar": {
       "links": [
         {
