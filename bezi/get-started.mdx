@@ -3,18 +3,17 @@ title: "Get Started"
 description: "Learn how to set up Bezi and connect it to your Unity project."
 ---
 
-Bezi is an independent application that connects to your Unity project. This enables us to use the existing project context to inform AI-based recommendations and scripts that are custom to your project and keep all the work within Unity.&#x20;
+Bezi is an independent application that connects to your Unity project. This enables us to use the existing project context to inform AI-based recommendations and scripts that are custom to your project and keep all the work within Unity. 
 
-**Bezi (codename Sidekick) is in beta**.&#x20;
+**Bezi (codename Sidekick) is in beta**. 
 
-The [**Common Issues**](https://docs.bezi.com/sidekick/troubleshooting/common-issues) documentation is available for self-service troubleshooting.&#x20;
+The [**Common Issues**](https://docs.bezi.com/sidekick/troubleshooting/common-issues) documentation is available for self-service troubleshooting. 
 
 Please report any issues or confusion in the [Discord channel](https://discord.gg/xdSTX8JT8K). We'll reply as fast as possible. Fixing any perceived issues may require asking you more questions to diagnose and resolve the root cause, not just the symptom.
 
 ## Get access
 
 1. [Request access](https://www.bezi.com/sidekick#form) to the private beta
-
 2. Wait to receive an email confirming your access. Keep an eye on your spam folder just in case
 
 ## Set-up tutorial
@@ -25,78 +24,62 @@ Please report any issues or confusion in the [Discord channel](https://discord.g
 
 <Steps>
   <Step title="Create an account">
-    1. Select the `Install Sidekick` button in your access email
-
-    2. Select `Sign up or Log in` to create your account
+    1. Select the `Install Bezi` button in your access email
+    2. Select `Sign-up or Log-in` to create your account
 
     <Note>
       You must create an account using the email address you received your access email at. If you want to use a different email, send us a note in the [Discord channel](https://discord.gg/cTraeg3n)
     </Note>
   </Step>
-
   <Step title="Start your free trial">
-    After your account is created, you'll be redirected to the [Get Sidekick](https://bezi.com/start?source=sidekick) page. Complete the free trial flow before you download the Bezi app.
+    After your account is created, you'll be redirected to the [Get Bezi](https://app.bezi.com/setup) page. Complete the free trial flow before you download the Bezi app.
 
-    If you are not automatically redirected back after starting the trial, return to [this page](https://bezi.com/start?source=sidekick)
+    If you are not automatically redirected back after starting the trial, return to [this page](https://bezi.com/start?source=sidekick).
   </Step>
-
   <Step title="Install the Bezi app">
     1. Download the appropriate app version for your machine
-
     2. Follow the standard app installation process (we recommend adding the Bezi app to your dock for ease of access)
-
-    3. Open the Bezi desktop app
+    3. Open the Bezi app
   </Step>
 </Steps>
 
-## Connect Bezi to Unity&#x20;
+## Connect Bezi to Unity 
 
 <Steps>
   <Step title="Check your Unity version">
     The following Unity versions can support Bezi:
 
-    * Best: **Unity 2022 LTS** (the latest LTS that Unity’s published)
-
-    * Supported: **2021 LTS**
-
-    * Supported with risk: **Unity 6, version 6000.0.29f1** (in active development by Unity, which can impact external apps)
+    - Best: **Unity 2022 LTS** (the latest LTS that Unity’s published)
+    - Supported: **2021 LTS**
+    - Supported with risk: **Unity 6, version 6000.0.29f1** (in active development by Unity, which can impact external apps)
   </Step>
-
   <Step title="Open the Unity project and connect it to Bezi">
     1. Open the Unity project you want to connect to Bezi
-
     2. Return to Bezi
-
     3. Open the **Project Picker** dropdown
-
     4. Select the relevant Unity project
-
     5. If you don't see the project in the dropdown, click `Add project` at the bottom of the dropdown to manually add the project to Sidekick
 
     <Tip>
       Both the Unity project and Bezi app must be open to use them together. We recommend a split screen to see both simultaneously.
     </Tip>
   </Step>
-
   <Step title="Confirm Bezi identified the Unity project">
     Check the **Unity Project Picker** in the Bezi menu bar to confirm Bezi identified and connected to the correct Unity project.
 
     ![](/images/unity-project-selector.png)
   </Step>
-
   <Step title="Connect Bezi to your Unity project">
-    Select the green `Install Unity Plugin` button in the Bezi menu bar, then click on the Unity project. It will ask you for consent to install, then the Unity Package Manager popup will appear. &#x20;
+    Select the green `Install Unity Plugin` button in the Bezi menu bar, then click on the Unity project. It will ask you for consent to install, then the Unity Package Manager popup will appear.  
 
     ![](/images/install-unity-plugin-button.png)
   </Step>
-
   <Step title="Confirm connection status">
     When Unity and Bezi are connected, there will be a green bar in Unity's menu and a green dot in Bezi's menu. If the bar in Unity is red at first, **click the bar** to retry the connection.
 
     <Warning>
-      **If either connection indicator is red, the connection must be reinstated for Bezi to work.**&#x20;
+      **If either connection indicator is red, the connection must be reinstated for Bezi to work.** 
     </Warning>
-
     ![](/images/unity-bezi-connection.png)
   </Step>
 </Steps>
@@ -105,18 +88,12 @@ Please report any issues or confusion in the [Discord channel](https://discord.g
 
 When a new version of Bezi is released, a green button in the top menu will appear. Click the button to update Sidekick before you start work in Bezi. This will update Bezi and the Unity plugin.
 
-Occasionally Unity's Package Manager doesn't automatically update the plugin. If you recently updated Bezi and it doesn't seem to be working with Unity, follow these steps:  &#x20;
+Occasionally Unity's Package Manager doesn't automatically update the plugin. If you recently updated Bezi and it doesn't seem to be working with Unity, follow these steps:   
 
-1. Close Bezi: right-click on the desktop app > `Quit`
-
+1. Close Bezi: right-click on the desktop app \> `Quit`
 2. Open the Unity project you've connected with Bezi
-
-3. Open Unity Package Manager: Window menu > `Package Manager`
-
-4. Delete the Sidekick plugin: open "Bezi Sidekick" in the Package Manager > `Remove`
-
+3. Open Unity Package Manager: Window menu \> `Package Manager`
+4. Delete the Sidekick plugin: open "Bezi Sidekick" in the Package Manager \> `Remove`
 5. Reopen the Bezi app
-
 6. Select the green `Install Unity Plugin` button in the top bar
-
 7. Click on the Unity project to see the Package Manager popup
