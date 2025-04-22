@@ -14,7 +14,7 @@
         "tab": "Bezi (beta)",
         "groups": [
           {
-            "group": "Install & Setup",
+            "group": "Get Started",
             "pages": [
               "bezi/get-started",
               "bezi/prompt-guide"
