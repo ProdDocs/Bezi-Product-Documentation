@@ -28,9 +28,9 @@
             ]
           },
             {
-            "group": "Security",
+            "group": "Privacy & Security",
             "pages": [
-              "bezi/security/security"
+              "bezi/privacy-security/security"
             ]
           }
         ]
