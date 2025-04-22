@@ -21,16 +21,16 @@
             ]
           },
           {
+            "group": "Privacy & Security",
+            "pages": [
+              "bezi/privacy-security/security"
+            ]
+          },
+            {
             "group": "FAQ",
             "pages": [
               "bezi/faq/troubleshooting",
               "bezi/faq/changelog"
-            ]
-          },
-            {
-            "group": "Privacy & Security",
-            "pages": [
-              "bezi/privacy-security/security"
             ]
           }
         ]
