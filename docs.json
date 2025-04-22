@@ -23,7 +23,8 @@
           {
             "group": "FAQ",
             "pages": [
-              "bezi/faq/troubleshooting"
+              "bezi/faq/troubleshooting",
+              "bezi/faq/changelog"
             ]
           },
             {
