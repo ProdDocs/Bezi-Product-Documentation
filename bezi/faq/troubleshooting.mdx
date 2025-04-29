@@ -21,7 +21,22 @@ If the connection indicators in Unity and Bezi are both green, but Bezi is stuck
 
 You'll be able to identify a lost connection by checking the connection indicators in Unity and Bezi. If either are red, the apps cannot communicate.
 
-![](/images/unity-bezi-connection.png)
+![](/bezi-unity-connected.png)
+
+### I was prompted to update Bezi's app and Unity plugin, but the plugin didn't update. How do I update it manually? 
+
+When a new version of Bezi is released, a green button in the top menu will appear. Click the button to update Bezi before you start work in Bezi. This will update Bezi and the Unity plugin.
+
+Occasionally Unity's Package Manager doesn't automatically update the plugin. If you recently updated Bezi and it doesn't seem to be working with Unity, follow these steps:
+
+1. Close Bezi: right-click on the desktop app \> `Quit`
+2. Open the Unity project you've connected with Bezi
+3. Open Unity Package Manager: Window menu \> `Package Manager`
+4. Delete the Bezi plugin: open "Bezi Sidekick" in the Package Manager \> `Remove`
+5. Reopen the Bezi app
+6. Select the green `Install Unity Plugin` button in the top bar
+7. Click on the Unity project to see the Package Manager popup
+8. The Unity plugin should now be updated\!
 
 ### **How do I reinstate a lost connection between Unity and** **Bezi**?
 
@@ -44,7 +59,7 @@ Asset Sync errors can mean a number of different things, such as: Bezi wasn't ab
 1. Do not sync while play mode is open in Unity
 2. Open the Bezi Asset Sync dialog and select the **sync** icon
 
-### **I opened** Bezi **and got stuck on the splash screen. How do I get past it?**
+### **I opened** **Bezi** **and got stuck on the splash screen. How do I get past it?**
 
 This happens when the app is out of date and the auto-update wasn't able to execute. Follow these steps to manually update the app:
 
