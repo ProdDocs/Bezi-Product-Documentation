@@ -5,7 +5,7 @@ description: "Learn about the steps to sync Bezi with your Unity project to get 
 
 Asset Sync is what enables Bezi to understand the pieces of your Unity project. That information is used by Bezi to deliver responses that are accurate and relevant to your project.
 
-When connecting a Unity project to Bezi for the first time, Bezi will need time to index the project. Larger projects will need more time to index. 
+When connecting a Unity project to Bezi for the first time, Bezi will need time to index the project. Larger projects will need more time to index.
 
 **Do not prompt Bezi until Asset Sync is successfully completed**. If Asset Sync has not indexed your project's assets, Bezi won't have complete context and you may get generic responses.
 
@@ -20,7 +20,7 @@ Once initial indexing is completed for a project, Bezi will automatically index 
 
 ## Where to track Asset Sync's status
 
-Track Asset Sync's status for the project in the **Asset Sync panel**. To open the Asset Sync panel, click the <Icon icon="pancakes" iconType="sharp-solid" color="#020202" /> icon in the bottom bar. 
+Track Asset Sync's status for the project in the **Asset Sync panel**. To open the Asset Sync panel, click the <Icon icon="pancakes" iconType="sharp-solid" color="#020202" /> icon in the bottom bar.
 
 <Frame>
   ![Asset Sync Panel Icon Pn](/images/asset-sync-panel-icon.png)
@@ -32,26 +32,26 @@ Before looking at the Asset Sync panel, confirm Bezi and the Unity project are c
 
 <AccordionGroup>
   <Accordion title="Understanding the Asset Sync icons">
-    There are a few different icons you'll see in the Asset Sync queue that indicate an asset's indexing status. 
+    There are a few different icons you'll see in the Asset Sync queue that indicate an asset's indexing status.
 
-    - <Icon icon="loader" iconType="sharp-solid" color="#080808" /> - this asset is in the process of indexing 
+    - <Icon icon="loader" iconType="sharp-solid" color="#080808" /> - this asset is in the process of indexing
     - <Icon icon="manhole" iconType="sharp-solid" color="#4bee32" /> - this asset has been successfully indexed
     - <Icon icon="triangle-exclamation" iconType="sharp-solid" color="#f6e127" /> - there were issues with this asset, it may only be partially indexed
     - <Icon icon="manhole" iconType="sharp-solid" color="#f31313" /> - this asset was not indexed (see Asset Sync Errors panel for more information)
   </Accordion>
   <Accordion title="How to know if Asset Sync is in progress">
-    If Asset Sync is in progress, you’ll see a list of all your project assets in the panel. Asset's status icons will update as they're indexed so you can track their progress in real time. 
+    If Asset Sync is in progress, you’ll see a list of all your project assets in the panel. Asset's status icons will update as they're indexed so you can track their progress in real time.
   </Accordion>
   <Accordion title="How to know if Asset Sync is completed">
-    Once Asset Sync is completed, the panel will say “**_everything has been indexed_**”. We recommend clicking the refresh icon once and checking the Asset Sync Errors panel to confirm everything's done. 
+    Once Asset Sync is completed, the panel will say “**_everything has been indexed_**”. We recommend clicking the refresh icon once and checking the Asset Sync Errors panel to confirm everything's done.
 
-    Now you're ready to prompt\! 
+    Now you're ready to prompt\!
   </Accordion>
 </AccordionGroup>
 
 ## Understanding and fixing Asset Sync errors
 
-The **Asset Sync Errors panel** will indicate if assets have failed to sync or if there is a project-level issue with Asset Sync. To open the Asset Sync Errors panel, click the <Icon icon="bug" iconType="sharp-solid" color="#020202" /> icon in the bottom bar.
+The **Asset Sync Errors panel** shows errors related to assets that failed to sync and project-level issues with Asset Sync. To open the Asset Sync Errors panel, click the <Icon icon="bug" iconType="sharp-solid" color="#020202" /> icon in the bottom bar.
 
 1. Assets failed to send to our server
 2. Embeddings/processing of assets failed
