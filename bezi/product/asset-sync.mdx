@@ -3,11 +3,11 @@ title: "Asset Sync"
 description: "Learn about the steps to sync Bezi with your Unity project to get customized AI assistance"
 ---
 
-Asset Sync is what enables Bezi to understand the pieces of your Unity project. That information is used by Bezi to deliver responses that are accurate and relevant to your project.
+Asset sync enables Bezi to understand your Unity project and craft responses (scripts, bug fixes, suggestions) that are accurate and relevant for your project.
 
 When connecting a Unity project to Bezi for the first time, Bezi will need time to index the project. Larger projects will need more time to index.
 
-**Do not prompt Bezi until Asset Sync is successfully completed**. If Asset Sync has not indexed your project's assets, Bezi won't have complete context and you may get generic responses.
+**Do not prompt Bezi until asset sync is successfully completed**. If your project hasn't been indexed, Bezi won't have complete context and you may get generic responses.
 
 <Accordion title="What parts of a project can Bezi index? ">
   1. Scene structure and hierarchy
@@ -18,20 +18,20 @@ When connecting a Unity project to Bezi for the first time, Bezi will need time 
 
 Once initial indexing is completed for a project, Bezi will automatically index the project in real-time (when it's connected) to keep responses relevant to the project as it evolves.
 
-## Where to track Asset Sync's status
+## Where to track asset's sync status
 
-Track Asset Sync's status for the project in the **Asset Sync panel**. To open the Asset Sync panel, click the <Icon icon="pancakes" iconType="sharp-solid" color="#020202" /> icon in the bottom bar.
+Track Asset Sync's status for the project in the **Asset sync panel**. To open the Asset sync panel, click the <Icon icon="pancakes" iconType="sharp-solid" color="#020202" /> icon in the bottom bar.
 
 <Frame>
   ![Asset Sync Panel Icon Pn](/images/asset-sync-panel-icon.png)
 </Frame>
 
-## Tracking Asset Sync's path to completion
+## Tracking asset sync completion
 
-Before opening the Asset Sync panel, confirm the Bezi app and the Unity project are connected.
+Before opening the Asset sync panel, confirm the Bezi app and the Unity project are connected.
 
 <AccordionGroup>
-  <Accordion title="Understanding the Asset Sync icons">
+  <Accordion title="Asset sync panel icons">
     There are a few different icons you'll see in the Asset Sync queue that indicate an asset's indexing status.
 
     - <Icon icon="loader" iconType="sharp-solid" color="#080808" /> - this asset is in the process of indexing
@@ -41,32 +41,32 @@ Before opening the Asset Sync panel, confirm the Bezi app and the Unity project 
   </Accordion>
 </AccordionGroup>
 
-### When Asset Sync is in progress
+### When asset sync is in progress
 
-When Asset Sync is in progress, you’ll see a list of all your project assets in the panel. Asset's status icons will update as they're indexed so you can track their progress in real time.
+When asset sync is in progress, you’ll see a list of all your project assets in the panel. Asset's status icons will update as they're indexed so you can track their progress in real time.
 
-### When Asset Sync is done
+### When assets are done syncing 
 
 When Asset Sync has processed everything, the panel will say “_asset sync queue is empty_”.
 
 However, **this does not mean all assets were successfully synced**.
 
-### When Asset Sync is successfully completed
+### When all assets are successfully synced 
 
 To confirm all assets are successfully synced, check if the Asset Sync Error panel icon ( <Icon icon="bug" iconType="sharp-solid" color="#050404" /> ) has a red dot in it. If there's no red dot, you're ready to prompt Bezi\!
 
-## What if Asset Sync runs into issues?
+## What if there are issues syncing my assets? 
 
-If there are issues with Asset Sync, the **Asset Sync Errors panel** icon (<Icon icon="bug" iconType="sharp-solid" color="#030303" />) will have a red dot in it. If this happens:
+If there are issues syncing assets, the **Asset sync errors panel** icon (<Icon icon="bug" iconType="sharp-solid" color="#030303" />) will have a red dot in it. If this happens:
 
-1. Open the Asset Sync Errors panel to see what the issue is
-2. Return to the Asset Sync panel
-3. Click the refresh icon in the top left of the Asset Sync panel to force an update
+1. Open the Asset sync errors panel to see what the issue is
+2. Return to the Asset sync panel
+3. Click the refresh icon in the top left of the Asset sync panel to force an update
 
-If this doesn't resolve the issues shown in the Asset Sync Errors panel, check what errors are showing in the Unity console log. Unity log errors can point to system-level issues that prevent Bezi from indexing assets (examples below).
+If this doesn't resolve the issues shown in the Asset sync errors panel, check the Unity console log for errors. These can point to system-level issues that prevent Bezi from successfully syncing some or all assets (examples below).
 
 1. Bezi's Unity plugin experienced an issue during asset sync
 2. There was an issue finding or scanning the Unity folder for assets
 3. There was a server connection issue
 
-If you see any of these errors, we recommend uninstalling and reinstalling Bezi's Unity plugin. If that doesn't resolve the Asset Sync Errors warning, email [support@bezi.com](mailto:support@bezi.com) and we'll help to resolve it.
+If you see any of these errors, we recommend uninstalling and reinstalling Bezi's Unity plugin. If that doesn't resolve the Asset sync errors warning, email [support@bezi.com](mailto:support@bezi.com) and we'll help to resolve it.
