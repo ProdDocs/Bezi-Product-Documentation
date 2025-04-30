@@ -45,28 +45,27 @@ Before opening the Asset sync panel, confirm the Bezi app and the Unity project 
 
 When asset sync is in progress, you’ll see a list of all your project assets in the panel. Asset's status icons will update as they're indexed so you can track their progress in real time.
 
-### When assets are done syncing 
+### When assets are done syncing
 
 When Asset Sync has processed everything, the panel will say “_asset sync queue is empty_”.
 
 However, **this does not mean all assets were successfully synced**.
 
-### When all assets are successfully synced 
+### When all assets are successfully synced
 
 To confirm all assets are successfully synced, check if the Asset Sync Error panel icon ( <Icon icon="bug" iconType="sharp-solid" color="#050404" /> ) has a red dot in it. If there's no red dot, you're ready to prompt Bezi\!
 
-## What if there are issues syncing my assets? 
+## What if there are issues syncing my assets?
 
 If there are issues syncing assets, the **Asset sync errors panel** icon (<Icon icon="bug" iconType="sharp-solid" color="#030303" />) will have a red dot in it. If this happens:
 
 1. Open the Asset sync errors panel to see what the issue is
 2. Return to the Asset sync panel
-3. Click the refresh icon in the top left of the Asset sync panel to force an update
+3. Click the `refresh` icon in the top right of the Asset sync panel to force an update
 
-If this doesn't resolve the issues shown in the Asset sync errors panel, check the Unity console log for errors. These can point to system-level issues that prevent Bezi from successfully syncing some or all assets (examples below).
+If the Asset sync errors persist, take the following steps to resolve possible project-level errors. If quitting the Bezi app resolves the errors, you do not need to uninstall the plugin. 
 
-1. Bezi's Unity plugin experienced an issue during asset sync
-2. There was an issue finding or scanning the Unity folder for assets
-3. There was a server connection issue
+1. Quit the Bezi app, reopen it, and click the `refresh` icon in the Asset sync panel
+2. Uninstall the Bezi Unity plugin, reinstall it, and click the `refresh` icon in the Asset sync panel
 
-If you see any of these errors, we recommend uninstalling and reinstalling Bezi's Unity plugin. If that doesn't resolve the Asset sync errors warning, email [support@bezi.com](mailto:support@bezi.com) and we'll help to resolve it.
+If the Asset sync errors panel still shows error(s), take a screenshot of the Unity console log errors and email it to us at [support@bezi.com](mailto:support@bezi.com) so we can help resolve it.  
