@@ -38,6 +38,13 @@
             "pages": [
               "bezi/privacy-security/security"
             ]
+          },
+            {
+            "group": "Account Settings",
+            "pages": [
+              "bezi/account-settings/plans-usage",
+              "bezi/account-settings/subscription-billing"
+            ]
           }
         ]
       }
