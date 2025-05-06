@@ -16,7 +16,7 @@
           {
             "group": "Get Started",
             "pages": [
-              "bezi/get-started"
+              "bezi/get-started",
               "bezi/prompt-guide",
               "bezi/troubleshooting-two"
             ]
