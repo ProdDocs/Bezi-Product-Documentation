@@ -16,6 +16,7 @@
           {
             "group": "Get Started",
             "pages": [
+              "bezi/welcome",
               "bezi/install-setup",
               "bezi/prompt-guide",
               "bezi/troubleshooting"
