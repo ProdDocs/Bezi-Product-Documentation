@@ -22,15 +22,27 @@
             ]
           },
           {
+            "group": "Product",
+            "pages": [
+              "bezi/product/changelog",
+              "bezi/product/asset-sync",
+              "bezi/product/reference-assets-in-prompts",
+              "bezi/product/task-history",
+              "bezi/product/edit-prompts",
+              "bezi/product/share-feedback-bezi-responses"
+            ]
+          },
+          {
             "group": "Privacy & Security",
             "pages": [
               "bezi/privacy-security/security"
             ]
           },
             {
-            "group": "FAQ",
+            "group": "Account Settings",
             "pages": [
-              "bezi/faq/changelog"
+              "bezi/account-settings/plans-usage",
+              "bezi/account-settings/subscription-billing"
             ]
           }
         ]
