@@ -62,7 +62,7 @@ Occasionally Unity’s Package Manager doesn’t automatically update the plugin
 
 ### How do I reinstate a lost connection between Unity and Bezi?
 
-There are a few common fixes. If none of these work, we recommend you follow the steps above to manually update Bezi's Unity plugin to force a new connection. 
+There are a few common fixes. If none of these work, we recommend you follow the steps above to manually update Bezi's Unity plugin to force a new connection.
 
 1. Check that you have reliable internet connection
 2. Confirm both the Unity project and the Bezi app are open and connected
@@ -113,6 +113,18 @@ If the connection indicators in Unity and Bezi are both green, but Bezi is stuck
 2. Quit and reopen Bezi
 3. Quit and reopen Unity
 
-## **Other Common Errors & FAQ**
+## **Other Common Errors, Bugs & FAQ**
 
 ### My project is taking longer to compile code and seems to be moving slower after installing Bezi. Why?
+
+This is a known bug. We've mostly resolved it but are still finding edge cases. If you encounter this, please tell us\! Email [support@bezi.com](mailto:support@bezi.com) with a description of the problem and any screenshots of the console, profiler logs, etc. All information helps\!
+
+The best way for us to nail down a solution is to figure out exactly what’s causing the problem, and the best way to do that is to observe and reproduce the issue, so we may reach out to ask about scheduling a hands-on troubleshooting call with our devs.
+
+### Why am I not seeing my project in the projects dropdown?
+
+Bezi's Project Picker dropdown list is based on the list of projects in Unity Hub, so if your project is not included there or has been changed (e.g. renamed) Bezi may be struggling to find it. Here are a few ways to troubleshoot it:
+
+1. If your project is not in Unity Hub, add it: `Add` \> `Add project from disk/repository`
+2. If you renamed your project, look for the original project name in the dropdown instead
+3. Manually add your Unity project to Bezi: Open the **Project Picker dropdown** \> `Add Project`
