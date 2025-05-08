@@ -9,17 +9,17 @@ Generate and iterate on scripts. Direct-from-Unity context enables Bezi to make 
 
 Bezi can help you ‘mass in’ the core fundamentals, so you can focus on the bespoke mechanics; it can help you mock up those bespoke mechanics when you aren’t sure how to approach a new idea; and it can simplify small busy work, turning thirty minutes of endless scrolling, rewriting and pasting, and testing/retesting into thirty seconds.
 
-### **Foundational systems**: 
+### **Foundational systems**:
 
 - “_Make a first person character controller with mouse-based camera movement_”
 - “_Mock up object pooling for the obstacles and set up the basic obstacle ‘spawning’ and movement system (right to left)_”
 
-### **Experimental whitebox mechs**: 
+### **Experimental whitebox mechs**:
 
 - “_Prototype a ghost possession mechanic that lets the player take and relinquish control of other characters when in range and spacebar is pressed_”
 - “_I want a camera system that moves to a fixed CameraLocation when they enter a collider tagged FixedCam, then lerps back to third person when out_”
 
-### **Adjustments and additions**: 
+### **Adjustments and additions**:
 
 - “_Add crouch and jump behavior to the player movement script_”
 - “_Instead of using a Raycast to detect treasure, can we change that to use the hunter collider?_”
@@ -31,7 +31,7 @@ Troubleshoot errors, whether they’re lighting up the console or glitching in y
 
 ### Console errors
 
-- “_What’s up with that NullReference exception?_” 
+- “_What’s up with that NullReference exception?_”
 - “_How do you fix ‘We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.’?_”
 - “_I made this shader but now I’m getting this endless loop of errors— why?_”
 
@@ -46,3 +46,27 @@ Troubleshoot errors, whether they’re lighting up the console or glitching in y
 - “_Every time the player enters the Dungeon level, the framerate plummets. Why?_”
 - “_How can I optimize the searching part of Seeker.cs?_”
 - “_Optimize my project for mobile_”
+
+## Search
+
+Bezi understands the contents of your project, the objects in your scene, and the properties on your assets, so it’s equipped to help you parse through it all to find what you need. Ask Bezi to navigate the depths of your project and find the little details that could take endless time to recover (like, “where is this used?” and “what objects have this box checked?”).
+
+### Property/Type
+
+- “_Find all objects set to Static_”
+- “_Which colliders are set to isTrigger?_”
+- “_Do I have multiple cameras tagged MainCam?_”
+- “_List all food prefabs_”
+
+### Dependencies
+
+- “_What tile palettes were used to build this level?_”
+- “_Return all scripts that instantiate Prey prefabs_”
+- “_Which animation clips does my character movement system actually use?_”
+- “_What script controls the pickup/drop behavior?_”
+
+### Efficiency
+
+- “_List all 4K textures_”
+- “_What models do I actually use across my scenes?_”
+- “_Models that are too high poly to run on mobile_”
