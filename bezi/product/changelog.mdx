@@ -1,10 +1,10 @@
 ---
 title: "Changelog"
-description: "Updates and improvements made to Bezi, and the most recent versions of Bezi's app and Unity plugin"
+description: "Improvements made to Bezi, and the most recent versions of Bezi's app and Unity plugin"
 ---
 
 <Info>
-  **Current Bezi app version**: 1.2.0
+  **Current Bezi app version**: 1.2.1
 
   **Current Unity plugin version**: 0.38.3
 </Info>
@@ -13,12 +13,30 @@ description: "Updates and improvements made to Bezi, and the most recent version
   
 </Card>
 
-<Update label="06/03/2025" description="">
-  This release is a little light because the team is working on Agent Mode, the ability for Bezi to implement approved changes on your behalf. Agent Mode will only apply to code - i.e. Bezi will be able edit and apply code changes, which can be accepted or rejected - to start. It will be released in beta shortly, as we'd like everyone's feedback but it should be treated with caution to start (as with all new functionality). 
+<Update label="06/10/2025" description="">
+  **Introducing, **[**Agent Mode**](https://docs.bezi.com/bezi/modes/agent-mode)** in beta\!**
+
+  - Bezi can now create and modify code, directly in your Unity project
+  - View code diffs in the response or in the full context of the script with Canvas
+  - All proposed code changes are viewable / testable in Unity before accepting / rejected, but must be accepted by you to save
+  - Rejecting proposed code changes removes only Bezi-generated code from it's memory 
+  - New asset drawer to track all files that Agent Mode has edited and accept/reject all changes at once
 
   **Usability improvements:**
 
-  - Updated Unity 6 docs in Bezi context, to help Bezi deliver quality responses for all supported versions 
+  - App UI updates
+
+  **General health:**
+
+  - Huge performance improvements to eliminate Bezi freezing when syncing very large projects
+</Update>
+
+<Update label="06/03/2025" description>
+  This release is a little light because the team is working on Agent Mode, the ability for Bezi to implement approved changes on your behalf. Agent Mode will only apply to code - i.e. Bezi will be able edit and apply code changes, which can be accepted or rejected - to start. It will be released in beta shortly, as we'd like everyone's feedback but it should be treated with caution to start (as with all new functionality).
+
+  **Usability improvements:**
+
+  - Updated Unity 6 docs in Bezi context, to help Bezi deliver quality responses for all supported versions
   - Method to increase credit limits if you run out of Pro credits before the month is up (Bezi team does this)
   - New method to "Reload" system if you see a "failed to iterate over archive" error when installing Unity Plugin on a Mac
 
