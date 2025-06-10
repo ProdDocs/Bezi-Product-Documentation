@@ -1,11 +1,15 @@
 ---
-title: "Agent Mode (in beta)"
+title: "Agent Mode (beta)"
 description: "Learn about Bezi's Agent Mode, what's possible with it, and how it differs from Ask Mode."
 ---
 
+<Warning>
+  **Agent Mode is in beta and active development**. 
+</Warning>
+
 ## What is Agent Mode?
 
-Agent Mode is Bezi’s _actionable_ setting. It understands your entire Unity project and can create and modify scripts directly, simplifying the suggestion to implementation process. You can accept or reject proposed code, compare diffs, and immediately test suggestions in-Unity.
+Agent Mode is Bezi’s _actionable_ setting. It understands your entire Unity project and can create and modify scripts directly, simplifying the suggestion to implementation process. You can accept or reject proposed code, compare diffs, and immediately test suggestions in-Unity. 
 
 To enter Agent Mode, select the **mode dropdown** (below the prompt textbox) and select **Agent**. When you’re in Agent Mode, it will look like this:
 
@@ -13,6 +17,23 @@ To enter Agent Mode, select the **mode dropdown** (below the prompt textbox) and
   ![Agent Mode Pn](/images/agent-mode.png)
 </Frame>
 
-## What can I do in Agent Mode?
-
 ## How's Agent Mode different than Ask Mode?
+
+Agent Mode will directly implement changes in Unity on your behalf, while Ask Mode cannot. Consider Agent Mode as **automatic** implementation and Ask Mode as **manual** implementation.
+
+## How do I use Agent Mode?
+
+### Code generation and modification in Agent Mode
+
+All Agent Mode suggestions are implements by default so you can test them in context before deciding to accept or reject them. 
+
+When it suggests a script with the `accept` or `reject` option, it’s been created and is viewable in Unity. This is what happens if you select either option: 
+
+1. `Accept`: this will not change anything, the script already exists in Unity and will stay as-is
+2. `Reject`: this will remove any Bezi changes, either deleting new files created or reverting any changes made to an existing file 
+
+**The decision to accept or reject a suggestion is non-reversible**. Once either button is clicked, you can't return to the undecided state. If you reject a change and decide that you actually liked it, you can always return to that script/suggestion, copy it in the chat or in canvas, and manually update the script (as you would in Ask Mode).
+
+If you submit a prompt without forming a decision on a script in the previous response, that suggestion is by default **rejected**. Therefore, if you like something but want to change it, it’s often best to “plant your flag” by accepting that change before submitting another prompt to change it.
+
+Best practice when iterating in Agent Mode, therefore, is to jump back to Unity to test scripts once created, then based on that experience, return to Bezi and accept what you like, reject what you don’t, and continue to prompt with your takeaways and next steps.
