@@ -23,22 +23,35 @@ Agent Mode will directly implement changes in Unity on your behalf, while Ask Mo
 
 ## How do I use Agent Mode?
 
+### Agent Mode suggestion states
+
+<Tip>
+  We recommend you accept or reject suggestions as you work. Allowing suggestions to remain undecided may lead to unintentionally accepting suggestions that you did not want implemented. 
+</Tip>
+
+Proposed changes (i.e. suggestions) from Agent Mode can exist in three states. 
+
+**Undecided**: Suggestions that have not been accepted or rejected
+
+**Accepted**: Suggestions that have been accepted, this can happen in two ways
+
+- **Directly Accepted**: You reviewed suggestion(s) and pressed `Accept` or `Accept All` button
+- **Indirectly Accepted**: You left suggestion(s) undecided and accepted a future suggestion that iterated on it
+
+**Rejected**: Suggestions that have been rejected, by pressing the `Reject` or `Reject All` button
+
+- Suggestions cannot be indirectly rejected. If you want to reject a suggestions, make sure to do so manually and ideally as soon as you realize you don't want it implemented
+
 ### Code generation and modification
 
 All Agent Mode suggestions are implemented by default so you can test them in context before deciding to accept or reject them. When you receive a suggestion in Agent Mode, it's best practice to test the suggestion(s) in Unity, return to Bezi to accept what you like and/or reject what you don't, and then prompt again to iterate.
 
-When Bezi suggests a script with the `accept` or `reject` option, it's been created and is viewable in Unity. This is what happens if you select either option:
+When Bezi suggests a script with the `Accept` or `Reject` option, it's been created and is viewable in Unity. This is what happens if you select either option:
 
-1. `Accept`: this will not change anything, the script already exists in Unity and will stay as-is
-2. `Reject`: this will remove any Bezi changes, either deleting new files created or reverting any changes made to an existing file
+1. `Accept` / `Accept All`: this will not change anything, the script already exists in Unity and will stay as-is
+2. `Reject` / `Reject All`: this will remove any Bezi changes, either deleting new files created or reverting any changes made to an existing file
 
 **Accepting or rejecting a suggestion is a non-reversible action**. Once either button is clicked, you can't return to the undecided state. If you wish to implement a suggestion you rejected, you can return to that section, copy it from the chat or in canvas, and manually implement it (as you would in Ask Mode).
-
-If you don't accept or reject a suggestion and then submit a new prompt, the previous suggestion remaind **undecided** and therefore, changes are still present in your files. Further changes to that file lock the Accept/Reject buttons on previous iterations, so in order to return to or affect a previous undecided state, you have to reach a decision for all changes made to it since (moving backwards, chronologically).
-
-- **Accepting** a later change to the same file accepts all prior undecided changes to that file which led to that state.
-- **Rejecting** an individual change reverts that _most recent_ change, and "unlocks" the next-most recent undecided iteration, so that you may move backwards to a point that you liked and continue iteration from there.
-- **Rejecting all** changes from the Asset Drawer rejects all iterations on that file, back to the last-planted flag— either the last version with accepted changes, or the version at the start of the thread of no new changes have been approved since.
 
 ### Diffs
 
