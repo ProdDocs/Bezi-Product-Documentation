@@ -34,7 +34,11 @@ When Bezi suggests a script with the `accept` or `reject` option, it's been crea
 
 **Accepting or rejecting a suggestion is a non-reversible action**. Once either button is clicked, you can't return to the undecided state. If you wish to implement a suggestion you rejected, you can return to that section, copy it from the chat or in canvas, and manually implement it (as you would in Ask Mode).
 
-If you don't accept or reject a suggestion and then submit a new prompt, the previous suggestion is **rejected by default**. Therefore, if you like a suggestion but want to iterate on it, we recommend accepting the suggestion to “plant your flag” and submit a new prompt to iterate on the accepted suggestion.
+If you don't accept or reject a suggestion and then submit a new prompt, the previous suggestion remaind **undecided** and therefore, changes are still present in your files. Further changes to that file lock the Accept/Reject buttons on previous iterations, so in order to return to or affect a previous undecided state, you have to reach a decision for all changes made to it since (moving backwards, chronologically). 
+
+- **Accepting** a later change to the same file accepts all prior undecided changes to that file which led to that state. 
+- **Rejecting** an individual change reverts that _most recent_ change, and "unlocks" the next-most recent undecided iteration, so that you may move backwards to a point that you liked and continue iteration from there.
+- **Rejecting all **changes from the Asset Drawer rejects all iterations on that file, back to the last-planted flag— either the last version with accepted changes, or the version at the start of the thread of no new changes have been approved since.
 
 ### Diffs
 
