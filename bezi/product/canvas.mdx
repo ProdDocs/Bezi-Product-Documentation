@@ -11,18 +11,22 @@ Canvas is especially powerful in Agent Mode because it allows you to see diffs a
 
 ## How do I access Canvas?
 
-Canvas appears in both **Ask Mode **and **Agent Mode**. In Ask, it’s used for longer code snippets and is openable through the expand button at the top of a script. (Previously, the expand button decompressed the full script in chat, pushing down the rest of the response; this has been updated to use Canvas.) For edits in Agent Mode, it’s used for modifications of any length and is openable by clicking the title of the script. Extremely short non-agentic code snippets cannot be opened in Canvas. To close it, just click the X.
+Canvas is available in Ask Mode and **Agent Mode** and is accessed differently in both. To close in eitehr situation, just select the `X` in the top bar.
+
+**Ask Mode:** select the expand button at the top of a script
+
+**Agent Mode**: select the script title (very short, non-agentic code snippets cannot be opened)
 
 ## Diffs
 
 For Agent Mode, Canvas is particularly helpful for viewing diffs in-situ. See changes in the context of the entire script and accept or reject them from there.
 
-## Tabs 
+## Tabs
 
 <Warning>
   **The tabs feature is still in development**, particularly for Ask Mode. For example, you may encounter tabs with “Untitled” names. Please consider the current version a work-in-progress\!
 </Warning>
 
-Canvas uses **tabs** to navigate between scripts returned in a response. When you open a script from one response, all the tabs will update to show only the scripts returned in that response, _at the state that they were for that query_. 
+Canvas uses **tabs** to navigate between scripts returned in a response. When you open a script from one response, all the tabs will update to show only the scripts returned in that response, _at the state that they were for that query_.
 
 For example, if you’ve been iterating on Script A and you want to compare the present version to a previous iteration, you can navigate to the previous message and view the script as it was returned there. This history navigation helps you to make compare versions and, as needed, informed decisions about reversion.
