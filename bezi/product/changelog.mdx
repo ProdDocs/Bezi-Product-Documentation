@@ -4,14 +4,38 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 ---
 
 <Info>
-  **Current Bezi app version**: 1.2.1
+  **Current app version**: 1.3.0
 
-  **Current Unity plugin version**: 0.38.3
+  **Current Unity plugin version**: 0.38.5
 </Info>
 
-<Card title="Download Unity plugin v0.38.3" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.38.3/com.bezi.sidekick-0.38.3.tgz" cta="Get the latest Unity plugin if you can't install it via Bezi App">
+<Card title="Download Unity plugin v0.38.5" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.38.3/com.bezi.sidekick-0.38.5.tgz" cta="Get the latest Unity plugin if you can't install it via Bezi App">
   
 </Card>
+
+<Update label="06/17/2025" description="">
+  _Today's release includes fixes for some critical issues that severely degraded user experience. If you noticed inconsistencies in Bezi's referencing existing files or  recreating things that were already in the project, please update your app/plugin and give it another go\! _
+
+  **New functionality: **
+
+  - Added a new search tool to improve Bezi's ability to find specific scripts by path
+  - Added fuzzy search for @ mentions
+    - Allows searching with misspellings
+    - Improved lookup speed
+
+  **Usability improvements:**
+
+  - Fixed inconsistencies with Bezi's locating relevant files (based on description, etc) 
+  - Fixed prompts disappearing when entering play mode
+  - Fixed prompts editing in the middle of the sentence in the Edit view
+  - Fixed very long files failing to fully generate
+  - Fixed partial responses completely failing when an internal error occurs
+
+  **General health:**
+
+  - Updated restore logic for Agent Mode to allow restoring to the top of the thread
+  - Increased the number of tools AI can use to 20 per prompt
+</Update>
 
 <Update label="06/10/2025" description>
   [******Introducing, Agent Mode in beta\!******](https://docs.bezi.com/bezi/modes/agent-mode)
@@ -31,7 +55,7 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 
   **General health:**
 
-  - Huge performance improvements to eliminate Bezi freezing when syncing very large projects 
+  - Huge performance improvements to eliminate Bezi freezing when syncing very large projects
 </Update>
 
 <Update label="06/03/2025" description>
