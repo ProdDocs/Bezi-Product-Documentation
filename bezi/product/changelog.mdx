@@ -4,7 +4,7 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 ---
 
 <Info>
-  **Current app version**: 1.5.0
+  **Current app version**: 1.6.1
 
   **Current Unity plugin version**: 0.38.7
 </Info>
@@ -13,8 +13,31 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
   
 </Card>
 
+<Update label="07/15/2025">
+  **Usability improvements**: 
+
+  - 5x performance increase for the tool used to search keywords in files
+  - Improvements to file search to minimize hallucinations 
+
+  **General health**: 
+
+  _Agent Mode updates and bug fixes:_
+
+  - Accepting / Rejecting changes won't override previous decisions
+  - Accepting / Rejecting changes only shows updates to pending changes
+  - Restoring Checkpoints will correctly restore all relevant file changes, not just the latest ones
+  - Bezi can read any asset file's contents (still not allowed to modify any asset files in case of hallucination)
+  - Improved speed of Accepting/Rejecting changes 
+  - Diffs in the Asset Drawer now show only pending and accepted changes, omitting any rejected changes
+
+  _UI updates to Canvas and Agent Mode:_
+
+  - Sliders now stay within bounds
+  - Canvas search with cmd/ctrl\+F scrolls to the search results items
+</Update>
+
 <Update label="07/08/2025" description>
-  **New tool**: 
+  **New tool**:
 
   - Added the Grep Tool, which can find specific keywords within files (i.e. function names and lines / files where the functions are used)
 </Update>
