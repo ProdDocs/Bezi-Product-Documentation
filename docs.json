@@ -37,7 +37,7 @@
               "bezi/product/asset-sync",
               "bezi/product/canvas",
               "bezi/product/reference-assets-in-prompts",
-              "bezi/product/task-history",
+              "bezi/product/thread-history",
               "bezi/product/edit-prompts",
               "bezi/product/share-feedback-bezi-responses"
             ]
