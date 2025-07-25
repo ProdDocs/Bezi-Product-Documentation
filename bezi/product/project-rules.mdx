@@ -32,20 +32,66 @@ Project Rules can be written in natural languange. Like a prompt, an effective P
 
 ### Rule examples: Communication preferences
 
-<Expandable title="Customize Bezi’s personality and responses">
-  
-</Expandable>
-
-
 <AccordionGroup>
   <Accordion title="Customize Bezi’s personality and responses">
     - _Make your tone less “eager-to-please”. All responses should be blunt and concise, yet friendly._
     - _Refer to me only as “buddy” in all responses moving forward._
     - _At the end of each message, add a motivational quote._
   </Accordion>
-  <Accordion title="Match response style and depth to your experience">
-    
+  <Accordion title="Match Bezi's response style and depth to your experience level">
+    - _I've been creating games as a hobby and want to learn professional game programming. Explain all software development and Unity-specific terms and concepts in detail. Include relevant project examples in your explanations as often as possible._
+    - _You are a professional Senior Unity Gameplay Developer. Don’t explain basic things._
+    - _I am a Game Designer looking to brainstorm new ideas. As we converse, don’t hesitate to suggest ideas for my game\!_
   </Accordion>
 </AccordionGroup>
 
 ### Rule examples: Output and structural guidelines
+
+<AccordionGroup>
+  <Accordion title="Set code guidelines and logic">
+    _Before you propose code-related changes, review all relevant scripts and analyze their code styles._
+
+    _Make sure all code-related changes you propose, to new or existing scripts, follow the project’s standard coding guidelines:_
+
+    1. _Use camel case for naming_
+    2. _Prefer long self-explanatory names for variables, methods, and types_
+    3. _Add short summary comments for all methods only and for each step in complex algorithms_
+    4. _Split long code statements into smaller ones_
+    5. _Use constant fields instead of in-place constants_
+    6. _Add logs for better debugging but avoid logs in extensively used methods (like Update)_
+    7. _Avoid combining unrelated responsibilities in a single script. Follow SOLID principles_
+
+    _This is an example of code that follows the project’s standard coding guidelines:_
+
+    ```c#
+    using UnityEngine;
+    
+    /// <summary> Helps with Raycasting </summary>
+    public class PhysicsHelper : MonoBehaviour
+    {
+    		private LayerMask layerMask = LayerMask.GetMask("Wall", "Character");
+    	
+    		// See Order of Execution for Event Functions for information on FixedUpdate() and Update() related to physics queries
+    		private void FixedUpdate()
+    		{
+    			RaycastHit hit;
+    			// Does the ray intersect any objects excluding the player layer
+    			// TODO: Remove spammy logs after debugging
+    			if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
+    			{
+    			    Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+    					Debug.Log("Did Hit");
+    			}
+    			else
+    			{
+    					Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+    					Debug.Log("Did not Hit");
+    			}
+    		}
+    }
+    ```
+  </Accordion>
+  <Accordion title="New Accordion">
+    
+  </Accordion>
+</AccordionGroup>
