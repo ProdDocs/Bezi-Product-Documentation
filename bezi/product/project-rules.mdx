@@ -92,12 +92,21 @@ Project Rules can be written in natural languange. Like a prompt, an effective P
     ```
   </Accordion>
   <Accordion title="Encode system preferences and project-specific knowledge ">
-    
+    - _I develop a 2D game. Unity is configured for 2D development using sprites and an orthographic camera. Make sure to follow Unity’s best practices for 2D games._
+    - _My project should use the old Unity Input System and old UGUI for interfaces; never suggest newer solutions. Always use Sprite Atlases._
+    - _My project uses:_
+      1. _Unity 6000.0 (aka Unity 6)_
+      2. _new Input System for handling player’s input_
+      3. _new UI Toolkit for user interfaces_
+      4. `com.unity.mobile.notifications@2.4.1`_package for local notifications_ 
   </Accordion>
   <Accordion title="Explain the game’s concept and goals">
-    
+    _My Game is an arcade-style side-scroller inspired by Flappy Bird, where players pilot a futuristic hovercraft through a dynamic, procedurally generated gauntlet of moving obstacles, shifting gravity zones, and collectible power-ups. Unlike the original, players can tap to boost upward or swipe to trigger special maneuvers like dashes or time-slow. The goal is to survive as long as possible, unlock new vehicles, and master increasingly chaotic levels while competing on global leaderboards._
   </Accordion>
   <Accordion title="Define response steps and workflow requirements ">
-    
+    - _When I ask you to suggest ideas, always check the web for relevant materials. Only suggest the latest, most popular, and proven solutions._
+    - _When I ask you to debug something, always check _[_http://stackoverflow.com_](http://stackoverflow.com)_ for common solutions and known issues._
+    - _When you generate scripts, give me clear and concise instructions on how to use them, which GameObjects to attach them to, and how to properly set them up._
+    - _When you are unsure how to fix an issue, suggest adding logs for tracing a bug._
   </Accordion>
 </AccordionGroup>
