@@ -5,7 +5,9 @@ description: "Description of your new file."
 
 ## What is enhanced code intelligence?
 
-Enhanced code intelligence provides advanced IDE-like features for your Unity projects in Bezi. These currently include improved refactoring and compilation error self-healing. This guide covers the prerequisites and setup required to enable enhanced code intelligence.
+Bezi's enhanced code intelligence provides advanced IDE-like features for your Unity project, within Bezi. The features currently include improved refactoring and compilation error self-healing. 
+
+This guide covers the prerequisites and setup required to enable enhanced code intelligence.
 
 ## Prerequisites
 
@@ -82,3 +84,25 @@ The enhanced code intelligence service will display different states to indicate
 </AccordionGroup>
 
 ## Troubleshooting
+
+### Solution file not found
+
+1. Check that your `.sln` file exists at the project root
+2. Verify the filename matches your project name exactly (case-sensitive)
+3. If missing, open your project in Unity to regenerate the solution file
+
+### .NET SDK issues
+
+1. Confirm installation: `dotnet --version`
+2. Ensure the SDK version is compatible with your Unity version
+3. Restart Bezi after installing the SDK
+4. Check that the SDK is properly added to your system PATH
+
+### Service won't initialize
+
+1. Verify both prerequisites are met
+2. Try closing and reopening your project
+3. Check for any error messages in the status indicator
+4. If issues persist, reach out on [Discord](https://discord.com/invite/UKWB46HTT9) with your project details
+
+If you have any unanswered questions or need additional support, visit our [Discord server](https://discord.com/invite/UKWB46HTT9)
