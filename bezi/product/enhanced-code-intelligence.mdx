@@ -46,3 +46,39 @@ You must have the .NET SDK installed globally on your system. This lets Bezi dev
 3. Navigate to the bottom right, the enhanced code intelligence UI should be set to active
 
 ## Status indicators
+
+The enhanced code intelligence service will display different states to indicate its current status
+
+<AccordionGroup>
+  <Accordion title="Active">
+    All prerequisites are met and the service is running correctly:
+
+    - **What it means:** Enhanced features are fully operational
+    - **Features available:** Improved refactoring and self-healing
+    - **Action required:** None - you're good to go\!
+  </Accordion>
+  <Accordion title="Initializing">
+    In the initial setup phase:
+
+    - **What it means:** The service is analyzing your project structure
+    - **Duration:** This may take a few minutes depending on project size
+    - **Note:** You can still submit prompts during initialization, though some features may be limited
+  </Accordion>
+  <Accordion title="Missing dependencies">
+    Prerequisites are not met:
+
+    - **What it means:** One or more required components are missing
+    - **Common causes:**
+      - `.sln` file doesn't match project name
+      - .NET SDK not installed or not found in PATH
+    - **Action required:** Review the prerequisites above and ensure both requirements are met
+  </Accordion>
+  <Accordion title="Inactive">
+    An unexpected error has occured:
+
+    - **What it means:** The service encountered an error during initialization
+    - **Action required:** Check your project setup, then contact support via our [Discord server](https://discord.com/invite/UKWB46HTT9)
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting
