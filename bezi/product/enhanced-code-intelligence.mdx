@@ -7,6 +7,39 @@ description: "Description of your new file."
 
 Enhanced code intelligence provides advanced IDE-like features for your Unity projects in Bezi. These currently include improved refactoring and compilation error self-healing. This guide covers the prerequisites and setup required to enable enhanced code intelligence.
 
-Prerequisites
+## Prerequisites
 
 To enable enhanced code intelligence, your project must meet two core requirements:
+
+### 1) Project naming convention
+
+Your Unity project name must match its corresponding `.sln` file:
+
+- The `.sln` file must be located at the project root (adjacent to the `Assets` folder)
+- The filename must exactly match your project name
+
+**Example:**
+
+```
+My-Unity-Project/
+├── Assets/
+├── Library/
+├── ProjectSettings/
+└── My-Unity-Project.sln ← Must match project name
+```
+
+### 2) .NET SDK installation
+
+You must have the .NET SDK installed globally on your system. This lets Bezi develop a deeper understanding of the code. 
+
+**Default installation locations:**
+
+- macOS (Intel): `/usr/local/share/dotnet/x64/dotnet`
+- macOS (Apple Silicon): `/usr/local/share/dotnet`
+- Windows: `C:\\\\Program Files\\\\dotnet`
+
+**Setup steps:**
+
+1. Download and install the appropriate .NET SDK for your Unity version
+   - For Unity-specific .NET requirements, see [Unity's .NET Profile Support documentation](https://docs.unity3d.com/2022.3/Documentation/Manual/dotnetProfileSupport.html)
+2. Relaunch Bezi—the Enhanced code intelligence UI in the bottom-right should be set to active after initializing
