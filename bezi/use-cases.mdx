@@ -47,31 +47,22 @@ Troubleshoot errors, whether they’re lighting up the console or glitching out 
 - “_How can I optimize the searching part of Seeker.cs?_”
 - “_Optimize my project for mobile_”
 
-## Search
+## Internal Tools
 
-Simplify the process of hunting through assets, scenes, and scripts— no parameter is too specific. Bezi understands the contents of your project, the objects in your scene, and the properties on your assets, so it’s equipped to help you parse through it all to find what you need. Ask Bezi to find the little details that could take endless time to recover (like, “where is this method called?” and “what objects have this box checked?”).
+Build internal tools to easily scale and automate repetitive Unity work, like creating levels and implementing asset.
 
-<Warning>
-  Currently, Bezi’s context does **<u>not</u>** dive into node graphs/state machines/visual scripting, so while Bezi will know that they’re there, it can’t see how such objects as animators and shader graphs are set up.
-</Warning>
+For repetitive workflows and outputs, simply outline the process, ideal result, any customization levers, and tool user’s Unity proficiency. Then prompt Bezi to build a custom tool that enables anyone to manage tedious game dev work to spec.
 
-### Property/Type
+### **Custom Editors**
 
-- “_Find all objects set to Static_”
-- “_Do I have multiple cameras tagged MainCam?_”
-- “_List all food prefabs_”
+- _“Create a custom editor with buttons to draw, shuffle, and discard cards for testing in play mode”_
+- _“Create a custom editor to add tiles in the west, north, east, south directions from the current tile”_
+- _“Add a custom editor to control the values of my shader”_
 
-### Dependencies
+### **Scene visualizations**
 
-- “_What tile palettes were used to build this level?_”
-- “_Return all scripts that instantiate Prey prefabs_”
-- “_Which animation clips does my character movement system actually use?_”
-
-### Efficiency
-
-- “_List all 4K textures_”
-- “_What models do I actually use across my scenes?_”
-- “_Models that are too high poly to run on mobile_”
+- “_Add debug visualization of the locations where the enemies will spawn in the next wave”_
+- _“Add a debug visualization of the spherical hotspots which trigger the next event”_
 
 ## Learn
 
@@ -100,3 +91,31 @@ Get concise, thorough project- and documentation-rooted answers. When you’re s
 - “_Walk me through PlayerInteraction.cs_”
 - “_How does the multiplayer system in this game work?_”
 - “_What are the controls for this game? List what mechanics there are, and explain how to use each to test._”
+
+## Search
+
+Simplify the process of hunting through assets, scenes, and scripts— no parameter is too specific. Bezi understands the contents of your project, the objects in your scene, and the properties on your assets, so it’s equipped to help you parse through it all to find what you need.
+
+Ask Bezi to find the little details that could take endless time to recover (like, “where is this method called?” and “what objects have this box checked?”).
+
+<Warning>
+  Currently, Bezi’s context does **<u>not</u>** dive into node graphs/state machines/visual scripting, so while Bezi will know that they’re there, it can’t see how such objects as animators and shader graphs are set up.
+</Warning>
+
+### Property/Type
+
+- “_Find all objects set to Static_”
+- “_Do I have multiple cameras tagged MainCam?_”
+- “_List all food prefabs_”
+
+### Dependencies
+
+- “_What tile palettes were used to build this level?_”
+- “_Return all scripts that instantiate Prey prefabs_”
+- “_Which animation clips does my character movement system actually use?_”
+
+### Efficiency
+
+- “_List all 4K textures_”
+- “_What models do I actually use across my scenes?_”
+- “_Models that are too high poly to run on mobile_”
