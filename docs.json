@@ -35,10 +35,12 @@
             "pages": [
               "bezi/product/changelog",
               "bezi/product/asset-sync",
+              "bezi/product/"project-rules,
               "bezi/product/canvas",
               "bezi/product/reference-assets-in-prompts",
               "bezi/product/thread-history",
               "bezi/product/edit-prompts",
+              "bezi/product/"enhanced-code-intelligence,
               "bezi/product/share-feedback-bezi-responses"
             ]
           },
