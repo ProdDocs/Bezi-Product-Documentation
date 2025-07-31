@@ -30,6 +30,21 @@ My-Unity-Project/
 └── My-Unity-Project.sln ← Must match project name
 ```
 
+### How to generate the .sln file
+
+1. In Unity, go to `Edit` \> `Preferences` \> `External Tools`
+2. Temporarily set the **External Script Editor** to Visual Studio Code (or any supported editor)
+3. Check all the boxes for:
+   - Embedded packages
+
+
+   - Local packages
+   - Registry packages
+   - Built-in packages
+4. Click `Regenerate project files`
+5. Confirm the generated `My-Unity-Project.sln` file exists
+6. Restart Bezi app
+
 ### 2) .NET SDK installation
 
 You must have the .NET SDK installed globally on your system. This lets Bezi develop a deeper understanding of the code.
