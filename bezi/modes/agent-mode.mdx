@@ -9,7 +9,7 @@ description: "Learn about Bezi's Agent Mode, what's possible with it, and how it
 
 ## What is Agent Mode?
 
-Agent Mode is Bezi’s _actionable_ setting. It understands your entire Unity project and can create and modify scripts directly, simplifying the suggestion to implementation process. You can accept or reject proposed code, compare diffs, and immediately test suggestions in-Unity.
+Agent Mode is Bezi’s _actionable_ setting. It understands your entire Unity project and can create and modify scripts directly, simplifying the suggestion to implementation process. You can keep or undo proposed code, compare diffs, and immediately test suggestions in-Unity.
 
 To enter Agent Mode, select the **mode dropdown** (below the prompt textbox) and select **Agent**. When you’re in Agent Mode, it will look like this:
 
@@ -26,32 +26,32 @@ Agent Mode will directly implement changes in Unity on your behalf, while Ask Mo
 ### Agent Mode suggestion states
 
 <Tip>
-  We recommend you accept or reject suggestions as you work. Allowing suggestions to remain undecided may lead to unintentionally accepting suggestions that you did not want implemented.
+  We recommend you keep or undo suggestions as you work. Allowing suggestions to remain undecided may lead to unintentionally keeping suggestions that you did not want implemented.
 </Tip>
 
 Proposed changes (i.e. suggestions) from Agent Mode can exist in three states.
 
-**Undecided**: Suggestions that have not been accepted or rejected
+**Undecided**: Suggestions that have not been kept or undone
 
-**Accepted**: Suggestions that have been accepted, this can happen in two ways
+**Kept**: Suggestions that you have opted to keep, which can happen in two ways
 
-- **Directly Accepted**: You reviewed suggestion(s) and pressed `Accept` or `Accept All` button
-- **Indirectly Accepted**: You left suggestion(s) undecided and accepted a future suggestion that iterated on it
+- **Directly Kept**: You reviewed suggestion(s) and pressed `Keep` or `Keep All` button
+- **Indirectly Kept**: You left suggestion(s) undecided and decided to keep a suggestion later on that iterated on the proposed code
 
-**Rejected**: Suggestions that have been rejected, by pressing the `Reject` or `Reject All` button
+**Rejected**: Suggestions that you have opted to undo, by pressing the `Undo` or `Undo All` button
 
-- Suggestions cannot be indirectly rejected. If you want to reject a suggestions, make sure to do so manually and ideally as soon as you realize you don't want it implemented
+- Suggestions cannot be indirectly undone. If you want to undo suggestion(s), be sure to select the `Undo` or `Undo All` button, ideally as soon as you decide you don't want them implemented
 
 ### Code generation and modification
 
-All Agent Mode suggestions are implemented by default so you can test them in context before deciding to accept or reject them. When you receive a suggestion in Agent Mode, it's best practice to test the suggestion(s) in Unity, return to Bezi to accept what you like and/or reject what you don't, and then prompt again to iterate.
+All Agent Mode suggestions are implemented by default so you can test them in context before deciding to keep or undo them. When you receive a suggestion in Agent Mode, it's best practice to test the suggestion(s) in Unity, return to Bezi to keep what you like and/or undo what you don't, and then prompt again to iterate.
 
-When Bezi suggests a script with the `Accept` or `Reject` option, it's been created and is viewable in Unity. This is what happens if you select either option:
+When Bezi suggests a script with the `Keep` or `Undo` option, it's been created and is viewable in Unity. This is what happens if you select either option:
 
-1. `Accept` / `Accept All`: this will not change anything, the script already exists in Unity and will stay as-is
-2. `Reject` / `Reject All`: this will remove any Bezi changes, either deleting new files created or reverting any changes made to an existing file
+1. `Keep` / `Keep All`: this will not change anything, the script already exists in Unity and will stay as-is
+2. `Undo` / `Undo All`: this will remove any Bezi changes, either deleting new files created or reverting any changes made to an existing file
 
-**Accepting or rejecting a suggestion is a non-reversible action**. Once either button is clicked, you can't return to the undecided state. If you wish to implement a suggestion you rejected, you can return to that section, copy it from the chat or in canvas, and manually implement it (as you would in Ask Mode).
+**Keeping or Undoing a suggestion is a non-reversible action**. Once either button is clicked, you can't return to the undecided state. If you wish to implement a suggestion you undid, you can return to that section, copy it from the chat or in canvas, and manually implement it (as you would in Ask Mode).
 
 ### Diffs
 
@@ -69,18 +69,18 @@ To view in the context of the entire script, open the script in **Canvas** (diff
 
 ### Asset Drawer
 
-The Asset Drawer lists all created and modified files. It sits above the prompt box so you can view all changes made in the duration of a thread in one place and bulk accept or reject a response's suggestions.
+The Asset Drawer lists all created and modified files. It sits above the prompt box so you can view all changes made in the duration of a thread in one place and bulk keep or undo a response's suggestions.
 
 ### Restore Checkpoint
 
-Once a suggestion is accepted or rejected, that suggestion cannot be reverted back to an undecided state.
+Once a suggestion is kept or undone, that suggestion cannot be reverted back to an undecided state. However, if you want to bring the project back to an earlier state and erase any kept changes from Bezi, use **Restore Checkpoint**.
 
-If you wish to revert the entire project to a overall prior state, select the `Restore Checkpoint` button to go back to a specific conclusive state, identified by a Bezi response.
+Select the `Restore Checkpoint` button to go back to a specific conclusive state, identified by a Bezi response. This is a great "last ditch" option if you fear that there have been not-easily-reversible changes made to a project when in Agent Mode.
 
 For example, if you go down a rabbit hole working on a particular mechanic, only to get feedback that your second iteration is the right direction; you can restore to that response and continue to iterate from there.
 
 <Note>
-  Restore Checkpoint does not revert actionable code to undecided. It returns you to a conclusive point in time, erasing any new code and/or code modifications made by Bezi after the point.
+  Restore Checkpoint does not revert kept code to undecided. It returns you to a conclusive point in time of the entire project, erasing any new code and/or code modifications made by Bezi after that point.
 </Note>
 
 This functionality is similar to the [Edit Prompt](https://docs.bezi.com/bezi/product/edit-prompts) functionality, but it allows you to return to a specific response without anything regenerating (whereas with Editing, you have to modify a prompt and therefore regenerate it’s results to return to that point).
