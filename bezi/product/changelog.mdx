@@ -13,14 +13,14 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
   
 </Card>
 
-<Update label="08/12/2025" description="">
+<Update label="08/12/2025" description>
   **Usability improvements:**
 
-  - Improved the load and response time for longer threads\! 
+  - Improved the load and response time for longer threads\!
 
   **General health:**
 
-  - Improved our server's ability to handle for asset indexing traffic to proactively prevent  slowdowns. More identifiable speed improvements will come in the next few weeks\! 
+  - Improved our server's ability to handle for asset indexing traffic to proactively prevent  slowdowns. More identifiable speed improvements will come in the next few weeks\!
 
   **Other fun:**
 
@@ -79,12 +79,12 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 
   _Agent Mode updates and bug fixes:_
 
-  - Accepting / Rejecting changes won't override previous decisions
-  - Accepting / Rejecting changes only shows updates to pending changes
+  - Keeping / Undoing changes won't override previous decisions
+  - Keeping / Undoing changes only shows updates to pending changes
   - Restoring Checkpoints will correctly restore all relevant file changes, not just the latest ones
   - Bezi can read any asset file's contents (still not allowed to modify any asset files in case of hallucination)
-  - Improved speed of Accepting/Rejecting changes
-  - Diffs in the Asset Drawer now show only pending and accepted changes, omitting any rejected changes
+  - Improved speed of Keeping / Undoing changes
+  - Diffs in the Asset Drawer now show only pending and kept changes, omitting any undone changes
 
   _UI updates to Canvas and Agent Mode:_
 
@@ -146,9 +146,9 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 
   - Bezi can now create and modify code, directly in your Unity project
   - View code diffs in the response or in the full context of the script with Canvas
-  - All proposed code changes are viewable / testable in Unity before accepting / rejected, but must be accepted by you to save
+  - All proposed code changes are viewable / testable in Unity before deciding to Keep or Undo them, but must be Kept by you to save
   - Rejecting proposed code changes removes only Bezi-generated code from it's memory
-  - New asset drawer to track all files that Agent Mode has edited and accept/reject all changes at once
+  - New asset drawer to track all files that Agent Mode has edited and Keep / Undo all changes at once
 
   **Usability improvements:**
 
@@ -163,7 +163,7 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 </Update>
 
 <Update label="06/03/2025" description>
-  This release is a little light because the team is working on Agent Mode, the ability for Bezi to implement approved changes on your behalf. Agent Mode will only apply to code - i.e. Bezi will be able edit and apply code changes, which can be accepted or rejected - to start. It will be released in beta shortly, as we'd like everyone's feedback but it should be treated with caution to start (as with all new functionality).
+  This release is a little light because the team is working on Agent Mode, the ability for Bezi to implement approved changes on your behalf. Agent Mode will only apply to code - i.e. Bezi will be able edit and apply code changes, which you can decide to Keep or Undo - to start. It will be released in beta shortly, as we'd like everyone's feedback but it should be treated with caution to start (as with all new functionality).
 
   **Usability improvements:**
 
