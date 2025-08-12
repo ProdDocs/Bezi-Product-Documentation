@@ -4,8 +4,8 @@
   "name": "Bezi",
   "colors": {
     "primary": "#e55428",
-    "light": "#07C983",
-    "dark": "#0D9373"
+    "light": "#e55428",
+    "dark": "#e55428"
   },
   "favicon": "/bezifavicon.svg",
   "navigation": {
