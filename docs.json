@@ -62,8 +62,8 @@
     ]
   }, 
   "logo": {
-    "light": "/logo/bezi-logo-light.svg",
-    "dark": "/logo/bezi-logo-light.svg"
+    "light": "/logo/bezis-logo-light.svg",
+    "dark": "/logo/bezis-logo-light.svg"
   },
   "global": {
     "navbar": {
