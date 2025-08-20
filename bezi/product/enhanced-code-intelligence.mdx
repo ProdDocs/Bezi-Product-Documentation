@@ -13,7 +13,24 @@ This guide covers the prerequisites and setup required to enable enhanced code i
 
 To enable enhanced code intelligence, your project must meet two core requirements:
 
-### 1) Project naming convention
+### 1) .NET SDK installation
+
+You must have the .NET SDK installed globally on your system. This lets Bezi develop a deeper understanding of the code.
+
+**Default installation locations:**
+
+- macOS (Intel): `/usr/local/share/dotnet/x64/dotnet`
+- macOS (Apple Silicon): `/usr/local/share/dotnet`
+- Windows: `C:\Program Files\dotnet`
+
+**Setup steps:**
+
+1. Download and install the appropriate .NET SDK for your Unity version from [the .NET website](https://dotnet.microsoft.com/en-us/download)
+   - For Unity-specific .NET requirements, see [Unity's .NET Profile Support documentation](https://docs.unity3d.com/2022.3/Documentation/Manual/dotnetProfileSupport.html)
+2. Close out of, then relaunch the Bezi app
+3. Navigate to the bottom right. If .NET was the only issue, the enhanced code intelligence UI should be set to active.
+
+### 2) Project naming convention
 
 Your Unity project name must match its corresponding `.sln` file:
 
@@ -32,35 +49,20 @@ My-Unity-Project/
 
 ### How to generate the .sln file
 
-1. In Unity, go to `Edit` \> `Preferences` \> `External Tools`
+1. In Unity, go to `Unity` \> `Preferences` \> `External Tools`
 2. Temporarily set the **External Script Editor** to Visual Studio Code (or any supported editor)
+
+   <Warning>
+     If you use Cursor and no other IDE, Unity will not recognize it as a supported editor and will not create the .sln file. In that case, **install a supported IDE** to create the .sln then set the **External Script Editor** back to Cursor.
+   </Warning>
 3. Check all the boxes for:
    - Embedded packages
-
-
    - Local packages
    - Registry packages
    - Built-in packages
 4. Select `Regenerate project files`
 5. Confirm the generated `My-Unity-Project.sln` file exists
 6. Restart Bezi app
-
-### 2) .NET SDK installation
-
-You must have the .NET SDK installed globally on your system. This lets Bezi develop a deeper understanding of the code.
-
-**Default installation locations:**
-
-- macOS (Intel): `/usr/local/share/dotnet/x64/dotnet`
-- macOS (Apple Silicon): `/usr/local/share/dotnet`
-- Windows: `C:\Program Files\dotnet`
-
-**Setup steps:**
-
-1. Download and install the appropriate .NET SDK for your Unity version
-   - For Unity-specific .NET requirements, see [Unity's .NET Profile Support documentation](https://docs.unity3d.com/2022.3/Documentation/Manual/dotnetProfileSupport.html)
-2. Close out of, then relaunch the Bezi app
-3. Navigate to the bottom right, the enhanced code intelligence UI should be set to active
 
 ## Status indicators
 
@@ -105,6 +107,13 @@ The enhanced code intelligence service will display different states to indicate
 1. Check that your `.sln` file exists at the project root
 2. Verify the filename matches your project name exactly (case-sensitive)
 3. If missing, open your project in Unity to regenerate the solution file
+
+### Unsupported script editor (Cursor, etc.)
+
+1. Install a supported script editor
+2. Temporarily set that as the **External Script Editor**
+3. Follow instructions (above) to regenerate the solution file
+4. Set the **External Script Editor** back to Cursor
 
 ### .NET SDK issues
 
