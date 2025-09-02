@@ -5,30 +5,32 @@ description: "Tailor Bezi to match your project specs, coding style, and communi
 
 ## What are Project Rules?
 
-Project Rules are persistent, reusable context that Bezi applies to every prompt response in a project. Adding Project Rules is the best way to ensure Bezi’s assistance will be consistent with your project’s goals, preferences, and workflows.
+Persistent, reusable context that Bezi will apply to every prompt response in the project. Adding Project Rules is the best way to ensure Bezi’s assistance will be consistent with your project’s goals, preferences, and workflows.
 
 <Note>
   **Project Rules only apply to the Unity project they’re set in**. To apply the same Project Rules across multiple projects, finalize them in one project, then paste them into the other Project Rules pages.
 </Note>
 
-Use Project Rules for:
+### **What to use Project Rules for:**
 
 1. **Output and structural guidelines**: define code syntax, input/UI systems, debug strategies, domain-specific knowledge, project-specific workflows, and more
 2. **Communication preferences**: set Bezi’s tone of voice, your proficiency level, how much instruction you want, and more
 
-## How do I access Project Rules?
+### **How to access Project Rules:**
 
-To access your Project Rules, click the  <Icon icon="sidebar" iconType="regular" color="#000000" />  icon in the top left of your app to open the Sidebar. Within the Sidebar, select `Project Rules` to open the page.
+To access your Project Rules, click the  <Icon icon="sidebar" iconType="regular" color="#000000" />  icon in the top left of your app to open the Sidebar then select `Project Rules` to open the page.
 
-Upon opening the Project Rules page, you'll see some default rules. You can choose to iterate on them or delete them and write your own.
+Project Rules comes with default rules. You can edit those or write your own from scratch.
 
-## Writing guide and examples
+## Project Rules writing guide
 
 **See the Project Rules examples (below) for best practice**s. Project Rules can be written in natural languange. Like a prompt, an effective Project Rule is focused on a specific purpose. Do not try to pack too much into a single rule.
 
 **Rules must be**: clear, direct, easy to understand, applicable to the entire project
 
 **Rules should not**: contradict each other, be conditional (_if_..., _otherwise_...)
+
+## Project Rules examples
 
 ### Rule examples: Communication preferences
 
@@ -59,7 +61,6 @@ Upon opening the Project Rules page, you'll see some default rules. You can choo
     4. _Split long code statements into smaller ones_
     5. _Use constant fields instead of in-place constants_
     6. _Add logs for better debugging but avoid logs in extensively used methods (like Update)_
-    7. _Avoid combining unrelated responsibilities in a single script. Follow SOLID principles_
 
     _This is an example of code that follows the project’s standard coding guidelines:_
 
@@ -100,12 +101,12 @@ Upon opening the Project Rules page, you'll see some default rules. You can choo
       3. _new UI Toolkit for user interfaces_
       4. `com.unity.mobile.notifications@2.4.1`_package for local notifications_
   </Accordion>
-  <Accordion title="Explain the game’s concept and goals">
-    _My Game is an arcade-style side-scroller inspired by Flappy Bird, where players pilot a futuristic hovercraft through a dynamic, procedurally generated gauntlet of moving obstacles, shifting gravity zones, and collectible power-ups. Unlike the original, players can tap to boost upward or swipe to trigger special maneuvers like dashes or time-slow. The goal is to survive as long as possible, unlock new vehicles, and master increasingly chaotic levels while competing on global leaderboards._
+  <Accordion title="Define how you want Bezi to approach debugging">
+    _When I tell you that your solution does not work, provide additional, detailed debugging and troubleshooting steps based on best programming practices, so I can execute them, copy and paste the logs back to you, so you can identify the real cause of the issue and explain it to me. _
   </Accordion>
   <Accordion title="Define response steps and workflow requirements ">
     - _When I ask you to suggest ideas, always check the web for relevant materials. Only suggest the latest, most popular, and proven solutions._
-    - _When I ask you to debug something, always check [**http://stackoverflow.com**](http://stackoverflow.com) for common solutions and known issues._ 
+    - [**_When I ask you to debug something, always check http://stackoverflow.com for common solutions and known issues._**](http://stackoverflow.com)
     - _When you generate scripts, give me clear and concise instructions on how to use them, which GameObjects to attach them to, and how to properly set them up._
     - _When you are unsure how to fix an issue, suggest adding logs for tracing a bug._
   </Accordion>
