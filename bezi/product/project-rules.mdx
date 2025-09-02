@@ -24,43 +24,32 @@ Project Rules comes with default rules. You can edit those or write your own fro
 
 ## Project Rules writing guide
 
-**See the Project Rules examples (below) for best practice**s. Project Rules can be written in natural languange. Like a prompt, an effective Project Rule is focused on a specific purpose. Do not try to pack too much into a single rule.
+Project Rules can be written in natural languange. Like a prompt, an effective Project Rule is focused on a specific purpose. Do not try to pack too much into a single rule.
 
-**Rules must be**: clear, direct, easy to understand, applicable to the entire project
+### **Things to do**
 
-**Rules should not**: contradict each other, be conditional (_if_..., _otherwise_...)
+1. **ALWAYS write direct, clear instructions**: only use decisive verbs and be very specific
+   1. GOOD: Follow code style rules defined in [MyProjectStyle.md](http://MyProjectStyle.md)
+   2. GOOD: NEVER use the Singleton design pattern
+   3. BAD: write good code
+   4. BAD: follow all SOLID principles
+2. **Expand definitions with context and synonyms**: Explain _why_ the rule matters, if you want Bezi to identify something in your project give multiple examples, etc.
+3. **Always add real, positive examples from the project**: Find examples of situations that you want Bezi to mirror and list as many as possible, to help Bezi recognize the patterns
+4. **Emphasize with strong language**: Use caps and clear words like “ALWAYS,” “IMPORTANT,” and “CRITICAL” to signal weight
+5. **Prioritize by importance**: Place CRITICAL rules at the top, and move less important ones down
+6. **Enrich references**: provide library name, version, official website, and a direct link to scripting examples.
+7. **Update rules as the project evolves**: Rules should be edited and improved, the fewer and clearer rules the better
 
-### Things to do
+### **Things not to do**
 
-<AccordionGroup>
-  <Accordion title="ALWAYS write direct, clear instructions — use strong verbs and be specific">
-    - **GOOD**: _Follow code style rules defined in _[_MyProjectStyle.md_](http://MyProjectStyle.md)
-    - **GOOD**: _NEVER use the Singleton design pattern_
+1. **Do not write rules that use _if_ or _when_**: Rules must be set as universal principles
+2. **Do not use vague language**: Statements should be clear and decisive, "_always_" or "_never_"
+3. **Do not use negative examples**: If you are telling Bezi never to do something, define what it should do instead and give example(s) of the positive behavior
+4. **Do not use negative examples**: If you are telling Bezi never to do something, define what it should do instead and give example(s) of the positive behavior
+5. **Do not have too much information in a single rule**: Rules must be simple and clear. Write out the entire rule and, if there is too much information it in, break it into multiple rules and give it its own section 
+6. **Do not have contradicting rules or examples**: Make sure your Rules serve a clear, well defined purpose and they all have relevant examples that will strengthen clarity
 
-
-    - BAD: _write good code_
-    - BAD: _follow all SOLID principles_
-  </Accordion>
-  <Accordion title="New Accordion">
-    
-  </Accordion>
-</AccordionGroup>
-
-### Things not to do
-
-<AccordionGroup>
-  <Accordion title="New Accordion">
-    
-  </Accordion>
-  <Accordion title="New Accordion">
-    
-  </Accordion>
-</AccordionGroup>
-
-
-## 
-
-## Project Rules examples
+## Project Rule Examples
 
 ### Output and structural guidelines
 
@@ -117,11 +106,11 @@ Project Rules comes with default rules. You can edit those or write your own fro
       4. `com.unity.mobile.notifications@2.4.1`_package for local notifications_
   </Accordion>
   <Accordion title="Define how you want Bezi to approach debugging">
-    _When I tell you that your solution does not work, provide additional, detailed debugging and troubleshooting steps based on best programming practices, so I can execute them, copy and paste the logs back to you, so you can identify the real cause of the issue and explain it to me. _
+    \_When I tell you that your solution does not work, provide additional, detailed debugging and troubleshooting steps based on best programming practices, so I can execute them, copy and paste the logs back to you, so you can identify the real cause of the issue and explain it to me. \_
   </Accordion>
   <Accordion title="Define response steps and workflow requirements ">
     - _When I ask you to suggest ideas, always check the web for relevant materials. Only suggest the latest, most popular, and proven solutions._
-    - **_When I ask you to debug something, always check _**[**_http://stackoverflow.com_**](http://stackoverflow.com)**_ for common solutions and known issues._**
+    - **\_When I ask you to debug something, always check \_**[**_http://stackoverflow.com_**](http://stackoverflow.com)**\_ for common solutions and known issues.\_**
     - _When you generate scripts, give me clear and concise instructions on how to use them, which GameObjects to attach them to, and how to properly set them up._
     - _When you are unsure how to fix an issue, suggest adding logs for tracing a bug._
   </Accordion>
