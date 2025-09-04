@@ -4,27 +4,46 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 ---
 
 <Info>
-  **Current app version**: 1.9.0
+  **Current app version**: 1.9.1
 
-  **Current Unity plugin version**: 0.42.1
+  **Current Unity plugin version**: 0.43.4
 </Info>
 
-<Card title="Download Unity plugin v0.42.1" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.42.1/com.bezi.sidekick-0.42.1.tgz" cta="Get the latest Unity plugin if you can't install it via Bezi App">
+<Card title="Download Unity plugin v0.43.4" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.43.4/com.bezi.sidekick-0.43.4.tgz" cta="Get the latest Unity plugin if you can't install it via Bezi App">
   
 </Card>
 
-<Update label="08/20/2025" description="">
+<Update label="09/04/2025" description="">
+  **Now introducing...**
+
+  - **ATTACH IMAGES TO PROMPTS**\! You can now add images/screenshots to a prompt to supplement the information Bezi factors into its response.
+  - Read the docs: https://docs.bezi.com/bezi/product/attach-images
+
+  **Usability improvements:**
+
+  - Improved performance of the GameObject inspecting tools to address feedback about Bezi freezing when looking for components in the scene/on GameObjects
+  - Added best practices for writing Project Rules to the rules page
+
+  **General health:**
+
+  - Fixed the bug where Bezi would throw errors when reading console logs 
+  - Added more enforcement to prevent the looping behavior when Bezi is trying to correct console errors
+  - Bug fix for Restore Checkpoint not showing up for new prompts
+  - Bug fix for occasionally not showing an updated plans new prompt limit in the UI if it's changed mid-cycle
+</Update>
+
+<Update label="08/20/2025" description>
   > We want your feedback\! We're committed to making Bezi as lightweight as possible and to not impact game developer's workflows or testing performance. \
   > After this update, do you notice any performance difference in your project's compile times, time to enter play mode, or general performance inside of Unity? If you do, can you share the before \+ after?
 
-   **Usability improvements:** 
+  **Usability improvements:**
 
   - Bezi \<\> Unity connection: improve reliability of the connection and shows clearer warning if a response cant be submitted / continue because Unity has become disconnected (usually due to a domain reload or being in Play Mode)
   - Agent Mode - Restore Checkpoint: now easier to restore checkpoints to any point in a thread, changes made in Agent Mode will be correctly restored, UI will accurately reflect which messages have been reverted, files created during the time can be removed, and more
   - Enhanced Code Intelligence (ECI): reducing the "Inactive" status many of you have reported by improving ECI's project auto-connect (Bezi now generates a .NET solution file for your Unity project using robust, built-in Unity methods)
   - Long threads performance: faster rendering for threads with lots of code edits
 
-   **General health:** 
+  **General health:**
 
   - Project sync performance: increased Bezi's servers abilities to adapt to traffic changes and efficiently index project assets
   - More bug fixes and polish\!
