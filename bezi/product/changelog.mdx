@@ -4,7 +4,7 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 ---
 
 <Info>
-  **Current app version**: 1.9.1
+  **Current app version**: 1.10.0
 
   **Current Unity plugin version**: 0.43.4
 </Info>
@@ -13,10 +13,23 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
   
 </Card>
 
-<Update label="09/04/2025" description="">
+<Update label="09/16/2025" description="">
+  **Usability improvements:**
+
+  - Messages are no longer cancelled by a domain reload or Play Mode. Bezi will continue the response after the domain reload is complete
+  - Improved Bezi's ability to auto-detect when images are attached to a prompt
+  - Made significant improvements to ECIs startup time on Windows
+  - Added Bezi application suggestions (based on where people see most value) in Home
+
+  **General health:**
+
+  - Fixed a bug where monthly credits weren't auto-resetting in select yearly Pro subscriptions
+</Update>
+
+<Update label="09/04/2025" description>
   **Now introducing...**
 
-  - **ATTACH IMAGES TO PROMPTS**\! You can now add images/screenshots to a prompt to supplement the information Bezi factors into its response.
+  - **ATTACH IMAGES TO PROMPTS**! You can now add images/screenshots to a prompt to supplement the information Bezi factors into its response.
   - Read the docs: https://docs.bezi.com/bezi/product/attach-images
 
   **Usability improvements:**
@@ -26,15 +39,15 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 
   **General health:**
 
-  - Fixed the bug where Bezi would throw errors when reading console logs 
+  - Fixed the bug where Bezi would throw errors when reading console logs
   - Added more enforcement to prevent the looping behavior when Bezi is trying to correct console errors
   - Bug fix for Restore Checkpoint not showing up for new prompts
   - Bug fix for occasionally not showing an updated plans new prompt limit in the UI if it's changed mid-cycle
 </Update>
 
 <Update label="08/20/2025" description>
-  > We want your feedback\! We're committed to making Bezi as lightweight as possible and to not impact game developer's workflows or testing performance. \
-  > After this update, do you notice any performance difference in your project's compile times, time to enter play mode, or general performance inside of Unity? If you do, can you share the before \+ after?
+  > We want your feedback! We're committed to making Bezi as lightweight as possible and to not impact game developer's workflows or testing performance. \
+  > After this update, do you notice any performance difference in your project's compile times, time to enter play mode, or general performance inside of Unity? If you do, can you share the before + after?
 
   **Usability improvements:**
 
@@ -46,7 +59,7 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
   **General health:**
 
   - Project sync performance: increased Bezi's servers abilities to adapt to traffic changes and efficiently index project assets
-  - More bug fixes and polish\!
+  - More bug fixes and polish!
 </Update>
 
 <Update label="08/14/2025" description>
@@ -58,15 +71,15 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 <Update label="08/12/2025" description>
   **Usability improvements:**
 
-  - Improved the load and response time for longer threads\!
+  - Improved the load and response time for longer threads!
 
   **General health:**
 
-  - Improved our server's ability to handle for asset indexing traffic to proactively prevent  slowdowns. More identifiable speed improvements will come in the next few weeks\!
+  - Improved our server's ability to handle for asset indexing traffic to proactively prevent  slowdowns. More identifiable speed improvements will come in the next few weeks!
 
   **Other fun:**
 
-  - We've updated Bezi's branding\! Keep an eye out for the new Bezi bud showing up in the app, docs, discord, and more :)
+  - We've updated Bezi's branding! Keep an eye out for the new Bezi bud showing up in the app, docs, discord, and more :)
 </Update>
 
 <Update label="08/05/2025" description>
@@ -86,15 +99,15 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 <Update label="07/29/2025" description>
   **Now introducing...**
 
-  - Project Rules\! Define project-wide rules for Bezi to follow. Set the code syntax, how to navigate your project's files, game design patterns, and other project-specific context, instructions, etc. you want Bezi to follow
+  - Project Rules! Define project-wide rules for Bezi to follow. Set the code syntax, how to navigate your project's files, game design patterns, and other project-specific context, instructions, etc. you want Bezi to follow
     - Read the docs: https://docs.bezi.com/bezi/product/project-rules
-  - Enhanced Code Intelligence: Turn this on to enable Bezi to find errors and warnings in your codebase on its own\! Bezi hooks into the OmniSharp language server to catch errors in the code it writes or help you fix existing errors in your own code
+  - Enhanced Code Intelligence: Turn this on to enable Bezi to find errors and warnings in your codebase on its own! Bezi hooks into the OmniSharp language server to catch errors in the code it writes or help you fix existing errors in your own code
     - Read the docs: https://docs.bezi.com/bezi/product/enhanced-code-intelligence
 
   **Usability improvements:**
 
   - _Restructured our database to enable a lot of long-term improvements._
-    - One in this release is better in-thread memory\! Bezi has better ability to recall past messages and context gathering steps, resulting in better accuracy in short and medium length threads
+    - One in this release is better in-thread memory! Bezi has better ability to recall past messages and context gathering steps, resulting in better accuracy in short and medium length threads
     - Long threads are still not the recommended way to use Bezi. We suggest starting new threads as you change tasks
   - Bezi can search your project with multiple methods simultaneously, to gather the context needed to generate a response faster
 
@@ -102,7 +115,7 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 
   - New sidebar design: Where you access past threads and the Project Rules page
   - More informative messages re: which files, classes, or GameObjects Bezi's searching for
-  - Tons more bug fixes and polish\!
+  - Tons more bug fixes and polish!
 </Update>
 
 <Update label="07/21/2025">
@@ -131,7 +144,7 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
   _UI updates to Canvas and Agent Mode:_
 
   - Sliders now stay within bounds
-  - Canvas search with cmd/ctrl\+F scrolls to the search results items
+  - Canvas search with cmd/ctrl+F scrolls to the search results items
 </Update>
 
 <Update label="07/08/2025" description>
@@ -156,11 +169,11 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 
   **Usability improvements:**
 
-  - Added the ability to pause the Bezi plugin in Unity\!
+  - Added the ability to pause the Bezi plugin in Unity!
 </Update>
 
 <Update label="06/17/2025" description>
-  _Today's release includes fixes for some critical issues that severely degraded user experience. If you noticed inconsistencies in Bezi's referencing existing files or  recreating things that were already in the project, please update your app/plugin and give it another go\!_
+  _Today's release includes fixes for some critical issues that severely degraded user experience. If you noticed inconsistencies in Bezi's referencing existing files or  recreating things that were already in the project, please update your app/plugin and give it another go!_
 
   **New functionality:**
 
@@ -184,7 +197,7 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 </Update>
 
 <Update label="06/10/2025" description>
-  [******Introducing, Agent Mode in beta\!******](https://docs.bezi.com/bezi/modes/agent-mode)
+  [******Introducing, Agent Mode in beta!******](https://docs.bezi.com/bezi/modes/agent-mode)
 
   - Bezi can now create and modify code, directly in your Unity project
   - View code diffs in the response or in the full context of the script with Canvas
@@ -220,7 +233,7 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 </Update>
 
 <Update label="05/20/2025" description>
-  **Introducing, Canvas\!**
+  **Introducing, Canvas!**
 
   Canvas allows you to view a Bezi response and the code file side-by-side in the Bezi app. It also provides a bigger window for reviewing a code file (opposed to having to scroll through a small window)
 
@@ -244,12 +257,12 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
   - Faster search for assets and gameobjects within Bezi
   - Bezi can respond in the language it's prompted in
   - Long text wrapping (console errors, exception messages, etc.) improvements
-  - Spaces in a search query work as expected now\!
+  - Spaces in a search query work as expected now!
   - Added progress bar in the Asset Sync panel so it's easy to see what % of your project has been indexed
 
   **General health:**
 
-  - Bezi can work with Photon networking library now\!
+  - Bezi can work with Photon networking library now!
   - WebSocket connection error fixes that occasionally impacted Unity performance when Bezi was not running
   - New flow to help install Bezi's Unity plugin with protected directories (_prev. users saw a "Failed to install plugin" popup with no way to fix_)
 </Update>
@@ -257,7 +270,7 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 <Update label="05/06/2025" description>
   **Bezi access and usage-based trial/subscriptions:**
 
-  - Ability to sign-up directly from our website\! No more waitlist\!
+  - Ability to sign-up directly from our website! No more waitlist!
   - Credits system for trial (100) and subscription (500 /mo)
   - Updated Account Settings to track credit usage
 
@@ -326,14 +339,14 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 
   - Addressed issues around some responses not fully saving
   - Addressed search result link issues
-  - More fast-follow polish and bug fixes from last week's release\!
+  - More fast-follow polish and bug fixes from last week's release!
 </Update>
 
 <Update label="03/14/2025">
   **Core capabilities:**
 
   - Major improvements to Bezi's ability to understand your Unity project and use that context in responses
-  - We've disabled Bezi's ability to attach scripts and generate Unity actions on your behalf. These capabilities will come back once they meet our accuracy and reliability standards\!
+  - We've disabled Bezi's ability to attach scripts and generate Unity actions on your behalf. These capabilities will come back once they meet our accuracy and reliability standards!
 
   **Usability improvements:**
 
@@ -345,33 +358,33 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 
   **General health:**
 
-  - Many more bug fixes and improvements\!
+  - Many more bug fixes and improvements!
 </Update>
 
 <Update label="03/13/2025">
-  **Bezi product update - moving into beta\!**
+  **Bezi product update - moving into beta!**
 
-  Excited to share that Bezi is moving into beta\! The beta phase is focused on deep context of your Unity project. Using this context, Bezi can be queried to identify and propose fixes for console errors, answer questions about project contents and packages, and even teach you how to implement unfamiliar mechanics.
+  Excited to share that Bezi is moving into beta! The beta phase is focused on deep context of your Unity project. Using this context, Bezi can be queried to identify and propose fixes for console errors, answer questions about project contents and packages, and even teach you how to implement unfamiliar mechanics.
 
-  During our alpha, we learned a lot from testers (you\!) about what’s needed in order to reduce the noise and repeatable work in game development. This helped us prioritize the right things to build in our beta - and it all starts with strong context of your project.
+  During our alpha, we learned a lot from testers (you!) about what’s needed in order to reduce the noise and repeatable work in game development. This helped us prioritize the right things to build in our beta - and it all starts with strong context of your project.
 
-  Heading into our beta (which starts today\!) we invested a lot of effort into making sure Bezi has this complete context of your project. This context is the first step and we will add more capabilities powered by the context.
+  Heading into our beta (which starts today!) we invested a lot of effort into making sure Bezi has this complete context of your project. This context is the first step and we will add more capabilities powered by the context.
 
-  We’ve learned that, above all, game dev tools need to be accurate and reliable in order to make the workflow more efficient. We hold Bezi to a high standard for both and will only ship new capabilities that meet this bar. During alpha it was clear there were issues with the script attaching and action creation capabilities. As a result, **script attaching and action creation will be temporarily disabled in Bezi**. They'll be re-implemented as soon as they are reliable and accurate enough to support game development\!
+  We’ve learned that, above all, game dev tools need to be accurate and reliable in order to make the workflow more efficient. We hold Bezi to a high standard for both and will only ship new capabilities that meet this bar. During alpha it was clear there were issues with the script attaching and action creation capabilities. As a result, **script attaching and action creation will be temporarily disabled in Bezi**. They'll be re-implemented as soon as they are reliable and accurate enough to support game development!
 </Update>
 
 <Update label="03/06/2025">
-  No release this week\! The team is heads-down on stability and bug fixes for the new agentic workflow - release will resume next Thursday.
+  No release this week! The team is heads-down on stability and bug fixes for the new agentic workflow - release will resume next Thursday.
 </Update>
 
 <Update label="02/27/2025">
   **Asset Sync package support:**
 
-  - Bezi's now able to sync and reference Unity project packages and use them to inform responses\! _For example, if you have a TextMeshPro package installed in your Unity project, Bezi can write scripts that reference it_
+  - Bezi's now able to sync and reference Unity project packages and use them to inform responses! _For example, if you have a TextMeshPro package installed in your Unity project, Bezi can write scripts that reference it_
 
   **Usability improvements:**
 
-  - You can manually add a Unity project you want to connect in Bezi\! Select the "Add project" button at the bottom of the Project Picker dropdown
+  - You can manually add a Unity project you want to connect in Bezi! Select the "Add project" button at the bottom of the Project Picker dropdown
   - Code rendering is faster
   - Improved speed of AI responses
 
@@ -393,7 +406,7 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 
   - You can use Bezi to create and assign tags in Unity's tag system
   - You can create 2D and 3D physical materials
-  - You can search/add a Unity project you want to connect with via Bezi's Unity Project Selector (see "Add project" in dropdown), no need to rely on Unity Hub\!
+  - You can search/add a Unity project you want to connect with via Bezi's Unity Project Selector (see "Add project" in dropdown), no need to rely on Unity Hub!
 
   **General health:**
 
