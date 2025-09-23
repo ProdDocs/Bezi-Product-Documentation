@@ -5,16 +5,35 @@ description: "Use Bezi to create custom Unity tools in minutes. "
 
 Easily scale and automate repetitive Unity workflows and outputs, like creating levels and implementing asset. Enable anyone to manage tedious game dev work to spec.
 
+## How to create custom tools:
+
 <Steps>
   <Step title="Enter Agent Mode">
     See the [Agent Mode docs](https://docs.bezi.com/bezi/modes/agent-mode) to learn more.
   </Step>
   <Step title="Draft your prompt">
-    Write a detailed prompt. Make sure to include each step of the process, the ideal result, any customization levers, and the tool user’s Unity proficiency. 
+    In <u>as much detail as possible</u>, explain: the high-level process, each step of it, all inputs, variuables, or customizations Bezi may need, and the ideal result or outcome. See example prompts below. 
 
-    At the end of the prompt, instruct Bezi to use this information build a custom tool.
+    Tag specific project assets or scripts in your prompt ([type @, then the name](https://docs.bezi.com/bezi/product/reference-assets-in-prompts)) to ensure Bezi factors them into the tool.
+
+    Make sure your prompt clearly instructs Bezi to use this information to build a custom tool.
   </Step>
-  <Step title="Submit and iterate">
-    
+  <Step title="Set-up and iterate">
+    Bezi will create all required scripts for the tool. In certain cases, it may give you instructions to attach the tool script to something in Unity.
+
+    Once set-up, test the tool and prompt Bezi in the same thread to make any required changes.
   </Step>
 </Steps>
+
+## Example prompts:
+
+**Custom editors:**
+
+- _“Create a custom editor with buttons to draw, shuffle, and discard cards for testing in play mode”_
+- _“Create a custom editor to add tiles in the west, north, east, south directions from the current tile”_
+- _“Add a custom editor to control the values of my shader”_
+
+**Scene visualizations:**
+
+- “_Add debug visualization of the locations where the enemies will spawn in the next wave”_
+- _“Add a debug visualization of the spherical hotspots which trigger the next event”_
