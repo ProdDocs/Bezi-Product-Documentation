@@ -19,7 +19,7 @@
               "bezi/welcome",
               "bezi/install-setup",
               "bezi/prompt-guide",
-              "bezi/use-cases",
+              "bezi/ip-security",
               "bezi/troubleshooting"
             ]
           },
@@ -43,12 +43,6 @@
               "bezi/product/edit-prompts",
               "bezi/product/enhanced-code-intelligence",
               "bezi/product/share-feedback-bezi-responses"
-            ]
-          },
-          {
-            "group": "Privacy & Security",
-            "pages": [
-              "bezi/privacy-security/security"
             ]
           },
             {
