@@ -24,6 +24,15 @@
             ]
           },
           {
+            "group": "Use Cases",
+            "pages": [
+              "bezi/use-cases/custom-tools",
+              "bezi/use-cases/debug",
+              "bezi/use-cases/documentation",
+              "bezi/use-cases/learning"
+            ]
+          },
+          {
             "group": "Modes",
             "pages": [
               "bezi/modes/agent-mode",
@@ -36,12 +45,12 @@
               "bezi/product/changelog",
               "bezi/product/asset-sync",
               "bezi/product/project-rules",
-              "bezi/product/attach-images",
               "bezi/product/reference-assets-in-prompts",
-              "bezi/product/canvas",
+              "bezi/product/attach-images",
               "bezi/product/thread-history",
               "bezi/product/edit-prompts",
               "bezi/product/enhanced-code-intelligence",
+              "bezi/product/canvas",
               "bezi/product/share-feedback-bezi-responses"
             ]
           },
