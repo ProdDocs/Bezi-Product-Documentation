@@ -7,7 +7,7 @@
     "light": "#e55428",
     "dark": "#e55428"
   },
-  "favicon": "/favicon.svg", 
+  "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -51,11 +51,10 @@
               "bezi/product/thread-history",
               "bezi/product/edit-prompts",
               "bezi/product/enhanced-code-intelligence",
-              "bezi/product/canvas",
-              "bezi/product/share-feedback-bezi-responses"
+              "bezi/product/canvas"
             ]
           },
-            {
+          {
             "group": "Account Settings",
             "pages": [
               "bezi/account-settings/plans-usage",
@@ -65,7 +64,7 @@
         ]
       }
     ]
-  }, 
+  },
   "logo": {
     "light": "/logo/bezis-logo-light.svg",
     "dark": "/logo/bezis-logo-light.svg"
@@ -83,7 +82,7 @@
       "socials": {
         "x": "https://x.com/bezi_ai",
         "linkedin": "https://linkedin.com/company/bezi-ai"
-       }
+      }
     }
   }
-} 
+}
