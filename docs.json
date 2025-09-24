@@ -27,6 +27,7 @@
             "group": "Use Cases",
             "pages": [
               "bezi/use-cases/custom-tools",
+              "bezi/use-cases/prototype-iterate",
               "bezi/use-cases/debug",
               "bezi/use-cases/documentation",
               "bezi/use-cases/learning"
