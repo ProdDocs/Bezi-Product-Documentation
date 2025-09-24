@@ -14,25 +14,32 @@ Anyone can create tools with Bezi, wielding the power to unblock workflows when 
     See the [Agent Mode docs](https://docs.bezi.com/bezi/modes/agent-mode) to learn more.
   </Step>
   <Step title="Draft your prompt">
-    In <u>as much detail as possible</u>, explain: the high-level process, each step of it, all inputs or variables Bezi may need, and the ideal result or outcome. See example prompts below.
+    In <u>as much detail as possible</u>, explain: the process you want to automate, any key inputs or variables Bezi should include, and the ideal outcome - what form the tool should take and what the output of using it should look like. See example prompts below.
 
     Tag specific project assets or scripts in your prompt ([type @, then the name](https://docs.bezi.com/bezi/product/reference-assets-in-prompts)) to ensure Bezi factors them into the tool.
 
     Make sure your prompt clearly instructs Bezi to use this information to build a custom tool.
   </Step>
   <Step title="Set-up and iterate">
-    Bezi will create all required scripts for the tool. In certain cases, it may give you instructions to attach the tool script to something in Unity.
+    Bezi will create all required scripts for the tool. It will also give you step-by-step explanations for how to use the tool. In some cases, this might include attaching some scripts in-scene.
 
-    Once set-up, test the tool and prompt Bezi in the same thread to make any required changes.
+    Once set-up, test the tool and prompt Bezi in the same thread to make any required changes. 
+
+    If the tool has an editor window, make sure you pin it in Bezi so the interface stays up-to-date with any changes. If your thread is getting too long, make a new thread, pin all relevant scripts, and resume iteration.
   </Step>
 </Steps>
 
 ## Example prompts
 
+**Object configurations:**
+
+- _“Make a setup script to add all necessary components (@AnimalController.cs, Rigidbody, Collider) to an animal on play. Include a dropdown for all animal types in @Animals folder, and add the selected animal-type script.”_
+- _“Create a ragdoll generator that I can attach to an object to setup configurable joints on it and all of its children.”_
+
 **Custom editors:**
 
-- _“Create a custom editor with buttons to draw, shuffle, and discard cards for testing in play mode”_
-- _“Create a custom editor to add tiles in the west, north, east, south directions from the current tile”_
+- _“Create a canvas tool, where I can lay out and generate new levels. I want to be able to add tiles, with each tile corresponding to a different prefab; place them on the grid; and press a button that generates that layout in-scene.”_
+- _“Create a custom editor with buttons to draw, shuffle, and discard cards for testing in play mode"_
 - _“Add a custom editor to control the values of my shader”_
 
 **Scene visualizations:**
