@@ -3,11 +3,7 @@ title: "Rapid Prototyping and Iteration"
 description: "Description of your new file."
 ---
 
-- **Start in Ask Mode** and explain the mechanic you want: inputs, variables, controller mappings, etc., and the result you want. Ask Bezi to identify gaps in your plan, then suggest possible answers
-- \*\*Switch to Agent Mode \*\*when you feel like the vision is clear, then submit your detailed prompt
-  - Don’t be afraid to iterate in either mode! All Agent Mode changes can be iterated or reverted
-- Example prompt to add the ability to temporarily blind another player by shining a flashlight in their eyes:
-  - _“I want to create a mechanic to blind another player by shining a flashlight in their eyes. If I’m holding a lit flashlight and I point it directly at the front of their head, within a range and unobstructed, they should see a bright flash of white, quickly transitioning to black, and fading back in through a widening vignette over the course of 10 seconds. Their eyes should go totally emissive white when blind, and fade back to normal over the course of those 10 seconds.”_
+d explain the mechanic you want: inputs, variables, controller mappings, etc., and the result you want.
 
 ## **How to prototype or iterate on features faster**
 
@@ -16,32 +12,48 @@ description: "Description of your new file."
     See the [**Ask Mode docs**](https://docs.bezi.com/bezi/modes/ask-mode) to learn more.
   </Step>
   <Step title="Ask Bezi to write you an implementation plan">
-    In <u>as much detail as possible</u>, explain what you want to build: the ideal result, any key variables you’ll want to play with, and the controller scheme. 
+    In <u>as much detail as possible</u>, explain what you want to build: the ideal result, any key variables you’ll want to play with, and the controller scheme. At the end of the prompt, ask Bezi to write you an implementation plan for this feature.
 
     Tag specific project assets or scripts in your prompt ([**type @, then the name**](https://docs.bezi.com/bezi/product/reference-assets-in-prompts)) to ensure Bezi factors them into the plan. For example, if you want to add a throwing mechanic to your player interactions, pin the player interaction script and the character prefab.
-
-    Ask Bezi to write you an implementation plan for this feature.
   </Step>
   <Step title="Iterate on the implementation plan until it’s set">
     The goal is to have a comprehensive implementation plan, with minimal room for Bezi to make assumptions.
   </Step>
   <Step title="Enter Agent Mode">
-    Stay in the same thread you were iterating in and switch to Agent Mode. 
+    Stay in the same thread you were iterating in and switch to Agent Mode.
 
     See the [**Agent Mode docs**](https://docs.bezi.com/bezi/modes/agent-mode) to learn more.
   </Step>
   <Step title="Tell Bezi to implement your feature">
-    If you have a precise plan, your prompt can be as simple as "Implement this plan". 
+    If you have a precise plan, your prompt can be as simple as "Implement this plan".
 
     If you're selecting from a few options, you can tell Bezi to "Implement option #2".
   </Step>
   <Step title="Test and iterate">
-    Once your feature is mocked up, jump into Unity to see the proposed plan in action. 
+    Once the feature is mocked up, click into Unity to see it in action.
 
-    If Bezi gave you implementation instructions, follow them to complete the set-up, then move into Unity for testing. 
+    If Bezi gave you implementation instructions, follow them to complete the set-up, then move into Unity for testing.
 
-    Continue moving between Bezi and Unity, iterating on the mechanic and seeing the changes in action instantly. 
+    Continue moving between Bezi and Unity, iterating on the mechanic and seeing the changes in action instantly.
 
     Make sure to keep and reject suggestions as you go. If you decide to revert the project to an earlier state, use the [Restore Checkpoint](https://docs.bezi.com/bezi/modes/agent-mode#restore-checkpoint) button.
   </Step>
 </Steps>
+
+## Example prompts
+
+**Foundational systems**:
+
+- “Make a first person character controller with mouse-based camera movement”
+- “Mock up object pooling for the obstacles and set up the basic obstacle ‘spawning’ and movement system (right to left)”
+
+**Experimental whitebox mechs**:
+
+- “Prototype a ghost possession mechanic that lets the player take and relinquish control of other characters when in range and spacebar is pressed”
+- “I want a camera system that moves to a fixed CameraLocation when they enter a collider tagged FixedCam, then lerps back to third person when out”
+
+**Adjustments and additions**
+
+- “_Add crouch and jump behavior to the player movement script_”
+- “_Instead of using a Raycast to detect treasure, can we change that to use the hunter collider?_”
+- “_Incorporate the isFalling, isFlying, and isMoving animation bools from @Character.controller into CharacterController.cs_”
