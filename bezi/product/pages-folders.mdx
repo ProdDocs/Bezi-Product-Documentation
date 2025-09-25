@@ -11,9 +11,13 @@ The Pages interface is a text editor and each Page has a 10,000 character limit.
 
 ## How to use Pages
 
-1. Create a Page
-2. Use `@` to tag the Page in prompts you want Bezi to reference it in
-3. Pin the page(s) if they’re relevant for the entire thread
+To include Pages in a prompt’s context, follow the same process as referencing an asset in the prompt. Type @[page name], press `enter` to select, and continue writing your prompt.
+
+If you want this Page to included in the context of an entire thread, pin the page to the prompt box.
+
+<Warning>
+  **You must tag or pin a Page for it to be included in Bezi’s context**. Bezi isn’t able to automatically include all Pages in its context yet, like how Project Rules work, but it's on the roadmap.
+</Warning>
 
 ## What should I use Pages for?
 
@@ -21,30 +25,18 @@ Use Pages to document any game-specific decisions, plans, or information that yo
 
 ### **Store Plans For Bezi to Execute On**
 
-Create an implementation plan with Bezi, then save it in a Page so Bezi can reference and execute on it.
+Create an implementation plan with Bezi, then save it in a Page so Bezi can reference and execute on it. **Tag the Page in an Agent Mode prompt and ask Bezi to execute on your plan.**
 
 - Define your core game mechanics (e.g., “Jumping uses stamina”).
 - Outline level ideas with quick bullet points.
 - Plan your feature implementation.
-- **Tag the Page in an Agent Mode prompt and ask Bezi to execute on your plan.**
 
 ### **Save Game-Wide Context To Tailor Bezi’s Output**
 
-Store meta-level game information, like GDDs or system architecture. Tag the Page in any prompts that require keeping the game’s end-state in mind.
+Store meta-level game information, like GDDs or system architecture. Tag the Page in any prompts that require keeping the game’s end-state in mind. **Tag the Page in prompts that reference existing goals or patterns**
 
 - Define key game strategy or plans, using Bezi to identify possible gaps
 - Set pre-established game directions or patterns you want Bezi to follow across threads
-- **Tag the Page in prompts that reference existing goals or patterns**
-
-## How to include Pages in prompt context
-
-To include Pages in a specific prompt’s context, follow the same process as referencing an asset in the prompt. Type @[page name], press `enter` to select, and continue writing your prompt.
-
-If you want this Page to included in the context of an entire thread, [pin the page](https://docs.bezi.com/bezi/product/reference-assets-in-prompts#how-to-reference-an-asset-in-your-prompt) to the prompt box.
-
-<Warning>
-  **You must tag or pin a Page for it to be included in Bezi’s context**. Bezi isn’t able to automatically include all Pages in its context yet, like how Project Rules work, but it's on the roadmap.
-</Warning>
 
 ## What are Folders?
 
