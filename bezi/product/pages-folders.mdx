@@ -9,12 +9,53 @@ Pages are where you store and manage important information about your game. Bezi
 
 The Pages interface is a text editor and each Page has a 10,000 character limit.
 
-## How to use Pages for prompt context
+## How to use Pages
+
+1. Create a Page
+2. Use `@` to tag the Page in prompts you want Bezi to reference it in
+3. Pin the page(s) if they’re relevant for the entire thread
+
+## What should I use Pages for?
+
+Use Pages to document any game-specific decisions, plans, or information that you'll want Bezi to reference continuously in prompts or threads.
+
+### **Store Plans For Bezi to Execute On**
+
+Create an implementation plan with Bezi, then save it in a Page so Bezi can reference and execute on it.
+
+- Define your core game mechanics (e.g., “Jumping uses stamina”).
+- Outline level ideas with quick bullet points.
+- Plan your feature implementation.
+- **Tag the Page in an Agent Mode prompt and ask Bezi to execute on your plan.**
+
+### **Save Game-Wide Context To Tailor Bezi’s Output**
+
+Store meta-level game information, like GDDs or system architecture. Tag the Page in any prompts that require keeping the game’s end-state in mind.
+
+- Define key game strategy or plans, using Bezi to identify possible gaps
+- Set pre-established game directions or patterns you want Bezi to follow across threads
+- **Tag the Page in prompts that reference existing goals or patterns**
+
+## How to include Pages in prompt context
 
 To include Pages in a specific prompt’s context, follow the same process as referencing an asset in the prompt. Type @[page name], press `enter` to select, and continue writing your prompt.
 
-If you want this Page to included in the context of an entire thread, pin the page to the prompt box.
+If you want this Page to included in the context of an entire thread, [pin the page](https://docs.bezi.com/bezi/product/reference-assets-in-prompts#how-to-reference-an-asset-in-your-prompt) to the prompt box.
 
 <Warning>
-  **You must tag or pin a Page for it to be included in Bezi’s context**. Bezi isn’t able to automatically include all Pages in its context yet, like how Project Rules work, but it's on the roadmap. 
+  **You must tag or pin a Page for it to be included in Bezi’s context**. Bezi isn’t able to automatically include all Pages in its context yet, like how Project Rules work, but it's on the roadmap.
+</Warning>
+
+## What are Folders?
+
+Folders are where you organize Pages. To figure out which Folder an open Page lives in, check the top toolbar where the storage path is listed.
+
+To manage the Folder or the Pages within it, hover over the Folder and click the `…` icon. You will see a menu of options to:
+
+- Rename the Folder
+- Move Pages in/out of the Folder
+- Delete the Folder
+
+<Warning>
+  **Deleting a Folder will delete any Pages in the Folder**. Do not delete any Folders until you’ve confirmed all Pages have been moved.
 </Warning>
