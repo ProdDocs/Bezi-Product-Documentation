@@ -7,9 +7,9 @@ description: "Store important game information in Bezi to be easily referenced a
 
 Pages are where you store and manage important information about your game. Bezi can use this information to make responses more consistent and specific to your game’s goals.
 
-## How to use Pages
+The Pages interface is a text editor. Each Page has a 10,000 character limit.
 
-Add a few Pages interface is a text editor and each Page has a 10,000 character limit.
+## How to use Pages
 
 To include Pages in a prompt’s context, follow the same process as referencing an asset in the prompt. Type @[page name], press `enter` to select, and continue writing your prompt.
 
@@ -21,22 +21,30 @@ If you want this Page to included in the context of an entire thread, pin the pa
 
 ## What should I use Pages for?
 
-Use Pages to document any game-specific decisions, plans, or information that you'll want Bezi to reference continuously in prompts or threads.
+Use Pages to store any game-specific decisions, plans, or documentation that you'll want Bezi to reference in future prompts or threads.
 
 ### **Store Plans For Bezi to Execute On**
 
 Create an implementation plan with Bezi, then save it in a Page so Bezi can reference and execute on it. **Tag the Page in an Agent Mode prompt and ask Bezi to execute on your plan.**
 
-- Define your core game mechanics (e.g., “Jumping uses stamina”).
-- Outline level ideas with quick bullet points.
-- Plan your feature implementation.
+- Define your core game mechanics (e.g., “Jumping uses stamina”)
+- Outline level ideas with quick bullet points
+- Plan your feature implementation
 
-### **Save Game-Wide Context To Tailor Bezi’s Output**
+### **Save Game-Wide Context to Tailor Bezi’s Output**
 
 Store meta-level game information, like GDDs or system architecture. Tag the Page in any prompts that require keeping the game’s end-state in mind. **Tag the Page in prompts that reference existing goals or patterns**
 
 - Define key game strategy or plans, using Bezi to identify possible gaps
 - Set pre-established game directions or patterns you want Bezi to follow across threads
+
+### **Save Documentation to Track Project Updates **
+
+Document a feature, system, or the entire project at a point in time and save it in a Page. **Tag the Page in a prompt and use Bezi to understand everything that's changed since**. 
+
+- For complete documentation, ask Bezi to explain the project in detail and save it to a Page 
+- For a detailed changelog, ask Bezi to write "Before" docs before you start. Once done, ask Bezi how the new state is different from the original, using the "Before" docs as a reference
+- To track progress over time, ask Bezi to generate new documentation on a regular cadence
 
 ## What are Folders?
 
