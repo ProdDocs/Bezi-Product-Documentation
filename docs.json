@@ -47,6 +47,7 @@
               "bezi/product/asset-sync",
               "bezi/product/project-rules",
               "bezi/product/prompt-tagging",
+              "bezi/product/pages-folders",
               "bezi/product/attach-images",
               "bezi/product/edit-prompts",
               "bezi/product/enhanced-code-intelligence",

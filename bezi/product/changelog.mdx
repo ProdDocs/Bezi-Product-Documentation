@@ -4,14 +4,45 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 ---
 
 <Info>
-  **Current app version**: 1.11.2
+  **Current app version**: 1.12.0
 
-  **Current Unity plugin version**: 0.47.1
+  **Current Unity plugin version**: 0.48.2
 </Info>
 
-<Card title="Download Unity plugin v0.47.1" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.47.1/com.bezi.sidekick-0.47.1.tgz" cta="Get the latest Unity plugin if you can't install it via Bezi App">
+<Card title="Download Unity plugin v0.48.2" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.48.2/com.bezi.sidekick-0.48.2.tgz" cta="Get the latest Unity plugin if you can't install it via Bezi App">
   
 </Card>
+
+<Update label="09/30/2025" description>
+  _____When you use Bezi to help with game development, memory is crucial. You want it to _____**_____remember the core premise of your game_____**_____, a great implementation plan from another thread, or a _____**_____mechanic’s_____**_____ original state to track changes._____
+
+  _There is so much crucial information that, unless stated, is totally unknown to Bezi and Unity, or easily gets lost in the context an AI system works through._
+
+  _We’ve built _[_Pages_](https://docs.bezi.com/bezi/product/pages-folders)_ so you have the power to inject and reinforce these key details without repeating yourself or copy/pasting. Save longer-form project information in Pages and tag them in threads/prompts when a given task builds on them._
+
+  **Now introducing...**
+
+  - **Pages (in beta)**: Store important, larger-format game information that can be tagged in threads/prompts to get more consistent and precise output 
+    - Save implementation plans and for Bezi to execute on in Agent Mode
+    - Store your GDD to reference when work needs to be tailored to your game’s concept, roadmap, etc.
+    - Pages must be referenced in prompts with @ mention 
+    - Pages is in beta - please share all your feedback and requests! 
+    - Read the docs: https://docs.bezi.com/bezi/product/pages-folders
+    - Page examples: Yahor to post / Sarah to add
+  - **BEZI WORKS IN PLAY MODE NOW**! You can submit prompts in Play Mode & get answers to your runtime questions
+    - No docs, just start prompting! 
+
+  **Usability improvements:**
+
+  - Fixed a challenging bug that users have surfaced multiple times, causing not all rejected changes would be practically rejected in the files
+  - Improved Bezi's ability to correctly identify and inspect active scenes, when unloaded scenes are present
+  - Improved Bezi's ability to inspect components and gather more precise details
+
+  **General health:**
+
+  - Fixed the issue that blocked Enhanced Code Intelligence (ECI) from initializing on Mac
+  - Fixed the conflict Bezi was having with some other apps (e.g. Intel GPU monitor, etc.)
+</Update>
 
 <Update label="09/23/2025" description>
   **Usability improvements:**
