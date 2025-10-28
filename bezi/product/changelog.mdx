@@ -4,17 +4,40 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 ---
 
 <Info>
-  **Current app version**: 1.13.0
+  **Current app version**: 1.13.1
 
-  **Current Unity plugin version**: 0.52.2
+  **Current Unity plugin version**: 0.53.0
 </Info>
 
-<Card title="Download Unity plugin v0.52.2" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.52.2/com.bezi.sidekick-0.52.2.tgz" cta="Get the latest Unity plugin if you can't install it via Bezi App">
+<Card title="Download Unity plugin v0.53.0" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.53.0/com.bezi.sidekick-0.53.0.tgz" cta="Get the latest Unity plugin if you can't install it via Bezi App">
   
 </Card>
 
-<Update label="10/14/2025" description="">
-  **Usability improvements:** 
+<Update label="10/28/2025" description="">
+  **Usability improvements:**
+
+  - New: View threads and pages side by side
+    - A substantial UI update paving the way for future features
+    - Threads and pages can be switched independently
+  - New: Sidebar drag and drop for pages
+  - Update: Tag selection and pinning!! 
+    - If you have something selected in Unity, it will now show as **a suggested pill** that you can click on to include it as prompt context (before it was auto-included)
+    - If a Page and floating thread are open simultaneously, the Page will show as **a suggested pill** that you can click on to include it as prompt context
+  - Update: Bezi asks clarifying questions more frequently
+
+  **General health:**
+
+  - Improved agent mode's viewing of large files
+  - Account Settings UI now opens in a popup to not disrupt the pages and threads workflows
+  - Optimized context for @ mentioned assets and pages
+  - Optimized context for viewing and searching GameObjects
+  - Bezi logs file size is now limited in MB size
+  - Improvements to object serialization and pagination in Unity scenes
+  - Search results should not overflow context
+</Update>
+
+<Update label="10/14/2025" description>
+  **Usability improvements:**
 
   - Improved Bezi's project handling
     - All new projects must be added via "Add Project"
@@ -24,7 +47,7 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
     - Bezi can now find relevant information in Pages via semantic search from prompts. No longer dependent on a Page being tagged in-prompt to search it
   - Images can be dragged / dropped into prompts
 
-   **General health:** 
+  **General health:**
 
   - Formally added Claude 4.5 Sonnet. Thorough testing confirmed it's a reliable foundation and will improve the end experience.
   - From our tests, Claude 4.5 is a lot more aware of Unity 6 APIs and should drive improvements in those responses
@@ -35,11 +58,11 @@ description: "Improvements made to Bezi, and the most recent versions of Bezi's 
 </Update>
 
 <Update label="09/30/2025" description>
-  ************************_____When you use Bezi to help with game development, memory is crucial. You want it to remember the core premise of your game, a great implementation plan from another thread, or a mechanic’s original state to track changes._____************************
+  ****************************_When you use Bezi to help with game development, memory is crucial. You want it to remember the core premise of your game, a great implementation plan from another thread, or a mechanic’s original state to track changes._****************************
 
   _There is so much crucial information that, unless stated, is totally unknown to Bezi and Unity, or easily gets lost in the context an AI system works through._
 
-  ___We’ve built ___[___Pages___](https://docs.bezi.com/bezi/product/pages-folders)___ so you have the power to inject and reinforce these key details without repeating yourself or copy/pasting. Save longer-form project information in Pages and tag them in threads/prompts when a given task builds on them.___
+  [******___We’ve built Pages so you have the power to inject and reinforce these key details without repeating yourself or copy/pasting. Save longer-form project information in Pages and tag them in threads/prompts when a given task builds on them.___******](https://docs.bezi.com/bezi/product/pages-folders)
 
   **Now introducing...**
 

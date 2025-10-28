@@ -15,16 +15,16 @@ We love hearing from you! Join the community, share your work, and ask questions
 
 <Steps>
   <Step title="Install the Bezi app">
-    1. Visit [bezi.com](http://bezi.com) \> click `Download` \> select your operating system
+    1. Visit [bezi.com](http://bezi.com) \> select `Download` \> choose your operating system
     2. Run the installer
     3. Launch the Bezi app
 
-    We recommend adding the Bezi app to your dock for ease of access
+    Add the app to your dock for ease of access
   </Step>
   <Step title="Set-up your account">
     1. Open the Bezi app
-    2. Select `Log In / Sign Up` to set up your account. You can use your email, or sign up with Google
-    3. When your account is setup, you'll see a webpage that says "Launch Bezi App"
+    2. Select `Log In / Sign Up`. You can use your email, or sign up with Google
+    3. When set-up is complete, you'll see a webpage that says "Launch Bezi App"
     4. Click `Launch app` to return to Bezi
     5. Your free trial period (50 credits, no time limit) starts now!
   </Step>
@@ -33,65 +33,51 @@ We love hearing from you! Join the community, share your work, and ask questions
 ## Connect Bezi to Unity
 
 <Steps>
-  <Step title="Check your Unity version">
-    Confirm you're running a Unity version that Bezi supports:
-
-    - **Unity 6**
-    - **Unity 2023**
-    - **Unity 2022**
-    - **Unity 2021**
+  <Step title="Open the Bezi app">
+    Confirm your app is open and you see the Get Started screen.
   </Step>
   <Step title="Open a Unity project ">
-    1. Open the Unity project you want to connect to Bezi
+    1. Open the Unity project you want to connect
     2. Confirm the Unity project is in a folder with write permissions
     3. Return to Bezi
-    4. Open the **Project Picker** dropdown \> select the project
-    5. If you don't see the desired project in the dropdown, click `Add project` at the bottom of the dropdown to manually add a Unity project to Bezi
-       1. If you can't find your Unity project, see [this documentation](https://docs.bezi.com/bezi/troubleshooting#why-am-i-not-seeing-my-project-in-the-projects-dropdown%3F).
+    4. Open the **Project Picker** dropdown in Bezi's menu bar \> select your project 5. If you don't see the desired project in the dropdown, click `Add Project` to manually add the Unity project to Bezi 5. If you can't find your Unity project, see [this documentation](https://docs.bezi.com/bezi/troubleshooting#why-am-i-not-seeing-my-project-in-the-projects-dropdown%3F)
+    5. Check name in the **Project Picker** to confirm the right Unity project is connected
 
     <Tip>
       Both the Unity project and Bezi app must be open to use them together. We recommend a split screen to see both simultaneously.
     </Tip>
   </Step>
-  <Step title="Confirm Bezi identified the Unity project">
-    Check the **Project Picker**  in the Bezi menu bar to confirm Bezi identified the right Unity project.
-
-    ![Projectpicker Pn](/images/projectpicker.png)
-  </Step>
-  <Step title="Install the Bezi plugin in Unity">
-    Select the plugin `Install` button, located in the Get Started flow.
+  <Step title="Install Bezi's plugin in Unity" stepNumber={3}>
+    Select the plugin `Install` button, located in step 2 of the Get Started flow.
 
     <Tip>
-      If you run into trouble installing the plugin via the Bezi app, you can download the Unity plugin directly from our [Changelog](https://docs.bezi.com/bezi/product/changelog).
+      If you run into trouble installing the plugin via the Bezi app, download the Unity plugin directly from our [Changelog](https://docs.bezi.com/bezi/product/changelog).
     </Tip>
     <Frame>
       ![Installunityplugin Pn](/images/installunityplugin.png)
     </Frame>
-    The plugin `Install` button is also availabe in the bottom bar, which is where you'll receive notices for version updates outside of the onboarding flow.
   </Step>
-  <Step title="Give Unity permission to install">
-    Once you've clicked `Install`, return to your Unity project. It will ask you for consent to install, then the Unity Package Manager popup will appear.
+  <Step title="Grant Unity permission to install" stepNumber={4}>
+    After you've clicked `Install` in Bezi, return to the Unity project. Unity will ask for consent to install the plugin. Once granted, the Unity Package Manager popup will appear.
 
-    You may also see a "**_Consent Request_**" popup from Unity at this stage. This popup is completely safe to accept, and will only modify some APIs from Bezi that need to match your Unity version. None of your personal files will be affected.
+    You may also see a _"_**_Consent Request_**_"_ popup from Unity. It's completely safe to accept, as it only modifies some APIs in Bezi to match your Unity version. No personal files are affected.
   </Step>
   <Step title="Confirm connection status">
-    Once Unity and Bezi are connected, you will see a green dot next to the **Bezi icon** in Unity's menu and a green dot next to the Unity icon in Bezi's menu. If the bar in Unity is red at first, **click on the bar** to retry the connection.
+    To confirm the connection is established, check Unity's menu for a green dot next to the **Bezi icon** and Bezi's menu for green dot next to the **Unity icon**. 
+
+    If either is red, follow [these steps to fix a broken connection](https://docs.bezi.com/bezi/troubleshooting#how-do-i-reinstate-a-lost-connection-between-unity-and-bezi%3F).
 
     <Warning>
-      If either connection indicator is red, the connection must be reinstated in order for Bezi to work.
+      Both connection indicators **must** be green for Bezi to work.
     </Warning>
     <Frame>
       ![Successfulconnection Pn](/images/successfulconnection.png)
     </Frame>
   </Step>
-  <Step title="Sync all project assets" stepNumber={7}>
-    The first time you connect Bezi to a Unity project, it needs time to index the entire project. This enables Bezi to adapt all responses to your project. It’s important not to prompt Bezi until all project assets are successfully indexed, otherwise you risk receiving generic responses.
+  <Step title="Sync your project with Bezi" stepNumber={6}>
+    The first time you connect Bezi to a new Unity project, it needs time to index the entire project. Do not prompt Bezi until Asset Sync is completed, otherwise you risk breaking the sync and receiving generic responses.
 
-    See the Asset Sync docs for complete details.
-
-    <Card title="Asset Sync documentation" icon="layer-group" iconType="solid" color="#000000" href="https://docs.bezi.com/bezi/product/asset-sync">
-      
-    </Card>
+    See the [Asset Sync docs](https://docs.bezi.com/bezi/product/asset-sync) for more information on the process.
   </Step>
   <Step title="Prepare to prompt!">
     Before you prompt Bezi, we suggest you do the following:
