@@ -6,35 +6,37 @@ Bezi is a game dev tool with complete context of your Unity project. It indexes 
 
 Because Bezi connects to the Unity project, one of our core tenets is IP security. We invest heavily in keeping your project data safe and private. **<u>No project data is ever used to train models</u>**. We encourage you to review our security programme and [security FAQs](https://docs.bezi.com/bezi/security). For security-related questions, email [security@bezi.com](mailto:security@bezi.com).
 
-Studios and indie devs use Bezi to be more efficient, without compromising IP security. Give it a shot and share your thoughts on [**Discord**](https://discord.com/invite/UKWB46HTT9)!
+Studios and indie devs use Bezi to be more efficient, without compromising IP security. Give it a try and share your thoughts on [**Discord**](https://discord.com/invite/UKWB46HTT9)!
 
-<CardGroup cols={2}>
-  <Card title="Build Custom Unity Tools" icon="house-chimney-blank" href="https://docs.bezi.com/bezi/use-cases/custom-tools">
-    
-  </Card>
-  <Card title="Prototype and Iterate On Features" icon="square-code" href="https://docs.bezi.com/bezi/use-cases/prototype-iterate">
-    
-  </Card>
-  <Card title="Find and Fix Bugs" icon="magnifying-glass" href="https://docs.bezi.com/bezi/use-cases/debug">
-    
-  </Card>
-  <Card title="Document and Explain Projects" icon="newspaper" href="https://docs.bezi.com/bezi/use-cases/documentation">
-    
-  </Card>
-</CardGroup>
+# How to use Bezi 
 
-## Latest version of the Bezi app & Unity plugin
+<Note>
+  Bezi’s UI is very simple **_because_** the power lies in prompting. This **<u>feels</u>** intuitive but, just like any other tool, time gets wasted if we don't learn the fundamentals before diving in.
+</Note>
 
-<Card title="Changelog" href="https://docs.bezi.com/bezi/product/changelog">
-  
-</Card>
+## **How to prompt**
 
-## How Bezi understands your project
+1. **Best prompt structure:** Current state, Expected/Ideal state, Response format you want
+   1. Prototype example: “_I have a system for X. I want to adjust it to add Y. Prototype that and describe any necessary setup steps_.”
+2. Prompt quality = response quality
+   1. DO NOT prompt "_fix_ _errors":_ This will get get a bad response. Bezi doesn’t know which error you want fixed.
+3. Bezi cannot read minds; the more relevant info, the better! These tools help give it specifics:
+   1. Always [**tag relevant project assets, scripts, etc. in-line**](https://docs.bezi.com/bezi/product/prompt-tagging): type “@” to search or select an asset/gameObject in Unity
+   2. Use [**image attachments**](https://docs.bezi.com/bezi/product/attach-images) (screenshots, figma layouts, etc.)
+4. **If Bezi gives a response you don’t like, DO NOT PROMPT TO FIX IT.** This causes rabbit-holes. Instead:
+   1. Edit the original prompt & add extra info that the old reply missed. This regenerates the response (and wipes any changes that followed the OG).
+   2. OR Start a new thread, summarize what you you liked from the previous, and re-ask the question
+5. More Do's and Don'ts of prompting: https://docs.bezi.com/bezi/prompt-guide
 
-Bezi indexes a Unity project (assets, scripts, packages, and more) to gather complete context of it. All responses are customized according to this context.
+## **How to use threads**
 
-Do not use Bezi until asset sync is successfully completed for the project. If it isn't completed, Bezi will have incomplete project context, which may cause generic or incomplete responses.
+1. Threads are a series of prompts/responses
+2. Keep threads short: aim for \<10 prompts per thread
+3. **Only 1** topic/task per thread: start a new thread when the topic or task changes!
+4. Bezi uses an active thread’s history as context for prompt responses in the thread. Threads that are long or cover multiple tasks/topics create noise and will lead to a worse response
 
-<Card title="Asset Sync" iconType="solid" color="#000000" href="https://docs.bezi.com/bezi/product/asset-sync">
-  
-</Card>
+## **When to use Ask vs Agent Mode**
+
+- Use [**Ask Mode**](https://docs.bezi.com/bezi/modes/ask-mode) when you want Bezi to ideate, plan, search for information, etc.
+- ONLY use [**Agent Mode**](https://docs.bezi.com/bezi/modes/agent-mode) when you want Bezi to write/modify scripts.
+- Before using Agent Mode, set-up Second Dinner’s default version history tool to safely test things out
