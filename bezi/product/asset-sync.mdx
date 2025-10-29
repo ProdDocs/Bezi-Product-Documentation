@@ -3,13 +3,11 @@ title: "Asset Sync"
 description: "How Bezi indexes your project to customize responses"
 ---
 
-Asset sync enables Bezi to understand your Unity project and craft responses (scripts, bug fixes, suggestions) that are accurate and relevant for your project.
+Asset sync enables Bezi to understand your Unity project and craft accurate, helpful responses.
 
 <Warning>
-  **Do not prompt Bezi until asset sync is successfully completed**. If your project hasn't been indexed, Bezi won't have complete context and you may get generic responses.
+  Do not prompt Bezi until asset sync is successfully completed. If your project hasn't been indexed, Bezi won't have complete context and you may get generic responses.
 </Warning>
-
-When connecting a Unity project to Bezi for the first time, Bezi will need time to index the project. Larger projects will need more time to index.
 
 <AccordionGroup>
   <Accordion title="What parts of a project can Bezi index?">
@@ -23,9 +21,11 @@ When connecting a Unity project to Bezi for the first time, Bezi will need time 
 
     1. Node graphs
     2. State machines
-    3. Visual scripting: _Bezi can't visually see a project like the human eye does. _[_Attach an image_](https://docs.bezi.com/bezi/product/attach-images)_ to your prompt if you need it to see something visually._
+    3. Visual scripting: [___Bezi can't visually see a project like the human eye does. Attach an image to your prompt if you need it to see something visually.___](https://docs.bezi.com/bezi/product/attach-images)
   </Accordion>
 </AccordionGroup>
+
+When connecting a Unity project to Bezi for the first time, Bezi will need time to index the project. Larger projects will need more time to index.
 
 Once initial indexing is completed for a project, Bezi will automatically check for modifications to the project (while it's connected) and will update the context in real-time to keep responses relevant.
 
