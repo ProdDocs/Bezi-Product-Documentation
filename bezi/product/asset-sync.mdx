@@ -11,12 +11,21 @@ Asset sync enables Bezi to understand your Unity project and craft responses (sc
 
 When connecting a Unity project to Bezi for the first time, Bezi will need time to index the project. Larger projects will need more time to index.
 
-<Accordion title="What parts of a project can Bezi index? ">
-  1. Scene structure and hierarchy (up to the last save)
-  2. Scripts and code
-  3. Assets and Resources, such as: _models, meshes, materials, textures, shaders, packages (including 3rd party packages), and more_
-  4. Project settings, such as: _Unity version, render pipeline, renderer configuration, tags and layers setup, and project name_
-</Accordion>
+<AccordionGroup>
+  <Accordion title="What parts of a project can Bezi index?">
+    1. Scene structure and hierarchy (up to the last save)
+    2. Scripts and code
+    3. Assets and Resources, such as: _models, meshes, materials, textures, shaders, packages (including 3rd party packages), and more_
+    4. Project settings, such as: _Unity version, render pipeline, renderer configuration, tags and layers setup, and project name_
+  </Accordion>
+  <Accordion title="What parts of a project can Bezi NOT index?">
+    Bezi is aware the following exist, but cannot see or explain how objects like animators and shader graphs are set up.
+
+    1. Node graphs
+    2. State machines
+    3. Visual scripting: _Bezi can't visually see a project like the human eye does. _[_Attach an image_](https://docs.bezi.com/bezi/product/attach-images)_ to your prompt if you need it to see something visually._
+  </Accordion>
+</AccordionGroup>
 
 Once initial indexing is completed for a project, Bezi will automatically check for modifications to the project (while it's connected) and will update the context in real-time to keep responses relevant.
 
@@ -51,7 +60,7 @@ However, **this does not mean all assets were successfully synced**.
 
 ### When all assets are successfully synced
 
-To confirm all assets are successfully synced, check if the Asset Sync Error panel icon ( <Icon icon="bug" iconType="sharp-solid" color="#050404" /> ) has a red dot in it. If there's no red dot, you're ready to prompt Bezi\!
+To confirm all assets are successfully synced, check if the Asset Sync Error panel icon ( <Icon icon="bug" iconType="sharp-solid" color="#050404" /> ) has a red dot in it. If there's no red dot, you're ready to prompt Bezi!
 
 ## What if there are issues syncing my assets?
 
