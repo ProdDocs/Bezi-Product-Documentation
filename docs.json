@@ -90,6 +90,10 @@
     {
       "source": "bezi/product/old-rules",
       "destination": "bezi/product/project-rules"
+    },
+    {
+      "source": "bezi/old-setup",
+      "destination": "bezi/install-setup"
     }
   ]
 }
