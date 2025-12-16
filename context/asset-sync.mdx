@@ -3,64 +3,60 @@ title: "Asset Sync"
 description: "How Bezi indexes your project  "
 ---
 
-Asset sync enables Bezi to understand your Unity project and craft accurate, helpful responses.
+Asset sync is how Bezi develops complete context of your project, in order to provide accurate, helpful responses.
 
-Do not prompt Bezi until asset sync is successfully completed. If your project hasn't been indexed, Bezi won't have complete context and you may get generic responses.
+<Warning>
+  Do not prompt Bezi until asset sync is completed. Until your project is fully indexed, Bezi won't have complete context and you may get generic responses.
+</Warning>
 
-<Expandable title="What Bezi can index / know" defaultOpen="true">
-  
-</Expandable>
+The first time you connect Bezi to a Unity project, it will index the entire project. Larger projects take more time to index.
 
-| What Bezi CAN index / know                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | What Bezi CANNOT index / know                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **/Assets**<br />- Scripts (Monobehaviours, Scriptable Objects)<br />- Materials, Models, InputActions, Render Pipelines, etc. <br />- Scenes, Prefabs (in Edit _AND_ Play Mode)<br />  - Hierarchy<br />  - Components, Variables<br />**/Packages**<br />- All<br />- External packages and folders (enabled on request) <br />**In-Bezi context**   <br />- Rules<br />- Pages<br />- Pins<br />- History of the active thread<br />**Any searchable information on the web**<br />- Unity docs<br />- Stack Overflow, etc. | - **Visual layouts**   - e.g. UI visuals, visual behavior in scene   - Bezi doesn’t have a constant camera running on your scene— it understands it through data.    - **Image attachments are the workaround**! - **Git diffs**   - “What was in that last push?”   - Bezi knows the _present state_ of a project, but cannot track / compare to past versions - **Node-based stuff (Animators, Shadergraphs, etc.)**   - **Some understanding**, but can’t create or modify it   - Parameters yes; layout, iffy. |
+Bezi only needs to index the entire project once. After that, Bezi automatically tracks updates in the project and updates its context in real-time.
 
-When connecting a Unity project to Bezi for the first time, Bezi will need time to index the project. Larger projects will need more time to index.
+**It's important to know what parts of a project Bezi can and cannot know. This informs what Bezi is best-suited to help with**.
 
-Once initial indexing is completed for a project, Bezi will automatically check for modifications to the project (while it's connected) and will update the context in real-time to keep responses relevant.
+| What Bezi CAN index / know                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | What Bezi CANNOT index / know                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **/Assets**<br />- Scripts (Monobehaviours, Scriptable Objects)<br />- Materials, Models, InputActions, Render Pipelines, etc. <br />- Scenes, Prefabs (in Edit _AND_ Play Mode)<br />  - Hierarchy<br />  - Components, Variables<br />**/Packages**<br />- All<br />- External packages and folders (enabled on request) <br />**In-Bezi context**   <br />- Rules<br />- Pages<br />- Pins<br />- History of the active thread<br />**Any searchable information on the web**<br />- Unity docs<br />- Stack Overflow, etc. | **Visual layouts**   - e.g. UI visuals, visual behavior in scene   - Bezi doesn’t have a constant camera running on your scene— it understands it through data.    - **Image attachments are the workaround**! - **Git diffs**   - “What was in that last push?”   - Bezi knows the _present state_ of a project, but cannot track / compare to past versions - **Node-based stuff (Animators, Shadergraphs, etc.)**   - **Some understanding**, but can’t create or modify it   - Parameters yes; layout, iffy. |
 
 ## **Where to track asset's sync status**
 
-Track the project's asset sync status in the **Asset sync panel**. To open the Asset sync panel, click the icon in the bottom bar.
+Track the project's sync status in the **Asset sync panel**. The panel is located in the bottom right toolbar.
 
-## **Tracking asset sync completion**
+## **Asset sync process**
 
-Before opening the Asset sync panel, confirm the Bezi app and the Unity project are connected.
+Before opening the asset sync panel, confirm Bezi and the Unity project are connected.
 
-**Asset sync panel icons**
+When asset sync is in progress, you’ll see a list of project assets, packages, etc. in the index queue. Status icons update in real-time so you can track progress.
 
-- 
-- 
-- 
-- 
+<Accordion title="Asset sync panel icons" defaultOpen>
+  There are a few different icons you'll see in the Asset Sync queue that indicate an asset's indexing status.
 
-### **When asset sync is in progress**
+  - <Icon icon="loader" iconType="sharp-solid" /> -  asset is in the process of indexing
+  - <Icon icon="circle-0" iconType="sharp-solid" color="#0bf139" /> -  asset has been successfully indexed
+  - <Icon icon="triangle-exclamation" iconType="sharp-solid" color="#fcd415" /> -  asset is taking a long time to sync, click the `refresh` icon in the top right of the Asset sync panel to restart the sync for it
+  - <Icon icon="circle-0" iconType="sharp-solid" color="#f10909" /> -  asset was not indexed (see Asset Sync issues section)
+</Accordion>
 
-When asset sync is in progress, you’ll see a list of project assets to be indexed in the panel. Asset's status icons will update as they're indexed so you can track their progress in real time.
-
-### **When assets are done syncing**
+### **Project is done syncing**
 
 When Asset sync has indexed everything, the panel will say “_asset sync queue is empty_”.
 
-However, **this does not mean all assets were successfully synced**.
+However, **this does not mean the project was successfully synced**.
 
-### **When all assets are successfully synced**
+### **Project is successfully synced**
 
-To confirm all assets are successfully synced, check if the Asset Sync Error panel icon ( ) has a red dot in it. If there's no red dot, you're ready to prompt Bezi!
+To confirm the project is successfully synced, open the **Error tab** in the Asset sync panel. If there are no errors, you're ready to prompt Bezi!
 
-## **What if there are issues syncing my assets?**
+## **What if there are issues syncing my project?**
 
-If there are issues syncing assets, the **Asset sync errors panel** icon () will have a red dot in it. If this happens:
-
-1. Open the Asset sync errors panel to see what the issue is
+1. Review the errors in the Asset sync panel's **Error tab**
 2. Return to the Asset sync panel
 3. Click the `refresh` icon in the top right of the Asset sync panel to force an update
 
-If the Asset sync errors persist, take the following steps to resolve possible project-level errors. If quitting the Bezi app resolves the errors, you do not need to uninstall the plugin.
+If the errors persist, take the following steps to resolve possible project-level issues. If Step 1 resolves the errors, do not proceed to Step 2.
 
 1. Quit the Bezi app, reopen it, and click the `refresh` icon in the Asset sync panel
-2. Uninstall the Bezi Unity plugin, reinstall it, and click the `refresh` icon in the Asset sync panel
+2. Uninstall Bezi's Unity plugin, reinstall it, and click the `refresh` icon in the Asset sync panel
 
-If the Asset sync errors panel still shows error(s), take a screenshot of the Unity console log errors and email it to us at [**support@bezi.com**](mailto:support@bezi.com) so we can help resolve it.
-
-1. 
+If the Errors tab still shows error(s), take a screenshot of the Unity console log errors and email it to us at [**support@bezi.com**](mailto:support@bezi.com) so we can help resolve it.
