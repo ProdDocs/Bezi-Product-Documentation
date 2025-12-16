@@ -1,15 +1,13 @@
 ---
-title: "Asset Sync"
-description: "How Bezi indexes your project  "
+title: "Project Indexing"
+description: "Asset sync is how Bezi develops complete context of your project, in order to provide accurate, helpful responses."
 ---
 
-Asset sync is how Bezi develops complete context of your project, in order to provide accurate, helpful responses.
+The first time you connect Bezi to a Unity project, it will index the entire project. Larger projects take more time to index.
 
 <Warning>
   Do not prompt Bezi until asset sync is completed. Until your project is fully indexed, Bezi won't have complete context and you may get generic responses.
 </Warning>
-
-The first time you connect Bezi to a Unity project, it will index the entire project. Larger projects take more time to index.
 
 Bezi only needs to index the entire project once. After that, Bezi automatically tracks updates in the project and updates its context in real-time.
 
@@ -47,22 +45,21 @@ Bezi only needs to index the entire project once. After that, Bezi automatically
   <Tab title="What Bezi cannot index / know">
     **Visual layouts**
 
-    - e.g. UI visuals, visual behavior in scene 
+    - e.g. UI visuals, visual behavior in scene
     - Bezi can only understand visual via data - there isn't a constant camera running in your scene, so it cannot see or understand visuals like a human can
-    - Use Image attachments whenever you want Bezi to "see" something - best workaround for now!  
+    - Use Image attachments whenever you want Bezi to "see" something - best workaround for now!
 
     **Git diffs**
 
-    - “What was in that last push?” 
-    - Bezi knows the present state of a project, but cannot track / compare to past versions 
+    - “What was in that last push?”
+    - Bezi knows the present state of a project, but cannot track / compare to past versions
 
     **Node-based stuff (Animators, Shadergraphs, etc.)**
 
-    - Some understanding, but can’t create or modify it 
+    - Some understanding, but can’t create or modify it
     - Parameters yes; layout, iffy
   </Tab>
 </Tabs>
-
 
 ## **Where to track asset's sync status**
 
