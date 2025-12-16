@@ -1,11 +1,7 @@
 ---
-title: "Agent Mode (beta)"
-description: "Learn about Bezi's Agent Mode, what's possible with it, and how it differs from Ask Mode."
+title: "Agent Mode"
+description: "Learn how Agent Mode differs from Ask Mode, and when to use it"
 ---
-
-<Warning>
-  **Agent Mode is in beta and active development**. If you're wary of how Agent Mode will work with your project, we recommend testing it in an example project first.
-</Warning>
 
 ## What is Agent Mode?
 
@@ -14,7 +10,7 @@ Agent Mode is Bezi’s _actionable_ setting. It understands your entire Unity pr
 To enter Agent Mode, select the **mode dropdown** (below the prompt textbox) and select **Agent**. When you’re in Agent Mode, it will look like this:
 
 <Frame>
-  ![Agent Mode Pn](/images/agent-mode.png)
+  ![Agent Mode](/images/agent-mode.png)
 </Frame>
 
 ## How's Agent Mode different than Ask Mode?
@@ -53,6 +49,18 @@ When Bezi suggests a script with the `Keep` or `Undo` option, it's been created 
 
 **Keeping or Undoing a suggestion is a non-reversible action**. Once either button is clicked, you can't return to the undecided state. If you wish to implement a suggestion you undid, you can return to that section, copy it from the chat or in canvas, and manually implement it (as you would in Ask Mode).
 
+### Restore Checkpoint
+
+If you want to bring the project back to an earlier state and erase any kept changes from after that state, use **Restore Checkpoint**.
+
+For example, if you go down a rabbit hole working on a particular mechanic with Bezi, only to get feedback that your second iteration is the right direction; you can restore to that response and continue to iterate from there.
+
+Hoever over the Bezi responses you want to revert to and select the `Restore Checkpoint` button to go back to a specific conclusive state. 
+
+<Note>
+  Restore Checkpoint does not revert Agent Mode suggestions to an undecided state. It erases all code additions/modifications made by Bezi after the conclusive point.
+</Note>
+
 ### Diffs
 
 We use **diffs** to indicate exactly what changes are being to files:
@@ -70,17 +78,3 @@ To view in the context of the entire script, open the script in **Canvas** (diff
 ### Asset Drawer
 
 The Asset Drawer lists all created and modified files. It sits above the prompt box so you can view all changes made in the duration of a thread in one place and bulk keep or undo a response's suggestions.
-
-### Restore Checkpoint
-
-Once a suggestion is kept or undone, that suggestion cannot be reverted back to an undecided state. However, if you want to bring the project back to an earlier state and erase any kept changes from Bezi, use **Restore Checkpoint**.
-
-Select the `Restore Checkpoint` button to go back to a specific conclusive state, identified by a Bezi response. This is a great "last ditch" option if you fear that there have been not-easily-reversible changes made to a project when in Agent Mode.
-
-For example, if you go down a rabbit hole working on a particular mechanic, only to get feedback that your second iteration is the right direction; you can restore to that response and continue to iterate from there.
-
-<Note>
-  Restore Checkpoint does not revert kept code to undecided. It returns you to a conclusive point in time of the entire project, erasing any new code and/or code modifications made by Bezi after that point.
-</Note>
-
-This functionality is similar to the [Edit Prompt](https://docs.bezi.com/bezi/product/edit-prompts) functionality, but it allows you to return to a specific response without anything regenerating (whereas with Editing, you have to modify a prompt and therefore regenerate it’s results to return to that point).
