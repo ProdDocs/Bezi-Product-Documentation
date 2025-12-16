@@ -13,7 +13,38 @@ The first time you connect Bezi to a Unity project, it will index the entire pro
 
 Bezi only needs to index the entire project once. After that, Bezi automatically tracks updates in the project and updates its context in real-time.
 
-**It's important to know what parts of a project Bezi can and cannot know. This informs what Bezi is best-suited to help with**.
+## What Bezi can vs cannot know about a project
+
+**It's important to know this, as it informs what Bezi is best-suited to help with**.
+
+<Tabs>
+  <Tab title="What Bezi can index / know">
+    **/Assets**
+
+    - Scripts (Monobehaviours, Scriptable Objects)
+    - Materials, Models, InputActions, Render Pipelines, etc. 
+    - Scenes, Prefabs (in Edit AND Play Mode)
+      - Hierarchy
+      - Components, Variables
+
+    **/Packages**
+
+    - All
+    - External packages and folders can be enabled on request
+
+    **In-Bezi context   **
+
+    - Rules
+    - Pages
+    - Pins
+    - History of the active thread
+
+    **Any searchable information on the web**
+
+    - Unity docs
+    - Stack Overflow, etc.
+  </Tab>
+</Tabs>
 
 | What Bezi CAN index / know                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | What Bezi CANNOT index / know                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
