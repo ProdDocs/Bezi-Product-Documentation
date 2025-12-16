@@ -32,7 +32,7 @@ Bezi only needs to index the entire project once. After that, Bezi automatically
     - All
     - External packages and folders can be enabled on request
 
-    **In-Bezi context   **
+    **In-Bezi context**
 
     - Rules
     - Pages
@@ -44,11 +44,25 @@ Bezi only needs to index the entire project once. After that, Bezi automatically
     - Unity docs
     - Stack Overflow, etc.
   </Tab>
+  <Tab title="What Bezi cannot index / know">
+    **Visual layouts**
+
+    - e.g. UI visuals, visual behavior in scene 
+    - Bezi can only understand visual via data - there isn't a constant camera running in your scene, so it cannot see or understand visuals like a human can
+    - Use Image attachments whenever you want Bezi to "see" something - best workaround for now!  
+
+    **Git diffs**
+
+    - “What was in that last push?” 
+    - Bezi knows the present state of a project, but cannot track / compare to past versions 
+
+    **Node-based stuff (Animators, Shadergraphs, etc.)**
+
+    - Some understanding, but can’t create or modify it 
+    - Parameters yes; layout, iffy
+  </Tab>
 </Tabs>
 
-| What Bezi CAN index / know                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | What Bezi CANNOT index / know                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **/Assets**<br />- Scripts (Monobehaviours, Scriptable Objects)<br />- Materials, Models, InputActions, Render Pipelines, etc. <br />- Scenes, Prefabs (in Edit _AND_ Play Mode)<br />  - Hierarchy<br />  - Components, Variables<br />**/Packages**<br />- All<br />- External packages and folders (enabled on request) <br />**In-Bezi context**   <br />- Rules<br />- Pages<br />- Pins<br />- History of the active thread<br />**Any searchable information on the web**<br />- Unity docs<br />- Stack Overflow, etc. | **Visual layouts**   - e.g. UI visuals, visual behavior in scene   - Bezi doesn’t have a constant camera running on your scene— it understands it through data.    - **Image attachments are the workaround**! - **Git diffs**   - “What was in that last push?”   - Bezi knows the _present state_ of a project, but cannot track / compare to past versions - **Node-based stuff (Animators, Shadergraphs, etc.)**   - **Some understanding**, but can’t create or modify it   - Parameters yes; layout, iffy. |
 
 ## **Where to track asset's sync status**
 
