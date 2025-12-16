@@ -19,7 +19,7 @@ If you run into something that isn’t addressed here or feels like a bug, pleas
 - **Unity 2022**
 - **Unity 2021**
 
-### I see a popup that says _“Failed to install Unity Plugin”_  when I try connecting it with my Unity project. What do I do?
+### I see a _“Failed to install Unity Plugin”_  popup when I try connecting Bezi with my Unity project. What do I do?
 
 Occasionally this error shows if a Unity set-up isn’t conducive with the Bezi plugin. Please try these things (in order) to see if either resolve. If neither work, reach out to [support@bezi.com](mailto:support@bezi.com) for assistance.
 
@@ -51,6 +51,10 @@ We use some APIs in Bezi that can be auto-updated by Unity, but these may change
 The connection indicators in your Unity project and Bezi app will both be green if they’re connected. If either are red, the connection is broken and the apps cannot communicate.
 
 > If you've installed the plugin but Bezi and Unity aren't successfully connecting, see the question below about troubleshooting a failed or lost connection.
+
+<Frame>
+  ![Successfulconnection](/images/successfulconnection.png)
+</Frame>
 
 ### **How do I manually update the Bezi plugin in Unity?**
 
@@ -87,17 +91,19 @@ There are a few common fixes. If none of these work, we recommend you follow the
 If Bezi isn’t connected to your Unity project or hasn’t indexed all the assets in it, it won’t have the context needed to return project-specific responses. Follow these steps to ensure the project is connected and indexed:
 
 1. Confirm Bezi and the Unity project are connected
-2. Open the **Asset sync** panel ( )
+2. Open the **Asset sync** panel in the bottom right toolbar
    1. if it shows assets in the queue, wait for them to finish syncing before prompting Bezi
    2. if says “_asset sync queue is empty_”, proceed to Step 3
-1. Check if there's anything listed in the **Asset sync errors** panel ( ). If so, follow [**these steps**](https://docs.bezi.com/bezi/product/asset-sync#what-if-there-are-issues-syncing-my-assets%3F) in the Asset Sync documentation
+1. Check if there's anything listed in the **Asset sync errors** panel. If so, follow [**these steps**](https://docs.bezi.com/bezi/product/asset-sync#what-if-there-are-issues-syncing-my-assets%3F) in the Asset Sync documentation
 2. If there are no visible errors or active syncs, there may have been an issue with the original connection. If that happens, we recommend you follow the steps above to manually update Bezi's Unity plugin to force a full resync of your assets. While syncing, try to avoid making changes in Unity (e.g. saving an updated scene, creating or changing scripts, etc.)
 
 ## **Syncing Your Unity Project with Bezi**
 
 See the Asset Sync product documentation for all questions regarding the asset sync process, how to know when a project is successfully, and how to understand the information in the Asset sync panel and Asset sync errors panel.
 
-## **Asset Sync documentation**
+<Card title="Asset Sync documentation" icon="layer-group" iconType="solid" href="https://docs.bezi.com/bezi/product/asset-sync">
+  
+</Card>
 
 If you have a question not answered in the documentation, please email [**support@bezi.com**](mailto:support@bezi.com) or post in our [**Discord server**](https://discord.com/invite/UKWB46HTT9).
 
@@ -123,11 +129,9 @@ If the connection indicators in Unity and Bezi are both green, but Bezi is stuck
 
 ## **Other Common Errors, Bugs & FAQ**
 
-### **My project is taking longer to compile code and seems to be moving slower after installing Bezi. Why?**
+### **My project seems to take longer to compile code and move slower after installing Bezi. Why?**
 
-This is a known bug. We've mostly resolved it but are still finding edge cases. If you encounter this, please tell us! Email [**support@bezi.com**](mailto:support@bezi.com) with a description of the problem and any screenshots of the console, profiler logs, etc. All information helps!
-
-The best way for us to nail down a solution is to figure out exactly what’s causing the problem, and the best way to do that is to observe and reproduce the issue, so we may reach out to ask about scheduling a hands-on troubleshooting call with our devs.
+This should never happen. If you encounter it, please email [**support@bezi.com**](mailto:support@bezi.com) with a description of the problem and any screenshots of the console, profiler logs, etc..
 
 ### **Why am I not seeing my project in the projects dropdown?**
 
