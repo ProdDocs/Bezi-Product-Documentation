@@ -51,3 +51,88 @@ We use some APIs in Bezi that can be auto-updated by Unity, but these may change
 The connection indicators in your Unity project and Bezi app will both be green if they’re connected. If either are red, the connection is broken and the apps cannot communicate.
 
 > If you've installed the plugin but Bezi and Unity aren't successfully connecting, see the question below about troubleshooting a failed or lost connection.
+
+### **How do I manually update the Bezi plugin in Unity?**
+
+When a new version of Bezi is released, a green button directing you to update your app and plugin will appear. Click the button to update the Bezi app and the Unity plugin before you start or resume working.
+
+Occasionally Unity’s Package Manager doesn’t automatically update the plugin. If you recently updated Bezi and it doesn’t seem to work with Unity, follow these steps:
+
+1. Close Bezi: right-click on the desktop app \> `Quit`
+2. Open the Unity project you’ve connected with Bezi
+3. Open Unity Package Manager: Window menu \> `Package Manager`
+4. Delete the Bezi plugin: open “Bezi Sidekick” in the Package Manager \> `Remove`
+5. Reopen the Bezi app
+6. Select the green `Install Unity Plugin` button in the bottom left corner
+7. Click on the Unity project to see the Package Manager popup
+8. The Unity plugin should now be updated!
+
+If the green `Install Unity Plugin` button doesn't appear in Bezi app for any reason, go to our [**Changelog**](https://docs.bezi.com/bezi/product/changelog) to download the most recent Unity plugin version.
+
+### **How do I reinstate a lost connection between Unity and Bezi?**
+
+There are a few common fixes. If none of these work, we recommend you follow the steps above to manually update Bezi's Unity plugin to force a new connection.
+
+1. Check that you have reliable internet connection
+2. Confirm both the Unity project and the Bezi app are open and connected
+3. Confirm the **Project Picker** dropdown shows the correct Unity project name
+4. Confirm you're running a Unity version that Bezi supports
+5. Close Bezi & Unity entirely
+6. Restart your machine
+
+## **Unsatisfactory Responses**
+
+### **Bezi is returning generic responses or doesn’t seem to reference all my project’s assets in responses. Why not and how can I fix this?**
+
+If Bezi isn’t connected to your Unity project or hasn’t indexed all the assets in it, it won’t have the context needed to return project-specific responses. Follow these steps to ensure the project is connected and indexed:
+
+1. Confirm Bezi and the Unity project are connected
+2. Open the **Asset sync** panel ( )
+   1. if it shows assets in the queue, wait for them to finish syncing before prompting Bezi
+   2. if says “_asset sync queue is empty_”, proceed to Step 3
+1. Check if there's anything listed in the **Asset sync errors** panel ( ). If so, follow [**these steps**](https://docs.bezi.com/bezi/product/asset-sync#what-if-there-are-issues-syncing-my-assets%3F) in the Asset Sync documentation
+2. If there are no visible errors or active syncs, there may have been an issue with the original connection. If that happens, we recommend you follow the steps above to manually update Bezi's Unity plugin to force a full resync of your assets. While syncing, try to avoid making changes in Unity (e.g. saving an updated scene, creating or changing scripts, etc.)
+
+## **Syncing Your Unity Project with Bezi**
+
+See the Asset Sync product documentation for all questions regarding the asset sync process, how to know when a project is successfully, and how to understand the information in the Asset sync panel and Asset sync errors panel.
+
+## **Asset Sync documentation**
+
+If you have a question not answered in the documentation, please email [**support@bezi.com**](mailto:support@bezi.com) or post in our [**Discord server**](https://discord.com/invite/UKWB46HTT9).
+
+## **Bezi App**
+
+### **I opened Bezi and got stuck on the splash screen. How do I get past it?**
+
+This can happen if the app is out of date and auto-update wasn’t able to execute. Follow these steps to manually update the app:
+
+1. Open [**https://bezi.com/auth-app**](https://bezi.com/auth-app)
+2. Select the `Launch app` button
+3. Follow the prompts to update the app to the newest version
+
+If that doesn’t work, email [**support@bezi.com**](mailto:support@bezi.com) and we can send you the latest version of the app to manually install.
+
+### **I submitted a prompt to Bezi and now it’s stuck in “thinking mode”.**
+
+If the connection indicators in Unity and Bezi are both green, but Bezi is stuck in “thinking mode” there are a few ways to reset it:
+
+1. Right-click anywhere in the Bezi app and select `Reload`
+2. Quit and reopen Bezi
+3. Quit and reopen Unity
+
+## **Other Common Errors, Bugs & FAQ**
+
+### **My project is taking longer to compile code and seems to be moving slower after installing Bezi. Why?**
+
+This is a known bug. We've mostly resolved it but are still finding edge cases. If you encounter this, please tell us! Email [**support@bezi.com**](mailto:support@bezi.com) with a description of the problem and any screenshots of the console, profiler logs, etc. All information helps!
+
+The best way for us to nail down a solution is to figure out exactly what’s causing the problem, and the best way to do that is to observe and reproduce the issue, so we may reach out to ask about scheduling a hands-on troubleshooting call with our devs.
+
+### **Why am I not seeing my project in the projects dropdown?**
+
+Bezi's Project Picker dropdown list is based on the list of projects in Unity Hub, so if your project is not included there or has been changed (e.g. renamed) Bezi may be struggling to find it. Here are a few ways to troubleshoot it:
+
+1. If your project is not in Unity Hub, add it: `Add` \> `Add project from disk/repository`
+2. If you renamed your project, look for the original project name in the dropdown instead
+3. Manually add your Unity project to Bezi: Open the **Project Picker** dropdown \> `Add Project`
