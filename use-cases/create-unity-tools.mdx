@@ -1,3 +1,58 @@
 ---
 title: "Create Unity Tools"
 ---
+
+It’s very easy to generate a fully-functional tool, purpose built for a task or workflow, using Bezi. 
+
+When tools creation is automated and highly customized to a niche task or workflow, you can use them more freely. Take advantage of having a custom tool generater on-hand! 
+
+## How can I use Bezi to automatically create Unity Tools?
+
+1. Document what you want the tool to do
+2. Prompt Bezi with the right details (Steps 1-5, **below**) and ask it to create a tool
+3. Bezi will create a tool for your exact specs!
+
+<Tip>
+  If you have guidelines or standards that Bezi-generated tools should follow, document them in a [**Page**](https://docs.bezi.com/context/pages) and [pin the page](https://docs.bezi.com/context/pins) whenever you ask Bezi to create a tool. 
+</Tip>
+
+## Steps to create a Unity Tool 
+
+The level of instruction and detail in the tool prompt dictates the tool's detail and polish.
+
+1. **Tell Bezi you want it to create a Unity tool**
+2. Define the process or workflow you want to automate
+3. Define what the tool’s output should be, in as much detail as possible
+4. Define any tool structure requirements: the form it should take, UI preferences, etc.
+5. Identify important inputs  from the project (these will be in-line prompt pins)
+6. [[**Agent Mode**](https://docs.bezi.com/bezi/modes/agent-mode)] Draft a prompt with all the information in Steps 1-5. Add [**in-prompt pins**](https://docs.bezi.com/bezi/product/prompt-tagging) for all inputs and variables from Step 5 (type `@`, then the name)
+7. Submit the prompt
+8. Bezi creates the tool in Unity and writes documentation on how to use it
+   1. Bezi create all tool scripts in Unity but, if tool set-up requires attaching scripts in-scene, Bezi will give instructions to complete this step
+9. Use your tool! 
+
+### Steps to edit a Unity Tool created by Bezi
+
+**If you like the Unity Tool but have a few minor edits:**
+
+1. [Agent Mode] Write another prompt with a detailed explanation of the edits
+2. Submit the prompt and test the updated tool
+3. Select Keep All on the response if you like it. If not, keep tweaking
+
+**If you want something very different than what was created:**
+
+1. Click the edit button on the original prompt
+2. Accept the pop-up to revert changes (this undoes any changes made after the edited prompt)
+3. Identify what information is missing or needs editing in the original tool prompt to get what you want
+4. Edit the prompt to account for that missing/incorrect info and submit!
+
+## Prompt examples
+
+1. Automate a repetitive process/pipeline
+   - **Prompt Example**: _Make a setup tool that will configure a given animal FBX as a prefab with the necessary components (@AnimalController.cs, Rigidbody, Collider). In the tool UI, include a dropdown for all animal types in @Animals folder, and add the selected animal-type’s script. Follow the rules in @UI-Guidelines-Page._
+2. Automate UI create
+   - **Prompt Example**: _Make a tool that will create the pictured UI for the Achievements screen. Create it as a prefab, use TextMeshPro, and include the ability to assign each sprite. Follow the scaling guidelines in @UI-Guidelines-Page._
+3. Automate very manual, 1-off setup process
+   - **Prompt Example**: _Create a partial ragdoll generator tool that I can attach to an object to setup configurable joints on it and all of its children._
+4. Create a more intuitive interface for a visual/artistic workflow
+   - **Prompt Example**: _Create a canvas tool to help me lay out and generate new levels. I want to be able to add tiles, with each tile corresponding to a different prefab; place them on the grid; and press a button that generates that layout in-scene._
