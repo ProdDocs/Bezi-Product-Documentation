@@ -24,6 +24,13 @@
             ]
           },
           {
+            "group": "Modes",
+            "pages": [
+              "bezi/modes/agent-mode",
+              "bezi/modes/ask-mode"
+            ]
+          },
+          {
             "group": "Use Cases",
             "pages": [
               "bezi/use-cases/custom-tools",
@@ -31,13 +38,6 @@
               "bezi/use-cases/debug",
               "bezi/use-cases/documentation",
               "bezi/use-cases/learning"
-            ]
-          },
-          {
-            "group": "Modes",
-            "pages": [
-              "bezi/modes/agent-mode",
-              "bezi/modes/ask-mode"
             ]
           },
           {
@@ -106,6 +106,18 @@
      {
       "source": "bezi/product/changelog",
       "destination": "get-started/changelog"
-    }
+    },
+    {
+      "source": "bezi/product/threads",
+      "destination": "xx"
+    },
+    {
+      "source": "bezi/modes/agent-mode",
+      "destination": "xx"
+    },
+     {
+      "source": "bezi/modes/ask-mode",
+      "destination": "xx"
+    },
   ]
 }
