@@ -43,7 +43,6 @@
           {
             "group": "Product",
             "pages": [
-              "bezi/product/changelog",
               "bezi/product/asset-sync",
               "bezi/product/project-rules",
               "bezi/product/prompt-tagging",
