@@ -25,7 +25,7 @@ The instruction and detail in your prompt dictates the tool's level of completio
 3. Define what the tool’s output should be, in as much detail as possible
 4. Define any tool structure requirements: the form it should take, UI preferences, etc.
 5. Identify important inputs and project information for the tool (assets, pages, scripts, etc.)
-6. [[**Agent Mode**](https://docs.bezi.com/bezi/modes/agent-mode)] Draft a prompt with all the information in Steps 1-5, [in-line pinning](https://docs.bezi.com/context/pins) the inputs from Step 5 (type `@`, then their name to search)
+6. [[**Agent Mode**](https://docs.bezi.com/bezi/modes/agent-mode)] Draft a prompt with all the information in Steps 1-5, the inputs from Step 5 will be [in-line pins](https://docs.bezi.com/context/pins) (type `@`, then their name to search)
 7. Submit the prompt
 8. Bezi creates the tool in Unity and writes documentation on how to use it
    - Bezi creates all tool scripts in Unity
@@ -52,7 +52,7 @@ The instruction and detail in your prompt dictates the tool's level of completio
 ## Prompt examples
 
 1. Automate a repetitive process/pipeline
-   - **Prompt Example**: _```Make a setup tool that will configure a given animal FBX as a prefab with the necessary components (@AnimalController.cs, Rigidbody, Collider). In the tool UI, include a dropdown for all animal types in @Animals folder, and add the selected animal-type’s script. Follow the rules in @UI-Guidelines-Page```_.
+   - **Prompt Example**: _`Make a setup tool that will configure a given animal FBX as a prefab with the necessary components (@AnimalController.cs, Rigidbody, Collider). In the tool UI, include a dropdown for all animal types in @Animals folder, and add the selected animal-type’s script. Follow the rules in @UI-Guidelines-Page`_.
 2. Automate UI create
    - **Prompt Example**: _`Make a tool that will create the pictured UI for the Achievements screen. Create it as a prefab, use TextMeshPro, and include the ability to assign each sprite. Follow the scaling guidelines in @UI-Guidelines-Page`_.
 3. Automate very manual, 1-off setup process
