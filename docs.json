@@ -143,6 +143,22 @@
     {
       "source": "bezi/product/pages-folders",
       "destination": "context/pages"
+    },
+     {
+      "source": "bezi/product/edit-prompts",
+      "destination": "more/edit-prompts"
+    },
+     {
+      "source": "bezi/product/prompt-guide",
+      "destination": "more/prompt-guide"
+    },
+    {
+      "source": "bezi/product/canvas",
+      "destination": "more/canvas"
+    },
+    {
+      "source": "bezi/product/enhanced-code-intelligence",
+      "destination": "more/enhanced-code-intelligence"
     }
   ]
 }
