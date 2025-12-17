@@ -61,9 +61,10 @@
           {
             "group": "More",
             "pages": [
-              "bezi/product/edit-prompts",
-              "bezi/product/enhanced-code-intelligence",
-              "bezi/product/canvas"
+              "more/edit-prompts",
+              "more/prompt-guide",
+              "more/canvas",
+              "more/enhanced-code-intelligence"
             ]
           }
         ]
