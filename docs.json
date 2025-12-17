@@ -34,21 +34,21 @@
             ]
           },
           {
-            "group": "Use Cases",
-            "pages": [
-              "bezi/use-cases/custom-tools",
-              "bezi/use-cases/prototype-iterate",
-              "bezi/use-cases/debug",
-              "bezi/use-cases/documentation"
-            ]
-          },
-          {
             "group": "Context",
             "pages": [
               "context/index-project",
               "context/pins",            
               "context/image-attachments",
               "context/pages"
+            ]
+          },
+          {
+            "group": "Use Cases",
+            "pages": [
+              "bezi/use-cases/custom-tools",
+              "bezi/use-cases/prototype-iterate",
+              "bezi/use-cases/debug",
+              "bezi/use-cases/documentation"
             ]
           },
           {
