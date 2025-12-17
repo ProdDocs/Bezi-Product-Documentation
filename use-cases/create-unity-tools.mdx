@@ -2,9 +2,9 @@
 title: "Create Unity Tools"
 ---
 
-Generate fully-functional tools, purpose built for a task or your workflow, in a few minutes.
+Generate fully-functional tools, purpose built for a task or your workflow.
 
-When tools creation is automated and highly customized to a niche task or workflow, you can use them more freely. Take advantage of having a custom tool generater on-hand!
+When you can generate tools in minutes instead of building them manually, you're free to use them for all sorts of manual and repetitive tasks - not only the _most_ painful ones. 
 
 ## How can I use Bezi to automatically create tools?
 
@@ -25,21 +25,24 @@ The instruction and detail in your prompt dictates the tool's level of completio
 3. Define what the tool’s output should be, in as much detail as possible
 4. Define any tool structure requirements: the form it should take, UI preferences, etc.
 5. Identify important inputs and project information for the tool (assets, pages, scripts, etc.)
-6. [[**Agent Mode**](https://docs.bezi.com/bezi/modes/agent-mode)] Draft a prompt with all the information in Steps 1-5. Add the inputs from Step 5 as [**in-line pins**](https://docs.bezi.com/bezi/product/prompt-tagging) (type `@`, then their name to search)
+6. [[**Agent Mode**](https://docs.bezi.com/bezi/modes/agent-mode)] Draft a prompt with all the information in Steps 1-5, [in-line pinning](https://docs.bezi.com/context/pins) the inputs from Step 5 (type `@`, then their name to search)
 7. Submit the prompt
 8. Bezi creates the tool in Unity and writes documentation on how to use it
-   1. Bezi create all tool scripts in Unity but, if tool set-up requires attaching scripts in-scene, Bezi will give instructions to complete this step
-1. Use your tool!
+   - Bezi creates all tool scripts in Unity
+   - If tool set-up requires attaching scripts in-scene, Bezi will give instructions for this step
+1. Start using your tool! 
 
-### Steps to edit a Bezi-created tool
+## Steps to edit a Bezi-created tool
 
-_If you generally like the tool but want to make a few minor edits..._
+**If you generally like the tool but want to make a few minor edits...**
 
-1. [**Agent Mode**] Write another prompt with a detailed explanation of the edit 
+1. [**Agent Mode**] Write another prompt with a detailed explanation of the edits
+   - Include current state vs desired state
+   - [Attach images](https://docs.bezi.com/context/image-attachments) for any visual edits 
 2. Submit the prompt and test the updated tool
 3. Select Keep All on the response if you like it. If not, edit the last prompt to include missing details or specifications that Bezi needes
 
-_If you want something very different than what was created..._
+**If you want something very different than what was created...**
 
 1. Click the edit button on the original prompt
 2. Accept the pop-up to revert changes (this undoes any changes made after the edited prompt)
