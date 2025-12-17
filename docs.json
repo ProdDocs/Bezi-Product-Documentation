@@ -52,22 +52,18 @@
             ]
           },
           {
-            "group": "Product",
-            "pages": [
-              "bezi/product/asset-sync",
-              "bezi/product/prompt-tagging",
-              "bezi/product/pages-folders",
-              "bezi/product/attach-images",
-              "bezi/product/edit-prompts",
-              "bezi/product/enhanced-code-intelligence",
-              "bezi/product/canvas"
-            ]
-          },
-          {
             "group": "Account Settings",
             "pages": [
               "bezi/account-settings/plans-usage",
               "bezi/account-settings/subscription-billing"
+            ]
+          },
+          {
+            "group": "More",
+            "pages": [
+              "bezi/product/edit-prompts",
+              "bezi/product/enhanced-code-intelligence",
+              "bezi/product/canvas"
             ]
           }
         ]
