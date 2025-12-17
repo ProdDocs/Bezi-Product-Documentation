@@ -24,10 +24,13 @@
             ]
           },
           {
-            "group": "Modes",
+            "group": "Fundamentals",
             "pages": [
-              "bezi/modes/agent-mode",
-              "bezi/modes/ask-mode"
+              "fundamentals/prompting",
+              "fundamentals/threads",
+              "fundamentals/rules",
+              "fundamentals/agent-mode",
+              "fundamentals/ask-mode"
             ]
           },
           {
@@ -43,14 +46,11 @@
           {
             "group": "Product",
             "pages": [
-              "bezi/product/changelog",
               "bezi/product/asset-sync",
-              "bezi/product/project-rules",
               "bezi/product/prompt-tagging",
               "bezi/product/pages-folders",
               "bezi/product/attach-images",
               "bezi/product/edit-prompts",
-              "bezi/product/threads",
               "bezi/product/enhanced-code-intelligence",
               "bezi/product/canvas"
             ]
@@ -109,15 +109,19 @@
     },
     {
       "source": "bezi/product/threads",
-      "destination": "xx"
+      "destination": "fundamentals/threads"
+    },
+    {
+      "source": "bezi/product/project-rules",
+      "destination": "fundamentals/rules"
     },
     {
       "source": "bezi/modes/agent-mode",
-      "destination": "xx"
+      "destination": "fundamentals/agent-mode"
     },
      {
       "source": "bezi/modes/ask-mode",
-      "destination": "xx"
-    },
+      "destination": "fundamentals/ask-mode"
+    }
   ]
 }
