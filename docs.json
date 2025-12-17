@@ -52,10 +52,10 @@
             ]
           },
           {
-            "group": "Account Settings",
+            "group": "Account",
             "pages": [
-              "bezi/account-settings/plans-usage",
-              "bezi/account-settings/subscription-billing"
+              "account/plans",
+              "account/billing"
             ]
           },
           {
@@ -143,6 +143,14 @@
     {
       "source": "bezi/product/pages-folders",
       "destination": "context/pages"
+    },
+    {
+      "source": "bezi/account-settings/plans-usage",
+      "destination": "account/plans"
+    },
+    {
+      "source": "bezi/account-settings/subscription-billing",
+      "destination": "account/billing"
     },
      {
       "source": "bezi/product/edit-prompts",
