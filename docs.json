@@ -43,6 +43,15 @@
             ]
           },
           {
+            "group": "Context",
+            "pages": [
+              "context/index-project",
+              "context/pins",            
+              "context/image-attachments",
+              "context/pages"
+            ]
+          },
+          {
             "group": "Product",
             "pages": [
               "bezi/product/asset-sync",
@@ -121,6 +130,22 @@
      {
       "source": "bezi/modes/ask-mode",
       "destination": "fundamentals/ask-mode"
+    },
+     {
+      "source": "bezi/product/asset-sync",
+      "destination": "context/index-project"
+    },
+     {
+      "source": "bezi/product/prompt-tagging",
+      "destination": "context/pins"
+    },
+    {
+      "source": "bezi/product/attach-images",
+      "destination": "context/image-attachments"
+    },
+    {
+      "source": "bezi/product/pages-folders",
+      "destination": "context/pages"
     }
   ]
 }
