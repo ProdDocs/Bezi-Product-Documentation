@@ -45,10 +45,10 @@
           {
             "group": "Use Cases",
             "pages": [
-              "bezi/use-cases/custom-tools",
-              "bezi/use-cases/prototype-iterate",
-              "bezi/use-cases/debug",
-              "bezi/use-cases/documentation"
+              "use-cases/unity-tools",
+              "use-cases/prototype-iterate",
+              "use-cases/debug",
+              "use-cases/documentation"
             ]
           },
           {
@@ -143,6 +143,26 @@
     {
       "source": "bezi/product/pages-folders",
       "destination": "context/pages"
+    },
+     {
+      "source": "bezi/use-cases/custom-tools",
+      "destination": "use-cases/unity-tools"
+    },
+     {
+      "source": "bezi/use-cases/prototype-iterate",
+      "destination": "use-cases/prototype-iterate"
+    },
+     {
+      "source": "bezi/use-cases/debug",
+      "destination": "use-cases/debug"
+    },
+    {
+      "source": "bezi/use-cases/documentation",
+      "destination": "use-cases/documentation"
+    },
+    {
+      "source": "bezi/use-cases/learning",
+      "destination": "use-cases/old-learning"
     },
     {
       "source": "bezi/account-settings/plans-usage",
