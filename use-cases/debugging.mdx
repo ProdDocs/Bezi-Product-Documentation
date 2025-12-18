@@ -4,16 +4,46 @@ title: "Debugging"
 
 Use Bezi's **in-depth project** (scripts, assets, scenes, packages, etc.) and Unity knowledge to find, interpret, and fix bugs faster than manual or code-only investigation.
 
-## How can I use Bezi to find and fix bugs? 
+The more information about a bug that you give Bezi, the faster it will find and fix the issue. Pin important information and attach images to your prompt as much as possible! 
 
-1. Define what you want the tool to do
-2. Prompt Bezi with the right details (Steps 1-5, **below**) 
-3. Bezi will suggest what's causing the bug and how to fix it
+<Danger>
+  Never submit vague prompts like "_fix errors_" or "_not working_". Bezi won't know what you're talking about, nothing will get fixed, and you'll waste a valuable prompt! 
+</Danger>
 
-## What types of bugs can Bezi help with? 
+## What types of bugs can Bezi help with?
 
 1. Console errors
-2. Behavioral issues 
+2. Behavioral issues
 3. Optimization
 
-## Debugging workflow with Bezi
+## Steps to fix console errors
+
+1. **Tell Bezi to implement a fix for a console error** 
+2. Attach a screenshot of the console error code or copy/paste it in the prompt field
+3. [[**Agent Mode**](https://docs.bezi.com/fundamentals/ask-mode)] Submit one prompt with all the information in Steps 1-2
+4. Test the fix and iterate as needed with Bezi 
+
+## Steps to fix behavioral and optimization issues
+
+_These issues aren't standardized like console errors and require a bit more information to fix_
+
+ 1. **Tell Bezi you want an explanation and possible solutions for a bug**
+ 2. Explain the current state of whatever is operating incorrectly
+ 3. Define the expected or ideal state
+ 4. Take screenshots of the bug (required for all visual issues)
+ 5. Identify important inputs and information (assets, pages, scripts, etc.)
+ 6. [[**Ask Mode**](https://docs.bezi.com/fundamentals/ask-mode)] Draft a prompt with all the information in Steps 1-5,
+    1. add the inputs from Step 5 as [**in-line pins**](https://docs.bezi.com/context/pins) (type `@`, then the name to pin)
+    2. [**attach images**](https://docs.bezi.com/context/image-attachments) from Step 4 to the prompt
+ 7. Submit the prompt
+ 8. Iterate with Bezi until you’re happy with the proposed solution
+ 9. [[**Agent Mode**](https://docs.bezi.com/fundamentals/ask-mode)] Tell Bezi to implement the fix you liked
+10. Test the fix and iterate as needed with Bezi 
+
+## What do I do if Bezi's fix doesn't work? 
+
+If Bezi isn't able to fix it on the first try, it's likely missing a key piece of information. 
+
+**DO**: Review the information you've given Bezi, try to figure out what context it's missing and [edit the last prompt](https://docs.bezi.com/more/edit-prompts) to include that information.
+
+**DO NOT**: Prompt "_still broken_", "_not working_", or anything vague like that. It won't help and risks sending Bezi down a rabbit hole! 
