@@ -47,6 +47,7 @@
             "pages": [
               "use-cases/unity-tools",
               "use-cases/create-ui",
+              "use-cases/debug",
               "use-cases/prototype-iterate",
               "use-cases/documentation"
             ]
