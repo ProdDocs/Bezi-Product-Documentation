@@ -4,6 +4,67 @@ title: "Create UI"
 
 Bezi creates UI by generating custom tools that spawn gameObjects and other UI setup related materials in-scene. This ensures speed AND accuracy.
 
-_Please note: Bezi has not been trained to create visually perfect hierarchy canvas, visual assets, or polish at this time._
+<Note>
+  _Bezi has not been trained to create visually perfect hierarchy canvas, visual assets, or polish at this time._
+</Note>
 
-## How can I use Bezi to automatically create tools?
+The more detail and specificity in a prompt, the better Bezi’s output will be. With the right prompting, you can reach relatively complete and polished UI, depending on the task
+
+- **Layout & Functionality:** 90% completion via the tool. The remaining 10% depends on manual customizations or polish.
+- **Visual Assets & Polish**: Bezi can't generate this for you, directly _or_ through a tool. It <u>CAN</u> make it easier to configure them (e.g. to swap out sprites, fonts, text, etc.) but the polish is in your hands.
+
+## How can I use Bezi to automatically create UI?
+
+1. Define what you want
+2. Create a [Page](https://docs.bezi.com/context/pages) documenting all UI Standards (e.g. prefab structures, sprite/text inputs, etc.)
+3. Prompt Bezi with all the right details (Steps 1-5, **below**) and tell it to create a tool to implement the UI to spec
+4. Bezi will generate a tool and provide instructions for how to use it
+
+## Precursors for using Bezi to create UI
+
+**Any UI-related work needs a **[**Page**](https://docs.bezi.com/context/pages)** where the standards and guidelines are defined**. Pin the UI Page(s) whenever you're doing relevant work to ensure Bezi has all the information it needs. 
+
+### What to include in a UI Page
+
+1. UI specs / parameters
+2. Template (if you have one)
+3. Dev best practices to follow for UI setup, prefabs, organization, exposed inputs, etc.
+4. List any UI requirements that must be met
+
+### UI Page Examples; copy into your Bezi page and customize! 
+
+<AccordionGroup>
+  <Accordion title="UI Standards Page (best example)">
+    **Code Rules:**
+
+    - ALWAYS use a coroutine when creating hierarchies
+    - ALWAYS add a "yield return null" after adding a component, obtain a reference to that component after the yield statement
+    - ALWAYS use textmeshproUGUI not Text
+    - ALWAYS use a callback to return new gameObjects created in coroutines
+    - ALWAYS create a prefab for groups of objects that are repeated, Add them to the "Prefab/GeneratedUI" folder
+    - ALWAYS use prefabs for objects that can be considered to be a separated section of the UI
+    - ALWAYS re-use a created prefab for repeated objects
+    - ALWAYS separate the creation of a prefab from the UI creation, create the prefab first and re-use it
+    - NEVER add readme code
+    - NEVER add code to implement the feature just the code to create the UI
+    - If a for, foreach or while loop is used create a prefab
+    - ONLY use layout groups when the number of child objects is likely to change
+    - Use the slider component for progress bars
+
+    **Tool Rules:**
+
+    - ALWAYS provide a window for the asset hierarchy creation process
+    - Make this window available from a menu item inside Tools\>UIBuilder\>{Name}
+    - Include the ability to assign font assets where appropriate
+    - Include the ability to assign sprite assets where appropriate
+    - Ignore UI elements that could be considered decorations
+
+    **General Rules:**
+
+    - Search the current scene for a canvas object to place the new UI
+    - Ensure that you use Unity.EditorCoroutineUtility
+  </Accordion>
+  <Accordion title="New Accordion" icon="sparkles">
+    
+  </Accordion>
+</AccordionGroup>
