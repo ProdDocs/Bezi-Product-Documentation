@@ -8,7 +8,7 @@ Bezi creates UI by generating custom tools that spawn gameObjects and other UI s
   _Bezi has not been trained to create visually perfect hierarchy canvas, visual assets, or polish at this time._
 </Note>
 
-The more detail and specificity in a prompt, the better Bezi’s output will be. With the right prompting, you can reach relatively complete and polished UI, depending on the task
+With the right prompting, you can reach relatively complete and polished UI, depending on the task
 
 - **Layout & Functionality:** 90% completion via the tool. The remaining 10% depends on manual customizations or polish.
 - **Visual Assets & Polish**: Bezi can't generate this for you, directly _or_ through a tool. It <u>CAN</u> make it easier to configure them (e.g. to swap out sprites, fonts, text, etc.) but the polish is in your hands.
@@ -20,9 +20,9 @@ The more detail and specificity in a prompt, the better Bezi’s output will be.
 3. Prompt Bezi with all the right details (Steps 1-5, **below**) and tell it to create a tool to implement the UI to spec
 4. Bezi will generate a tool and provide instructions for how to use it
 
-## Precursors for using Bezi to create UI
+## Precursor for creating UI with Bezi
 
-**Any UI-related work needs a** [Page](https://docs.bezi.com/context/pages) **where the standards and guidelines are defined** . Pin the UI Page(s) whenever you're doing relevant work to ensure Bezi has all the information it needs.
+**Before doing UI-related work with Bezi, you must document the UI standards / guidelines in a** [Page](https://docs.bezi.com/context/pages). Pin the UI Page(s) whenever you're doing relevant work in Bezi to ensure it has enough information to provide quality output.
 
 ### What to include in a UI Page
 
@@ -31,7 +31,7 @@ The more detail and specificity in a prompt, the better Bezi’s output will be.
 3. Dev best practices to follow for UI setup, prefabs, organization, exposed inputs, etc.
 4. List any UI requirements that must be met
 
-### UI Page Examples; copy into your Bezi page and customize!
+### UI Page examples; copy and customize!
 
 <AccordionGroup>
   <Accordion title="UI Standards Page">
@@ -404,3 +404,21 @@ The more detail and specificity in a prompt, the better Bezi’s output will be.
     - Debug with UI Debugger tool for style and hierarchy inspection**Steps to create a custom tool**
   </Accordion>
 </AccordionGroup>
+
+## Steps to create UI
+
+The more detail and specificity in a prompt, the better Bezi’s output will be. 
+
+1. **Tell Bezi you want it to create a Unity tool**
+2. Create a UI Standards Page, following the **provided framework and examples** 
+3. Define what UI you want it to create
+4. Define any customizations for this UI that don't belong in your UI Standards Page
+5. Gather visual examples of the UI layout you want to create (must-have for UI)
+6. [[**Agent Mode**](https://docs.bezi.com/bezi/modes/agent-mode)] Draft a prompt with all the information in Steps 1-5.  [**Pin**](https://docs.bezi.com/context/pins) the UI Standards Page created in Step 2 (type `@`, then Page name) and attach images from Step 5
+   - **Prefab example prompt**: “_Create a tool that will create [Step 3] UI, use [image attachment] as an example, especially [specific parts of the image Bezi should focus on]. Follow the guidelines written in @[UI-standards Page].”_
+7. Submit your prompt!
+8. Manually polish the UI ouput
+
+### Recommendations for using Bezi to polish UI
+
+If you want to try using Bezi to fine-tune UI, we recommend switching between Bezi and Unity frequently. Iterate in Bezi, check how it looks in Unity, then back to Bezi. Repeat this cycle this until you’ve reached the ideal state and level of polish.
