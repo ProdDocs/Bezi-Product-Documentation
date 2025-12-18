@@ -22,7 +22,7 @@ The more detail and specificity in a prompt, the better Bezi’s output will be.
 
 ## Precursors for using Bezi to create UI
 
-**Any UI-related work needs a **[**Page**](https://docs.bezi.com/context/pages)** where the standards and guidelines are defined**. Pin the UI Page(s) whenever you're doing relevant work to ensure Bezi has all the information it needs. 
+[******Any UI-related work needs a Page where the standards and guidelines are defined******](https://docs.bezi.com/context/pages). Pin the UI Page(s) whenever you're doing relevant work to ensure Bezi has all the information it needs.
 
 ### What to include in a UI Page
 
@@ -31,7 +31,7 @@ The more detail and specificity in a prompt, the better Bezi’s output will be.
 3. Dev best practices to follow for UI setup, prefabs, organization, exposed inputs, etc.
 4. List any UI requirements that must be met
 
-### UI Page Examples; copy into your Bezi page and customize! 
+### UI Page Examples; copy into your Bezi page and customize!
 
 <AccordionGroup>
   <Accordion title="UI Standards Page (best example)">
@@ -54,7 +54,7 @@ The more detail and specificity in a prompt, the better Bezi’s output will be.
     **Tool Rules:**
 
     - ALWAYS provide a window for the asset hierarchy creation process
-    - Make this window available from a menu item inside Tools\>UIBuilder\>{Name}
+    - Make this window available from a menu item inside Tools\>UIBuilder\>Name
     - Include the ability to assign font assets where appropriate
     - Include the ability to assign sprite assets where appropriate
     - Ignore UI elements that could be considered decorations
@@ -64,7 +64,449 @@ The more detail and specificity in a prompt, the better Bezi’s output will be.
     - Search the current scene for a canvas object to place the new UI
     - Ensure that you use Unity.EditorCoroutineUtility
   </Accordion>
-  <Accordion title="New Accordion" icon="sparkles">
-    
+  <Accordion title="UI Toolkit Guide">
+    ## Essential UI Toolkit Guide for Unity 6.1
+
+    ### Panel Settings Asset
+
+    The foundation of runtime UI controlling rendering and input handling.
+
+    **Create:** Right-click → Create → UI Toolkit → Panel Settings
+
+    **Configure:**
+
+    - Reference Resolution (e.g., 1920x1080)
+
+    - Scale Mode (Constant Pixel Size, Constant Physical Size, Scale With Screen Size)
+
+    - Screen Match Mode for aspect ratio handling
+
+    - Sort Order for layering multiple UIs
+
+    ### UXML Documents
+
+    Define UI structure and hierarchy, similar to HTML.
+
+    **Create:** Right-click → Create → UI Toolkit → UI Document
+
+    **Edit:** Double-click to open in UI Builder or edit as text
+
+    ### USS StyleSheets
+
+    Control visual appearance and styling, similar to CSS.
+
+    **Create:** Right-click → Create → UI Toolkit → StyleSheet
+
+    \`\`\`xml
+
+    \<ui:UXML xmlns:ui="UnityEngine.UIElements"\>
+
+        \<Style src="project://database/Assets/UI/Styles/MainMenuStyles.uss" /\>
+
+    \</ui:UXML\>
+
+    \`\`\`
+
+    ### UI Document Component
+
+    Bridge between scene and UXML files.
+
+    **Create:** GameObject → UI Toolkit → UI Document
+
+    **Configure:**
+
+    - Panel Settings: Assign Panel Settings asset
+
+    - Source Asset: Assign UXML document
+
+    - Sort Order: Set rendering order
+
+    ## Asset Requirements
+
+    ### Fonts
+
+    - Formats: TrueType (.ttf), OpenType (.otf)
+
+    - Applied via USS `-unity-font` property or inline styles
+
+    - Import by dragging into Assets folder
+
+    ### Sprites and Textures
+
+    - Formats: PNG, JPG, TGA, PSD, SVG (with Vector Graphics package)
+
+    - Recommended sizes: Power-of-two (256x256, 512x512, 1024x1024)
+
+    - Icon sizes: 16x16, 24x24, 32x32, 64x64 pixels
+
+    - Use sprite atlases for batching
+
+    - 9-slice support for scalable elements
+
+    ## Core Workflow
+
+    1. Create Panel Settings → Configure rendering
+
+    2. Create UXML Document → Define structure
+
+    3. Create USS StyleSheet → Define styles
+
+    4. Link USS to UXML → Apply visual appearance
+
+    5. Create UI Document in Scene → Display at runtime
+
+    6. Use UI Builder → Visual design and iteration
+
+    7. Test in Play Mode → Verify functionality
+
+    ## Built-in UI Elements
+
+    ### Input Controls
+
+    - `Button` - Clickable actions
+
+    - `TextField` - Single-line text input
+
+    - `Toggle` - Boolean checkbox
+
+    - `Slider`, `SliderInt` - Numeric input with drag handle
+
+    - `MinMaxSlider` - Dual-handle range selector
+
+    - `DropdownField` - Selection from list
+
+    - `EnumField` - Dropdown for enums
+
+    ### Numeric Fields
+
+    - `IntegerField`, `LongField` - Integer inputs
+
+    - `FloatField`, `DoubleField` - Floating-point inputs
+
+    - `Vector2Field`, `Vector3Field`, `Vector4Field` - Vector inputs
+
+    - `BoundsField`, `BoundsIntField` - 3D bounds
+
+    ### Display Elements
+
+    - `Label` - Non-interactive text
+
+    - `Image` - Textures, sprites, vector images
+
+    - `HelpBox` - Informational messages
+
+    ### Containers
+
+    - `VisualElement` - Base container for grouping
+
+    - `Box` - Container with border styling
+
+    - `GroupBox` - Container with header
+
+    - `Foldout` - Collapsible container
+
+    - `ScrollView` - Scrollable content
+
+    - `ListView` - Virtualized list for collections
+
+    - `TreeView` - Hierarchical tree structure
+
+    - `MultiColumnListView`, `MultiColumnTreeView` - Tabular data displays
+
+    ### Editor-Specific
+
+    - `ObjectField` - Unity Object references
+
+    - `ColorField` - Color picker
+
+    - `CurveField` - Animation curve editor
+
+    - `GradientField` - Gradient editor
+
+    ## Best Practices
+
+    ### Web-Inspired Architecture
+
+    Separate concerns into three layers:
+
+    - **UXML** - Structure (like HTML)
+
+    - **USS** - Style (like CSS)
+
+    - **C#** - Behavior and logic
+
+    ### UI Builder Workflow
+
+    - Primary tool for visual authoring
+
+    - Drag-and-drop interface for rapid prototyping
+
+    - Extract inline styles to reusable USS classes
+
+    - Preview different screen sizes in viewport
+
+    - Use UI Debugger (Window → UI Toolkit → Debugger) for troubleshooting
+
+    ### Flexbox Layout
+
+    Based on CSS Flexbox model:
+
+    - Flex Direction: Row or column flow
+
+    - Justify Content: Main axis alignment (start, center, end, space-between)
+
+    - Align Items: Cross axis alignment (stretch, start, center, end)
+
+    - Flex Grow/Shrink: How elements expand or contract
+
+    - Use percentage-based sizes for responsive design
+
+    ### Retained Mode Architecture
+
+    - UI structure persists in memory as visual tree
+
+    - Elements created once, updated only when data changes
+
+    - Framework handles rendering optimization
+
+    - Better performance than immediate mode
+
+    ### Data Binding Pattern
+
+    - Automatically synchronize UI with data sources
+
+    - Two-way binding (UI updates data, data updates UI)
+
+    - Reduces boilerplate synchronization code
+
+    - Similar to modern web frameworks
+
+    ### Design Patterns
+
+    - **MVP (Model-View-Presenter):** Separate data, presentation, and logic
+
+    - **State Pattern:** Manage UI screens and navigation flows
+
+    - **Custom Controls:** Extend VisualElement for reusable components
+
+    ## Styling
+
+    ### USS Structure
+
+    Style rules contain selectors and declaration blocks:
+
+    - **Type Selectors:** Target by C# class name (e.g., `Button`)
+
+    - **Name Selectors:** Target by unique name (e.g., `#playButton`)
+
+    - **Class Selectors:** Target by USS class (e.g., `.primary-button`)
+
+    - **Complex Selectors:** Descendant `selector1 selector2`), child `selector1 > selector2`)
+
+    - **Pseudo-classes:** State-based `:hover`, `:active`, `:focus`, `:disabled`, `:checked`)
+
+    ### Style Application Methods
+
+    1. **USS Files:** Define reusable styles (recommended)
+
+    2. **Inline Styles:** Direct properties on elements (prototyping only)
+
+    3. **UI Builder:** Visual style modification
+
+    4. **C# Scripts:** Programmatic styling at runtime
+
+    ### Theme Style Sheets (TSS)
+
+    Specialized USS files for complete visual themes:
+
+    - Use `@import` to compose multiple stylesheets
+
+    - Switch themes at runtime for dark/light modes
+
+    - Support platform-specific or localization-based themes
+
+    - Assign to Panel Settings as default theme
+
+    ### Managing Styles at Runtime
+
+    - Add class: `element.AddToClassList("className")`
+
+    - Remove class: `element.RemoveFromClassList("className")`
+
+    - Toggle class: `element.ToggleInClassList("className")`
+
+    - Direct property: `element.style.backgroundColor = Color.red;`
+
+    ### Interactivity
+
+    **Event System**
+
+    UI Toolkit uses event-driven architecture:
+
+    - Default event system created automatically in Play mode
+
+    - Supports Input Manager (legacy) and Input System (new) packages
+
+    - Configure in Project Settings → Player → Active Input Handling
+
+    **Event Types**
+
+    - Pointer Events: Mouse/touch `PointerDownEvent`, `PointerUpEvent`, `PointerMoveEvent`)
+
+    - Click Events: Click interactions `ClickEvent`)
+
+    - Change Events: Value changes `ChangeEvent<T>`)
+
+    - Keyboard Events: Key presses `KeyDownEvent`, `KeyUpEvent`)
+
+    - Navigation Events: UI navigation `NavigationMoveEvent`, `NavigationSubmitEvent`)
+
+    - Focus Events: Focus changes `FocusInEvent`, `FocusOutEvent`)
+
+    **Event Propagation**
+
+    Events flow through three phases:
+
+    1. Trickle-Down: Root to target
+
+    2. Target: At the target element
+
+    3. Bubble-Up: Target back to root
+
+    **Callback Registration**
+
+    All interactive behavior implemented through callbacks in C# (not Inspector-based):
+
+    \`\`\`csharp
+
+    button.RegisterCallback\<ClickEvent\>(OnButtonClicked);
+
+    void OnButtonClicked(ClickEvent evt)
+
+    {
+
+        // Handle click
+
+    }
+
+    \`\`\`
+
+    **Focus and Navigation**
+
+    - Mark elements `focusable = true` for keyboard focus
+
+    - Tab key navigates between focusable elements
+
+    - Arrow keys for UI navigation
+
+    - `:focus` pseudo-class for visual feedback
+
+    **Manipulators**
+
+    Reusable behavior components:
+
+    - `Clickable` - Click detection
+
+    - `ContextualMenuManipulator` - Right-click menus
+
+    - Custom manipulators for drag-drop, gestures, long-press
+
+    ### App UI Package ([com.unity.dt.app](http://com.unity.dt.app)-ui)
+
+    Experimental framework extending UI Toolkit with enterprise-level components.
+
+    **Install:** Package Manager → Add package by name → `com.unity.dt.app-ui`
+
+    **Key Components**
+
+    Panel: Root element providing context and overlay layering.
+
+    Overlay Components:
+
+    - `Popover` - Content next to target element with arrow
+
+    - `Modal` - Blocking dialog centered on screen
+
+    - `Tray` - Bottom-anchored popup (mobile-style)
+
+    - `Toast` - Auto-dismiss notification at screen edge
+
+    - `Tooltip` - Hover information popup
+
+    **Architecture Support**
+
+    - MVVM**:** Model-View-ViewModel pattern
+
+    - Observables**:** Data binding infrastructure
+
+    - Dependency Injection: Constructor injection with lifetimes
+
+    - Navigation**:** Stack-based page navigation
+
+    - Context Management: Hierarchical context propagation
+
+    **Resources**
+
+    - Icon library with Phosphor Icons integration
+
+    - Typography system
+
+    - Pre-built theme TSS files (dark/light, various sizes)
+
+    ### Performance Optimization
+
+    **Draw Call Batching**
+
+    - UI Toolkit auto-batches compatible elements
+
+    - Same material/texture batch together
+
+    - Monitor in Unity Profiler
+
+    **Dynamic Atlasing**
+
+    - Automatically combines textures at runtime
+
+    - Configure in Project Settings
+
+    - Reduces draw calls for multiple images
+
+    **Hierarchy Optimization**
+
+    - Flatten visual tree where possible
+
+    - Minimize nesting depth
+
+    - Remove unnecessary containers
+
+    **Memory Management**
+
+    - Unregister callbacks when elements destroyed
+
+    - Pool and reuse elements for lists
+
+    - Release unused asset references
+
+    ### Quick Tips
+
+    - Use UI Builder for visual authoring, code for behavior only
+
+    - Prefer USS classes over inline styles for maintainability
+
+    - Design at reference resolution, use scaling modes for adaptation
+
+    - Test multiple resolutions and aspect ratios thoroughly
+
+    - Profile with Unity Profiler for performance bottlenecks
+
+    - Use data binding to reduce manual UI updates and synchronization
+
+    - Implement MVP pattern for complex UIs and better separation of concerns
+
+    - Create reusable custom controls to avoid duplication
+
+    - Use flexbox for responsive layouts that adapt to screen sizes
+
+    - Debug with UI Debugger tool for style and hierarchy inspection
   </Accordion>
 </AccordionGroup>
