@@ -48,7 +48,6 @@
               "use-cases/unity-tools",
               "use-cases/create-ui",
               "use-cases/prototype-iterate",
-              "use-cases/debug",
               "use-cases/documentation"
             ]
           },
