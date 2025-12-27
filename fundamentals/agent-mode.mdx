@@ -2,7 +2,7 @@
 title: "Agent Mode"
 ---
 
-Agent Mode is Bezi’s _actionable_ setting. It understands your entire Unity project and can create and modify scripts directly, simplifying the suggestion to implementation process. You can keep or undo proposed code, compare diffs, and immediately test suggestions in-Unity.
+Agent Mode is Bezi’s _actionable_ setting. It can create and modify scripts in Unity, streamlining the implementation process. You can keep or undo proposed code, compare diffs, and immediately test suggestions in-Unity. Agent Mode can also create Pages in Bezi. 
 
 To enter Agent Mode, select the **mode dropdown** (below the prompt textbox) and select **Agent**. When you’re in Agent Mode, it will look like this:'
 
@@ -28,12 +28,13 @@ Proposed changes (i.e. suggestions) from Agent Mode can exist in three states.
 
 **Kept**: Suggestions that you have opted to keep, which can happen in two ways
 
-- **Directly Kept**: You reviewed suggestion(s) and pressed `Keep` or `Keep All` button
-- **Indirectly Kept**: You left suggestion(s) undecided and decided to keep a suggestion later on that iterated on the proposed code
+- **Directly Kept**: you reviewed suggestion(s) and pressed `Keep` or `Keep All` button
+- **Indirectly Kept**: accepting a code suggestion accepts ALL suggestions up to that point in the thread
 
 **Rejected**: Suggestions that you have opted to undo, by pressing the `Undo` or `Undo All` button
 
 - To undo suggestion(s), be sure to select the `Undo` or `Undo All` button, ideally as soon as you decide you do not want to implement them
+- Rejecting a code suggestion in-thread will only revert it to the previous undecided version
 
 ### Code generation and modification
 
@@ -52,7 +53,7 @@ If you want to bring the project back to an earlier state and erase any kept cha
 
 For example, if you go down a rabbit hole working on a particular mechanic with Bezi, only to get feedback that your second iteration is the right direction; you can restore to that response and continue to iterate from there.
 
-Hoever over the Bezi responses you want to revert to and select the `Restore Checkpoint` button to go back to a specific conclusive state.
+However over the Bezi responses you want to revert to and select the `Restore Checkpoint` button to go back to a specific conclusive state.
 
 <Note>
   Restore Checkpoint does not revert Agent Mode suggestions to an undecided state. It erases all code additions/modifications made by Bezi after the conclusive point.
@@ -60,7 +61,7 @@ Hoever over the Bezi responses you want to revert to and select the `Restore Che
 
 ### Diffs
 
-We use **diffs** to indicate exactly what changes are being to files:
+We use **diffs** to indicate exactly what changes are being made to files:
 
 - **red highlights**: deletions made within a file
 - **green highlights**: additions made within a file
@@ -75,3 +76,5 @@ To view in the context of the entire script, open the script in **Canvas** (diff
 ### Asset Drawer
 
 The Asset Drawer lists all created and modified files. It sits above the prompt box so you can view all changes made in the duration of a thread in one place and bulk keep or undo a response's suggestions.
+
+If you accept or reject a code suggestion in the Asset Drawer, it will auto-accept or auto-reject all outstanding changeg - making full-accept or full-revert. 
