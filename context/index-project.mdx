@@ -62,13 +62,13 @@ Bezi only needs to index the entire project once. After that, Bezi automatically
 
 ---
 
-## Monitor project indexing
+## Indexing process
 
 Track the project's index status in the **Asset sync panel**. The panel is located in the bottom right toolbar.
 
-## Indexing process
-
 Before opening the asset sync panel, confirm Bezi and the Unity project are connected.
+
+### Sync in-progress
 
 When indexing is in progress, you’ll see a list of project assets, packages, etc. in the queue. Status icons update in real-time so you can track progress.
 
@@ -78,20 +78,16 @@ When indexing is in progress, you’ll see a list of project assets, packages, e
   - <Icon icon="loader" iconType="sharp-solid" /> -  asset is in the process of indexing
   - <Icon icon="circle-0" iconType="sharp-solid" color="#0bf139" /> -  asset has been successfully indexed
   - <Icon icon="triangle-exclamation" iconType="sharp-solid" color="#fcd415" /> -  asset is taking a long time to sync, click the `refresh` icon in the top right of the Asset sync panel to restart the sync for it
-  - <Icon icon="circle-0" iconType="sharp-solid" color="#f10909" /> -  asset was not indexed (see Asset Sync issues section)
+  - <Icon icon="circle-0" iconType="sharp-solid" color="#f10909" /> -  asset was not indexed (see the Error tab)
 </Accordion>
 
-### Project is done syncing
+### Sync completed
 
-When Asset sync has indexed everything, the panel will say “_asset sync queue is empty_”.
-
-However, **this does not mean the project was successfully synced**.
-
-### Project is successfully synced
+When Asset sync has indexed everything, the panel will say “_asset sync queue is empty_”. 
 
 To confirm the project is successfully synced, open the **Error tab** in the Asset sync panel. If there are no errors, you're ready to prompt Bezi!
 
-## What if there are issues syncing my project?
+## What if there are issues indexing my project?
 
 1. Review the errors in the Asset sync panel's **Error tab**
 2. Return to the Asset sync panel
