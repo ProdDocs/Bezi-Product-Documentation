@@ -2,11 +2,15 @@
 title: "Agent Mode: Actions (beta)"
 ---
 
-Agent Mode is Bezi’s _actionable_ setting. When enabled, it will make real changes in your Unity project. It does this via [scripts](https://docs.bezi.com/fundamentals/agent-mode) or Actions, which is a group of non-script based work Bezi can do for you directly in the Unity editor. 
+Agent Mode is Bezi’s _actionable_ setting. When enabled, it will make real changes in your Unity project. It does this via [scripts](https://docs.bezi.com/fundamentals/agent-mode) or Actions, which is a group of non-script based work Bezi can do for you directly in the Unity editor.
 
-## What Actions are available in Agent Mode today?
+When Agent Mode's Actions is enabled, Bezi can automatically create, update, and organize scenes, game objects, prefabs, and assets on your behalf in the Unity editor.
 
-Bezi currently supports a growing subset of Unity editor actions. Not all Unity editor actions are supported yet, and destructive actions are intentionally limited.
+<Note>
+  Not all Unity editor actions are supported yet. Bezi supports a growing subset of Unity editor actions and we intentionally limit destructive actions.
+</Note>
+
+## Which Actions are available today?
 
 <AccordionGroup>
   <Accordion title="Scene & Game Objects">
@@ -40,6 +44,12 @@ Bezi currently supports a growing subset of Unity editor actions. Not all Unity 
   </Accordion>
 </AccordionGroup>
 
-## How does Agent Mode's Actions work?
+## How Agent Mode's Actions work
 
-Part of Agent Mode's ability  Bezi can create, update, and organize scenes, game objects, prefabs, and assets on your behalf - not just explain _what_ to do, but actually do it for you in the editor
+When you prompt Bezi with **Agent Mode** toggled on, the Agent may choose one or more in-editor actions to accomplish your request.
+
+- The Agent decides **which actions** to use based on your intent
+- Multiple actions can be chained together to complete complex tasks
+- Actions only apply to the **currently open Unity project** and its assets
+
+For more control, explicitly state the name of the action you want Bezi to take in your prompt.
