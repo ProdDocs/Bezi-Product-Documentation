@@ -70,13 +70,16 @@ When Actions are disabled, Bezi Agent Mode will continue to reason, explain, and
 
 ## Prompt examples
 
-You don’t need to think in terms of actions - natural language works best.
+1. Prototype faster without manual editor setup
+   - **Prompt Example**: “_Create a Player prefab with a Rigidbody and BoxCollider_.”
+   - **Prompt Example**: “_Create a new ScriptableObject for weapon stats and link it to this prefab._”
+2. Apply consistent changes across many objects
+   - **Prompt Example**: “_Add a CapsuleCollider to all enemies in the current scene_.”
+3. Move from idea to implementation without context switching
+   - **Prompt Example**:
+4. Let the Agent handle repetitive or mechanical editor work
+   - **Prompt Example**: “_Reorganize these UI elements into a vertical layout._”
 
-- “Create a Player prefab with a Rigidbody and BoxCollider.”
-- “Add a CapsuleCollider to all enemies in the current scene.”
-- “Create a new ScriptableObject for weapon stats and link it to this prefab.”
-- “Reorganize these UI elements into a vertical layout.”
+Natural language works great but, if you want deterministic behavior, be explicit:
 
-For more deterministic behavior, be explicit:
-
-- “Use Actions to create a prefab from @[game object name].”
+- “_Use Actions to create a prefab from @[game object name]_.”
