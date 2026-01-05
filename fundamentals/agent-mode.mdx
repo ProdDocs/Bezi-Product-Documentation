@@ -1,20 +1,22 @@
 ---
-title: "Agent Mode"
+title: "Agent Mode: Scripts"
 ---
 
-Agent Mode is Bezi’s _actionable_ setting. It can create and modify scripts in Unity, streamlining the implementation process. You can keep or undo proposed code, compare diffs, and immediately test suggestions in-Unity. Agent Mode can also create Pages in Bezi. 
+Agent Mode is Bezi’s _actionable_ setting. Agent Mode takes action in the Unity Editor via scripts and Actions (see Agent Mode: Actions for more information).
 
-To enter Agent Mode, select the **mode dropdown** (below the prompt textbox) and select **Agent**. When you’re in Agent Mode, it will look like this:'
+Agent Mode will directly implement changes in Unity on your behalf, while Ask Mode cannot. Consider Agent Mode as **automatic** implementation and [Ask Mode](https://docs.bezi.com/bezi/modes/ask-mode) as **manual** implementation.
+
+## How to enter Agent Mode
+
+Select the **mode dropdown** (below the prompt textbox) and select **Agent**. When you’re in Agent Mode, it will look like this:
 
 <Frame>
   ![Agentmode](/images/agentmode.png)
 </Frame>
 
-## How's Agent Mode different than Ask Mode?
+## How does Agent Mode: Script work?
 
-Agent Mode will directly implement changes in Unity on your behalf, while Ask Mode cannot. Consider Agent Mode as **automatic** implementation and [Ask Mode](https://docs.bezi.com/bezi/modes/ask-mode) as **manual** implementation.
-
-## How do I use Agent Mode?
+Agent Mode Scripts enables Bezi to create and modify scripts in Unity on your behalf, to streamline the implementation process. You can keep or undo proposed code, compare diffs, and immediately test suggestions in-Unity.
 
 ### Agent Mode suggestion states
 
@@ -77,4 +79,4 @@ To view in the context of the entire script, open the script in **Canvas** (diff
 
 The Asset Drawer lists all created and modified files. It sits above the prompt box so you can view all changes made in the duration of a thread in one place and bulk keep or undo a response's suggestions.
 
-If you accept or reject a code suggestion in the Asset Drawer, it will auto-accept or auto-reject all outstanding changeg - making full-accept or full-revert. 
+If you accept or reject a code suggestion in the Asset Drawer, it will auto-accept or auto-reject all outstanding changeg - making full-accept or full-revert.
