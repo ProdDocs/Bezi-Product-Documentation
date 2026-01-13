@@ -1,68 +1,85 @@
 ---
-title: "Create UI"
+title: "Generate UI"
 ---
 
 Bezi creates UI by using [Actions](https://docs.bezi.com/fundamentals/agent-mode-actions) to spawn gameObjects, set up functionality, and create prefabs. This ensures speed AND accuracy.
 
 <Note>
-  _Bezi has not been trained to create visually perfect hierarchy canvas, visual assets, or polish at this time. We’re working towards this, but the complexity and nuance of UI hierarchies and the variance in any LLM-based response makes it impossible for any LLM-based tool to promise it could build UI 100% to-spec at this moment_.
+  _Bezi isn't trained to create visually perfect hierarchy canvas, visual assets, or polish at this time. We’re working towards this, but the complexity and nuance of UI hierarchies and the variance in any LLM-based response makes it impossible for any LLM-based tool to promise it could build UI 100% to-spec at this moment_.
 </Note>
 
 With the right prompting, you can reach relatively complete and polished UI, depending on the task
 
-- **Layout & Functionality:** 90% completion via the tool. The remaining 10% depends on manual customizations or polish.
-- **Visual Assets & Polish**: Bezi can’t generate this for you, directly _or_ through a tool. It makes it easier to configure them (e.g. to swap out sprites, fonts, text, etc.; to link it to game functionality) but the polish is in your hands.
+- **Layout & Functionality:** 90% completion using Actions. The remaining 10% depends on manual customizations or polish.
+- **Visual Assets & Polish**: Bezi isn't trained to generate human-level polish. It makes it easier to configure assets (e.g. swap out sprites, fonts, text, etc. and to link it to game functionality) but the polish is in your hands.
 
-## How can I use Bezi to automatically create UI?
+## Steps to generate UI
 
-1. Define what you want
-2. Create a [Page](https://docs.bezi.com/context/pages) documenting all UI Standards (e.g. prefab structures, sprite/text inputs, etc.)
-3. Prompt Bezi with all the right details (Steps 1-5, **below**) and tell it to create a tool to implement the UI to spec
-4. Bezi will generate a tool and provide instructions for how to use it
+The more detail and specificity in a prompt, the better Bezi’s output will be.
 
-## Precursor for creating UI with Bezi
+1. **Tell Bezi you want to create UI**
+2. Create the UI Standards Page, following the [provided framework and example](https://docs.bezi.com/use-cases/create-ui#precursor-for-creating-ui-with-bezi)
+3. Define what UI you want to create (level-selection menu, leaderboard screen, health bar, etc.)
+4. Find visual example(s) of UI layout you want Bezi to generate
+9. Define any customizations and functionality _specific_ to this UI that shouldn't live in your UI Standards Page
+9. Pin any existing assets you want to use, e.g. textures, icons, etc.
+6. [[**Agent Mode**](https://docs.bezi.com/bezi/modes/agent-mode)] Draft a prompt with all the information in Steps 1-6. [**<u>Pin</u>**](https://docs.bezi.com/context/pins) the UI Standards Page created in Step 2 (type `@`, then Page name) and attach images from Step 4
+   - **Prefab example prompt**: “_Create UI to do [Step 3]. Make it look like the attached image ([Step 4]), especially [specific parts of the image Bezi should focus on], and do [Step 5]. Follow the guidelines written in @[UI Standards Page]. Use the assets in @[Step 6].”_
+7. Submit your prompt!
+9. Bezi will generate a whitebox of the UI, with any scripts for functionality and made into a prefab
+8. Manually polish the UI ouput
 
-**Before doing UI-related work with Bezi, you must document the UI standards / guidelines in a** [Page](https://docs.bezi.com/context/pages). Pin the UI Page(s) whenever you're doing relevant work in Bezi to ensure it has enough information to provide quality output.
+## UI Standards Pages for generating consistent UI
+
+**Before doing UI-related work with Bezi, document the UI standards / guidelines in a** [Page](https://docs.bezi.com/context/pages). Pin the UI Page(s) whenever you're doing relevant work in Bezi to ensure it has enough information to provide quality output.
 
 ### What to include in a UI Page
 
 1. UI specs / parameters
 2. Template (if you have one)
 3. Dev best practices to follow for UI setup, prefabs, organization, exposed inputs, etc.
-4. List any UI requirements that must be met
+4. List all UI requirements that must be met
 
 ### UI Page examples; copy and customize!
 
 <AccordionGroup>
   <Accordion title="UI Standards Page">
-    ### **Code Rules**
+    ## UI Guidelines + Specs
 
-    - ALWAYS use a coroutine when creating hierarchies
-    - ALWAYS add a "yield return null" after adding a component, obtain a reference to that component after the yield statement
+    ### Components/Objects
+
     - ALWAYS use textmeshproUGUI not Text
-    - ALWAYS use a callback to return new gameObjects created in coroutines
-    - ALWAYS create a prefab for groups of objects that are repeated, Add them to the "Prefab/GeneratedUI" folder
-    - ALWAYS use prefabs for objects that can be considered to be a separated section of the UI
-    - ALWAYS re-use a created prefab for repeated objects
-    - ALWAYS separate the creation of a prefab from the UI creation, create the prefab first and re-use it
-    - NEVER add readme code
-    - NEVER add code to implement the feature just the code to create the UI
-    - If a for, foreach or while loop is used create a prefab
     - ONLY use layout groups when the number of child objects is likely to change
     - Use the slider component for progress bars
-
-    ### **Tool Rules**
-
-    - ALWAYS provide a window for the asset hierarchy creation process
-    - Make this window available from a menu item inside Tools\>UIBuilder\>Name
-    - Include the ability to assign font assets where appropriate
-    - Include the ability to assign sprite assets where appropriate
-    - Ignore UI elements that could be considered decorations
-
-    ### **General Rules**
-
     - Search the current scene for a canvas object to place the new UI
-    - Ensure that you use Unity.EditorCoroutineUtility
+
+    ### Prefabs
+
+    - ALWAYS create a prefab for groups of objects that are repeated. Add them to the "Prefab/GeneratedUI" folder
+    - ALWAYS use prefabs for objects that can be considered to be a separated section of the UI
+    - ALWAYS re-use a created prefab for repeated objects
+    - Store all generated UI prefabs in /Assets/Prefabs/GeneratedUI/ folder
+
+    ### Anchoring & Positioning
+
+    - ALWAYS anchor UI elements relative to their intended screen position:
+      - Top-left elements → anchor to top-left
+      - Center elements → anchor to center
+      - Bottom elements → anchor to bottom
+    - Use stretch anchors for elements that should scale with screen size (backgrounds, panels)
+    - NEVER position UI with absolute world coordinates - always use anchored positions
+    - Set appropriate pivot points based on scaling/rotation needs (0.5, 0.5 for center scaling)
+    - Use sizeDelta for pixel-perfect dimensions when anchors are together
+    - Keep Z position at 0 for all UI elements unless intentionally layering
+
+    ### Best Practices
+
+    - Use consistent spacing between UI elements (multiples of 8 or 10)
+    - Name button callbacks clearly: OnButtonNameClicked() pattern
+    - Keep UI scripts single-responsibility - separate concerns (display vs. logic)
+    - Use serialized fields for references instead of FindObjectOfType
+    - Add [Header] attributes to organize Inspector properties
+    - Cache frequently accessed components in Awake() or Start()
   </Accordion>
   <Accordion title="UI Toolkit Guide">
     ## Essential UI Toolkit Guide for Unity 6.1
@@ -404,21 +421,3 @@ With the right prompting, you can reach relatively complete and polished UI, dep
     - Debug with UI Debugger tool for style and hierarchy inspection**Steps to create a custom tool**
   </Accordion>
 </AccordionGroup>
-
-## Steps to create UI
-
-The more detail and specificity in a prompt, the better Bezi’s output will be.
-
-1. **Tell Bezi you want it to create a Unity tool**
-2. Create the UI Standards Page, following the [provided framework and examples](https://docs.bezi.com/use-cases/create-ui#precursor-for-creating-ui-with-bezi)
-3. Define what UI you want it to create
-4. Define any customizations for this UI that don't belong in your UI Standards Page
-5. Gather visual examples of the UI layout you want to create (must-have for UI)
-6. [[**Agent Mode**](https://docs.bezi.com/bezi/modes/agent-mode)] Draft a prompt with all the information in Steps 1-5. [**Pin**](https://docs.bezi.com/context/pins) the UI Standards Page created in Step 2 (type `@`, then Page name) and attach images from Step 5
-   - **Prefab example prompt**: “_Create a tool that will create [Step 3] UI, use [image attachment] as an example, especially [specific parts of the image Bezi should focus on]. Follow the guidelines written in @[UI-standards Page].”_
-7. Submit your prompt!
-8. Manually polish the UI ouput
-
-### Recommendations for using Bezi to polish UI
-
-If you want to try using Bezi to fine-tune UI, we recommend switching between Bezi and Unity frequently. Iterate in Bezi, check how it looks in Unity, then back to Bezi. Repeat this cycle this until you’ve reached the ideal state and level of polish.
