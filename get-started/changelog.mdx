@@ -15,12 +15,20 @@ title: "Changelog"
 <Update label="01/13/2026" description="">
   **Usability improvements:**
 
-  - If you prompt to execute Actions when Unity's in Play Mode, you'll see the option to exit Play Mode or continue in Ask Mode to prevent unexpected behavior 
-  - Updated output formatting when Bezi searches a project so it's easier to read and understand what Bezi's looking at 
+  - If you prompt to execute Actions when Unity's in Play Mode, you'll see the option to exit Play Mode or continue in Ask Mode to prevent unexpected behavior
+  - Updated output formatting when Bezi searches a project so it's easier to read and understand what Bezi's looking at
 
   **Bug fixes:**
 
-  - Fixed an Actions bug related to creating materials without shader names 
+  - [Actions] fixed bug related to creating materials without shader names
+  - [Actions] fixed bug that blocked Bezi from creating standard material sometimes
+  - [Actions] fixed bug that blocked Actions if Hot Reload plugin is present
+  - [Actions] fixed bug that blocked Actions if Amplify shaders are present
+  - [Actions] fixed bug that blocked Actions if a specific Terrain shader is present
+  - [Actions] fixed bug that blocked Actions from inspecting Enums for ECS-related assets
+  - NRE when deleting a selected object in Unity
+  - Fixed bug re: not inspecting GameObject marked as DontDestroyOnLoad
+  - Fixes for obsolete warnings in custom script
   - Fixed a bug in Windows where Bezi would not properly be closed before updating
   - Several other minor bug fixes related to generating and executing Actions
 </Update>
