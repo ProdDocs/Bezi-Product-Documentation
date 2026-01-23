@@ -59,6 +59,13 @@
               "account/plans",
               "account/billing"
             ]
+          },
+          {
+            "group": "More",
+            "pages": [
+              "more/enhanced-code-intelligence",
+              "more/edit-prompts"
+            ]
           }
         ]
       }
