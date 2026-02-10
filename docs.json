@@ -29,6 +29,7 @@
               "fundamentals/prompting",
               "fundamentals/threads",
               "fundamentals/rules",
+              "fundamentals/plan-mode",
               "fundamentals/agent-mode",
               "fundamentals/agent-mode-actions",
               "fundamentals/ask-mode"
@@ -38,7 +39,7 @@
             "group": "Context",
             "pages": [
               "context/index-project",
-              "context/pins",            
+              "context/pins",
               "context/image-attachments",
               "context/pages"
             ]
