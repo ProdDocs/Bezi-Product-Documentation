@@ -3,44 +3,65 @@ title: "Changelog"
 ---
 
 <Info>
-  **App:** v1.21.0
+  **App:** v1.22.1
 
-  **Plugin**: v0.75.4
+  **Plugin**: v0.79.6
 </Info>
 
-<Update label="02/10/2026" description="">
+<Card icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.79.6/com.bezi.sidekick-0.79.6.tgz" title="Download Plugin v0.79.6">
+  
+</Card>
+
+<Update label="02/25/2026">
+  **Usability improvements:**
+
+  - Plans include more implementation specifics so you can tweak and get more predictable results when executed
+  - Enable submission of custom, free-form responses in Plan Mode 
+  - Plans can be moved to pages folders
+  - Main reasoning model updated to Sonnet 4.6
+  - Bezi's reasoning (what it's doing when it says "thinking...") now shown in the thread so you can see what it's doing
+  - Made Bezi compatible with certain JSONConverter packages, like `Newtonsoft.Json-for-Unity.Converters`
+
+  **Bug fixes**: 
+
+  - Networking updates to limit timeout errors (usually related to to slow network, slow LLM reasoning, or long domain reloads)
+  - Copy/paste formatting between pages, threads, and prompts preserves rich text
+  - Bezi will not focus Unity (bring it into the foreground) to avoid interrupting other work
+</Update>
+
+<Update label="02/10/2026">
   ## Now introducing: Plan Mode
 
-  Plan Mode is a new space for structuring prompts to execute complex tasks more accurately in Agent Mode 
+  Plan Mode is a new space for structuring prompts to execute complex tasks more accurately in Agent Mode
 
   - Get more done by enabling Bezi to execute tasks independently (min intervention needed once a plan's set)
   - Define what to build and how to approach it before execution
   - Best for medium-to-complex tasks with multiple steps or evolving requirements
 
-   **How to use it** 
+  **How to use it**
 
-  - **Plans define execution. Pages store context. Agent Mode builds.** 
+  - **Plans define execution. Pages store context. Agent Mode builds.**
   - Break work into clear, implementation-ready steps
   - Click Build to start a new Agent Mode thread from your plan
 
-   **When to use it**
+  **When to use it**
 
   - Medium-to-complex tasks with multiple steps or evolving requirements
   - Work that needs repeatable, accurate results
 
-   **When NOT to use it**
+  **When NOT to use it**
 
   - Small or exploratory tasks where in-time iteration is better
   - To document background information, multiple separate deliverables, etc. (use a Page instead)
   - Planning entire games and press build
 
-  **Other improvements **
+  **Other improvements** 
 
   - Faster initial response times
   - Better error recovery when Bezi needs to use tool calls (so it can more reliably correct itself)
 </Update>
 
-<Update label="02/09/2026" description="">
+<Update label="02/09/2026">
   **Usability improvements:**
 
   - Improved Bezi's ability to accomplish longer or more complex tasks while keeping responses fast, specifically for users that sent/received a message in the last 5 min
@@ -54,7 +75,7 @@ title: "Changelog"
   - Small UI tweaks to color
 </Update>
 
-<Update label="01/28/2026" description="">
+<Update label="01/28/2026">
   **Hotfixes from yesterday's release:**
 
   The updater isn't auto-surfacing so, to get the latest release, fresh install the app from [www.bezi.com](https://www.bezi.com/).
@@ -70,7 +91,7 @@ title: "Changelog"
   - Fixed several visual bugs with prompt container and asset drawer
 </Update>
 
-<Update label="01/27/2026" description="">
+<Update label="01/27/2026">
   **Usability improvements:**
 
   - Bezi desktop icon shows visual alert when a response is done generating
@@ -87,7 +108,7 @@ title: "Changelog"
   - Other small fixes and improvements
 </Update>
 
-<Update label="01/13/2026" description="">
+<Update label="01/13/2026">
   **Usability improvements:**
 
   - If you prompt to execute Actions when Unity's in Play Mode, you'll see the option to exit Play Mode or continue in Ask Mode to prevent unexpected behavior
@@ -108,7 +129,7 @@ title: "Changelog"
   - Several other minor bug fixes related to generating and executing Actions
 </Update>
 
-<Update label="01/08/2026" description="">
+<Update label="01/08/2026">
   **Usability improvements:**
 
   - Bezi Actions can create prefab variants from existing prefabs and assets
@@ -121,7 +142,7 @@ title: "Changelog"
   - Improved recovery when Bezi encounters certain errors
 </Update>
 
-<Update label="01/06/2026" description="">
+<Update label="01/06/2026">
   **Now introducing**: Actions is in GA!!
 
   - Big launch to kick off 2026: Actions is now available and activated by default for everyone
