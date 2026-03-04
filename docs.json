@@ -29,9 +29,10 @@
               "fundamentals/prompting",
               "fundamentals/threads",
               "fundamentals/rules",
+              "fundamentals/model-selection",
               "fundamentals/plan-mode",
-              "fundamentals/agent-mode",
               "fundamentals/agent-mode-actions",
+              "fundamentals/agent-mode",
               "fundamentals/ask-mode"
             ]
           },

@@ -1,0 +1,63 @@
+---
+title: "Model Selection"
+---
+
+Choose the **model type** per prompt - Frontier, Core or Basic - to affects the depth and speed of a response.
+
+How to decide: **heavier tasks need more reasoning power; simple tasks don't**. The right model for the right task gets you a good result faster, which will help credits go further.
+
+## Model type options
+
+| Model Type         | Example Models             | Best for                                                      | Credits per prompt |
+| ------------------ | -------------------------- | ------------------------------------------------------------- | ------------------ |
+| **Frontier**       | Claude Opus, Gemini Pro    | Complex, multi-step workflows requiring accuracy or reasoning | 5-20               |
+| **Core** (default) | Claude Sonnet              | Most tasks - balanced speed and reasoning                     | 3-10               |
+| **Basic**          | Claude Haiku, Gemini Flash | Quick questions, small edits, lookups                         | 1-3                |
+
+## When to use each model type
+
+A good rule of thumb: **start with Core**. Upgrade to Frontier if you're getting responses that feel shallow or need lots of correction. Switch to Basic for quick questions between longer tasks.
+
+<Tabs>
+  <Tab title="Frontier">
+    **Frontier** is worth the extra credits for complex tasks:
+
+    - Long, multi-step Agent Mode workflows
+    - Output that requires precision, like UI generation
+    - Tasks with many dependencies or subtle system interactions
+    - Deep debugging across scenes and systems where the root isn’t clear
+  </Tab>
+  <Tab title="Core">
+    **Core** is genuinely great for a lot of daily work:
+
+    - Debugging and error fixing
+    - Writing or modifying scripts
+    - Building an editor tool
+  </Tab>
+  <Tab title="Basic">
+    **Basic** is nice for getting a fast answer or iterating on lighter tasks:
+
+    - Quick lookups and explanations
+    - Simple one-line fixes you're confident about
+    - Tasks where you plan to review and refine the output anyway
+  </Tab>
+</Tabs>
+
+---
+
+## How to select the model type
+
+The model selector is inline in the prompt input. **Core** is the default. If you want a different model type for a prompt, you need to select it before you submit the prompt.
+
+<Frame>
+  ![Model Selector](/images/model-selector.png)
+</Frame>
+
+## Tracking credit usage
+
+To see a breakdown of credits consumed per prompt and by model type, follow these steps:
+
+1. Go to: [app.bezi.com/account](https://app.bezi.com/account)
+2. Open the **Subscriptions & Usage** tab
+
+See the [Plans & Credits](https://docs.bezi.com/account/plans) page for a full breakdown of how credit usage works.

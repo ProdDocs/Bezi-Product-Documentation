@@ -1,22 +1,28 @@
 ---
-title: "Plans and Overage Credits"
+title: "Plans and Credits"
 ---
 
 ### Plan options
 
 See [**bezi.com/pricing**](https://www.bezi.com/pricing) for plan options and pricing.
 
-- **Trial**: 50 credits / no expiration, 2 pages
-- **Pro**: 500 credits / month, 20 pages
-- **Advanced**: 1800 credits / month, 40 pages
-- **Team**: 3 seats, 5000 pooled credits / month, 100 pages per seat
-  - Centralized billing and team management capabilities
-  - Additional seats can be added to a Team, extra credits are added to the Team credit pool
-- **Enterprise**: Custom seat, credit and page limits, custom security and compliance, SSO, etc.
+| Plan           | Price    | Credits per month                                                                                                                                  |
+| -------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Trial**      | Free     | 100 (one-time)                                                                                                                                     |
+| **Pro**        | \$20/mo  | 800                                                                                                                                                |
+| **Advanced**   | \$60/mo  | 2,400                                                                                                                                              |
+| **Team**       | \$200/mo | 8,000 pooled credits, 3 seats included, centralized billing and team management <br />(can add more seats, which will increase team's credit pool) |
+| **Enterprise** | Custom   | Custom credits and seats, Enterprise security and compliance, SSO, etc.                                                                            |
 
-### Usage-based overage credits
+## How credit usage is measured
 
-If you hit a paid plan's credit limit before the renewal, you can purchase extra credits to continue working in Bezi.
+Credit cost per prompt depends on the model type selected. On average:
+
+- **Frontier**: 5–20 credits per prompt
+- **Core**: 3–10 credits per prompt
+- **Basic**: 1–3 credits per prompt
+
+Exact credit usage depends on the task complexity and prompt - specifically, how many steps Bezi takes to complete the work.
 
 1. Open [accout dashboard](https://app.bezi.com/account) \> **Usage** tab
 2. Toggle on **Enable usage-based pricing**
@@ -24,8 +30,27 @@ If you hit a paid plan's credit limit before the renewal, you can purchase extra
 4. Click `Save`
 5. Log out of Bezi completely and back-in before continuing your work
 
-### How credit usage is measured
+## Viewing your usage
 
-1 credit = 1 **sucessful** prompt. A successful prompt means you submit a prompt and receive a response from Bezi. If you edit a past prompt and regenerate a response, this also counts as a successful prompt.
+To see a per-prompt breakdown of credit usage, including which model was used and how many credits each prompt consumed:
 
-If you submit a prompt and Bezi gets stuck in “thinking mode” or you get an error, these won't count towards usage.
+1. Open [app.bezi.com/account](https://app.bezi.com/account)
+2. Select the **Subscription & Usage** tab
+
+## On-demand usage
+
+If you hit your plan's credit limit before renewal, you can enable on-demand credits to keep working.
+
+1. Open [app.bezi.com/account](https://app.bezi.com/account) 
+1. Select the **Subscriptions & Usage** tab
+2. Toggle on **Enable on-demand usage**
+3. Set your monthly spending limit
+4. Click `Save`
+
+Overage credits are priced at **\$0.05 per credit**. Charges are applied at regular intervals, not at the end of the month. If a payment fails, you won't be able to prompt Bezi until the payment succeeds.
+
+## Credit reset at billing renewal
+
+Credits reset to your plan's monthly limit at each billing renewal. Unused credits from the previous cycle do not roll over.
+
+See [Billing](https://docs.bezi.com/account/billing) for information on upgrading, downgrading, and managing your subscription.

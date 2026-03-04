@@ -3,26 +3,68 @@ title: "Changelog"
 ---
 
 <Info>
-  **App:** v1.22.1
+  **App:** v1.22.2
 
-  **Plugin**: v0.79.6
+  **Plugin**: v0.79.13
 </Info>
 
-<Card icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.79.6/com.bezi.sidekick-0.79.6.tgz" title="Download Plugin v0.79.6">
+<Card icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.79.13/com.bezi.sidekick-0.79.13.tgz" title="Download Plugin v0.79.13">
   
 </Card>
+
+<Update label="03/04/2026">
+  ## Now introducing: Model Selection, Auto-Continue, New Credit System
+
+  **Model Selections:** _Choose the right AI for a task. Available on all plans._
+
+  - **Frontier** (Claude Opus 4.6) for complex multi-step challenges, UI and debugging
+  - **Core** (Claude Sonnet 4.6) for everyday development work - the default
+  - **Basic** (Gemini Flash) for fast, lightweight tasks
+
+  **Auto-Continue**
+
+  - Bezi will execute multi-step tasks completely, without interruption
+  - No more prompt to "continue" when Bezi hits the 20 tool-call limit
+
+  **New Credit System**
+
+  - No changes to the subscription price
+  - Credit consumption per prompt is determined by the model it uses
+  - Increased the credit limit per plan (see pricing page)
+
+  **On-Demand Credits & Spend Limits:** _Use Bezi past the monthly credit limit_
+
+  - On-demand credits are cheaper: \$0.05/credit (reduced from \$0.20/credit)
+  - Enable on-demand usage in your account dashboard
+
+  **Usage Dashboard**
+
+  - The Usage tab in your account dashboard shows full credit history: consumption per prompt, breakdowns by model, mode, and date
+
+  **Usability improvements**
+
+  - Bezi now proactively summarizes, caches, and clears expired tools mid-workflow to keep the context window clearer for long tasks
+  - Enabled Bezi actions for Animation controllers
+  - Improved Bezi's speed and ability to retrieve subscription information in the account dashboard and app
+  - Enabled yearly subscriptions to add on-demand credits
+
+  **Bug fixes**
+
+  - Fixed multiple bugs related to Bezi's file reading and list directory tools failing on invalid paths
+  - Fixed bug that was blocking Bezi from reading packages linked from outside of the Unity folder
+</Update>
 
 <Update label="02/25/2026">
   **Usability improvements:**
 
   - Plans include more implementation specifics so you can tweak and get more predictable results when executed
-  - Enable submission of custom, free-form responses in Plan Mode 
+  - Enable submission of custom, free-form responses in Plan Mode
   - Plans can be moved to pages folders
   - Main reasoning model updated to Sonnet 4.6
   - Bezi's reasoning (what it's doing when it says "thinking...") now shown in the thread so you can see what it's doing
   - Made Bezi compatible with certain JSONConverter packages, like `Newtonsoft.Json-for-Unity.Converters`
 
-  **Bug fixes**: 
+  **Bug fixes**:
 
   - Networking updates to limit timeout errors (usually related to to slow network, slow LLM reasoning, or long domain reloads)
   - Copy/paste formatting between pages, threads, and prompts preserves rich text
@@ -55,7 +97,7 @@ title: "Changelog"
   - To document background information, multiple separate deliverables, etc. (use a Page instead)
   - Planning entire games and press build
 
-  **Other improvements** 
+  **Other improvements**
 
   - Faster initial response times
   - Better error recovery when Bezi needs to use tool calls (so it can more reliably correct itself)
