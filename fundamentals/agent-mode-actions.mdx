@@ -22,17 +22,23 @@ When Agent Mode's Actions is enabled, Bezi can automatically create, update, and
     - Create scenes
     - Create primitives
     - Create tags
+    - Take Scene view image
+    - Take Game view image
   </Accordion>
+
   <Accordion title="Assets & Prefabs">
     - Create or update assets
     - Create prefabs
     - Create prefabs from assets
     - Instantiate prefabs
+    - Take prefab image (including uGUI)
+    - Create or update AnimatorController
     - Create or update materials
     - Create or update ScriptableObjects
     - Update asset importers
     - Print assets
   </Accordion>
+
   <Accordion title="Components & Layout">
     - Add or update components
     - Remove components
@@ -54,8 +60,7 @@ For more control on which Actions Bezi takes, explicitly state the name of the a
 
 See the Agent Mode docs for complete details on the states that changes exist in and how to manage each one.
 
-<Card title="Agent Mode states and management " icon="robot" iconType="regular" href="https://docs.bezi.com/fundamentals/agent-mode#how-to-preview-and-keep-/-undo-proposed-changes">
-  
+<Card title="Agent Mode states and management" icon="robot" iconType="regular" href="https://docs.bezi.com/fundamentals/agent-mode#how-to-preview-and-keep-/-undo-proposed-changes">
 </Card>
 
 ## How to turn off Actions for your Bezi instance
@@ -83,4 +88,4 @@ When Actions are disabled, Bezi Agent Mode will continue to reason, explain, and
 
 Natural language works great but, if you want deterministic behavior, be explicit:
 
-- “_Use Actions to create a prefab from @[game object name]_.”
+- “_Use Actions to create a prefab from @\[game object name\]_.”

@@ -3,14 +3,35 @@ title: "Changelog"
 ---
 
 <Info>
-  **App:** v1.23.0
+  **App:** v1.24.1
 
-  **Plugin**: v0.79.17
+  **Plugin**: v0.82.2
 </Info>
 
-<Card icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.79.17/com.bezi.sidekick-0.79.17.tgz" title="Download Plugin v0.79.13">
-  
+<Card title="Download Plugin v0.82.2" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.82.2/com.bezi.sidekick-0.82.2.tgz">
 </Card>
+
+<Update label="03/24/2026">
+  **Now introducing:**_ Vision Tool - auto-capture images to enable more accurate implementations_
+
+  - Bezi now automatically takes images of a project's Game View, Scene View, UI, and assets to analyze changes visually
+    - Game View and Scene View images work in edit mode and play mode
+    - asset images only work in edit mode
+  - Supported asset types: _Scenes, GameObjects, Prefabs (including uGUI), Materials, Textures, Sprites, UI Toolkit, Particles, and Animators_
+  - Bezi decides when to activate the Vision Tool, which camera angles to use, and which objects to focus on
+
+  --------------\
+  **Usability improvements**
+
+  - Huge improvements to how Bezi loads and handles large code files, improving output and minimizing credit usage
+  - Team seat add-ons now add 2000 credits/seat
+  - Transform Page text into a Plan: select the text \> open the selection menu
+  - Pages can now render tables
+
+  **Bug fixes**
+
+  - Resolved a bug that blocked the Play Mode pop-up from showing when Unity was in Play Mode
+</Update>
 
 <Update label="03/10/2026">
   **Usability improvements**
@@ -171,12 +192,12 @@ title: "Changelog"
 
   **Bug fixes:**
 
-  - [Actions] fixed bug related to creating materials without shader names
-  - [Actions] fixed bug that blocked Bezi from creating standard material sometimes
-  - [Actions] fixed bug that blocked Actions if Hot Reload plugin is present
-  - [Actions] fixed bug that blocked Actions if Amplify shaders are present
-  - [Actions] fixed bug that blocked Actions if a specific Terrain shader is present
-  - [Actions] fixed bug that blocked Actions from inspecting Enums for ECS-related assets
+  - \[Actions\] fixed bug related to creating materials without shader names
+  - \[Actions\] fixed bug that blocked Bezi from creating standard material sometimes
+  - \[Actions\] fixed bug that blocked Actions if Hot Reload plugin is present
+  - \[Actions\] fixed bug that blocked Actions if Amplify shaders are present
+  - \[Actions\] fixed bug that blocked Actions if a specific Terrain shader is present
+  - \[Actions\] fixed bug that blocked Actions from inspecting Enums for ECS-related assets
   - NRE when deleting a selected object in Unity
   - Fixed bug re: not inspecting GameObject marked as DontDestroyOnLoad
   - Fixes for obsolete warnings in custom script
@@ -208,7 +229,7 @@ title: "Changelog"
     - Create and modify materials and shaders
     - Create and modify prefabs, both loaded and available in the Assets
     - Create and modify scenes, both loaded and available in the Assets
-  - Learn more: https://docs.bezi.com/fundamentals/agent-mode-actions
+  - Learn more: [https://docs.bezi.com/fundamentals/agent-mode-actions](https://docs.bezi.com/fundamentals/agent-mode-actions)
 
   **Usability improvements:**
 
@@ -305,7 +326,7 @@ title: "Changelog"
 <Update label="11/06/2025" description>
   **Now introducing:**
 
-  - Added a Team Plan for studios using Bezi! Includes 3 seats, 5k credits in a shared pool, and team management capabilities. Learn more: https://www.bezi.com/pricing
+  - Added a Team Plan for studios using Bezi! Includes 3 seats, 5k credits in a shared pool, and team management capabilities. Learn more: [https://www.bezi.com/pricing](https://www.bezi.com/pricing)
   - Bezi can now view and edit local Unity packages installed in a project
 
   **Usability improvements:**
@@ -381,7 +402,7 @@ title: "Changelog"
     - Store your GDD to reference when work needs to be tailored to your game’s concept, roadmap, etc.
     - Pages must be referenced in prompts with @ mention
     - Pages is in beta - please share all your feedback and requests!
-    - Read the docs: https://docs.bezi.com/bezi/product/pages-folders
+    - Read the docs: [https://docs.bezi.com/bezi/product/pages-folders](https://docs.bezi.com/bezi/product/pages-folders)
     - Page examples: Yahor to post / Sarah to add
   - **BEZI WORKS IN PLAY MODE NOW**! You can submit prompts in Play Mode & get answers to your runtime questions
     - No docs, just start prompting!
@@ -428,7 +449,7 @@ title: "Changelog"
   **Now introducing...**
 
   - **ATTACH IMAGES TO PROMPTS**! You can now add images/screenshots to a prompt to supplement the information Bezi factors into its response.
-  - Read the docs: https://docs.bezi.com/bezi/product/attach-images
+  - Read the docs: [https://docs.bezi.com/bezi/product/attach-images](https://docs.bezi.com/bezi/product/attach-images)
 
   **Usability improvements:**
 
@@ -445,7 +466,7 @@ title: "Changelog"
 
 <Update label="08/20/2025" description>
   > We want your feedback! We're committed to making Bezi as lightweight as possible and to not impact game developer's workflows or testing performance. \
-  > After this update, do you notice any performance difference in your project's compile times, time to enter play mode, or general performance inside of Unity? If you do, can you share the before + after?
+  > After this update, do you notice any performance difference in your project's compile times, time to enter play mode, or general performance inside of Unity? If you do, can you share the before \+ after?
 
   **Usability improvements:**
 
@@ -498,9 +519,9 @@ title: "Changelog"
   **Now introducing...**
 
   - Project Rules! Define project-wide rules for Bezi to follow. Set the code syntax, how to navigate your project's files, game design patterns, and other project-specific context, instructions, etc. you want Bezi to follow
-    - Read the docs: https://docs.bezi.com/bezi/product/project-rules
+    - Read the docs: [https://docs.bezi.com/bezi/product/project-rules](https://docs.bezi.com/bezi/product/project-rules)
   - Enhanced Code Intelligence: Turn this on to enable Bezi to find errors and warnings in your codebase on its own! Bezi hooks into the OmniSharp language server to catch errors in the code it writes or help you fix existing errors in your own code
-    - Read the docs: https://docs.bezi.com/bezi/product/enhanced-code-intelligence
+    - Read the docs: [https://docs.bezi.com/bezi/product/enhanced-code-intelligence](https://docs.bezi.com/bezi/product/enhanced-code-intelligence)
 
   **Usability improvements:**
 
@@ -542,7 +563,7 @@ title: "Changelog"
   _UI updates to Canvas and Agent Mode:_
 
   - Sliders now stay within bounds
-  - Canvas search with cmd/ctrl+F scrolls to the search results items
+  - Canvas search with cmd/ctrl\+F scrolls to the search results items
 </Update>
 
 <Update label="07/08/2025" description>
@@ -561,9 +582,8 @@ title: "Changelog"
   **Subscription tiers and management:**
 
   - New tiers for higher credit limits: [bezi.com/pricing](https://www.bezi.com/pricing)
-
-    New subscription setting hub to easily manage subscription and billing: https://app.bezi.com/account
-  - See updated product docs on managing subscriptions and billing here: https://docs.bezi.com/bezi/account-settings/subscription-billing
+    New subscription setting hub to easily manage subscription and billing: [https://app.bezi.com/account](https://app.bezi.com/account)
+  - See updated product docs on managing subscriptions and billing here: [https://docs.bezi.com/bezi/account-settings/subscription-billing](https://docs.bezi.com/bezi/account-settings/subscription-billing)
 
   **Usability improvements:**
 
