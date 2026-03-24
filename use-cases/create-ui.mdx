@@ -18,16 +18,17 @@ With the right prompting, you can reach relatively complete and polished UI, dep
 The more detail and specificity in a prompt, the better Bezi’s output will be.
 
 1. **Tell Bezi you want to create UI**
-2. Create the UI Standards Page, following the [provided framework and example](https://docs.bezi.com/use-cases/create-ui#precursor-for-creating-ui-with-bezi)
+2. Create your UI Standards Page, ref the below [framework and example](https://docs.bezi.com/use-cases/create-ui#precursor-for-creating-ui-with-bezi) 
 3. Define what UI you want to create (level-selection menu, leaderboard screen, health bar, etc.)
 4. Find visual example(s) of UI layout you want Bezi to generate
-9. Define any customizations and functionality _specific_ to this UI that shouldn't live in your UI Standards Page
-9. Pin any existing assets you want to use, e.g. textures, icons, etc.
-6. [[**Agent Mode**](https://docs.bezi.com/bezi/modes/agent-mode)] Draft a prompt with all the information in Steps 1-6. [**<u>Pin</u>**](https://docs.bezi.com/context/pins) the UI Standards Page created in Step 2 (type `@`, then Page name) and attach images from Step 4
-   - **Prefab example prompt**: “_Create UI to do [Step 3]. Make it look like the attached image ([Step 4]), especially [specific parts of the image Bezi should focus on], and do [Step 5]. Follow the guidelines written in @[UI Standards Page]. Use the assets in @[Step 6].”_
-7. Submit your prompt!
-9. Bezi will create a whitebox of the UI, with any scripts for functionality and made into a prefab, directing in the Unity Editor
-8. Manually polish the UI
+5. Define any customizations and functionality _specific_ to this UI that shouldn't live in your UI Standards Page
+6. Pin any existing assets you want to use, e.g. textures, icons, etc.
+7. \[[**Agent Mode**](https://docs.bezi.com/bezi/modes/agent-mode)\] Draft a prompt with all the information in Steps 1-6. [**<u>Pin</u>**](https://docs.bezi.com/context/pins) the UI Standards Page created in Step 2 (type `@`, then Page name) and attach images from Step 4
+   - **Prefab example prompt**: “_Create UI to do \[Step 3\]. Make it look like the attached image (\[Step 4\]), especially \[specific parts of the image Bezi should focus on\], and do \[Step 5\]. Follow the guidelines written in @\[UI Standards Page\]. Use the assets in @\[Step 6\].”_
+8. Submit your prompt!
+9. Bezi will create the UI prefab and functionality directly in the Unity Editor
+10. Bezi will take images of the UI and iterate on look and feel until it gets close to the specs
+11. Manually polish the UI to get it to 100%
 
 ## UI Standards Pages for generating consistent UI
 
@@ -44,7 +45,7 @@ The more detail and specificity in a prompt, the better Bezi’s output will be.
 
 <AccordionGroup>
   <Accordion title="UI Standards Page">
-    ## UI Guidelines + Specs
+    ## UI Guidelines \+ Specs
 
     ### Components/Objects
 
@@ -78,9 +79,10 @@ The more detail and specificity in a prompt, the better Bezi’s output will be.
     - Name button callbacks clearly: OnButtonNameClicked() pattern
     - Keep UI scripts single-responsibility - separate concerns (display vs. logic)
     - Use serialized fields for references instead of FindObjectOfType
-    - Add [Header] attributes to organize Inspector properties
+    - Add \[Header\] attributes to organize Inspector properties
     - Cache frequently accessed components in Awake() or Start()
   </Accordion>
+
   <Accordion title="UI Toolkit Guide">
     ## Essential UI Toolkit Guide for Unity 6.1
 
