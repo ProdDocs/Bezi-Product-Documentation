@@ -3,13 +3,78 @@ title: "Changelog"
 ---
 
 <Info>
-  **App:** v1.24.0
+  **App:** v1.25.0
 
-  **Plugin**: v0.82.2
+  **Plugin**: v0.84.5
 </Info>
 
-<Card title="Download Plugin v0.82.2" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.82.2/com.bezi.sidekick-0.82.2.tgz">
+<Card title="Download Plugin v0.84.5" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.84.5/com.bezi.sidekick-0.84.5.tgz">
 </Card>
+
+<Update label="04/21/2026">
+  ## Now introducing: Workspaces
+
+  _multi-source, team hubs with shared artifacts, parallel working threads, subagents and more!_
+
+  [**Workspaces**](https://docs.bezi.com/fundamentals/workspaces):
+
+  - One hub to contain all relevant Unity projects, local folders, pages, threads, and rules for the work
+  - No limits on the number of individual and Team Workspaces you can have/be added to
+
+  [**Connections**](https://docs.bezi.com/context/connections): _Unity projects & local folders_
+
+  - **Unity projects:** Bezi retains knowledge of all conventions, systems, and architecture across connected projects. Streamline porting, referencing examples, and working across a multi-project studio pipeline
+  - **Local folders**: Add local folders (server-side code, other games, build tooling, asset pipelines) for Bezi to reference and update during work
+  - **Manage Connections**: Toggle them on/off to keep Bezi focused and prevent context overload
+
+  [**Team Workspaces**](https://docs.bezi.com/fundamentals/team-workspaces)
+
+  - Members of a Team Workspace can create and access a single source of truth for vision, standards, rules, documented decisions in a project
+  - Admins can view, add, manage and monitor all Member licenses and usage from a single Team settings panel
+  - Workspace membership is managed per Team Workspace
+  - You can convert a personal Workspace into a Team Workspace to preserve all its data (Connections, Pages, Plans, and threads)
+
+  [**Shared Pages**](https://docs.bezi.com/context/pages):
+
+  - Shared Pages are how your whole team gets consistent, grounded outputs - the same coding standards, the same architecture decisions, the same documented schemas - without repeating work
+  - Every member's Bezi agent automatically references Shared Pages to keeps teams aligned and work consistent
+  - In Team Workspaces, Pages can be Shared (visible to everyone) or Private (visible only to you)
+  - Shared Pages are visible and editable by all members
+
+  **Run multiple threads in parallel**
+
+  - You can run multiple threads in parallel for separate projects - great for parallelizing work on different parts of a game
+  - If a thread has pending Agent Mode changes for a project, you can't run Agent Mode in a second thread for the same project until the changes are decided
+
+  ---
+
+  **Subagents**: _Save your time and money by reducing work on the main model_
+
+  - Subagents are deployed automatically by Bezi to break up larger tasks and manage the less complex work, reducing the work the main agent does
+  - You can see what tasks Subagents are assigned to and what they are currently working on
+
+  [**Workspace Threads**](https://docs.bezi.com/fundamentals/threads):
+
+  - You set one target project per thread to tell Bezi which project to actively work on
+  - All Threads for a Workspace live in the dedicated Threads panel on the right
+
+  [**How to prompt**](https://docs.bezi.com/fundamentals/prompting):
+
+  - Use # to mention Projects/Local Folders in prompts
+
+  [**Workspace Rules**](https://docs.bezi.com/context/rules):
+
+  - Rules now function at the Workspace level (apply to all work and Connections in a Workspace)
+  - Rules are private to each person in a Team Workspace, so each dev can tailor Bezi to your workflow without affecting your teammates
+  - Still persistent instructions for how Bezi behaves - preferred code style, naming conventions, architectural constraints
+
+  **Efficiency improvements**
+
+  - Asset Sync has been replaced by subagents to power our Project Search tool
+  - Searching files by name or contents is more token efficient and faster
+  - Executing actions is now more token efficient
+  - Substantially decreased Bezi’s chance to spiral when it works on long, complex tasks
+</Update>
 
 <Update label="03/24/2026">
   ## Now introducing: Vision Tool

@@ -1,10 +1,8 @@
 ---
-title: "Install and Connect"
+title: "Quickstart"
 ---
 
-If you have questions or difficulties during set-up, check out our [Troubleshooting FAQ](https://docs.bezi.com/get-started/troubleshooting) or get support on our [**Discord**](https://discord.com/invite/UKWB46HTT9).
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WRkpliHvBTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+A brief guide to get you set-up and building with Bezi in under an hour. If you have questions or run into anything unusual, check the [Troubleshooting FAQ](https://docs.bezi.com/get-started/troubleshooting) - or get some good ol' fashioned human support on our [**Discord**](https://discord.com/invite/UKWB46HTT9).
 
 ## Install and set-up Bezi
 
@@ -17,67 +15,54 @@ If you have questions or difficulties during set-up, check out our [Troubleshoot
     Add the app to your dock for ease of access.
   </Step>
   <Step title="Set-up your account">
-    1. Open the Bezi app
-    2. Select `Log In / Sign Up` and use email or Google to sign-in
-    3. When set-up is complete, you'll see a webpage that says "Launch Bezi App"
-    4. Click `Launch app` to return to Bezi
-    5. Start your free trial (100 credits, no expiration)
+    1. Open Bezi  \> select `Log In / Sign Up` \> sign-in with email or Google
+    2. When set-up is complete, you'll see a webpage that says "Launch Bezi App"
+    3. Click `Launch app` to return to Bezi
+    4. Start your free trial (100 credits, no expiration)
   </Step>
 </Steps>
 
 ## Connect Bezi with Unity
 
 <Steps>
-  <Step title="Open the Bezi app">
-    Confirm your app is open and you see the Get Started screen.
+  <Step title="Open Bezi">
+    You'll start in an empty [Workspace](/fundamentals/workspaces)
   </Step>
-  <Step title="Open a Unity project">
-    1. Open the Unity project you want to connect
-    2. Confirm the Unity project is in a folder with write permissions
+  <Step title="Connect a Unity project">
+    1. Click `Connect Unity project`
+    2. Select the Unity Project from your file system and click `Open`
+       1. Open the  project 
+       2. Confirm the  project's in a folder with write permissions
     3. Return to Bezi
-    4. Open the **Project Picker** dropdown in Bezi's menu bar \> select your project
-       1. If you don't see the desired project in the dropdown, click `Add Project` to manually add the Unity project to Bezi
-       2. If you can't find your Unity project, see [this documentation](https://docs.bezi.com/bezi/troubleshooting#why-am-i-not-seeing-my-project-in-the-projects-dropdown%3F)
-    1. Check name in the **Project Picker** to confirm the right Unity project is connected
-
-    <Tip>
-      Both the Unity project and Bezi app must be open to use them together. We recommend a split screen to see both simultaneously.
-    </Tip>
   </Step>
-  <Step stepNumber={3} title="Install Bezi's Unity plugin">
-    Select the plugin `Install` button, located in step 2 of the Get Started flow.
+  <Step title="Install Bezi's Unity plugin" stepNumber={3}>
+    Click the`Install plugin` button, located in the **Your Connections** dialog
 
-    <Tip>
-      If you run into trouble installing the plugin via the Bezi app, download the Unity plugin directly from our [Changelog](https://docs.bezi.com/bezi/product/changelog).
-    </Tip>
+    <Info>
+      If you can't install the plugin from  Bezi, download it directly from our [Changelog](https://docs.bezi.com/bezi/product/changelog).
+    </Info>
   </Step>
-  <Step stepNumber={4} title="Grant Unity permission to install">
-    After you've clicked `Install` in Bezi, return to the Unity project. Unity will ask for consent to install the plugin. Once granted, the Unity Package Manager popup will appear.
-
-    You may also see a _"_**_Consent Request_**_"_ popup from Unity. It's completely safe to accept, as it only modifies some APIs in Bezi to match your Unity version. No personal files are affected.
+  <Step title="Grant Unity permission to install" stepNumber={4}>
+    After you click `Install` in Bezi, return to the Unity project. Unity will ask for consent to install the plugin. Once granted, the Unity Package Manager popup will appear.
   </Step>
-  <Step title="Confirm connection status">
-    To confirm the connection is established, check Unity's menu for a green dot next to the **Bezi icon** and Bezi's menu for green dot next to the **Unity icon**.
+  <Step title="Confirm Bezi <> Unity connection status">
+    Check Unity's menu for a green dot next to the **Bezi icon** and Bezi's menu for green dot next to the **Unity icon**. Both must be green for Bezi to work.
 
     If either is red, follow [these steps to fix a broken connection](https://docs.bezi.com/bezi/troubleshooting#how-do-i-reinstate-a-lost-connection-between-unity-and-bezi%3F).
 
-    <Warning>
-      Both connection indicators **must** be green for Bezi to work.
-    </Warning>
+    <Tip>
+      Both the target Unity project and Bezi  must be open to use them together. We recommend a split screen to see both simultaneously.
+    </Tip>
   </Step>
-  <Step stepNumber={6} title="Sync your project with Bezi">
-    First time you connect Bezi to a new Unity project, you must wait for it to index the entire project. Do not prompt Bezi until this step is completed. If you prompt before it's indexed, you risk interrupting the sync and receiving bad responses.
-
-    See the below for complete details on the index process.
-
-    <Card icon="layer-group" iconType="sharp-solid" title="Project index documentation">
-      
-    </Card>
+  <Step title="Customize your Workspace" stepNumber={6}>
+    - [Add relevant data sources](https://docs.bezi.com/context/connections): connect Bezi to  other Unity projects and external files
+    - [Create your documentation and instructions](https://docs.bezi.com/context/pages): give Bezi evergreen context with Pages
+    - [Set mandatory Rules](https://docs.bezi.com/context/rules) for Bezi to follow
   </Step>
   <Step title="Learn how to use Bezi">
-    Before you start prompting, review:
-
     1. [How to prompt](https://docs.bezi.com/fundamentals/prompting)
     2. [How to use threads](https://docs.bezi.com/fundamentals/threads)
+    3. [Model Selection](https://docs.bezi.com/fundamentals/model-selection)
+    4. [Agent Mode](https://docs.bezi.com/fundamentals/agent-mode) vs [Plan Mode](https://docs.bezi.com/fundamentals/plan-mode)
   </Step>
 </Steps>

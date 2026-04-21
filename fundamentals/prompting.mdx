@@ -1,32 +1,41 @@
 ---
-title: "How to Prompt"
-description: "Important rules to get the most from each Bezi prompt"
+title: "Prompting Best practices  "
 ---
 
-## Correct prompt structure
+### Plan first, then implement
 
-Current state \> Expected/Ideal state \> Response format you want
+Asking Bezi to jump straight into implementation can produce the wrong outcomes and waste credits. Use [**Plan Mode**](/fundamentals/plan-mode) to find the best approach before execution.
 
-Prototype prompt example: “_I have a system for X. I want to adjust it to add Y. Prototype that and describe any necessary setup steps_.”
+### Specific prompts = better outcomes
 
-## Prompt quality = response quality
+Bezi cannot read minds; **specific prompts take fewer prompts to deliver accurate results**. Tag Pages, set constraints, and define what you consider "success".
 
-Bezi cannot read minds; the more specific a prompt, the better! Use these tools to give specifics:
+1. Define the current state
+2. Define what needs to be done 
+3. Define the desired end-state
+4. Define how Bezi should measure successful completion of the task
+5. Point Bezi to resources: tag Pages, pin related parts of the project, reference existing patterns ([in any projects](/context/connections)), share suggestions or ideas, etc.
 
-1. Always [**add in-line pins**](https://docs.bezi.com/bezi/product/prompt-tagging) to call-out important information (assets, scripts, etc.): type “@” to search
-2. [**Attachment images**](https://docs.bezi.com/bezi/product/attach-images) (screenshots, Figma UI, etc.) to give Bezi visual context or direction
-3. Write [Rules](https://docs.bezi.com/bezi/product/project-rules) to customize Bezi's system prompt, defining how it should navigate and interact with a project and format or communicate its responses
-4. Write and pin [Pages](https://docs.bezi.com/bezi/product/pages-folders) to give Bezi important guidelines or more information for a given task
+Before submitting a prompt, read it in isolation. Is it very clear what the prompt refers to, what Bezi needs to do, and the resources and success criteria to use?
 
-Rule of thumb: Before submitting a prompt, read it separately from the thread history. Is it very clear what the prompt is referring to and what Bezi's needs to do or create?
+### Give Bezi rich data to inform decisions
 
-If the prompt isn't independently clear to you, Bezi will be confused by it too. Simplify your ask. Pin details. Replace any vague wording (i.e. "_fix_ _errors"_) with the error code / description and expected outcome.
+Use @ to reference in-project context, pages, and external Connections
 
-## If you get a response you don’t like, DO NOT PROMPT TO FIX IT
+1. [**Add in-line pins**](https://docs.bezi.com/bezi/product/prompt-tagging) to define project references (assets, scripts, scenes, etc.)
+2. Pin [Pages](https://docs.bezi.com/bezi/product/pages-folders) to give Bezi guidelines or documentation to follow
+3. [**Attach images**](https://docs.bezi.com/bezi/product/attach-images) (UI mockups, screenshots, etc.) directly to the prompt
+4. Set [Rules](https://docs.bezi.com/bezi/product/project-rules) to standardize how Bezi navigates and interacts with the Workspace
 
-Bezi ingests an active thread's prompt _and_ response history as context. So, if Bezi gives you a response you don't like and you prompt on top of it, Bezi will reference the wrong response as "important context" for its next attempt.
+### Low context window = high performance
 
-**Two ways to avoid a rabbit-hole**:
+Performance degrades and prompts take more credits as the context window fills. Always check a thread's **context window tracker** (bottom right of the prompt field) before prompting.
 
-1. [Edit the original prompt](https://docs.bezi.com/bezi/product/edit-prompts) and add any information missing in the origional prompt to get the right answer
-1. Summarize what you liked from this thread in a Page, start a new thread, @ the Page, and re-ask the question
+Try these thread context modifications if the context window is full:
+
+1. The thread's own prompt and response history; **start new threads every ~10 prompts**
+2. All active [Workspace Connections](https://docs.bezi.com/context/connections) (Unity projects and local data sources); **disable  Connections that are unrelated to a given task**
+
+### If you get responses you don’t like, start a new thread
+
+Bezi ingests the active thread's prompt and response history as context. If Bezi gives you a response you don't like and you prompt on top of it, Bezi may reference the wrong response as "relecant context" for its next attempt.

@@ -2,34 +2,52 @@
 title: "Welcome"
 ---
 
-Bezi is a game dev tool with complete context of your Unity project. It indexes a Unity project in-real time, registering all the **assets, scenes, packages, codebase and more.** It uses LLMs to find and apply task-relevant context, so every response is specific to the work at hand.
+Bezi is an AI game dev assistant. It's custom Unity integration enables complete, real-time project context (scripts, scenes, prefabs, assets, packages and more), used to plan and implement changes directly in the Unity Editor.
 
-Because Bezi connects to the project, we invest heavily in IP security to keep your project data safe. **No project data is ever used to train models**. We encourage you to review our security program and [security FAQs](https://docs.bezi.com/bezi/security). For security-related questions, email [security@bezi.com](mailto:security@bezi.com).
+Bezi's platform connects to multiple Unity projects and data sources to eliminate redundant work and offers a source of truth for teams to keep everyone's work consistent.
 
-Studios and indie devs use Bezi to be more efficient, without compromising IP security. Give it a try and share your thoughts on [**Discord**](https://discord.com/invite/UKWB46HTT9)!
+Together, Bezi's AI assistant and platform help you get work done - build features, fix bugs, implement UI - while keeping it aligned to your team's standards and compounding the output across teams.
 
-## How to use Bezi
+## What you can do
 
-<Note>
-  Bezi looks very simple **_because_** the power lies in how you prompt it. This _feels_ intuitive but, just like any other tool, time gets wasted if you don't learn the fundamentals before diving in.
-</Note>
+<AccordionGroup>
+  <Accordion title="Build features that fit your project" icon="hammer">
+    Describe what you want in plain language. Bezi reads your existing systems, plans the approach and implements it for you, tailored your game's existing architecture and best practices.
+  </Accordion>
 
-### [Prompting](https://docs.bezi.com/fundamentals/prompting)
+  <Accordion title="Build UI from a screenshot" icon="image">
+    Bezi handles the tedious work and set-up for UI. Give it a screenshot and assets, and it will implement and verify its visual output. See [create UI](https://docs.bezi.com/use-cases/create-ui) for more details.
+  </Accordion>
 
-1. **Best prompt structure:** Current state, Expected/Ideal state, Response format you want
-   1. Good example: “_I have a system for X. I want to adjust it to add Y. Prototype that and describe any necessary setup steps_.”
-   2. Anti-example: "_Fix errors_"
-1. **Prompt quality = response quality**. Make clear asks and include all the relevant information
-   1. Always [**pin relevant project assets, scripts, etc. in-line:**](https://docs.bezi.com/bezi/product/prompt-tagging) type “@” to search or select an asset/gameObject in Unity
-   2. Use [**image attachments**](https://docs.bezi.com/bezi/product/attach-images) (screenshots, figma layouts, etc.)
+  <Accordion title="Designers and artists prototype in Unity" icon="recycle">
+    Non-engineers can build and test their own ideas now; share the spec and Bezi will help you flesh out the idea, plan the details, and implement it directly in Unity. See [Rapid Prototyping](https://docs.bezi.com/use-cases/prototype-iterate) for more details.
+  </Accordion>
 
-### [Using Threads](https://docs.bezi.com/fundamentals/threads)
+  <Accordion title="Debug and optimize " icon="magnifying-glass">
+    Describe the symptom or paste an error. Bezi will parse through all your sources to diagnose issues across scenes and systems and implement a fix.
+  </Accordion>
 
-1. Threads are a series of prompts/responses
-2. Keep threads short: aim for \<10 prompts per thread
-3. **Only 1** topic/task per thread: start a new thread when the topic or task changes
-4. Bezi uses an active thread’s history as context for prompt responses in the thread. Threads that are long or cover multiple tasks/topics create noise and will lead to a worse response
+  <Accordion title="Refactor without the risk" icon="map">
+    Describe the scope to Bezi; complete code refactor, asset re-organization and implementations, etc.. It will plan the approach, break it into chunks, implement it for you, and keep your architecture intact.
+  </Accordion>
 
-### Discord resources
+  <Accordion title="Automate your pipeline" icon="swap">
+    Ragdoll setup, batch asset changes, level layouts, and more. Bezi will build procedural workflows and tools to handle your most tedious tasks.
+  </Accordion>
 
-For more advice, see our [#tips-and-tricks](https://discord.gg/mtXFWVwjcD) channel, where devs share best practices.
+  <Accordion title="Keep teams aligned by default" icon="people">
+    Store GDDs, feature specs, and coding standards in [Shared Pages](https://docs.bezi.com/context/pages). Every team member and every Bezi agent response draws from the same source.
+  </Accordion>
+
+  <Accordion title="Onboard new hires in weeks">
+    New hires onboard to a project that already knows itself and get instant access to  project resources in one place. They can then query the project  to learn as they work.
+  </Accordion>
+</AccordionGroup>
+
+## How it works
+
+Bezi runs as a Unity Editor plugin. Requests go through a custom TypeScript execution layer; **Bezi does not use a generic MCP connection to execute changes in Unity**. Changes are correctly sequenced, validated against your live project state, and applied step by step. See [Bezi Actions](https://docs.bezi.com/fundamentals/agent-mode-actions) for the full picture.
+
+## Security
+
+We invest heavily in IP security. **Your source code, assets, and game data are never used to train AI models**. Review our [Security](https://docs.bezi.com/get-started/security) program or email [security@bezi.com](mailto:security@bezi.com) with questions.
