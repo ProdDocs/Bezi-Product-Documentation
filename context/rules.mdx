@@ -1,0 +1,71 @@
+---
+title: "Workspace Rules"
+---
+
+Workspace Rules only apply to the Workspace they're set in, and to all threads and projects within that Workspace. If working in a Team Workspace, Rules are private to you and not shared or visible by other members.
+
+## What are Workspace Rules?
+
+Rules are persistent, custom instructions for Bezi to follow. They are added directly to the system prompt and given extra weight, so if your instructions conflict with our existing system prompt, your preferences are prioritized. Use rules to ensure Bezi’s ouput is consistent with your project structure, preferences, and workflows.
+
+**Workspace Rules are universal principles for how Bezi works with a given Workspace**
+
+1. Define workspace-specific structures and systems (unity version, render pipeline, default packages, etc.)
+2. Define how Bezi should interact with certain systems or information types
+3. Customize response formats, explanations, code style, etc.
+
+## Using Rules
+
+### Access Workspace Rules
+
+1. Navigate to the desired Workspace
+2. Click on `Your Rules`
+3. Write custom rules for the Workspace, following the below guidance
+
+### Shared Rules for Team Workspaces
+
+If you're part of a [Team Workspace](https://docs.bezi.com/fundamentals/team-workspaces) and want to set the same Rules for everyone, add the Rules in a Shared Page and ask all members to ‘@mention’ the Page in the Workspace Rules.
+
+### Project-specific Rules
+
+If you want to set Rules that only apply to a specific Unity projects/local folders in a Workspace, create a Page for each Project containing rules and ‘@mention’ the Page in the Workspace Rules.
+
+## Writing Workspace Rules that work
+
+Workspace Rules has pre-written examples to illustrate rule-writing best practices. You need to edit them or write your own from scratch.
+
+### Step 1: Decide if it's a Workspace Rule or Page
+
+> **PAGE**: Documenting the GDD, how something is structured, standards for creating UI, etc.
+
+> **RULE**: Define how Bezi should manage information sources (Connections, Pages, etc) and other "constants" that are relevant to most work done in that Workspace
+
+### Step 2: Write Rules like instructions for a new team member
+
+1. Write clear and concise rules, using natural language
+2. Provide positive examples Bezi can follow
+3. Do not give Bezi a lot of rules - it will miss things
+
+### Step 3: Update Rules often, following best practices
+
+<Tabs>
+  <Tab title="ALWAYS do">
+    1. **Write direct, clear instructions**: Only use decisive verbs and be very specific
+       1. GOOD: Follow code style rules defined in [**MyProjectStyle.md**](http://MyProjectStyle.md)
+       2. GOOD: NEVER use the Singleton design pattern
+       3. BAD: write good code
+       4. BAD: follow all SOLID principles
+    2. **Give real, positive examples to follow**: Add multiple examples of the formatting or behavior you want Bezi to follow, for positive pattern recognition
+    3. **Use strong language**: Use caps and decisive words (e.g. “_ALWAYS_,” “_IMPORTANT_,” “_CRITICAL_”)
+    4. **Enrich references**: Provide library name, version, official website, and a direct link to scripting examples
+    5. **Keep Rules list short**: Only list absolutely critical rules. The fewer rules, the better
+    6. **Reflect on and update Rules often**: Rules must evolve alongside the work. Don't ask Bezi to write them - you know what's most important
+  </Tab>
+  <Tab title="NEVER do">
+    1. **Never use anti-examples** (e.g. "don't do X"), as Bezi may reference the example without taking into account the context it's used in
+    2. **Never write conditional rules, using "IF" or "SHOULD"** because rules must be constants and Bezi will not reliably follow these instructions
+    3. **Never include conflicting information** in your rules because Bezi will break one or both rules
+    4. **Never make Rules too long** because the more information Bezi has to adhere to, the more likely it is to miss something or to find conflicting instructions
+    5. **Never "set and forget" your rules** - this should be a living document that changes as your project and requirements evolve! Old rules need to be cleared out to make room for new ones
+  </Tab>
+</Tabs>

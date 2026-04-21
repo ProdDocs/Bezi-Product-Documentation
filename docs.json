@@ -25,41 +25,45 @@
           },
           {
             "group": "Fundamentals",
+            "expanded": true,
             "pages": [
-              "fundamentals/prompting",
               "fundamentals/threads",
-              "fundamentals/rules",
-              "fundamentals/model-selection",
-              "fundamentals/plan-mode",
-              "fundamentals/agent-mode-actions",
+              "fundamentals/prompting",
+              "fundamentals/workspaces",
+              "fundamentals/team-workspaces",
               "fundamentals/agent-mode",
-              "fundamentals/ask-mode"
+              "fundamentals/plan-mode",
+              "fundamentals/ask-mode",
+              "fundamentals/model-selection"
             ]
           },
           {
             "group": "Context",
             "pages": [
-              "context/index-project",
+              "context/pages",
+              "context/connections",
+              "context/rules",
               "context/pins",
               "context/image-attachments",
-              "context/pages"
-            ]
-          },
-          {
-            "group": "Use Cases",
-            "pages": [
-              "use-cases/create-ui",
-              "use-cases/unity-tools",
-              "use-cases/debug",
-              "use-cases/prototype-iterate",
-              "use-cases/documentation"
+              "context/index-project"
             ]
           },
           {
             "group": "Account",
             "pages": [
               "account/plans",
-              "account/billing"
+              "account/billing",
+              "account/team"
+            ]
+          },
+          {
+            "group": "Use Cases",
+            "pages": [
+              "use-cases/create-ui",
+              "use-cases/prototype-iterate",
+              "use-cases/unity-tools",
+              "use-cases/debug",
+              "use-cases/documentation"
             ]
           },
           {
@@ -103,6 +107,10 @@
       "destination": "get-started/install-connect"
     },
     {
+      "source": "get-started/install-connect",
+      "destination": "get-started/quickstart"
+    },
+    {
       "source": "bezi/troubleshooting",
       "destination": "get-started/troubleshooting"
     },
@@ -123,7 +131,15 @@
       "destination": "fundamentals/rules"
     },
     {
+      "source": "fundamentals/rules",
+      "destination": "context/rules"
+    },
+    {
       "source": "bezi/modes/agent-mode",
+      "destination": "fundamentals/agent-mode"
+    },
+    {
+      "source": "fundamentals/agent-mode-actions",
       "destination": "fundamentals/agent-mode"
     },
      {
@@ -190,5 +206,16 @@
       "source": "bezi/product/enhanced-code-intelligence",
       "destination": "more/enhanced-code-intelligence"
     }
-  ]
+  ],
+  "footer": {
+    "socials": {
+      "discord": "https://discord.com/invite/UKWB46HTT9"
+    }
+  },
+  "appearance": {
+    "strict": false
+  },
+  "seo": {
+    "indexing": "all"
+  }
 }

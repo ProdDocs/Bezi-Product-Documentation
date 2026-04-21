@@ -1,52 +1,58 @@
 ---
-title: "Pages and Folders"
+title: "Shared and Private Pages"
 ---
 
-Use Pages to store important game information that doesn't live in Unity, like feature specs, UI guidelines, and GDDs.
+Pages are evergreen documentation, available to every thread in a Workspace. **Anything in a Page - coding standards, architecture decisions, design specs, system docs - is context for your Bezi agent's work anywhere in that Workspace.**
 
-**Once stored in Bezi, you can easily reference Page information while prompting to ensure Bezi has all the context it needs with no repetitive effort on your part**.
+Pages can be created and modified by you or by Bezi can do it on your behalf. If you never want Bezi to create Pages, [create a Rule](https://docs.bezi.com/fundamentals/rules) explicitly stating this.
 
-The interface is a text editor. Each Page has a 10,000 character limit. Pages can be created and modified in two ways:
+## Page documentation examples
 
-1. By you, directly creating/editing/deleting a Page
-2. By Bezi, prompting Bezi to create or edit a Page on your behalf
+<AccordionGroup>
+  <Accordion title="Guidelines and standards ">
+    When Bezi plans or implements an idea, pin @PageName so  execution follows standards.
 
-<Tip>
-  To build out internal context, Bezi will automatically create documentation as Pages. If it’s making too many Pages or you’d prefer documentation to be stored elsewhere, **create a rule telling Bezi what to do**. 
-</Tip>
+    - UI creation standards
+    - Level creation guidelines
+    - Feature implementation requirements
+  </Accordion>
 
-## Using Rules vs Pages
+  <Accordion title="Systems and architecture patterns ">
+    Pin @PageName so Bezi  knows to follow a pre-defined pattern.
 
-- **RULE**: Define how Bezi should interact with information in Unity and Pages, game-wide "constants" that are always included at the top of Bezi's system prompt
-- **PAGE**: Explain certain systems, implementations, and design ideas that can be included in context and/or pinned as a reference point in prompts
+    - Core game mechanics (e.g., “Jumping uses stamina”)
+    - How specific systems work 
+  </Accordion>
 
-## Using Pages
+  <Accordion title="Vision and workflow definitions">
+    Store meta-level game information and pin @PageName when you need a task to keep in mind the game's end-state.
 
-If there's information relevant to your game or workflow that doesn't live in Unity and will be important for Bezi to reference, document it in a Page.
+    - GDDs 
+    - Instructions for Bezi to navigate your  Connections: where to look for specific information types or references
+  </Accordion>
+</AccordionGroup>
 
-### **Guidelines and plans to execute against**
+## Shared Pages
 
-Write a prompt in Agent Mode, pin the Page (@PageName), and tell Bezi to execute on the plan.
+<Note>
+  Shared Pages are only available on Team and Enterprise plans.
+</Note>
 
-- UI creation guidelines
-- Level creation guidelines
-- Feature implementation plans
+Shared Pages are visible and editable by all members of a [Team Workspace](https://docs.bezi.com/fundamentals/team-workspaces). **They act as the team's single source of truth - vision, standards, rules, documented decisions - that every member's Bezi agent automatically references**. This keeps teams aligned and work consistent, even when people aren't in the same room.
 
-### Systems and architecture patterns to follow
+If you're in a Team Workspace and need to create Pages for private use (not team-wide consumption) you can create **Private Pages**. These are visible only to the Page creator and their Bezi agent.
 
-Pin the Page (@PageName) whenever you need Bezi to reference the existing pattern.
+To update a Page from Private \<\> Shared, select the Page and drag it to the other section.
 
-- Core game mechanics (e.g., “Jumping uses stamina”)
-- Explaining how a specific system works
+### Shared Page editing and saving
 
-### **Game-level information to inform strategy work**
+Shared Pages currently support async collaboration. **Check the top of a Shared Page to see who else is editing it to avoid merge conflicts**.
 
-Store meta-level game information, like GDDs. Pin the Page (@PageName) in higher-level tasks that need to anchor on a feature's goal or the game's end-state.
+> **Bezi uses a "last save wins" model.** If a Shared Page is edited by more than one person or Bezi agent the same time, the most recent save is kept. [​​](https://docs.bezi.com/bezi/product/pages-folders#what-are-folders)Check a Page's version history to view past saved changes and/or roll back to a previous state.
 
-- Key game strategy or plans
-- Pre-established game directions that need to be followed across threads
+Bezi agents can edit Shared Pages. If your Team Workspace never wants Bezi to edit a Shared Page, make sure each member [creates a Rule](https://docs.bezi.com/fundamentals/rules) explicitly stating this.
 
-## [​](https://docs.bezi.com/bezi/product/pages-folders#what-are-folders)What are folders?
+## Using Folders
 
 Pages are organized into folders. To manage a folder or the Pages in it, hover over the Folder and click the`…`icon. You will see a menu of options to:
 

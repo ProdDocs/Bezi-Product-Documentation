@@ -1,33 +1,55 @@
 ---
-title: "How to Use Threads"
-description: "Important rules to memorize and live by to get the best value from Bezi"
+title: "Threads"
 ---
 
-Threads are a series of prompts and responses. Bezi uses an active thread (the thread you're working in) prompt and response history as context to inform future answers in that thread.
-
-Create new threads frequently so Bezi only uses relevant context and keeps response quality high.
-
-1. Keep threads short, **10 or less prompts per thread**
-2. **1 topic per thread**: start a new thread when the topic or task changes!
-
-In the bottom left corner of the prompt field you can see the % of context used in the active thread. If the % is high, response quality will decrease and you need to start a new thread. 
+Threads are how you interact with your Bezi agent. They belong to a Workspace, write to the target project and pull context from multiple places. Using threads correctly is very important.
 
 <Frame>
-  ![Contextwindow](/images/contextwindow.png)
+  ![Image](/images/image.png)
 </Frame>
 
-## Thread navigation
+## How Threads gather and manage context
 
-Each project connected to Bezi has its own thread history. If you can't find a specific thread, first confirm you're looking in the right project.
+1. The thread's own prompt and response history (it cannot access other thread's histories)
+2. All active [Workspace Connections](https://docs.bezi.com/context/connections); Unity projects and local data sources you've connected. Target project context will have more emphasis placed on it.
+3. [Pages](https://docs.bezi.com/context/pages), both private and shared (if you're in a team workspace)
 
-**Access threads**: select the  <Icon icon="sidebar" iconType="sharp-solid" />  icon in the top left of the app
+Monitor the **thread's context window tracker** (bottom right of the prompt field). Lower context windows = better results and fewer credits used per prompt.
 
-**Start a new thread**: select the  **\+**  icon in the Threads section
+If the context window is high, disable unnecessary Connections or start a new thread.
 
-**View a thread split-screen with Pages/Rules**: select the icon in the top right of the thread view
+## How Threads interact with the Workspace
 
-**Reopen old threads:** click on any thread name to reopen it. You can scroll through past responses or submit new prompts to pick up the conversation where you left off.
+Threads are stored at the Workspace level, not the project level. **This means that the Threads list shows every thread you've created, across every project in a given Workspace.**
 
-**View threads alongside Pages:** threads can be compressed into a sidebar when a page is open
+When you switch Workspaces, the Threads list will only show threads that belong to the new Workspace.
 
-If you submit a prompt in one thread then open another thread (existing or new), the prompt will cancel. To avoid spending credits on canceled prompts, wait for the prompt response before leaving the existing thread.
+## How Threads interact with Unity projects
+
+For every new thread, you assign **target project**. This tells the Bezi agent which Unity it will make edits and use for primary context. Click the **Project selector** to select a target project from your Connections.
+
+<Warning>
+  Do not change a thread's target project once you've prompted in that thread. This leads to unexpected behavior and changes. 
+</Warning>
+
+<Frame>
+  ![Target Project](/images/target-project.png)
+</Frame>
+
+## Threads navigation
+
+Everything Threads-related lives in the right sidebar, i.e. the ‘**Threads window**’. This is where you create new threads, access old threads, and manage all threads associated with a Workspace.
+
+Open the **Threads** dropdown in the right sidebar to see a list of your past threads in the current Workspace. Each entry shows the thread name and its target project so you can quickly identify what you were working on.
+
+From this menu you can:
+
+- Open a past thread to continue where you left off
+- See which target project each thread is associated with
+- Delete threads you no longer need
+
+If you can't find a specific thread, confirm that you're looking in the right Workspace.
+
+<Frame>
+  ![Workspaces Threads (1)](/images/Workspaces_threads-\(1\).png)
+</Frame>
