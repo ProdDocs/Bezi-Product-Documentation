@@ -17,7 +17,7 @@
             "group": "Get Started",
             "pages": [
               "get-started/welcome",
-              "get-started/install-connect",
+              "get-started/quickstart",
               "get-started/troubleshooting",
               "get-started/security",
               "get-started/changelog"
