@@ -3,13 +3,28 @@ title: "Changelog"
 ---
 
 <Info>
-  **App:** v1.25.1
+  **App:** v1.26.0
 
-  **Plugin**: v0.85.2
+  **Plugin**: v0.86.2
 </Info>
 
-<Card title="Download Plugin v0.85.2" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.85.2/com.bezi.sidekick-0.85.2.tgz">
+<Card title="Download Plugin v0.86.2" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.86.2/com.bezi.sidekick-0.86.2.tgz">
 </Card>
+
+<Update label="05/12/2026">
+  **Usability improvements**
+
+  - Added profiler tools to inspect selected ranges
+  - Removes missing scripts before saving prefabs to not block saving
+
+  **Bug fixes**
+
+  - Fixed a bug that caused subagents silently to silently timeout and fail the workflow
+  - Fixed a bug where compaction of threads produced an error
+  - Fixed a bug where read console tool could be erroneously called on Folders and would timeout
+  - Fixed a bug that blocked re-adding removed connections
+  - Fixed a bug where relinking non-selected projects would fail
+</Update>
 
 <Update label="04/29/2026">
   **Usability improvements**
