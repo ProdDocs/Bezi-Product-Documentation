@@ -1,0 +1,129 @@
+---
+title: "MCP "
+---
+
+Bezi can connect to external tools and services using the Model Context Protocol (MCP).
+
+Game dev workflows are spread across a dozen tools; tickets in Jira, specs in Notion, mockups in Figma, code in GitHub, scenes in Blender, etc.. 
+
+Connect an MCP to Bezi when you find yourself repeatedly copying data into Bezi from another tool or leaving Bezi to make changes in another tool.
+
+## What you can do with MCP
+
+With an MCP connection, you can ask Bezi to:
+
+- **Jira**: Automatically pull in issue or feature request tickets to triage by severity and implement in Unity, then log update comments to close the loop on the ticket
+- **GitHub**: Explain a diff, review a PR, or check what changed in a project since the last build
+- **Blender:** Inspect scene structure, check poly counts, or flag naming convention issues in a model
+- **Figma:** Reference UI mockups to build HUD elements to spec
+- **Notion**: Query internal documentation hubs to keep work aligned to the most current designs
+
+## Using Bezi with MCP
+
+<Warning>
+  Always verify an MCP server before you connect it to Bezi.
+</Warning>
+
+Bezi’s interaction with an external product or service is dictated by the MCP permissions. Each MCP exposes different things. Check the MCP provider’s documentation to understand what’s possible.
+
+- Read-only: Bezi can only pull information from the connector
+- Read and Write: Bezi can pull data from the connector AND make changes in it
+
+For example; Figma’s official connector is read-only, but Figma Bridge (an unofficial, community-built MCP) supports reading Figma file data and editing the Figma canvas
+
+**Not supported: Bezi cannot run code in a Terminal or inject code into an external app or service.**
+
+## MCP Connections and Context Limits
+
+MCPs are comprised of tools. Each tool executes a specific task when the MCP is called.
+
+When you connect an MCP to Bezi, its tools are added to Bezi’s context so all information and capabilities are accessible on demand.
+
+**The limit is 100 MCP tools (active) at a single time.**
+
+If you exceed this limit, prompting will be disabled until the number of active MCP tools drops below 100.
+
+To view MCP tool counts and pause connections you’re not actively using:
+
+- Open **Workspace Settings**
+- Select the `MCPs` tab
+- Toggle MCPs on (active) or off (paused)
+
+If a single MCP has over 100 tools, you can deny specific tools in Allow List to bring it under the 100 active tools limit.
+
+## Installing MCPs
+
+<Warning>
+  Before you connect an MCP, always verify it and pause existing MCP connections you don’t need.
+</Warning>
+
+You can connect any MCP you want to Bezi. MCPs can be configured in two different ways:
+
+### Prompt Bezi to install
+
+1. Start a new thread
+2. Ask Bezi to install the MCP (e.g. "install the Jira MCP" or paste a link to the MCP docs)
+3. Bezi writes the entry into `mcp.json`
+4. Bezi prompts you for credentials, and starts the server
+5. The first time any of that MCP's tools fires, approve it in-thread (Always Allow / Always Ask / Always Deny)
+
+### Edit `mcp.json` directly
+
+1. Open **Workspace Settings**
+2. Select the `MCPs` tab
+3. Select **Open mcp.json**
+4. Add the entry under `mcpServers` (see format example below)
+5. Save the file
+6. Resume prompting, Bezi will automatically detect and use the MCP
+
+### Format example
+
+Each entry under `mcpServers` defines one MCP connection. The MCP provider’s documentation should include a setup snippet to copy/paste.
+
+Example of what to look for
+
+```json
+{
+  "mcpServers": {
+    "my-tool": {
+      "command": "npx",
+      "args": ["-y", "@my-org/my-mcp-server"],
+      "env": {
+        "API_TOKEN": "your-token-here"
+      }
+    }
+  }
+}
+```
+
+## Manage and Troubleshoot MCP connections
+
+MCP tools add context to Bezi; always pause MCPs you aren’t actively using and resume them when they’re needed for you work.
+
+### Pause or resume connected MCPs
+
+- Open **Workspace Settings**
+- Select the `MCPs` tab
+- View tool counts per MCP
+- Toggle MCPs on (active) or off (paused)
+- For MCPs with over 100 tools, open the Allow List and deny specific tools that you won’t need
+
+### Debug a locally-connected MCP
+
+- Toggle the MCP off and back on
+- Restart Bezi
+- Restart your machine
+- Ask Bezi to inspect and patch `mcp.json` (paths, env vars, credential placement)
+
+## MCP Security and Data Access
+
+<Danger>
+  MCPs are third-party software. Bezi does not pre-vet MCP connections. Always verify an MCP before you connect it to Bezi.
+</Danger>
+
+MCPs access all the information in the tools and services they’re connected to. Connecting an insecure MCP to Bezi can risk exposing project data and IP externally.
+
+### Data security best practices:
+
+1. **Vet the MCP:** thoroughly review security standards for all MCPs, both official and unofficial
+2. **Keep your** `mcp.json `**private:** It holds your credentials, never commit it to a repo

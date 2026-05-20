@@ -42,6 +42,7 @@
             "pages": [
               "context/pages",
               "context/connections",
+              "context/mcp",
               "context/rules",
               "context/pins",
               "context/image-attachments",
