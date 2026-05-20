@@ -3,13 +3,50 @@ title: "Changelog"
 ---
 
 <Info>
-  **App:** v1.26.1
+  **App:** v1.26.2
 
-  **Plugin**: v0.86.2
+  **Plugin**: v0.86.4
 </Info>
 
-<Card title="Download Plugin v0.86.2" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.86.2/com.bezi.sidekick-0.86.2.tgz">
+<Card title="Download Plugin v0.86.4" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.86.4/com.bezi.sidekick-0.86.4.tgz">
 </Card>
+
+<Update label="05/20/2026">
+  ## Now introducing: MCP Connectors
+
+  _Connect external tools to Bezi to add more context and execute multi-tool workflows from Bezi_
+
+  [<u>MCP Connectors</u>](https://docs.bezi.com/context/mcp)
+
+  - Add and manage any MCP-compatible tool or service via chat or Workspace Settings
+  - Bezi can read from and write to connected tools directly in a session
+  - MCP provider documentation will define what permissions and actions are available to Bezi 
+  - Example connections include; Jira, Blender, GitHub, Figma, but options are infinite! 
+
+  **New**
+
+  - Checkout-aware actions to reduce prefab and scene merge conflicts
+    - Applicable to check-out based VCS, like Unity VCS and Perforce
+    - Available on Team plan only
+
+  **Usability improvements**
+
+  - Bezi can now search files inside Unity Packages folders
+  - Greatly improved reliability of Bezi to Unity connection
+  - Improved how Bezi handles long-running threads so you’re less likely to lose progress when a run hits its limit
+
+  **Bug fixes**
+
+  - Fixed cases where paid plans were shown incorrectly, including some Pro accounts being prompted to upgrade and some upgrades from Pro to Advanced not going through
+  - Fixed a bug where subscription details weren’t shown for some users
+  - Fixed the dll collision that would make Bezi plugin conflict with some other Unity plugins
+  - Fixed a naming collision that could stop action generation in some Unity projects
+  - Fixed an action-type error that could break certain Unity update actions
+  - Reduced heavy disk usage some people experienced with large Unity projects, which could slow work down or even crash Unity
+  - Fixed a bug where approving multiple tool actions at once could cancel the thread instead of resuming it
+  - Fixed several failure modes that could interrupt runs unexpectedly, including subagent timeouts, malformed Unicode content, and some Basic model request errors
+  - Fixed an assortment of UI bugs
+</Update>
 
 <Update label="05/14/2026">
   **Usability improvements**
