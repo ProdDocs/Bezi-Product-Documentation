@@ -3,13 +3,32 @@ title: "Changelog"
 ---
 
 <Info>
-  **App:** v1.26.2
+  **App:** v1.26.3
 
-  **Plugin**: v0.86.4
+  **Plugin**: v0.87.0
 </Info>
 
-<Card title="Download Plugin v0.86.4" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.86.4/com.bezi.sidekick-0.86.4.tgz">
+<Card title="Download Plugin v0.87.0" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.87.0/com.bezi.sidekick-0.87.0.tgz">
 </Card>
+
+<Update label="05/27/2026">
+  ## Now introducing: Thinking Effort
+
+  - Specify the amount of thinking that each model should use for solving tasks
+  - Select from None, Low, Medium, High
+  - Higher thinking effort will solve harder problems, but will cost more tokens
+
+  **Usability improvements**
+
+  - We have updated the Bezi Actions system to handle larger tasks faster, more reliably, and at lower cost
+  - Threads panel is now resizable
+
+  **Bug fixes**
+
+  - Fixed a bug where recompilation was not called before calling the console errors tool
+  - Editor-tool generation no longer captures Game View screenshots when it shouldn’t
+  - Fixed a bug where "Project not found" errors would show up after a project was disconnected and relinked
+</Update>
 
 <Update label="05/20/2026">
   ## Now introducing: MCP Connectors
@@ -20,8 +39,8 @@ title: "Changelog"
 
   - Add and manage any MCP-compatible tool or service via chat or Workspace Settings
   - Bezi can read from and write to connected tools directly in a session
-  - MCP provider documentation will define what permissions and actions are available to Bezi 
-  - Example connections include; Jira, Blender, GitHub, Figma, but options are infinite! 
+  - MCP provider documentation will define what permissions and actions are available to Bezi
+  - Example connections include; Jira, Blender, GitHub, Figma, but options are infinite!
 
   **New**
 
