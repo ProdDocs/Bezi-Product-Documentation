@@ -3,13 +3,38 @@ title: "Changelog"
 ---
 
 <Info>
-  **App:** v1.26.3
+  **App:** v1.27.0
 
-  **Plugin**: v0.87.0
+  **Plugin**: v0.90.0
 </Info>
 
-<Card title="Download Plugin v0.87.0" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.87.0/com.bezi.sidekick-0.87.0.tgz">
+<Card title="Download Plugin v0.90.0" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.90.0/com.bezi.sidekick-0.90.0.tgz">
 </Card>
+
+<Update label="06/03/2026">
+  ## 
+
+  **New**
+
+  - Animation Timeline support in Bezi Actions
+    - Create and edit keyframes for any GameObject properties, such as position/rotation/scale, script values, etc.
+    - Sprite animations via image sequences or sprite sheet sub-assets
+  - Featured MCP registry to make it easier to discover and connect to supported MCPs
+
+  **Usability improvements**
+
+  - Several updates to the image capture tool to improve Bezi’s ability to inspect prefabs and assets
+  - More stable MCP connection settings, includes persistent enabled toggles and improved syncing when `mcp.json` is edited manually
+  - Updated logic for mode, model and thinking effort selection between threads
+    - Mode is now derived from the most recently used mode in that thread
+    - Model and thinking effort is consistent across the app
+
+  **Bug fixes**
+
+  - Several Actions updates to reduce errors, especially those causing its confusion about availability and capabilities
+  - Filesystem and action workflows now behave more reliably with VFS paths and required action properties
+  - Fixed a bug where deleting a page could result in a crash
+</Update>
 
 <Update label="05/27/2026">
   ## Now introducing: Thinking Effort
