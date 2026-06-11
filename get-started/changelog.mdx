@@ -3,13 +3,50 @@ title: "Changelog"
 ---
 
 <Info>
-  **App:** v1.27.0
+  **App:** v1.27.1
 
-  **Plugin**: v0.90.0
+  **Plugin**: v0.92.1
 </Info>
 
-<Card title="Download Plugin v0.90.0" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.90.0/com.bezi.sidekick-0.90.0.tgz">
+<Card title="Download Plugin v0.92.1" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.92.1/com.bezi.sidekick-0.92.1.tgz">
 </Card>
+
+<Update label="06/11/2026">
+  ## 
+
+  **New**
+
+  - Added support for adding scenes to the build list
+  - Added support for referencing sub-assets
+  - Added a button to copy message response
+
+  **Usability improvements**
+
+  - Improved app load time from 12s to 4s average
+  - Improved compaction, thinking-effort, and max-token handling
+  - Pending changes in one project no longer block sending messages to another target project
+  - Selecting “Make Plan” now stays in plan mode vs executing in agent mode
+  - Safer handling of multiple messages in one thread
+  - Reduced scroll jitter in threads
+  - Minor UI updates
+
+  **Bug fixes**
+
+  - Fixed action compilation failures
+  - Fixed animator controller action changes not being applied
+  - Fixed failed actions restoring previous scene changes incorrectly
+  - Fixed prefab instances not being detected in scene understanding
+  - Fixed scene changes being reverted after app updates
+  - Fixed cases causing pages and plans failing to load
+  - Fixed invalid generated TypeScript appearing before a successful result
+  - Fixed a bug where the Submit button self-disabled after repeat edit-and-submit cycles
+  - Fixed Unity plugin auto-update to 0.9.0 breaking projects
+  - Fixed desktop app crash edge-case due to actions compilation
+  - Fixed issues with the cancel-subscription button for users with pending updates
+  - Fixed a Figma MCP rate-limit issue
+  - Fixed the Jira MCP discovery helper link (wasn’t clickable)
+  - Fixed malformed attachment URLs causing AI image download errors
+</Update>
 
 <Update label="06/03/2026">
   ## 
