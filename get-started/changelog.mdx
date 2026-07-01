@@ -3,16 +3,233 @@ title: "Changelog"
 ---
 
 <Info>
-  **App:** v1.28.0
+  **App:** v1.29.0
 
-  **Plugin**: v0.95.1
+  **Plugin**: v0.97.0
 </Info>
 
-<Card title="Download Plugin v0.95.1" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.95.1/com.bezi.sidekick-0.95.1.tgz">
+<Card title="Download Plugin v0.97.0" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.97.0/com.bezi.sidekick-0.97.0.tgz">
 </Card>
 
+<Update label="07/01/2026">
+  ## Now Introducing: Skills & Direct Model Selection
+
+  **NEW: Skills!!**
+
+  - Extend what Bezi can do and standardize repeated workflows
+  - Let Bezi automate complex tasks by packaging repetitive, multi-step workflows into a single command. Use default Bezi skills or create custom skills for a workflow
+  - Default Skills options include: `UGUI > UI Toolkit Conversion` or `Create Documentation`
+  - Learn more: [https://docs.bezi.com/fundamentals/skills](https://docs.bezi.com/fundamentals/skills)
+
+  **NEW: Model selection and more options**
+
+  - You can now select a specific model from the menu (see image)
+  - Added GLM 5.2 model: performant and cheap, great for daily work
+  - Added Claude Sonnet 5 model: next-gen sonnet offering
+  - Safer defaults for model capabilities, e.g. disabled image output for models that don’t support it
+  - Updated model descriptions and compaction/model-provider tuning
+
+  **Usability improvements**
+
+  - Updated Bezi’s Home interface for better management of workspaces, projects and skills
+  - New detailed view of token usage and plan usage in Home
+  - Improved MCP tool serialization
+
+  **Bug fixes**
+
+  - Fixed private pages that failed to load when collaboration is turned on
+  - Reduced failed sync requests and validated collaboration-server behavior
+  - Reduced token-usage spikes in websocket-related flows
+  - Fixed several save-flow and scene-state blockers, including screenshot-triggered scene creation, missing-script save popups, unsaved-scene handling, and action failures despite healthy Unity connection state
+  - Fixed Notion MCP setup hallucinations and MCP-cap limit behavior
+  - Removed outdated Pages word-count UI
+  - Fixed Unity save-scene prompts when taking screenshots
+  - Fixed sync polling so it stops on automatic logout after 401 responses
+  - Fixed the explored dropdown jumping while tools are being called
+  - Fixed a bug that made Shared pages load very slowly
+
+  <Frame>
+    ![Release July 1](/images/release-July-1.png)
+  </Frame>
+</Update>
+
 <Update label="06/23/2026">
-  ## Now introducing: Opus 4.8 and real-time collaborative pages! 
+  ## Now Introducing: Opus 4.8 and real-time collaborative pages! 
+
+  **New: real-time collaborative pages**
+
+  - Shared Pages (available in Teams) now support real-time collaboration. When more than one person has a Shared Page open, you see each other's cursors and see text appear as it's typed.
+  - The person editing a paragraph is visible to everyone viewing the page. Everyone's edits merge automatically as you go, so there's nothing to manually save and no merge conflicts to resolve.
+  - Real-time collaboration covers people’s manual edits. Edits Bezi makes to a Shared Page on your behalf will appear once it's done editing.
+
+  **AI updates**
+
+  - Frontier now uses Opus 4.8
+  - Context window is expanded 2x
+  - Improved speed and accuracy of thread compaction
+
+  **Subscriptions updates**
+
+  - Outstanding payments are now invoiced before a new subscription can be created
+
+  **Usability improvements**
+
+  - Improved compilation of Bezi Actions when submitting consecutive messages in a thread
+  - Added progressive generation of Actions to improve speed
+  - Included Plans in page list searches
+  - Enabled aborting Action batches
+  - Several improvements to recompilation triggers - after deleting scripts and DLLs
+  - Grouped Actions by modules in Unity
+
+  **Bug fixes**
+
+  - Fixed occasional file watcher errors
+  - Fixed Actions checkpointing not working with subagents
+  - Fixed a UI bug where header overlayed scrollbar in Pages
+  - Fixed a bug where listing folders recursively would return incomplete lists
+  - Fixed a bug that broke moving pages via right
+  - Undo All does not remove created material now
+  - Fixed an occasional crash in Bezi
+  - Removed some Unity console messages on first install
+  - Fixed a bug where Bezi failed to recompile on assembly reference edits
+  - Forces Unity recompilation after script changes and deletes
+
+  <Frame>
+    ![Real Time Collab](/images/real-time-collab.gif)
+  </Frame>
+</Update>
+
+<Update label="06/23/2026">
+  ## Now Introducing: Opus 4.8 and real-time collaborative pages!
+
+  **New: real-time collaborative pages**
+
+  - Shared Pages (available in Teams) now support real-time collaboration. When more than one person has a Shared Page open, you see each other's cursors and see text appear as it's typed.
+  - The person editing a paragraph is visible to everyone viewing the page. Everyone's edits merge automatically as you go, so there's nothing to manually save and no merge conflicts to resolve.
+  - Real-time collaboration covers people’s manual edits. Edits Bezi makes to a Shared Page on your behalf will appear once it's done editing.
+
+  **AI updates**
+
+  - Frontier now uses Opus 4.8
+  - Context window is expanded 2x
+  - Improved speed and accuracy of thread compaction
+
+  **Subscriptions updates**
+
+  - Outstanding payments are now invoiced before a new subscription can be created
+
+  **Usability improvements**
+
+  - Improved compilation of Bezi Actions when submitting consecutive messages in a thread
+  - Added progressive generation of Actions to improve speed
+  - Included Plans in page list searches
+  - Enabled aborting Action batches
+  - Several improvements to recompilation triggers - after deleting scripts and DLLs
+  - Grouped Actions by modules in Unity
+
+  **Bug fixes**
+
+  - Fixed occasional file watcher errors
+  - Fixed Actions checkpointing not working with subagents
+  - Fixed a UI bug where header overlayed scrollbar in Pages
+  - Fixed a bug where listing folders recursively would return incomplete lists
+  - Fixed a bug that broke moving pages via right
+  - Undo All does not remove created material now
+  - Fixed an occasional crash in Bezi
+  - Removed some Unity console messages on first install
+  - Fixed a bug where Bezi failed to recompile on assembly reference edits
+  - Forces Unity recompilation after script changes and deletes
+
+  <Frame>
+    ![Real Time Collab](/images/real-time-collab.gif)
+  </Frame>
+</Update>
+
+<Update label="06/23/2026">
+  ## Now Introducing: Opus 4.8 and real-time collaborative pages!
+
+  **New: real-time collaborative pages**
+
+  - Shared Pages (available in Teams) now support real-time collaboration. When more than one person has a Shared Page open, you see each other's cursors and see text appear as it's typed.
+  - The person editing a paragraph is visible to everyone viewing the page. Everyone's edits merge automatically as you go, so there's nothing to manually save and no merge conflicts to resolve.
+  - Real-time collaboration covers people’s manual edits. Edits Bezi makes to a Shared Page on your behalf will appear once it's done editing.
+
+  **AI updates**
+
+  - Frontier now uses Opus 4.8
+  - Context window is expanded 2x
+  - Improved speed and accuracy of thread compaction
+
+  **Subscriptions updates**
+
+  - Outstanding payments are now invoiced before a new subscription can be created
+
+  **Usability improvements**
+
+  - Improved compilation of Bezi Actions when submitting consecutive messages in a thread
+  - Added progressive generation of Actions to improve speed
+  - Included Plans in page list searches
+  - Enabled aborting Action batches
+  - Several improvements to recompilation triggers - after deleting scripts and DLLs
+  - Grouped Actions by modules in Unity
+
+  **Bug fixes**
+
+  - Fixed occasional file watcher errors
+  - Fixed Actions checkpointing not working with subagents
+  - Fixed a UI bug where header overlayed scrollbar in Pages
+  - Fixed a bug where listing folders recursively would return incomplete lists
+  - Fixed a bug that broke moving pages via right
+  - Undo All does not remove created material now
+  - Fixed an occasional crash in Bezi
+  - Removed some Unity console messages on first install
+  - Fixed a bug where Bezi failed to recompile on assembly reference edits
+  - Forces Unity recompilation after script changes and deletes
+
+  <Frame>
+    ![Real Time Collab](/images/real-time-collab.gif)
+  </Frame>
+</Update>
+
+<Update label="06/11/2026">
+  ## 
+
+  **New**
+
+  - Added support for adding scenes to the build list
+  - Added support for referencing sub-assets
+  - Added a button to copy message response
+
+  **Usability improvements**
+
+  - Improved app load time from 12s to 4s average
+  - Improved compaction, thinking-effort, and max-token handling
+  - Pending changes in one project no longer block sending messages to another target project
+  - Selecting “Make Plan” now stays in plan mode vs executing in agent mode
+  - Safer handling of multiple messages in one thread
+  - Reduced scroll jitter in threads
+  - Minor UI updates
+
+  **Bug fixes**
+
+  - Fixed action compilation failures
+  - Fixed animator controller action changes not being applied
+  - Fixed failed actions restoring previous scene changes incorrectly
+  - Fixed prefab instances not being detected in scene understanding
+  - Fixed scene changes being reverted after app updates
+  - Fixed cases causing pages and plans failing to load
+  - Fixed invalid generated TypeScript appearing before a successful result
+  - Fixed a bug where the Submit button self-disabled after repeat edit-and-submit cycles
+  - Fixed Unity plugin auto-update to 0.9.0 breaking projects
+  - Fixed desktop app crash edge-case due to actions compilation
+  - Fixed issues with the cancel-subscription button for users with pending updates
+  - Fixed a Figma MCP rate-limit issue
+  - Fixed the Jira MCP discovery helper link (wasn’t clickable)
+  - Fixed malformed attachment URLs causing AI image download errors
+</Update>
+
+<Update label="06/23/2026">
+  ## Now introducing: Opus 4.8 and real-time collaborative pages!
 
   **New: real-time collaborative pages**
 

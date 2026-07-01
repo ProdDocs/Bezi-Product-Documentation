@@ -1,0 +1,91 @@
+---
+title: "Skills"
+---
+
+Skills extend what Bezi can do and standardize repeated workflows.
+
+Create a skill when you keep pasting the same instructions, checklist, or multi-step procedure into a prompt, or when a Page has evolved into a checklist instead of information to reference.
+
+# What are skills
+
+A skill packages a repetitive, multi-step workflow into a single command. Bezi runs the skill the same way every time, delivering a more reliable, predictable output with less effort.
+
+A skill is a folder that contains instructions, and scripts or reference files it needs. The instructions are executed a defined sequence of steps whenever the skill is invoked. A single skill can include any combination of the following:
+
+1. Multi-step procedure to run in a fixed order
+2. Call an MCP tool to pull in external information
+3. Scripts or reference files for extra context
+
+You can use default skills or create custom skills. Bezi skills follow the same [**Agent Skills**](https://agentskills.io/) open standard as other common AI tools.
+
+## **What skills are available**
+
+Skills work best when tailored to _your_ workflow. You can create any custom skill you need or edit Bezi default skills.
+
+- **Convert to UI Toolkit** **\[default\]** - Migrate UGUI canvas-based screens to UI Toolkit.
+- **Create documentation \[default\]** - Scan the project and automatically generate a GDD as organized pages.
+- **Set up a scene** — Drop in your default lighting, camera rig, and environment so every new scene starts the same way.
+- **Set up an object pool** — Generate a reusable pool for a prefab (bullets, enemies, pickups) instead of instantiating at runtime.
+- **Run a pre-build checklist** — Walk through your standard QA checks before you ship a build.
+- **Pull data into a report** — Query an external tool (analytics, issue tracker, docs) and format the results how you want.
+- **Generate a changelog or release note** — Turn recent commits or merged work into a formatted summary your team can read.
+- **Onboard a new project** — Configure a fresh project with your standard settings, dependencies, and structure.
+
+## **What is the difference between Skills, Pages, and Rules?**
+
+- **Skills**: A list of steps Bezi executes in a specific order for a given task (a repeatable, multi-step workflow)
+- [**Pages**](https://docs.bezi.com/context/pages): Reference materials for Bezi, like facts, decisions, architecture/design docs, etc
+- [**Rules**](https://docs.bezi.com/context/rules): Standards Bezi applies to all work in a Workspace (code style, project structure, constants)
+
+## **Using Skills**
+
+<Frame>
+  ![Screenshot 2026 06 25 At 6 45 45 PM](/images/Screenshot-2026-06-25-at-6.45.45-PM.png)
+</Frame>
+
+### **Install a default skill**
+
+Installing a default skill automatically creates a copy of it on your machine.
+
+1. Open **Workspace Settings**
+2. Select the `Skills` tab
+3. Click the `Discover` toggle to explore skills options
+4. Identify the desired skill and select `Install`
+
+If a default skill requires an MCP you don't have, Bezi will tell you and set up the configuration during install. If a skill includes an MCP, it will inherit the MCP’s allow-list permissions. Adjust the permissions directly in [MCP settings](https://docs.bezi.com/context/mcp#installing-mcps) as needed.
+
+### **Create a custom skill**
+
+There are two ways to create a custom skill. It will automatically be installed and a copy will be created on your machine.
+
+1. **Chat**: Describe the workflow steps and asks Bezi to create a skill for it. Bezi will automatically create instructions and any scripts or reference files needed to run
+2. **Workspace Settings**: In the `Skills` section, click the `+ Create with Bezi` button
+
+### **Run a skill**
+
+Bezi can only run installed skills
+
+1. **Automatically:** Bezi knows every skill you have installed and uses that information to invoke the right skill for a request, even if it’s not named
+2. **Use a ‘/command’:** Invoke a specific skill using the slash command and skill name
+
+### **Edit a skill**
+
+You can only edit installed skills. To edit, write a prompt with the skill name and desired changes. Bezi will proposes the edits as a diff: review it and select `Keep` or `Undo` (same way you review changes in Agent Mode).
+
+### **View and uninstall skills**
+
+Default skills show a name and a one-line description; your own skills show their name.
+
+1. Open **Workspace Settings**
+2. Select the `Skills` tab to see everything you have installed
+3. Select the `>` icon next to the desired skill and click `Uninstall`
+
+<Danger>
+  Uninstalling a skill is non-reversible. If you uninstall a custom skill, it will be deleted from Bezi.
+</Danger>
+
+## **Current Limitations**
+
+- **No on/off toggles.** A skill is either installed or not. To deactivate a skill, you must uninstall it.
+- **Skills are local to you.** Skills cannot be auto-shared in Team Workspaces yet. Send a colleague the skill file to give share it.
+- **Skills run JavaScript only.** Skills can’t run file system, network, or shell access yet. If you’re importing a skill from another AI tool, confirm it doesn’t rely on shell commands before running.

@@ -29,6 +29,7 @@
             "pages": [
               "fundamentals/threads",
               "fundamentals/prompting",
+              "fundamentals/skills",
               "fundamentals/workspaces",
               "fundamentals/team-workspaces",
               "fundamentals/agent-mode",
