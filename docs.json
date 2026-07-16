@@ -55,7 +55,8 @@
             "pages": [
               "account/plans",
               "account/billing",
-              "account/team"
+              "account/team",
+              "account/untitled-page"
             ]
           },
           {
