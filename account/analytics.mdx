@@ -18,19 +18,33 @@ Members can view their credit usage and limits and request more credits in their
   ![Admin Member Usage View](/images/Admin-Member-Usage-View.png)
 </Frame>
 
-## Admin Access and Permissions
+## Data Access by Role
+
+|  | Admin | Member |
+| --- | --- | --- |
+| **Usage Overview**<br />Total Credit Pool and Credit Usage | Usage breakdown <br />per member | No per-member <br />details |
+| **Member Credit Limits**<br />Custom Limits, Usage to date, Pending Requests | Table of all Member data | Only their data |
+| **Usage History**<br />Logs for every prompt's use date, mode, model type, credit cost <br />Filters for time range, mode, and model type |  |  |
 
 ### What Admins can see
 
-- **\[All Members\] Usage Overview:** the account org’s total credit pool and credit usage per member
+- **\[All Members\] Usage Overview:** the account's total credit pool and credit usage per member
 - **\[All Members\] Member Credit Limits**: Table of each Member’s **Custom Credit Limit**, credit **Usage to Date**, and **Pending Credit Requests**
 - **\[All Members\] Usage History:** complete log of all Bezi usage. The user, date, mode, model type, and credits consumed, filterable by time range, mode, and model type
+
+### What Members can see
+
+- **\[General\] Usage Overview:** the account's total credit pool and credit usage
+- **\[Yours Only\] Member Credit Limits**: View of your **Custom Credit Limit**, **Usage to Date**, and **Pending Credit Requests**
+- **\[Yours Only\] Usage History:** a log of your individual usage events, filterable by time range, mode, and model type
+
+## Admin Permissions
 
 ### Set Member credit limits
 
 1. Confirm you are the account Admin
 2. Open the [Account](https://app.bezi.com/account) page \> select the organization
-3. Open `Usage` \> scroll to Spend Limits section
+3. Open `Usage` \> scroll to Credit Limits section
 4. Turn on **Credit Limit per Seat**
 5. Enter a default **Credit Limit** and click `Save`
 6. To override the default spend limit for a member, locate their row in the **Team Member** **table** and add a **Custom Credit Limit** number
@@ -42,7 +56,7 @@ Members can view their credit usage and limits and request more credits in their
 1. Increase the member’s credit limit (can adjust the Default or the Custom Credit Limit)
 2. Approve the Member’s request for more credits
 
-When a Member requests extra credits, Admins see a **Pending request** next in the member’s **Team Member Credit Limits** row (for example, \+2,000). Click `...` in their row to approve or deny the request.
+When a Member requests extra credits, Admins receive an email. In the Dashboard, Admins will see a **Pending request** next in the member’s **Team Member Credit Limits** row (for example, \+2,000). Click `...` in their row to approve or deny the request.
 
 If your organization's total credit pool is exhausted, approving a request won’t add more credits to the total pool. The Admin will need to contact the org’s Bezi account contact to purchase additional credits.
 
@@ -56,15 +70,14 @@ Credit limit changes will take effect immediately.
 4. Edit: Change the number in their **Custom Credit Limit** column 
 5. Remove:  Click `...` at the end of their row \> `Remove limit` 
 
-## **Member Access and Permissions**
+## **Member Permissions**
 
-### What you can see
+### Request more credits if you hit your limit
 
-- **\[General\] Usage Overview:** the account org’s total credit pool and credit usage
-- **\[Yours Only\] Member Credit Limits**: View of your **Custom Credit Limit**, **Usage to Date**, and **Pending Credit Requests**
-  - **Spend limits** shows only your own row — your **Spend limit** and **Spend to date**. You can't see other teammates' limits or usage.
-- **\[Yours Only\] Usage History:** a log of your individual usage events, filterable by time range, mode, and model type
+**You're blocked from prompting Bezi once you hit your credit limit.** Request more credits from the Admin to continue work:  
 
-### What happens when you hit your limit
-
-**You're blocked from further usage once you hit your spend limit.** To request more credits, open the `...` menu next to your row under **Spend limits** and submit a request. An admin needs to approve it before you can resume usage.
+1. Open your [Account](https://app.bezi.com/account) page \> select the organization
+2. Open `Usage` \> scroll to Credit Limits section
+3. Click the `...` button next to your row 
+4. Submit the credit request
+5. Account Admins receive an email notifying them of the request - if urgent, ping the Admin directly to speed the approval process
