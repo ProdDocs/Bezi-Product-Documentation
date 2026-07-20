@@ -12,7 +12,7 @@ View Member's usage metrics, track adoption patterns, and set credit limits in t
 
 Enterprise account Admins can now view usage data and set usage limits per team member.
 
-Members can view their credit usage and spend limits and request more credits in their [Accounts](https://app.bezi.com/account) dashboard.
+Members can view their credit usage and limits and request more credits in their [Accounts](https://app.bezi.com/account) dashboard.
 
 <Frame>
   ![Admin Member Usage View](/images/Admin-Member-Usage-View.png)
@@ -23,17 +23,17 @@ Members can view their credit usage and spend limits and request more credits in
 ### What Admins can see
 
 - **\[All Members\] Usage Overview:** the account org’s total credit pool and credit usage per member
-- **\[All Members\] Member Spend Limits**: Table of each Member’s **Custom Spend Limit**, **Spend to Date**, and **Pending Credit Requests**
+- **\[All Members\] Member Credit Limits**: Table of each Member’s **Custom Credit Limit**, credit **Usage to Date**, and **Pending Credit Requests**
 - **\[All Members\] Usage History:** complete log of all Bezi usage. The user, date, mode, model type, and credits consumed, filterable by time range, mode, and model type
 
-### Set Member spend limits
+### Set Member credit limits
 
 1. Confirm you are the account Admin
 2. Open the [Account](https://app.bezi.com/account) page \> select the organization
 3. Open `Usage` \> scroll to Spend Limits section
-4. Turn on **Spend Limit per Seat**
-5. Enter a default **Spend Limit (# of credits)** and click `Save`
-6. To override the default spend limit for a member, locate their row in the **Team Member** **table** and add a **Custom Spend Limit** number
+4. Turn on **Credit Limit per Seat**
+5. Enter a default **Credit Limit** and click `Save`
+6. To override the default spend limit for a member, locate their row in the **Team Member** **table** and add a **Custom Credit Limit** number
 
 ### Approve Member credit requests
 
@@ -42,8 +42,29 @@ Members can view their credit usage and spend limits and request more credits in
 1. Increase the member’s credit limit (can adjust the Default or the Custom Credit Limit)
 2. Approve the Member’s request for more credits
 
-When a Member requests extra credits, Admins see a **Pending request** next in the member’s **Team Member Spend Limits** row (for example, \+2,000). Click `...` in their row to approve or deny the request.
+When a Member requests extra credits, Admins see a **Pending request** next in the member’s **Team Member Credit Limits** row (for example, \+2,000). Click `...` in their row to approve or deny the request.
 
 If your organization's total credit pool is exhausted, approving a request won’t add more credits to the total pool. The Admin will need to contact the org’s Bezi account contact to purchase additional credits.
 
-### Edit or remove a credit limit
+### Edit or remove a custom limit
+
+Credit limit changes will take effect immediately.
+
+1. Open the [Account](https://app.bezi.com/account) page \> select the organization
+2. Open `Usage` 
+3. Find their row in the **Member Credit Limits** table
+4. Edit: Change the number in their **Custom Credit Limit** column 
+5. Remove:  Click `...` at the end of their row \> `Remove limit` 
+
+## **Member Access and Permissions**
+
+### What you can see
+
+- **\[General\] Usage Overview:** the account org’s total credit pool and credit usage
+- **\[Yours Only\] Member Credit Limits**: View of your **Custom Credit Limit**, **Usage to Date**, and **Pending Credit Requests**
+  - **Spend limits** shows only your own row — your **Spend limit** and **Spend to date**. You can't see other teammates' limits or usage.
+- **\[Yours Only\] Usage History:** a log of your individual usage events, filterable by time range, mode, and model type
+
+### What happens when you hit your limit
+
+**You're blocked from further usage once you hit your spend limit.** To request more credits, open the `...` menu next to your row under **Spend limits** and submit a request. An admin needs to approve it before you can resume usage.
