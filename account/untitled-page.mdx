@@ -2,7 +2,7 @@
 title: "Usage Analytics and Limits"
 ---
 
-View Bezi usage metrics, track adoption patterns, and set credit limits in the Usage dashboard.
+View Member's usage metrics, track adoption patterns, and set credit limits in the Usage dashboard.
 
 <Note>
   Per-Member usage data and limits are only available on Enterprise plans.
@@ -12,12 +12,38 @@ View Bezi usage metrics, track adoption patterns, and set credit limits in the U
 
 Enterprise account Admins can now view usage data and set usage limits per team member.
 
-Members can still view their credit usage in the [Accounts](https://app.bezi.com/account) dashboard.
+Members can view their credit usage and spend limits and request more credits in their [Accounts](https://app.bezi.com/account) dashboard.
+
+<Frame>
+  ![Admin Member Usage View](/images/Admin-Member-Usage-View.png)
+</Frame>
 
 ## Admin Access and Permissions
 
 ### What Admins can see
 
-- **Usage overview:** the account org’s total credit pool and credit usage by member
-- **Spend Limits**: a table of each Member’s **Custom Spend Limit**, **Spend to Date**, and **Pending Requests**
-- **Usage History:** complete **Usage History** log for every Member. Records of the user, date, mode, model type, and credits consumed, filterable by time range, mode, and model type.
+- **\[All Members\] Usage Overview:** the account org’s total credit pool and credit usage per member
+- **\[All Members\] Member Spend Limits**: Table of each Member’s **Custom Spend Limit**, **Spend to Date**, and **Pending Credit Requests**
+- **\[All Members\] Usage History:** complete log of all Bezi usage. The user, date, mode, model type, and credits consumed, filterable by time range, mode, and model type
+
+### Set Member spend limits
+
+1. Confirm you are the account Admin
+2. Open the [Account](https://app.bezi.com/account) page \> select the organization
+3. Open `Usage` \> scroll to Spend Limits section
+4. Turn on **Spend Limit per Seat**
+5. Enter a default **Spend Limit (# of credits)** and click `Save`
+6. To override the default spend limit for a member, locate their row in the **Team Member** **table** and add a **Custom Spend Limit** number
+
+### Approve Member credit requests
+
+**Members cannot prompt Bezi once they hit their credit limit**. To continue using Bezi, the Admin must open [Account](https://app.bezi.com/account) dashboard and either:
+
+1. Increase the member’s credit limit (can adjust the Default or the Custom Credit Limit)
+2. Approve the Member’s request for more credits
+
+When a Member requests extra credits, Admins see a **Pending request** next in the member’s **Team Member Spend Limits** row (for example, \+2,000). Click `...` in their row to approve or deny the request.
+
+If your organization's total credit pool is exhausted, approving a request won’t add more credits to the total pool. The Admin will need to contact the org’s Bezi account contact to purchase additional credits.
+
+### Edit or remove a credit limit
