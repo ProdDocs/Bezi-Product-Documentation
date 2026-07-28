@@ -3,13 +3,42 @@ title: "Changelog"
 ---
 
 <Info>
-  **App:** v1.30.0
+  **App:** v1.30.1
 
-  **Plugin**: v0.103.0
+  **Plugin**: v0.103.8
 </Info>
 
-<Card title="Download Plugin v0.103.0" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.103.0/com.bezi.sidekick-0.103.0.tgz">
+<Card title="Download Plugin v0.103.8" icon="sparkles" href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.103.8/com.bezi.sidekick-0.103.8.tgz">
 </Card>
+
+<Update label="07/28/2026">
+  **Usability improvements**
+
+  - Improved ability for Actions to handle larger tasks at lower cost
+  - Added confirmation step to prevent trial cancellation
+  - Improved wording of error popup when org limit is reached
+  - Compressing images prior to upload
+
+  **Bug fixes**
+
+  - Fixed several issues when Bezi would lose connection or terminate workflow after a failed tool call to Unity
+  - Fixed a bug where compilation requests hung on disconnected targets
+  - Fixed connection status error causing blocked input
+  - Detect and escape unbalanced parentheses in grep queries
+  - Restores view setup after screenshot action failure
+  - Fixed a bug where Bezi UI stopped updating during parallel LLM generation
+  - Remove duplicate error sections in action execution batches
+  - Fixed excessive scroll bars appearing
+  - Fixed subscription inactive warning shows for annual plans near usage cap
+  - Fixed a bug where deleted assets may be returned by editor APIs to list assets
+  - Fixed a bug where duplicate customer payment profiles caused sign-in issues
+  - Fixed display of credit numbers in web app for lower tier plans
+  - Fixed UI issue showing incorrect diff values for added lines
+  - Show invited org after accepting an invite
+  - Redirect used invite links to the web app for logged-in users
+  - Fixed usage bar doesn't reach the end when limit is exceeded
+  - Removed on-demand usage for free trial
+</Update>
 
 <Update label="07/21/2026">
   **NEW**
