@@ -1,0 +1,82 @@
+---
+title: "ACP"
+---
+
+Agent Client Protocol (ACP) is a way to use Bezi's agent capabilities via an IDE.
+
+## What is ACP? When do you use it?
+
+ACP provides a communication channel between an IDE (Visual Studio, Rider, etc.) and agents like Bezi. If you want to work in your code editor UI and use the Bezi agent's rich context and superior typescript-based action execution method, this is an option.
+
+## How it works
+
+The Bezi ACP client connects your IDE to Bezi running on the same machine. When you send a prompt from the IDE:
+
+- The **prompt, @-mentions, and attachments** are passed to Bezi
+- Bezi does the actual execution work in Unity, working in whatever **workspace and project is open in the Bezi app**
+- Results stream back into your IDE
+- Start a **new chat session** in the IDE to begin a new thread in Bezi (follow standard best practice, one chat/thread per task, when using ACP)
+
+## How to setup Bezi ACP in the IDE
+
+> **Prerequisite**: The latest version of Node.js (version 22 or newer) must be installed and on your PATH. Install here: [https://nodejs.org/en/download](https://nodejs.org/en/download)
+
+### 1. Activate the ACP server
+
+- Open **Workspace Settings** \> `App Settings`
+- Toggle on the **ACP Server** (beta)
+
+### 2. Configure Bezi
+
+- Open the [Workspace](https://docs.bezi.com/fundamentals/workspaces) you want to work in
+- Set the **Agent mode, model, and thinking effort** you want your prompts to use
+- Activate any [Connections](https://docs.bezi.com/context/connections) or [MCPs](https://docs.bezi.com/context/mcp) you need Bezi to access
+
+_Important: Keep the Bezi App open and running while you work!_
+
+### 3. Configure your IDE
+
+- Point your IDE’s ACP config at the Bezi bridge, which runs via `npx`
+- **Do not** install anything globally: `npx -y @bezihq/acp@latest` fetches and runs the latest bridge automatically
+
+<AccordionGroup>
+  <Accordion title="Example ACP setup: JetBrains Rider">
+    - Confirm that Rider is up to date
+    - Confirm the AI Chat plugin is installed and updated in Rider
+    - Open the AI Chat sidebar \> context menu \> click `Add Custom Agent (beta)`
+    - In the open `acp.json` file, add a Bezi entry to your ACP agent servers config:
+
+    ```text
+    {
+      "default_mcp_settings":{},
+      "agent_servers": {
+        "Bezi": {
+          "type": "custom",
+          "command": "npx",
+          "args": ["-y", "@bezihq/acp@latest"]
+        }
+      }
+    }
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## What's not supported (yet)
+
+ACP covers most of Bezi, but a few App-only features aren't available in the IDE:
+
+- **You cannot pin game objects** from the IDE
+- **Rich previews of pages/plans**; diffs to your edited pages/plans will be rendered, but the final content and rich preview menus won’t
+- **Accepting / rejecting checkpoints**; if you need to revert edits made in the current thread, **open that thread in Bezi** to revert to a previous point
+
+## Troubleshooting
+
+- **Editor can't connect / "waiting for Bezi"**: make sure the Bezi App is open/running and you've activated **ACP Server** in your **Bezi Settings** (Step 1)
+- **Bezi can't see my project files**: Bezi works out of whichever Workspace is open in your app, not the IDE's project. Update the Workspace in Bezi to change what it has access to
+- `npx `**errors**: confirm Node.js version 22\+ is installed (`node --version`)
+
+## Building custom experiences with Bezi ACP
+
+The ACP standard can be used to drive the Bezi agent from more than just an IDE. You're free to try out other ACP-community-built apps, but try to build your own.   
+
+If you’re interested in building your own integration with Bezi ACP, we recommend you start by reading through the [ACP docs](https://agentclientprotocol.com/get-started/introduction).
