@@ -2,36 +2,42 @@
 title: "Welcome"
 ---
 
-Bezi is an AI game dev assistant. Its custom Unity integration enables complete, real-time project context (scripts, scenes, prefabs, assets, packages and more), used to plan and implement changes directly in the Unity Editor.
+Bezi is a game development assistant. Its custom engine integration enables complete, real-time project context (scripts, scenes, prefabs, assets, packages and more), and is used to help plan work and then implement the work in-engine. 
 
-Bezi's platform connects to multiple Unity projects and data sources to eliminate redundant work and offers a source of truth for teams to keep everyone's work consistent.
+Bezi's hub connects to and centralizes the Unity projects, data sources, files, and other shared or individual artifacts. It provides a source of truth for teams and the individuals on them, to keep output consistent and eliminate the redundant, menial work. 
 
-Together, Bezi's AI assistant and platform help you get work done - build features, fix bugs, implement UI - while keeping it aligned to your team's standards and compounding the output across teams.
+Together, Bezi's assistant and platform help you get work done - build features, fix bugs, implement UI - keeping it aligned to your team's standards and compounding each person's work.
 
 ## What you can do
 
 <AccordionGroup>
-  <Accordion title="Build features that fit your project" icon="hammer">
-    Describe what you want in plain language. Bezi reads your existing systems, plans the approach and implements it for you, tailored your game's existing architecture and best practices.
+  <Accordion title="Prototype and build features that work, without " icon="hammer">
+    Share your spec or just what you want in plain language. Bezi will help you flesh out the idea, plan the implementation, and execute it directly in Unity - tailored to work with the existing architecture and best practices. 
+
+    See [Rapid Prototyping](https://docs.bezi.com/use-cases/prototype-iterate) for more details.
   </Accordion>
 
-  <Accordion title="Build UI from a screenshot" icon="image">
-    Bezi handles the tedious work and set-up for UI. Give it a screenshot and assets, and it will implement and verify its visual output. See [create UI](https://docs.bezi.com/use-cases/create-ui) for more details.
+  <Accordion title="Figma > UI " icon="image">
+    Bezi handles the tedious work and set-up for UI. Give it a screenshot or Figma file and assets, and it will implement and verify its visual output.
+
+     See [create UI](https://docs.bezi.com/use-cases/create-ui) for more details.
   </Accordion>
 
-  <Accordion title="Designers and artists prototype in Unity" icon="recycle">
-    Non-engineers can build and test their own ideas now; share the spec and Bezi will help you flesh out the idea, plan the details, and implement it directly in Unity. See [Rapid Prototyping](https://docs.bezi.com/use-cases/prototype-iterate) for more details.
+  <Accordion title="Build animation systems: Animator Controller, Mecanim BlendTrees, Timelines" icon="play">
+    Describe the animation you want, and Bezi builds it. Create new Animator Controllers, states, parameters, layers, and wire up Mecanim BlendTrees and transition logic so characters blend smoothly between movement states. 
+
+    For cinematics and scripted sequences, Bezi builds Timeline tracks and clips directly, and connects both systems into your existing gameplay scripts so the right parameter changes at the right moment.
   </Accordion>
 
   <Accordion title="Debug and optimize " icon="magnifying-glass">
     Describe the symptom or paste an error. Bezi will parse through all your sources to diagnose issues across scenes and systems and implement a fix.
   </Accordion>
 
-  <Accordion title="Refactor without the risk" icon="map">
+  <Accordion title="Refactor without risk" icon="map">
     Describe the scope to Bezi; complete code refactor, asset re-organization and implementations, etc.. It will plan the approach, break it into chunks, implement it for you, and keep your architecture intact.
   </Accordion>
 
-  <Accordion title="Automate your pipeline" icon="swap">
+  <Accordion title="Automate pipelines and internal tool creation" icon="swap">
     Ragdoll setup, batch asset changes, level layouts, and more. Bezi will build procedural workflows and tools to handle your most tedious tasks.
   </Accordion>
 
@@ -39,8 +45,14 @@ Together, Bezi's AI assistant and platform help you get work done - build featur
     Store GDDs, feature specs, and coding standards in [Shared Pages](https://docs.bezi.com/context/pages). Every team member and every Bezi agent response draws from the same source.
   </Accordion>
 
-  <Accordion title="Onboard new hires in weeks">
-    New hires onboard to a project that already knows itself and get instant access to  project resources in one place. They can then query the project  to learn as they work.
+  <Accordion title="Automate project onboarding">
+    Introduce new hires to a project that already knows itself and can teach them how to build in it. They learn as they work and have instant access to all important docs in the Team Workspace.
+  </Accordion>
+
+  <Accordion title="Write tests, run them, and fix what fails — automatically">
+     Bezi  writes EditMode and PlayMode tests for your code, runs them inside the Unity Test Runner, and reads back real pass/fail results with error messages and stack traces. 
+
+    Ask it to get a suite passing and Bezi will iterate on its own: run tests, fix what's broken, rerun to confirm - continuing until everything's green, while you work on something else. 
   </Accordion>
 </AccordionGroup>
 
