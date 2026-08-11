@@ -39,28 +39,6 @@ _Important: Keep the Bezi App open and running while you work!_
 - Point your IDE’s ACP config at the Bezi bridge, which runs via `npx`
 - **Do not** install anything globally: `npx -y @bezihq/acp@latest` fetches and runs the latest bridge automatically
 
-<AccordionGroup>
-  <Accordion title="Example ACP setup: JetBrains Rider">
-    - Confirm that Rider is up to date
-    - Confirm the AI Chat plugin is installed and updated in Rider
-    - Open the AI Chat sidebar \> context menu \> click `Add Custom Agent (beta)`
-    - In the open `acp.json` file, add a Bezi entry to your ACP agent servers config:
-
-    ```text
-    {
-      "default_mcp_settings":{},
-      "agent_servers": {
-        "Bezi": {
-          "type": "custom",
-          "command": "npx",
-          "args": ["-y", "@bezihq/acp@latest"]
-        }
-      }
-    }
-    ```
-  </Accordion>
-</AccordionGroup>
-
 ## What's not supported (yet)
 
 ACP covers most of Bezi, but a few App-only features aren't available in the IDE:
@@ -77,6 +55,6 @@ ACP covers most of Bezi, but a few App-only features aren't available in the IDE
 
 ## Building custom experiences with Bezi ACP
 
-The ACP standard can be used to drive the Bezi agent from more than just an IDE. You're free to try out other ACP-community-built apps, but try to build your own.   
+The ACP standard can be used to drive the Bezi agent from more than just an IDE. You're free to try out other ACP-community-built apps, but try to build your own.
 
 If you’re interested in building your own integration with Bezi ACP, we recommend you start by reading through the [ACP docs](https://agentclientprotocol.com/get-started/introduction).
