@@ -35,8 +35,8 @@
               "fundamentals/agent-mode",
               "fundamentals/plan-mode",
               "fundamentals/ask-mode",
-              "fundamentals/model-selection",
-              "proofs"
+              "fundamentals/proofs",
+              "fundamentals/model-selection"
             ]
           },
           {
