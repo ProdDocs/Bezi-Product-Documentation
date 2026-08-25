@@ -1,0 +1,132 @@
+---
+title: "Custom Actions"
+---
+
+Execute any in-engine functionality not covered by Bezi’s built-in Actions, like working with specific plugins, menu item functions, or custom workflows defined in your project.
+
+Custom Actions expose static C# methods as an extension of Bezi Actions. They run with the Unity Editor’s full execution permissions and can access your computer, filesystem, network, processes, and project data.
+
+<Warning>
+  **Best practice is to setup version control prior to testing Custom Actions**. There is no built-in automatic checkpointing or recovery. Review all code that goes into a Custom Action and enable approval for risky operations.
+</Warning>
+
+## Auto-create Custom Actions
+
+1. Enter Agent Mode
+2. Prompt: describe the Action you want, it’s goal, and tell Bezi to create an Action. Be specific with inputs, outputs, side effects, read-only, and approval requirements
+3. Bezi will use the dedicated skill to write the Custom Action to the codebase
+4. Check the thread’s diff to review the Custom Action code
+5. Use the Custom Action!
+
+<ResponseField name="Prompt to create a new Custom Action">
+  Create a read-only action that takes an assets folder path and returns the number of prefabs in it.
+</ResponseField>
+
+<ResponseField name="Prompt to prompt to convert an existing method into a Custom Action">
+  Convert DeleteGeneratedPrefabs in @PrefabTools.cs into a custom action that requires approval.
+</ResponseField>
+
+## Manually create a Custom Action
+
+If you prefer to build Custom Actions in C#, add the `[BeziAction]` attribute to a static method in an Editor assembly, and provide the required parameters.
+
+```csharp
+using Bezi;
+
+public static class ProjectActions {
+    [BeziAction("Return the given message.", IsReadOnly = true)]
+    public static string Echo(string message) => message;
+}
+```
+
+### BeziActionAttribute API
+
+```csharp
+[BeziAction(
+    "Describe what the action does.",
+    IsReadOnly = true,
+    RequireApproval = "User-facing approval message."
+)]
+```
+
+Methods with `[BeziAction]` can be synchronous or async, with any serializable inputs and outputs. Invalid inputs throw an exception and instructions for Bezi to recover from the error. You can customize the attribute with the following parameters:
+
+| Parameter | Default |  |
+| :-- | :-- | :-- |
+| `Description` | **Required** | Explains to Bezi how to use the Action, as well as any additional instructions and examples. Bezi will also use this during the Actions discovery process. |
+| `IsReadOnly` | `false` | Set true only when the method does not modify any data in Unity, the filesystem, the network, or any other data. This allows the Action to be used in read-only contexts such as Ask and Plan mode. |
+| `RequireApproval` | `null` | Set a string to require user approval before Bezi executes the Action. Use it for destructive or sensitive Actions. The message will show up as an approval prompt in Bezi, along with the inputs and the Action name. |
+
+## Best Practices
+
+#### Structured return values
+
+Return a serializable class, struct, or tuple when the Action needs to return more than one result.
+
+```csharp
+[Serializable]
+public struct SceneSummary {
+    public string name;
+    public int rootObjectCount;
+}
+
+[BeziAction("Return a summary of the active scene.", IsReadOnly = true)]
+public static SceneSummary GetSceneSummary() {
+    var scene = SceneManager.GetActiveScene();
+    return new SceneSummary {
+        name = scene.name,
+        rootObjectCount = scene.rootCount,
+    };
+}
+```
+
+### Validate inputs, throw useful exceptions, and use Undo patterns
+
+Validate inputs and the current state of the project upfront as much as possible. Throw an exception with a useful message early in the Custom Action so Bezi knows what went wrong and how to proceed.
+
+Since Bezi creates an undo group for each batch of Actions, you can use Unity's typical `Undo` patterns to hook into the undo group and allow the Custom Action to use the undo menu or shortcuts.
+
+```csharp
+public static void RenameGameObject(GameObject target, string newName) {
+    if (target == null) {
+        throw new ArgumentNullException(nameof(target), "Target object was not found.");
+    }
+    if (string.IsNullOrWhiteSpace(newName)) {
+        throw new ArgumentException("The new name cannot be empty.", nameof(newName));
+    }
+    if (EditorApplication.isPlaying) {
+        throw new InvalidOperationException(
+            "RenameGameObject only works in Edit Mode. Exit Play Mode and try again.");
+    }
+
+    // Mutate after validations succeed, with Undo record
+    Undo.RecordObject(target, "Rename GameObject");
+    target.name = newName;
+}
+```
+
+### Prefer returning data instead of logging
+
+Logs written to the Unity console via `Debug.Log` methods are not directly available to Bezi without extra tool calls. Make sure to provide any useful information from the Custom Action as a return value.
+
+```csharp
+[BeziAction("Return the current product name.", IsReadOnly = true)]
+public static string GetProductName() {
+    Debug.Log(Application.productName);
+    return Application.productName;
+}
+```
+
+## Troubleshooting
+
+#### Bezi can't find the Custom Action
+
+Wait for Unity to compile (as well as the `Generating type definitions...` background task), fix any Console errors, and confirm the method is public, static, non-generic, and part of an Editor assembly.
+
+#### The Custom Action isn'tavailable in Ask or Plan Mode
+
+Custom Actions must be marked `IsReadOnly = true` to run in Ask or Plan Mode. Use Agent Mode for Actions which require modifying state.
+
+#### Bezi receives no useful output from the Custom Action
+
+Return a serializable value, class, struct, or tuple to send output to Bezi. Logs are not automatically returned to Bezi.
