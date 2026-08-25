@@ -28,7 +28,6 @@
             "expanded": true,
             "pages": [
               "fundamentals/threads",
-              "fundamentals/prompting",
               "fundamentals/skills",
               "fundamentals/workspaces",
               "fundamentals/team-workspaces",
@@ -37,6 +36,7 @@
               "fundamentals/plan-mode",
               "fundamentals/ask-mode",
               "fundamentals/proofs",
+              "fundamentals/prompting",
               "fundamentals/model-selection"
             ]
           },
