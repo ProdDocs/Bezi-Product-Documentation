@@ -33,6 +33,7 @@
               "fundamentals/workspaces",
               "fundamentals/team-workspaces",
               "fundamentals/agent-mode",
+              "fundamentals/custom-actions",
               "fundamentals/plan-mode",
               "fundamentals/ask-mode",
               "fundamentals/proofs",
