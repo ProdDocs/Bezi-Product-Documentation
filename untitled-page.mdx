@@ -1,3 +1,42 @@
 ---
 title: "Custom Actions"
 ---
+
+Execute any in-engine functionality not covered by Bezi’s built-in Actions, like working with specific plugins, menu item functions, or custom workflows defined in your project.
+
+Custom Actions expose static C# methods as an extension of Bezi Actions. They run with the Unity Editor’s full execution permissions and can access your computer, filesystem, network, processes, and project data.
+
+<Warning>
+  **Best practice is to setup version control prior to testing Custom Actions**. There is no built-in automatic checkpointing or recovery. Review all code that goes into a Custom Action and enable approval for risky operations.
+</Warning>
+
+## Auto-create Custom Actions
+
+1. Enter Agent Mode
+2. Prompt: describe the Action you want, it’s goal, and tell Bezi to create an Action. Be specific with inputs, outputs, side effects, read-only, and approval requirements
+3. Bezi will use the dedicated skill to write the Custom Action to the codebase
+4. Check the thread’s diff to review the Custom Action code
+5. Use the Custom Action!
+
+<ResponseField name="Prompt to create a new Custom Action">
+  Create a read-only action that takes an assets folder path and returns the number of prefabs in it.
+</ResponseField>
+
+<ResponseField name="Prompt to prompt to convert an existing method into a Custom Action">
+  Convert DeleteGeneratedPrefabs in @PrefabTools.cs into a custom action that requires approval.
+</ResponseField>
+
+## Manually create a Custom Action
+
+If you prefer to build Custom Actions in C#, add the `[BeziAction]` attribute to a static method in an Editor assembly, and provide the required parameters.
+
+```csharp
+using Bezi;
+
+public static class ProjectActions {
+    [BeziAction("Return the given message.", IsReadOnly = true)]
+    public static string Echo(string message) => message;
+}
+```
+
+### BeziActionAttribute API
