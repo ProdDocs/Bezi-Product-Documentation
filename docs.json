@@ -53,15 +53,6 @@
             ]
           },
           {
-            "group": "Account",
-            "pages": [
-              "account/billing",
-              "account/plans",
-              "account/analytics",
-              "account/team"
-            ]
-          },
-          {
             "group": "Use Cases",
             "pages": [
               "use-cases/create-ui",
@@ -84,7 +75,11 @@
       {
         "tab": "Security & Admin",
         "pages": [
-          "get-started/security"
+          "get-started/security",
+          "account/plans",
+          "account/billing",
+          "account/team",
+          "account/analytics"
         ]
       }
     ]
