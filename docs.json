@@ -57,7 +57,7 @@
             "pages": [
               "account/billing",
               "account/team",
-              "account/analytics"
+              "account/plans"
             ]
           },
           {
@@ -83,7 +83,8 @@
       {
         "tab": "Security & Admin",
         "pages": [
-          "get-started/security"
+          "get-started/security",
+          "account/analytics"
         ]
       }
     ]
