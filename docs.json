@@ -54,7 +54,12 @@
           },
           {
             "group": "Account",
-            "pages": []
+            "pages": [
+              "account/billing",
+              "account/plans",
+              "account/analytics",
+              "account/team"
+            ]
           },
           {
             "group": "Use Cases",
@@ -79,11 +84,7 @@
       {
         "tab": "Security & Admin",
         "pages": [
-          "get-started/security",
-          "account/plans",
-          "account/billing",
-          "account/team",
-          "account/analytics"
+          "get-started/security"
         ]
       }
     ]
