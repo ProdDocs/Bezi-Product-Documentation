@@ -19,7 +19,6 @@
               "get-started/welcome",
               "get-started/quickstart",
               "get-started/troubleshooting",
-              "get-started/security",
               "get-started/changelog"
             ]
           },
@@ -56,7 +55,6 @@
           {
             "group": "Account",
             "pages": [
-              "account/plans",
               "account/billing",
               "account/team",
               "account/analytics"
@@ -83,7 +81,10 @@
         ]
       },
       {
-        "tab": "Untitled Tab"
+        "tab": "Security & Admin",
+        "pages": [
+          "get-started/security"
+        ]
       }
     ]
   },
