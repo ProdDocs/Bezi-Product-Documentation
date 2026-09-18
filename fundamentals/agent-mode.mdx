@@ -25,39 +25,41 @@ Select the **mode dropdown** in the prompt textbox and select **Agent**. Agent M
 
 Bezi uses Actions to automatically create, update, and organize editor scenes. Multiple actions are chained to complete complex tasks. 
 
-When you prompt Bezi in Agent Mode, actions will be auto-deployed based on intent. It will either use a pre-built Action or prompt you to create a reusable [Custom Action](/fundamentals/custom-actions) for everything not provided in Bezi. 
+When you prompt Bezi in Agent Mode, actions will be auto-deployed based on intent. It will either use pre-built Actions or prompt you to create reusable [Custom Actions](/fundamentals/custom-actions) for everything else. 
 
-/
+#### Unity Pre-Built Action Examples
 
-#### GameObject **Modification and Scene Layout**
+<AccordionGroup>
+  <Accordion title="GameObject Modification and Scene Layout Actions">
+    - Create, update, delete, and reparent GameObjects
+    - Print GameObjects, print GameObjects by path, print scene hierarchy
+    - Create scenes, primitives, tags
+    - Capture image of scene view and game view (at rest and runtime)
+    - Create, update and view Particle Systems
+  </Accordion>
 
-- Create, update, delete, and reparent GameObjects
-- Print GameObjects, print GameObjects by path, print scene hierarchy
-- Create scenes, primitives, tags
-- Capture image of scene view and game view (at rest and runtime)
-- Create, update and view Particle Systems
+  <Accordion title="Assets & Prefabs">
+    - Create or update assets
+    - Create prefabs, create prefabs from assets, instantiate prefabs
+    - Take prefab image (including uGUI)
+    - Create or update AnimatorController, materials, ScriptableObjects
+    - Update asset importers, print assets
+    - Create and update Input Systems
+    - Analyze Profiler performance data, implement optimizations
+  </Accordion>
 
-#### Assets & Prefabs
-
-- Create or update assets
-- Create prefabs, create prefabs from assets, instantiate prefabs
-- Take prefab image (including uGUI)
-- Create or update AnimatorController, materials, ScriptableObjects
-- Update asset importers, print assets
-- Create and update Input Systems
-- Analyze Profiler performance data, implement optimizations
-
-#### **Component Functionality & Dynamic Behavior**
-
-- Add, update, or remove components
-- Set RectTransform layout
-- Generate animation clips, sequence cinematic content
-- Setup advanced Mecanim BlendTrees
-- Debug broken functionality, auto-iterate until desired behavior is achieved
+  <Accordion title="Component Functionality & Dynamic Behavior">
+    - Add, update, or remove components
+    - Set RectTransform layout
+    - Generate animation clips, sequence cinematic content
+    - Setup advanced Mecanim BlendTrees
+    - Debug broken functionality, auto-iterate until desired behavior is achieved
+  </Accordion>
+</AccordionGroup>
 
 ## Preview Agent suggestions
 
-Agent Mode auto-implements suggestions in Unity so it's easy to test them in the game before deciding to keep them.
+Agent Mode auto-implements suggestions in the editor so it's easy to test them in the game before deciding to keep them.
 
 1. Agent makes suggestions and auto-implements in Unity
 2. Click back to Unity: test the suggestions in-action
