@@ -26,10 +26,10 @@
             "group": "Fundamentals",
             "expanded": true,
             "pages": [
-              "fundamentals/threads",
-              "fundamentals/skills",
               "fundamentals/workspaces",
               "fundamentals/team-workspaces",
+              "fundamentals/threads",
+              "fundamentals/skills",
               "fundamentals/agent-mode",
               "fundamentals/custom-actions",
               "fundamentals/plan-mode",
