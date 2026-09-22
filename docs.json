@@ -26,17 +26,17 @@
             "group": "Fundamentals",
             "expanded": true,
             "pages": [
-              "fundamentals/threads",
-              "fundamentals/skills",
               "fundamentals/workspaces",
               "fundamentals/team-workspaces",
+              "fundamentals/threads",
+              "fundamentals/skills",
               "fundamentals/agent-mode",
               "fundamentals/custom-actions",
               "fundamentals/plan-mode",
               "fundamentals/ask-mode",
-              "fundamentals/proofs",
               "fundamentals/prompting",
-              "fundamentals/model-selection"
+              "fundamentals/model-selection",
+              "fundamentals/proofs"
             ]
           },
           {
@@ -68,7 +68,8 @@
             "pages": [
               "more/enhanced-code-intelligence",
               "more/edit-prompts"
-            ]
+            ],
+            "hidden": true
           }
         ]
       },

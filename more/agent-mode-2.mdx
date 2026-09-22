@@ -1,10 +1,11 @@
 ---
-title: "Agent Mode"
+title: "old Agent Mode (copy)"
+hidden: true
 ---
 
 Agent Mode automatically implements changes directly in-editor. Bezi has complete access to the engines' editors. 
 
-Generally speaking, if you can do something in the Editor, Bezi Agent Mode can do it for you. 
+Generally speaking, if you can do something in the Editor, Bezi can do it for you.
 
 Bezi doesn't use MCP to connect and implement editor changes, as this method gives people unreliable results, inefficient token usage, and high maintenance burdens. Bezi's Editor integrations are customized per engine to provide more accurate, reliable results.
 
@@ -12,31 +13,61 @@ Bezi doesn't use MCP to connect and implement editor changes, as this method giv
 
 ## What can Agent Mode do? 
 
-Agent Mode is capable of doing nearly anything a human can do in-engine. It automatically deploys Actions and/or code to complete any type of task. Examples include:
+Bezi Agent Mode is capable of doing nearly anything a human can do in-engine. It will automatically deploy Actions and/or code to complete any type of task. Examples include:
 
 - **Actions**: create, update, and organize scenes, editor objects, Blueprints, prefabs, etc.
 - **Code:** create or modify C++, C#, Unity scripts, etc. 
 
-When you prompt Bezi in Agent Mode, actions are auto-deployed. If the task requires an action that doesn't exist yet, you may be prompted to create a reusable [Custom Action](/fundamentals/custom-actions). 
+When you prompt Bezi in Agent Mode, pre-existing actions are auto-deployed. If the task requires an action that doesn't exist yet, you will be prompted to create a reusable [Custom Action](/fundamentals/custom-actions). 
+
+#### Pre-existing Action examples
 
 ## Using Agent Mode
 
-Select the **mode dropdown** in the prompt textbox, select **Agent**, and begin prompting.
-
-Agent Mode will auto-implement all edits so you can view and test them in-engine before deciding to keep or revert. 
+Select the **mode dropdown** in the prompt textbox and select **Agent**. Agent Mode is capable of generating code 
 
 <Danger>
   Keep and undo Agent suggestions as you work. Letting suggestions pile up in an undecided state can lead to unintentionally keeping or erasing everything.
 </Danger>
 
+<AccordionGroup>
+  <Accordion title="GameObject Modification and Scene Layout Actions">
+    - Create, update, delete, and reparent GameObjects
+    - Print GameObjects, print GameObjects by path, print scene hierarchy
+    - Create scenes, primitives, tags
+    - Capture image of scene view and game view (at rest and runtime)
+    - Create, update and view Particle Systems
+  </Accordion>
+
+  <Accordion title="Assets & Prefabs">
+    - Create or update assets
+    - Create prefabs, create prefabs from assets, instantiate prefabs
+    - Take prefab image (including uGUI)
+    - Create or update AnimatorController, materials, ScriptableObjects
+    - Update asset importers, print assets
+    - Create and update Input Systems
+    - Analyze Profiler performance data, implement optimizations
+  </Accordion>
+
+  <Accordion title="Component Functionality & Dynamic Behavior">
+    - Add, update, or remove components
+    - Set RectTransform layout
+    - Generate animation clips, sequence cinematic content
+    - Setup advanced Mecanim BlendTrees
+    - Debug broken functionality, auto-iterate until desired behavior is achieved
+  </Accordion>
+</AccordionGroup>
+
 ## Preview Agent suggestions
+
+Agent Mode auto-implements suggestions in the editor so it's easy to test them in the game before deciding to keep them.
 
 1. Agent makes suggestions and auto-implements in Unity
 2. Click back to Unity: test the suggestions in-action
 3. Return to Bezi: keep or undo undecided suggestions
 4. Continue working
 
-## Agent suggestion states
+### Agent suggestion states
 
 Bezi agent suggestions can exist in three states. Once you decide to keep or undo a suggestion, you cannot revert the suggestion back to an undecided state.
 
@@ -70,7 +101,9 @@ To restore: hover on the Bezi response you want to revert to and select `Restore
 
 ## Diffs
 
-Diffs show the Agent Mode changes per file. In chat, diffs are compressed for quick scanning. To view a diff in full context, open the Canvas (diffs will remain highlighted).
+Diffs show exactly what Agent Mode suggestions are changing in each file:
 
 - **Red highlights**: deletions
 - **Green highlights**: additions
+
+In chat, diffs are compressed for quick scanning. To view a diff in full context, open the script in **Canvas** (diffs will remain highlighted). Here you can compare and inspect Agent suggestions.

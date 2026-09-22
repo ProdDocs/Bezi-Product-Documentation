@@ -9,7 +9,7 @@ Below are frequent asked questions. If you have an issue that isn't answered, or
 1. Post in our [Discord server](https://discord.com/invite/UKWB46HTT9)
 2. Email [support@bezi.com](mailto:support@bezi.com)
 
-## App Setup and Bezi \<\> Unity Connection
+## App Setup and Bezi \<> Engine Connection
 
 ### What versions of Unity does Bezi support?
 
@@ -18,51 +18,45 @@ Below are frequent asked questions. If you have an issue that isn't answered, or
 - **Unity 2022**
 - **Unity 2021**
 
-### I see a _“Failed to install Unity Plugin”_  popup when I try connecting Bezi with my Unity project.
+### What versions of Unreal does Bezi support?
 
-Occasionally this error shows if a Unity set-up isn’t conducive with the Bezi plugin. Please try these things (in order) to see if either resolve. If neither work, reach out to [support@bezi.com](mailto:support@bezi.com) for assistance.
+- **Unreal 5.4**
+- **Unreal 5.5**
+- **Unreal 5.6**
+- **Unreal 5.7**
+- **Unreal 5.8**
 
-1. Follow the Bezi flow to install the Unity plugin with administrator privileges
-2. Download the Unity plugin directly from our [Changelog](https://docs.bezi.com/bezi/product/changelog)
+### I see a _“Failed to install [Engine] Plugin”_  popup when I try connecting Bezi with my project.
 
-### I can no longer find my project in Bezi after installing a package, and when I add the project manually I get a pop up that says “Error adding project”.
+Occasionally this error shows if an engine set-up isn’t conducive with the Bezi plugin. Please try these things (in order) to see if either resolve. If neither work, reach out to [support@bezi.com](mailto:support@bezi.com) for assistance.
 
-This error occurs when installing some template games for the Unity Asset Store. Doing so may overwrite the **productGUID** with an **invalid GUID** (00000000000000000000000000000000). Bezi requires a valid GUID to work, so this immediately breaks the connection to the project.
+1. Follow the Bezi flow to install the plugin with administrator privileges
+2. Download the Bezi plugin directly from our [Changelog](https://docs.bezi.com/bezi/product/changelog)
 
-To fix the issue, you need to fix the project. We recommend trying these solutions, in order:
-
-1. (If you have version control) Revert changes to ProjectSettings.asset and its .meta file
-2. Close and reopen the Unity Project to regenerate the GUID
-3. Delete the Library Folder to force-regenerate the GUID
-
-<Note>
-  Bezi tracks history using the GUID, so changing/regenerating the productGUID may lose your previous threads. In the future, we recommend **unchecking ProjectSettings.asset** in the Import pop-up, or copying the productGUID prior to install and replacing it after.
-</Note>
-
-### I see a _"Consent Request"_ popup from Unity
+### I see a _"Consent Request"_ popup 
 
 The popup is completely safe to accept and will only modify the scripts that make Bezi; none of your personal files will be affected.
 
-We use some APIs in Bezi that can be auto-updated by Unity, but these may change between versions. This popup just updates them to use the latest for whatever version of Unity you’re working in.
+This just updates some engine APIs used in Bezi to match whatever version you’re working in.
 
-### How do I know if Bezi is connected to my Unity project?
+### How do I know if Bezi is connected to my project?
 
-The connection indicators in your Unity project and Bezi app will both be green if they’re connected. If either are red, the connection is broken and the apps cannot communicate.
+The connection indicators in your project and Bezi app will both be green if they’re connected. If either are red, the connection is broken and the apps cannot communicate.
 
-> If you've installed the plugin but Bezi and Unity aren't successfully connecting, see the question below about troubleshooting a failed or lost connection.
+> If you've installed the plugin but Bezi and the project aren't successfully connected, see the question below about troubleshooting a failed or lost connection.
 
 <Frame>
   ![Successfulconnection](/images/successfulconnection.png)
 </Frame>
 
-### How do I manually update or reinstall Bezi's plugin in Unity?
+### How do I manually update or reinstall Bezi's Unity plugin?
 
 When a new version of Bezi is released, you'll receive an in-app prompt to update the app and plugin. Follow the instructions to do so before you start or resume working.
 
-If Unity’s Package Manager doesn’t automatically update the plugin, follow these steps:
+If the plugin doesn't auto-update, follow these steps:
 
 1. Close Bezi: right-click on the desktop app \> `Quit`
-2. Open the Unity project you’ve connected with Bezi
+2. Open the project you’ve connected with Bezi
 3. Open Unity Package Manager: Window menu \> `Package Manager`
 4. Delete the Bezi plugin: open “Bezi Sidekick” in the Package Manager \> `Remove`
 5. Reopen the Bezi app

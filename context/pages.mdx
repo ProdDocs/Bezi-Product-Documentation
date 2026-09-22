@@ -1,10 +1,12 @@
 ---
-title: "Shared and Private Pages"
+title: "Pages"
 ---
 
-Pages are evergreen documentation, available to every thread in a Workspace. **Anything in a Page - coding standards, architecture decisions, design specs, system docs - is context for your Bezi agent's work anywhere in that Workspace.**
+Pages are evergreen documentation that your Bezi agent references as it works. **Anything in a Page - coding standards, architecture decisions, design specs, system docs - is context for your Bezi agent's work in that specific Workspace.**
 
-Pages can be created and modified by you or by Bezi can do it on your behalf. If you never want Bezi to create Pages, [create a Rule](https://docs.bezi.com/fundamentals/rules) explicitly stating this.
+If you have existing docs or markdown files, import these directly into Bezi as Pages (claude.md files, folders, ZIPs, file drops, etc.). Otherwise, you can start by manually creating a Page. 
+
+Your Bezi agent can also create and edit Pages as part it on your work. To block it from doing so, [create a Rule](https://docs.bezi.com/fundamentals/rules) explicitly stating this.
 
 ## Page documentation examples
 
@@ -34,27 +36,23 @@ Pages can be created and modified by you or by Bezi can do it on your behalf. If
 
 ## Shared Pages
 
+Shared Pages are visible and editable by all members of a [Team Workspace](https://docs.bezi.com/fundamentals/team-workspaces). **They're a team's source of truth - the same information on vision, standards, rules, decisions - documented for each member's Bezi agent to reference**. This keeps teams work aligned and consistent.
+
 <Note>
   Shared Pages are only available on Team and Enterprise plans.
 </Note>
 
-Shared Pages are visible and editable by all members of a [Team Workspace](https://docs.bezi.com/fundamentals/team-workspaces). **They act as the team's single source of truth - vision, standards, rules, documented decisions - that every member's Bezi agent automatically references**. This keeps teams aligned and work consistent, even when people aren't in the same room.
+### Real-time collaboration in Shared Pages
 
-If you're in a Team Workspace and need to create Pages for private use (not team-wide consumption) you can create **Private Pages**. These are visible only to the Page creator and their Bezi agent.
-
-To update a Page from Private \<\> Shared, select the Page and drag it to the other section.
-
-### Real-time collaboration on Shared Pages
-
-Shared Pages support real-time collaboration. If more than one person has a Shared Page open, you will see each other’s cursors and text will appear as it’s typed.
+Multiple people can edit a Shared Page simultaneously. If more than one person has a Shared Page open, you will see each other’s cursors and text will appear as it’s typed.
 
 All edits merge automatically as you work, so there's nothing to manually save and no merge conflicts to resolve.
 
-> Bezi agents can edit Shared Pages and will not show up in real-time. All edits Bezi makes to a Shared Page will appear once it’s done editing. 
+> Bezi agents can edit Shared Pages and will not show up in real-time. All edits Bezi agents makes to a Shared Page appear once it’s done editing.
 
-If your Team Workspace doesn't want Bezi to edit Shared Pages, each member needs to [create a Rule](https://docs.bezi.com/fundamentals/rules) explicitly stating this.
+If your Team Workspace doesn't want Bezi agents to edit Pages, each member needs to [create a Rule](https://docs.bezi.com/fundamentals/rules) explicitly stating this.
 
-## Using Folders
+## Folders
 
 Pages are organized into folders. To manage a folder or the Pages in it, hover over the Folder and click the`…`icon. You will see a menu of options to:
 
@@ -65,23 +63,3 @@ Pages are organized into folders. To manage a folder or the Pages in it, hover o
 <Danger>
   Deleting a folder will delete all Pages in it. Do not delete any folders until you’ve confirmed all Pages **you want to keep** are moved.
 </Danger>
-
-### Real-time collaboration on Shared Pages
-
-Shared Pages support real-time collaboration. If more than one person has a Shared Page open, you will see each other’s cursors and text will appear as it’s typed.
-
-All edits merge automatically as you work, so there's nothing to manually save and no merge conflicts to resolve.
-
-> Bezi agents can edit Shared Pages and will not show up in real-time. All edits Bezi makes to a Shared Page will appear once it’s done editing.
-
-If your Team Workspace doesn't want Bezi to edit Shared Pages, each member needs to [create a Rule](https://docs.bezi.com/fundamentals/rules) explicitly stating this.
-
-### Real-time collaboration on Shared Pages
-
-Shared Pages support real-time collaboration. If more than one person has a Shared Page open, you will see each other’s cursors and text will appear as it’s typed.
-
-All edits merge automatically as you work, so there's nothing to manually save and no merge conflicts to resolve.
-
-> Bezi agents can edit Shared Pages and will not show up in real-time. All edits Bezi makes to a Shared Page will appear once it’s done editing.
-
-If your Team Workspace doesn't want Bezi to edit Shared Pages, each member needs to [create a Rule](https://docs.bezi.com/fundamentals/rules) explicitly stating this.

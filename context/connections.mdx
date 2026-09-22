@@ -2,10 +2,10 @@
 title: "Connections"
 ---
 
-These are the Workspace sources you give Bezi access to read from and write to. A**ll active Connections (other Unity projects, local folders) are available as read-only context for any thread in the same Workspace.** Connections are added and managed from Workspace settings.
+These are the Workspace sources you give Bezi access to read from and write to. **All active Connections (projects, local folders) are available as read-only context for work being done in a given Workspace.** You can add and manage Connections in Workspace settings.
 
 <Tip>
-  Any Connections you add are private to you. Even if you're working in a Team Workspace, other members of the team cannot see or use the Connections you have added.
+  Connections are private to you, even if you're working in a Team Workspace. No other person or agent can view or access your Connections.
 
   _Connection isolation is intentional. It ensures each team member can feed their Bezi agent the exact context needed for their work and won't be confused by a colleague's unrelated context._
 </Tip>
@@ -14,13 +14,13 @@ These are the Workspace sources you give Bezi access to read from and write to. 
 
 Enable Bezi to reference code or systems from a separate source to expedite work on the project or task at hand. All Connections are read-only context, unless they're the set as the thread's **target project**. Learn more about Target Project in [Threads](https://docs.bezi.com/fundamentals/threads).
 
-### Unity projects
+### Projects
 
-> Connect multiple Unity projects to a single workspace. In addition to linking your primary working environment, this is great for adding projects you want Bezi to reference for inspiration, copy systems from, etc..
+> Connect multiple projects to a single workspace. They can be from the same or different engines. Besides linking your primary work environment, this is great for providing your Bezi agent with inspiration, systems to copy, etc..
 
 ### Local folders
 
-> Connect any folders from your local filesystem. Great for non-Unity game migrations, asset pipelines, shared utility code, design docs, and any other context you want to give Bezi that lives outside of a Unity project.
+> Connect any folders from your local filesystem. Great for cross-platform migrations, asset pipelines, shared utility code, design docs, and any other context you want to give Bezi that lives outside of a project.
 
 ## Managing Connections
 
@@ -31,7 +31,7 @@ Each Connection adds context for Bezi; monitor active Connections and disable on
 1. Open the **Workspace dropdown** (top of the left sidebar)
 2. Select `Workspace Settings`
 3. Navigate to **Your Connections**
-4. Click `+` and select the Unity project or local folder
+4. Click `+` and select the project or local folder
 
 <Frame>
   ![Workspaces Connections](/images/Workspaces_Connections-1.png)
