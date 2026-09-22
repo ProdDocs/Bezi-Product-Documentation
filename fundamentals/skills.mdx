@@ -36,48 +36,40 @@ Skills work best when tailored to _your_ workflow. You can create any custom ski
   ![Screenshot 2026 06 25 At 6 45 45 PM](/images/Screenshot-2026-06-25-at-6.45.45-PM.png)
 </Frame>
 
-/
+<Tabs>
+  <Tab title="Install a default skill">
+    Installing a default skill automatically creates a copy of it on your machine.
 
-### **Install a default skill**
+    1. Open **Workspace Settings**
+    2. Select the `Skills` tab
+    3. Click the `Discover` toggle to explore skills options
+    4. Identify the desired skill and select `Install`
 
-Installing a default skill automatically creates a copy of it on your machine.
+    If a default skill requires an MCP you don't have, Bezi will tell you and set up the configuration during install. If a skill includes an MCP, it will inherit the MCP’s allow-list permissions. Adjust the permissions directly in [MCP settings](https://docs.bezi.com/context/mcp#installing-mcps) as needed.
+  </Tab>
+  <Tab title="Create a custom skill">
+    There are two ways to create a custom skill. It will automatically be installed and a copy will be created on your machine.
 
-1. Open **Workspace Settings**
-2. Select the `Skills` tab
-3. Click the `Discover` toggle to explore skills options
-4. Identify the desired skill and select `Install`
+    1. **Chat**: Describe the workflow steps and asks Bezi to create a skill for it. Bezi will automatically create instructions and any scripts or reference files needed to run
+    2. **Workspace Settings**: In the `Skills` section, click the `+ Create with Bezi` button
+  </Tab>
+  <Tab title="Run">
+    Bezi can only run installed skills
 
-If a default skill requires an MCP you don't have, Bezi will tell you and set up the configuration during install. If a skill includes an MCP, it will inherit the MCP’s allow-list permissions. Adjust the permissions directly in [MCP settings](https://docs.bezi.com/context/mcp#installing-mcps) as needed.
+    1. **Automatically:** Bezi knows every skill you have installed and uses that information to invoke the right skill for a request, even if it’s not named
+    2. **Use a ‘/command’:** Invoke a specific skill using the slash command and skill name
+  </Tab>
+  <Tab title="Edit">
+    You can only edit installed skills. To edit, write a prompt with the skill name and desired changes. Bezi will proposes the edits as a diff: review it and select `Keep` or `Undo` (same way you review changes in Agent Mode).
+  </Tab>
+  <Tab title="Uninstall">
+    Default skills show a name and a one-line description; your own skills show their name.
 
-### **Create a custom skill**
-
-There are two ways to create a custom skill. It will automatically be installed and a copy will be created on your machine.
-
-1. **Chat**: Describe the workflow steps and asks Bezi to create a skill for it. Bezi will automatically create instructions and any scripts or reference files needed to run
-2. **Workspace Settings**: In the `Skills` section, click the `+ Create with Bezi` button
-
-### **Run a skill**
-
-Bezi can only run installed skills
-
-1. **Automatically:** Bezi knows every skill you have installed and uses that information to invoke the right skill for a request, even if it’s not named
-2. **Use a ‘/command’:** Invoke a specific skill using the slash command and skill name
-
-### **Edit a skill**
-
-You can only edit installed skills. To edit, write a prompt with the skill name and desired changes. Bezi will proposes the edits as a diff: review it and select `Keep` or `Undo` (same way you review changes in Agent Mode).
-
-### **Uninstall a skill**
-
-Default skills show a name and a one-line description; your own skills show their name.
-
-1. Open **Workspace Settings**
-2. Select the `Skills` tab to see everything you have installed
-3. Select the `>` icon next to the desired skill and click `Uninstall`
-
-<Danger>
-  Uninstalling a skill is non-reversible. If you uninstall a custom skill, it will be deleted from Bezi.
-</Danger>
+    <Danger>
+      Uninstalling a skill is non-reversible. If you uninstall a custom skill, it will be deleted from Bezi.
+    </Danger>
+  </Tab>
+</Tabs>
 
 ## **Current Limitations**
 
