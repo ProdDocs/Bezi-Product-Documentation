@@ -34,9 +34,9 @@
               "fundamentals/custom-actions",
               "fundamentals/plan-mode",
               "fundamentals/ask-mode",
-              "fundamentals/proofs",
               "fundamentals/prompting",
-              "fundamentals/model-selection"
+              "fundamentals/model-selection",
+              "fundamentals/proofs"
             ]
           },
           {
