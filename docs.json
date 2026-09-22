@@ -68,7 +68,8 @@
             "pages": [
               "more/enhanced-code-intelligence",
               "more/edit-prompts"
-            ]
+            ],
+            "hidden": true
           }
         ]
       },
