@@ -18,28 +18,22 @@ Below are frequent asked questions. If you have an issue that isn't answered, or
 - **Unity 2022**
 - **Unity 2021**
 
-### I see a _“Failed to install Unity Plugin”_  popup when I try connecting Bezi with my Unity project.
+### What versions of Unreal does Bezi support?
 
-Occasionally this error shows if a Unity set-up isn’t conducive with the Bezi plugin. Please try these things (in order) to see if either resolve. If neither work, reach out to [support@bezi.com](mailto:support@bezi.com) for assistance.
+- **Unreal 5.4**
+- **Unreal 5.5**
+- **Unreal 5.6**
+- **Unreal 5.7**
+- **Unreal 5.8**
 
-1. Follow the Bezi flow to install the Unity plugin with administrator privileges
-2. Download the Unity plugin directly from our [Changelog](https://docs.bezi.com/bezi/product/changelog)
+### I see a _“Failed to install [Engine] Plugin”_  popup when I try connecting Bezi with my project.
 
-### I can no longer find my project in Bezi after installing a package, and when I add the project manually I get a pop up that says “Error adding project”.
+Occasionally this error shows if an engine set-up isn’t conducive with the Bezi plugin. Please try these things (in order) to see if either resolve. If neither work, reach out to [support@bezi.com](mailto:support@bezi.com) for assistance.
 
-This error occurs when installing some template games for the Unity Asset Store. Doing so may overwrite the **productGUID** with an **invalid GUID** (00000000000000000000000000000000). Bezi requires a valid GUID to work, so this immediately breaks the connection to the project.
+1. Follow the Bezi flow to install the plugin with administrator privileges
+2. Download the Bezi plugin directly from our [Changelog](https://docs.bezi.com/bezi/product/changelog)
 
-To fix the issue, you need to fix the project. We recommend trying these solutions, in order:
-
-1. (If you have version control) Revert changes to ProjectSettings.asset and its .meta file
-2. Close and reopen the Unity Project to regenerate the GUID
-3. Delete the Library Folder to force-regenerate the GUID
-
-<Note>
-  Bezi tracks history using the GUID, so changing/regenerating the productGUID may lose your previous threads. In the future, we recommend **unchecking ProjectSettings.asset** in the Import pop-up, or copying the productGUID prior to install and replacing it after.
-</Note>
-
-### I see a _"Consent Request"_ popup from Unity
+### I see a _"Consent Request"_ popup 
 
 The popup is completely safe to accept and will only modify the scripts that make Bezi; none of your personal files will be affected.
 
