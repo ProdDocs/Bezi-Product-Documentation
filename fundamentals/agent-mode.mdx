@@ -19,47 +19,15 @@ Bezi Agent Mode is capable of doing nearly anything a human can do in-engine. It
 
 When you prompt Bezi in Agent Mode, pre-existing actions are auto-deployed. If the task requires an action that doesn't exist yet, you will be prompted to create a reusable [Custom Action](/fundamentals/custom-actions). 
 
-#### Pre-existing Action examples
-
 ## Using Agent Mode
 
-Select the **mode dropdown** in the prompt textbox and select **Agent**. Agent Mode is capable of generating code 
+Select the **mode dropdown** in the prompt textbox and select **Agent**. Agent Mode auto-implements suggestions in the editor so it's easy to test them in the game before deciding to keep them. 
 
 <Danger>
   Keep and undo Agent suggestions as you work. Letting suggestions pile up in an undecided state can lead to unintentionally keeping or erasing everything.
 </Danger>
 
-<AccordionGroup>
-  <Accordion title="GameObject Modification and Scene Layout Actions">
-    - Create, update, delete, and reparent GameObjects
-    - Print GameObjects, print GameObjects by path, print scene hierarchy
-    - Create scenes, primitives, tags
-    - Capture image of scene view and game view (at rest and runtime)
-    - Create, update and view Particle Systems
-  </Accordion>
-
-  <Accordion title="Assets & Prefabs">
-    - Create or update assets
-    - Create prefabs, create prefabs from assets, instantiate prefabs
-    - Take prefab image (including uGUI)
-    - Create or update AnimatorController, materials, ScriptableObjects
-    - Update asset importers, print assets
-    - Create and update Input Systems
-    - Analyze Profiler performance data, implement optimizations
-  </Accordion>
-
-  <Accordion title="Component Functionality & Dynamic Behavior">
-    - Add, update, or remove components
-    - Set RectTransform layout
-    - Generate animation clips, sequence cinematic content
-    - Setup advanced Mecanim BlendTrees
-    - Debug broken functionality, auto-iterate until desired behavior is achieved
-  </Accordion>
-</AccordionGroup>
-
 ## Preview Agent suggestions
-
-Agent Mode auto-implements suggestions in the editor so it's easy to test them in the game before deciding to keep them.
 
 1. Agent makes suggestions and auto-implements in Unity
 2. Click back to Unity: test the suggestions in-action
