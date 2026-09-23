@@ -12,6 +12,36 @@ title: "Changelog"
 </Card>
 
 <Update label="09/23/2026" description="">
+  ## Unreal Early Access, UI Updates, and Models
+
+  **NEW: Unreal Early Access, Interface Update, New Models**
+
+  - Bezi’s Unreal support is in early access! Sign-up to be an early tester:
+  - Interface was reorganized to support multi-task work:
+    - Parallel threads are more visibile, so you can monitor multiple tasks simultaneously
+    - Threads live next to Pages in the left sidebar
+    - Cleaned up navigation modes to keep left sidebar clean and focused.
+    - Settings moved to left sidebar
+
+  **Model updates**
+
+  - Added Claude Opus 5.5: Anthropic's new frontier model, outstanding 3D capabilities, less expensive than Fable 5.1
+  - Added GPT-6 Sol and GPT-6 Luna: great 3D capabilities at much lower cost (50% cost of the GPT-5.6 counterparts, better at all game dev tasks)
+  - Upgraded GLM 5.2 to GLM 5.3 Flash: GLM 5.3 has vision capabilities (critical for game dev tasks) and is less expensive
+
+  **Usability improvements**
+
+  - Bezi can generate and execute one-off C# scripts, without recompilation. You will be prompted to approve these actions because they’re not sandboxed
+  - Actions now work natively with DontDestroyOnLoad objects
+  - Improved consistency when using actions in a workspace with no connected Unity projects
+
+  **Bug fixes**
+
+  - When Unity crashes, Bezi can now cancel pending tool calls and respond with suggestions
+  - When Bezi encounters an error it will no longer suggest rerunning the previous prompt
+  - Improved Unity Plugin connection/reconnection stability after disruptions (computer sleep, Unity crashes, etc)
+  - Fix some cases where Unity would hang after Bezi triggers a recompilation
+  - Fix some cases where Bezi would fail to run actions in a workspace with multiple projects
 </Update>
 
 <Update label="09/16/2026" description="">
