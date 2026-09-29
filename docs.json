@@ -28,16 +28,16 @@
             "pages": [
               "fundamentals/workspaces",
               "fundamentals/team-workspaces",
-              "fundamentals/threads",
               "fundamentals/skills",
+              "untitled-page",
+              "fundamentals/threads",
               "fundamentals/agent-mode",
               "fundamentals/custom-actions",
               "fundamentals/plan-mode",
               "fundamentals/ask-mode",
               "fundamentals/prompting",
               "fundamentals/model-selection",
-              "fundamentals/proofs",
-              "untitled-page"
+              "fundamentals/proofs"
             ]
           },
           {
