@@ -1,1 +1,34 @@
+---
+title: "Subagents"
+---
 
+Subagents do sub-tasks that your main Bezi agent delegates. Subagents can run simultaneously, in their own threads and with unique instructions, and report back to the main thread when their task is done. 
+
+## How subagents work
+
+When a task has independent sub-tasks, like creating materials, UI, or documentation, your main agent will auto-delegate them to subagents instead of doing them one at a time. Each subagent will appear as a block in the main thread.
+
+- Click a subagent block to open its thread and see exactly what it did
+- Click `<` to return to the main thread 
+
+The main agent picks a subagent based on the subagent's description. To use a specific subagent, mention it by name in your message, for example: "Have ui-builder lay out the pause menu." Without direct reference, the agent can infer relevant subagents based on their descriptions.
+
+## Subagents types
+
+### Built-in / Default subagents
+
+Bezi pre-built subagents for commonly delegated tasks.
+
+<AccordionGroup>
+  <Accordion title="Explore ">
+    Read your project and report what it finds. It never changes anything, so it can search and map your project in any mode (without getting blocked) before taking any action. 
+  </Accordion>
+
+  <Accordion title="General">
+    Full-tool worker with access to all the same capabilities the main agent does. It's used to run independent subtasks simultaneously. It can change the project and works best in `Agent Mode`. It will be blocked from making changes if you prompt in `Ask Mode`. 
+  </Accordion>
+</AccordionGroup>
+
+### Custom Subagents
+
+Custom subagents are specialists you define, such as a shader agent, a UI agent, or a QA agent. You set the subagent's name, when it should be used, which models it runs on, and how it behaves. Once saved, your main agent calls it when a subtask matches the description _or_ when you mention it by name.
