@@ -48,13 +48,12 @@ There are three ways to create a custom subagent:
   - **Name**: Must be kebab-case, like `ui-builder`. This is the name you mention to call the subagent.
   - **Description**: When to use this subagent and which tasks the main agent should send it. Bezi reads the description to decide when to call the subagent, so be specific.
   - **Model IDs**: The models this subagent is allowed to run on. Select at least one, or select all of them. `Inherit from thread` runs the subagent on the same model as the main thread.
+    - If >1 model (or `Inherit from thread`) is selected, the thread will select the  model based on task difficulty
   - **Default Model**: The model the subagent uses when the thread doesn't choose one while calling it. This list only shows the models you selected in Model IDs.
   - **Default Effort**: The effort level the subagent uses when the thread doesn't choose one while calling it.
   - **System Prompt**: Full instructions for how the subagent behaves.
 
   **If a model you selected becomes unavailable, the subagent falls back to** `Inherit from thread`
-
-  If >1 model (or `Inherit from thread`) is selected, the thread will select the  model based on task difficulty
 </Accordion>
 
 <Accordion title="UI subagent example">
