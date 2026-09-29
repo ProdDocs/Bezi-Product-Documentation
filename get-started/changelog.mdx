@@ -3,13 +3,46 @@ title: "Changelog"
 ---
 
 <Info>
-  **App:** v1.36.3
+  **App:** v1.36.4
 
-  **Unity Plugin**: v0.118.1
+  **Unity Plugin**: v0.118.6
 </Info>
 
-<Card title="Download Unity Plugin v0.118.1" icon="down" horizontal href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.118.1/com.bezi.sidekick-0.118.1.tgz">
+<Card title="Download Unity Plugin v0.118.6" icon="down" horizontal href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.118.6/com.bezi.sidekick-0.118.6.tgz">
 </Card>
+
+<Update label="09/29/2026" description="">
+  ## Custom Subagents
+
+  **NEW**
+
+  - Bezi supports [custom subagents](https://docs.bezi.com/fundamentals/subagents) to execute complex tasks faster
+    - Pre-define models & system prompts to add consistent multi-agent workflows to Bezi
+  - Bezi can execute one-off C# scripts directly in your Unity project, without recompilation. For now they prompt you for approval, due to their unsandboxed nature
+  - Role-specific new user onboarding experience, to support project and workspace setup
+
+  **Usability improvements**
+
+  - Improved Play Mode support in Agent, Plan, and Ask Modes
+  - Improved sidebar navigation
+  - Updated Unity project picker instructions to clarify how to refresh Unity Hub projects
+  - Bezi can place images from a thread into pages (whether uploaded or created by tools)
+  - Added Claude Sonnet 5.5: Better quality, same price as Sonnet 5
+
+  **Bug fixes**
+
+  - Fixed NullReferenceException when selecting objects in Unity in some cases
+  - Fixed slow Domain Reload in some projects which have many files
+
+  **Unreal**
+
+  - **Usability improvements**
+    - Action execution is now up to ~15x faster for select tasks that require executing +1000 actions. New execution updates allow Bezi to run a large number of actions in the editor as fast as possible
+    - Improved the rendering performance in threads where Bezi executed thousands of actions (scrolling performance and thread loading performance)
+  - **Bug fixes**
+    - Fixed an issue where Bezi could not start PIE if there are Blueprint compile errors
+    - Fixed a warning in UE 5.4 where a plugin dependency was not explicitly defined
+</Update>
 
 <Update label="09/23/2026" description="">
   ## Unreal Early Access, UI Updates, and Models
