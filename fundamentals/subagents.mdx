@@ -1,0 +1,103 @@
+---
+title: "Subagents"
+hidden: true
+---
+
+Subagents do sub-tasks delegated by your main Bezi agent. Subagents can run simultaneously, in their own threads and with unique instructions, and report back to the main thread when their task is done. 
+
+## How subagents work
+
+When a task has independent sub-tasks, like creating materials, UI, or documentation, your main agent will auto-delegate them to subagents instead of doing them one at a time. Each subagent will appear as a block in the main thread.
+
+- Click a subagent block to open its thread and see exactly what it did
+- Click `<` to return to the main thread 
+
+The main agent picks a subagent based on the subagent's description. To use a specific subagent, mention it by name in your message, for example: "Have ui-builder lay out the pause menu." Without direct reference, the agent can infer relevant subagents based on their descriptions.
+
+## Subagents types
+
+### Built-in / Default subagents
+
+Bezi pre-built subagents for commonly delegated tasks.
+
+<AccordionGroup>
+  <Accordion title="Explore ">
+    Read your project and report what it finds. It never changes anything, so it can search and map your project in any mode (without getting blocked) before taking any action. 
+  </Accordion>
+
+  <Accordion title="General">
+    Full-tool worker with access to all the same capabilities the main agent does. It's used to run independent subtasks simultaneously. It can change the project and works best in `Agent Mode`. It will be blocked from making changes if you prompt in `Ask Mode`. 
+  </Accordion>
+</AccordionGroup>
+
+### Custom Subagents
+
+Custom subagents are specialists you define, such as a shader agent, a UI agent, or a QA agent. You set the subagent's name, when it should be used, which models it runs on, and how it behaves. Once saved, your main agent calls it when a subtask matches the description _or_ when you mention it by name.
+
+## How to create custom subagents
+
+There are three ways to create a custom subagent:
+
+### 1. Define manually
+
+1. Go to `Settings` > `Subagents`
+2. Select `Define manually`
+3. Fill in the Subagent fields (defined below) 
+4. Click `Save`
+
+<Accordion title="Subagent fields">
+  - **Name**: Must be kebab-case, like `ui-builder`. This is the name you mention to call the subagent.
+  - **Description**: When to use this subagent and which tasks the main agent should send it. Bezi reads the description to decide when to call the subagent, so be specific.
+  - **Model IDs**: The models this subagent is allowed to run on. Select at least one, or select all of them. `Inherit from thread` runs the subagent on the same model as the main thread.
+    - If >1 model (or `Inherit from thread`) is selected, the thread will select the  model based on task difficulty
+  - **Default Model**: The model the subagent uses when the thread doesn't choose one while calling it. This list only shows the models you selected in Model IDs.
+  - **Default Effort**: The effort level the subagent uses when the thread doesn't choose one while calling it.
+  - **System Prompt**: Full instructions for how the subagent behaves.
+
+  **If a model you selected becomes unavailable, the subagent falls back to** `Inherit from thread`
+</Accordion>
+
+<Accordion title="UI subagent example">
+  **Name**: ui-builder
+
+  **Description**: Use for building or editing in-game UI: menus, HUDs, buttons, and layout. Call this subagent when a task involves creating or changing UI elements. Don't use it for gameplay logic, materials, or scene layout.
+
+  **Model IDs**: Inherit from thread, Gemini 3 Flash
+
+  **Default Model**: Inherit from thread
+
+  **Default Effort**: High
+
+  **System Prompt**: You build and edit in-game UI. Before making changes, read the existing UI to match its naming, structure, and styling. Keep each change scoped to the elements named in the task. Don't edit scripts or assets outside the UI unless the task asks for it. When you finish, list every element you created or changed.
+</Accordion>
+
+### 2. Create with Bezi
+
+1. Go to `Settings` > `Subagents`
+2. Click `Create with Bezi`: wait for the starter prompt to load in the thread input
+3. Describe what you want the subagent to do, then send the message.
+4. Bezi works through the subagent's fields with you and creates it
+
+### 3. Use existing Markdown file
+
+1. Locate the existing Markdown file you want to turn into a subagent
+2. Start a new thread
+3. Add the file to the thread and prompt Bezi to create a subagent from it
+
+## Sharing custom subagents
+
+Custom subagents are stored as Markdowns on your computer. To share a subagent with a teammate, find and share the Markdown file with them:
+
+- Navigate to `Settings` > `Subagents`se
+- Click the `...` dropdown next to the subagent
+- Select `Reveal in Finder` to open the on-disk folder and send the Markdown file to them
+- Add the Markdown to the`subagents` folder or paste it into a thread and prompt Bezi to configure it
+
+## Managing and sharing custom subagents
+
+Navigate to `Settings` > `Subagents`
+
+- To disable a subagent: toggle it on/off
+- To review, edit, or delete a subagent: click the `...` menu
+
+Since Markdowns are stored on the computer, deleting a subagent deletes it on disc.
