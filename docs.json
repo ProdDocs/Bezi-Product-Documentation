@@ -19,6 +19,8 @@
               "get-started/welcome",
               "what-bezi-can-do",
               "get-started/quickstart",
+              "fundamentals/workspaces",
+              "fundamentals/team-workspaces",
               "get-started/troubleshooting",
               "get-started/changelog"
             ]
@@ -27,8 +29,6 @@
             "group": "Fundamentals",
             "expanded": true,
             "pages": [
-              "fundamentals/workspaces",
-              "fundamentals/team-workspaces",
               "fundamentals/skills",
               "fundamentals/subagents",
               "fundamentals/threads",
