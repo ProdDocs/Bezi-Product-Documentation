@@ -17,6 +17,7 @@
             "group": "Start here",
             "pages": [
               "get-started/welcome",
+              "what-bezi-can-do",
               "get-started/quickstart",
               "get-started/troubleshooting",
               "get-started/changelog"
