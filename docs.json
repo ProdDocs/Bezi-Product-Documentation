@@ -14,7 +14,7 @@
         "tab": "Bezi",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Start here",
             "pages": [
               "get-started/welcome",
               "get-started/quickstart",
