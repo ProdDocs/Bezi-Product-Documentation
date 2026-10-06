@@ -26,18 +26,18 @@
             ]
           },
           {
-            "group": "Fundamentals",
+            "group": "How Bezi works",
             "expanded": true,
             "pages": [
-              "fundamentals/skills",
-              "fundamentals/subagents",
-              "fundamentals/threads",
               "fundamentals/agent-mode",
-              "fundamentals/custom-actions",
               "fundamentals/plan-mode",
               "fundamentals/ask-mode",
-              "fundamentals/prompting",
+              "fundamentals/subagents",
+              "fundamentals/custom-actions",
               "fundamentals/model-selection",
+              "fundamentals/skills",
+              "fundamentals/threads",
+              "fundamentals/prompting",
               "fundamentals/proofs"
             ]
           },
