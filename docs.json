@@ -30,13 +30,13 @@
             "expanded": true,
             "pages": [
               "fundamentals/agent-mode",
+              "fundamentals/custom-actions",
               "fundamentals/plan-mode",
               "fundamentals/ask-mode",
               "fundamentals/subagents",
-              "fundamentals/custom-actions",
+              "fundamentals/threads",
               "fundamentals/model-selection",
               "fundamentals/skills",
-              "fundamentals/threads",
               "fundamentals/prompting",
               "fundamentals/proofs"
             ]
