@@ -46,16 +46,17 @@
               "context/pages",
               "fundamentals/skills",
               "context/rules",
-              "context/connections",
               {
                 "group": "Connect your tools",
-                "pages": []
+                "pages": [
+                  "context/connections",
+                  "context/mcp",
+                  "acp"
+                ]
               },
-              "context/mcp",
               "context/pins",
               "context/image-attachments",
-              "context/index-project",
-              "acp"
+              "context/index-project"
             ]
           },
           {
