@@ -29,12 +29,17 @@
             "group": "How Bezi works",
             "expanded": true,
             "pages": [
-              "fundamentals/agent-mode",
-              "fundamentals/custom-actions",
-              "fundamentals/plan-mode",
-              "fundamentals/ask-mode",
-              "fundamentals/subagents",
               "fundamentals/threads",
+              "fundamentals/subagents",
+              "fundamentals/custom-actions",
+              {
+                "group": "Modes",
+                "pages": [
+                  "fundamentals/agent-mode",
+                  "fundamentals/plan-mode",
+                  "fundamentals/ask-mode"
+                ]
+              },
               "fundamentals/model-selection",
               "fundamentals/prompting",
               "fundamentals/proofs"
@@ -58,6 +63,10 @@
               "context/image-attachments",
               "context/index-project"
             ]
+          },
+          {
+            "group": "Untitled Group",
+            "pages": []
           },
           {
             "group": "Use Cases",
