@@ -36,18 +36,22 @@
               "fundamentals/subagents",
               "fundamentals/threads",
               "fundamentals/model-selection",
-              "fundamentals/skills",
               "fundamentals/prompting",
               "fundamentals/proofs"
             ]
           },
           {
-            "group": "Context",
+            "group": "Give Bezi context",
             "pages": [
               "context/pages",
-              "context/connections",
-              "context/mcp",
+              "fundamentals/skills",
               "context/rules",
+              "context/connections",
+              {
+                "group": "Connect your tools",
+                "pages": []
+              },
+              "context/mcp",
               "context/pins",
               "context/image-attachments",
               "context/index-project",
