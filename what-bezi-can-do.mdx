@@ -2,9 +2,81 @@
 title: "What Bezi can do "
 ---
 
-- Welcome's 10 accordions.
-- The Agent Mode action list (GameObjects, prefabs, AnimatorControllers, BlendTrees, particle systems, Profiler analysis, Input System).
-- Proofs.
-- The MCP integrations (Jira, GitHub, Blender, Figma, Notion).
-- The Skills examples.
-- ACP.
+#### What Bezi can do
+
+Bezi works in your Unity project with real-time context of your scripts, scenes, prefabs, assets, and packages. This page lists what Bezi can do, which mode or tool does it, and where to read more.
+
+Bezi has three modes:
+
+- **Agent Mode** makes changes directly in the Unity Editor.
+- **Plan Mode** works out the approach before anything changes.
+- **Ask Mode** answers questions. You apply any changes yourself.
+
+In Agent Mode, Bezi shows each change as a diff. You can keep or undo each change, or restore a checkpoint.
+
+#### Build in Unity
+
+Bezi builds with Actions. Actions create, update, and organize Unity objects, and Bezi chains them to finish larger tasks. [Custom Actions](/fundamentals/custom-actions) cover anything Bezi doesn't provide.
+
+| Capability | What Bezi does | Mode or tool | Details |
+| :-- | :-- | :-- | :-- |
+| Scenes and GameObjects | Bezi creates, updates, deletes, and reparents GameObjects. It creates scenes, primitives, and tags, prints the scene hierarchy, and captures images of the Scene and Game views, at rest and at runtime. | Agent Mode | [Agent Mode](/fundamentals/agent-mode) |
+| Assets and prefabs | Bezi creates and updates assets, materials, and ScriptableObjects. It creates prefabs from scratch or from assets, instantiates them, and captures prefab images, including uGUI. It also updates asset importers. | Agent Mode | [Agent Mode](/fundamentals/agent-mode) |
+| Components, particles, and input | Bezi adds, updates, and removes components, sets RectTransform layout, and creates and updates Input Systems. It also creates, updates, and views Particle Systems. | Agent Mode | [Agent Mode](/fundamentals/agent-mode) |
+| UI | Bezi builds UI from a screenshot or Figma file. It creates the prefabs and functionality, compares the result to your reference, and adjusts until it is close. Bezi completes most of the layout and functionality, and you finish the polish. A default Skill also converts UGUI screens to UI Toolkit. | Agent Mode, UI Standards Page, Skills | [Create UI](/use-cases/create-ui) |
+| Animation | Bezi creates Animator Controllers with states, parameters, layers, and transitions, and sets up Mecanim BlendTrees. It generates animation clips and builds Timeline tracks and clips for cinematics, then connects them to your gameplay scripts. | Agent Mode | [Agent Mode](/fundamentals/agent-mode) |
+| Scripts | Bezi creates and modifies scripts. Each change appears as a diff, so you can see what changed in every file. | Agent Mode | [Agent Mode](/fundamentals/agent-mode) |
+| Features from a spec | Give Bezi a spec or a plain-language description. Bezi helps define the idea, plans the implementation, and builds it in Unity to fit your existing architecture and best practices. | Plan Mode, Agent Mode | [Rapid Prototyping](/use-cases/prototype-iterate) |
+| Plans | Bezi works out an approach before it changes anything. Plans are private to you. Convert a Plan to a Page to share it with your team. | Plan Mode | [Plan Mode](/fundamentals/plan-mode) |
+| Proofs | Bezi creates small interactive tools you can click through, such as a dialogue tree editor, a weapon balance matrix, a shader previewer, or a UI layout builder. When the idea works, Bezi can recreate it in Unity as objects or data assets. This is a one-time transfer. You can export a Proof as a .zip or publish a public link. | Proofs | [Proofs](/fundamentals/proofs) |
+
+#### Fix and improve code
+
+| Capability | What Bezi does | Mode or tool | Details |
+| :-- | :-- | :-- | :-- |
+| Debugging | Describe the symptom or paste an error. Bezi checks your scripts, scenes, and systems to find the cause, implements a fix, and can keep iterating until the behavior is correct. | Agent Mode | [Debugging](/use-cases/debug) |
+| Compile errors | With Enhanced Code Intelligence on, Bezi gives better help with compilation errors and refactoring. It needs the .NET SDK and a .sln file that matches your project name. | Enhanced Code Intelligence | [Enhanced Code Intelligence](/more/enhanced-code-intelligence) |
+| Performance | Bezi analyzes Profiler data and implements optimizations. | Agent Mode | [Agent Mode](/fundamentals/agent-mode) |
+| Tests | Bezi writes EditMode and PlayMode tests and runs them in the Unity Test Runner. It reads the pass or fail results, including errors and stack traces, fixes what fails, and reruns until the tests pass. | Agent Mode | [Agent Mode](/fundamentals/agent-mode) |
+| Refactoring | Describe the scope, such as a code refactor or an asset reorganization. Bezi plans the approach, splits it into chunks, and implements each one while keeping your architecture intact. | Plan Mode, Agent Mode | [Plan Mode](/fundamentals/plan-mode) |
+
+#### Automate repeated work
+
+| Capability | What Bezi does | Mode or tool | Details |
+| :-- | :-- | :-- | :-- |
+| Custom tools | Describe a process, and Bezi writes an Editor tool for it, with instructions for using it. Examples include a tool that sets up an animal FBX as a prefab with the right components, a canvas tool that lays out levels from tile prefabs, and a ragdoll generator. | Agent Mode | [Create Unity Tools](/use-cases/unity-tools) |
+| Batch changes and pipelines | Bezi builds procedural workflows and tools for jobs such as ragdoll setup, batch asset changes, and level layouts. | Agent Mode | [Create Unity Tools](/use-cases/unity-tools) |
+| Packages | Bezi finds, installs, updates, and removes packages from the registry, Git, or local files. It imports package samples and moves assets between connected projects with dependencies and GUIDs intact, using package exporting. | Agent Mode | [Agent Mode](/fundamentals/agent-mode) |
+| Skills | A Skill saves a multi-step workflow as one command, and Bezi runs it the same way every time. Run a Skill with a slash command, or let Bezi choose it from your request. Default Skills are Implement UGUI, UGUI to UI Toolkit, and Create documentation. You can write your own, such as an object pool setup or a pre-build checklist. | Skills | [Skills](/fundamentals/skills) |
+| Custom Actions | Add Editor Actions for anything Bezi doesn't provide. | Custom Actions | [Custom Actions](/fundamentals/custom-actions) |
+
+#### Keep your team aligned
+
+| Capability | What Bezi does | Mode or tool | Details |
+| :-- | :-- | :-- | :-- |
+| Shared Pages | Store design docs, feature specs, and coding standards in Shared Pages. Bezi includes them in every team member's context. Shared Pages need a Team or Enterprise plan. | Pages, Team Workspaces | [Pages](/context/pages) |
+| Rules | Rules set standards that Bezi applies to all work in a Workspace, such as code style, project structure, and constants. Rules are private to you. To share standards with a team, put them in a Shared Page. | Rules | [Rules](/context/rules) |
+| Project documentation | Bezi scans a project and generates a design document as organized Pages. | Skills (Create documentation) | [Document and Explain Projects](/use-cases/documentation) |
+| Onboarding | New team members can ask Bezi how the project is built and read the Pages in the Team Workspace. | Team Workspaces | [Team Workspaces](/fundamentals/team-workspaces) |
+| Multiple projects | A Workspace can hold several Unity projects and local folders. In a Team Workspace, your Connections stay private to you. | Workspaces | [Workspaces](/fundamentals/workspaces) |
+
+#### Connect your tools
+
+| Capability | What Bezi does | Mode or tool | Details |
+| :-- | :-- | :-- | :-- |
+| Outside tools | Connect outside tools so Bezi can use them. With Jira, Bezi can pull in tickets, triage them by severity, implement them in Unity, and comment on the ticket. With GitHub, it can explain a diff, review a PR, or check what changed since the last build. With Blender, it can inspect scene structure, check poly counts, and flag naming problems. With Figma, it can build HUD elements from your mockups. With Notion, it can query your internal docs. Each MCP is read-only or read and write. Bezi does not vet MCPs, so check each one before you connect it. | MCP | [MCP](/context/mcp) |
+| Your IDE | Send prompts from Visual Studio or Rider. Bezi still makes the changes in Unity, through the Bezi app running on the same machine. ACP is in beta. | ACP | [ACP](/acp) |
+
+#### Current limits
+
+- **UI:** Bezi does not produce pixel-perfect hierarchy, final visual assets, or polish. Plan to finish UI by hand.
+- **MCP:** Bezi can't run code in a terminal or inject code into an external app or service. Up to 100 MCP tools can be active at once.
+- **Proofs:** Moving a Proof into Unity is a one-time transfer. Unity does not stay linked to the Proof.
+- **Skills:** Skills are local to you and aren't shared automatically in Team Workspaces. Skills run JavaScript only.
+- **ACP:** Some features stay in the Bezi app, including pinning GameObjects and accepting or rejecting checkpoints.
+
+#### Next steps
+
+- [Quickstart](/get-started/quickstart)
+- [Prompting Best Practices](/fundamentals/prompting)
+- [Create UI](/use-cases/create-ui)
