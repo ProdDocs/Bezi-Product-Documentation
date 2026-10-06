@@ -41,7 +41,6 @@
                 ]
               },
               "fundamentals/model-selection",
-              "fundamentals/prompting",
               "fundamentals/proofs"
             ]
           },
@@ -66,10 +65,12 @@
           },
           {
             "group": "Get the best results",
-            "pages": []
+            "pages": [
+              "fundamentals/prompting"
+            ]
           },
           {
-            "group": "Use Cases",
+            "group": "Use cases",
             "pages": [
               "use-cases/create-ui",
               "use-cases/prototype-iterate",
