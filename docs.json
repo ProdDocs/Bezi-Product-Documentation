@@ -14,47 +14,62 @@
         "tab": "Bezi",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Start here",
             "pages": [
               "get-started/welcome",
               "get-started/quickstart",
+              "fundamentals/workspaces",
+              "fundamentals/team-workspaces",
               "get-started/troubleshooting",
               "get-started/changelog"
             ]
           },
           {
-            "group": "Fundamentals",
+            "group": "How Bezi works",
             "expanded": true,
             "pages": [
-              "fundamentals/workspaces",
-              "fundamentals/team-workspaces",
-              "fundamentals/skills",
-              "fundamentals/subagents",
               "fundamentals/threads",
-              "fundamentals/agent-mode",
+              "fundamentals/subagents",
               "fundamentals/custom-actions",
-              "fundamentals/plan-mode",
-              "fundamentals/ask-mode",
-              "fundamentals/prompting",
+              {
+                "group": "Modes",
+                "pages": [
+                  "fundamentals/agent-mode",
+                  "fundamentals/plan-mode",
+                  "fundamentals/ask-mode"
+                ]
+              },
               "fundamentals/model-selection",
               "fundamentals/proofs"
             ]
           },
           {
-            "group": "Context",
+            "group": "Give Bezi context",
             "pages": [
               "context/pages",
-              "context/connections",
-              "context/mcp",
+              "fundamentals/skills",
               "context/rules",
+              {
+                "group": "Connect your tools",
+                "pages": [
+                  "context/connections",
+                  "context/mcp",
+                  "acp"
+                ]
+              },
               "context/pins",
               "context/image-attachments",
-              "context/index-project",
-              "acp"
+              "context/index-project"
             ]
           },
           {
-            "group": "Use Cases",
+            "group": "Get the best results",
+            "pages": [
+              "fundamentals/prompting"
+            ]
+          },
+          {
+            "group": "Use cases",
             "pages": [
               "use-cases/create-ui",
               "use-cases/prototype-iterate",
