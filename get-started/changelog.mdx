@@ -3,13 +3,47 @@ title: "Changelog"
 ---
 
 <Info>
-  **App:** v1.36.5
+  **App:** v1.38.0
 
-  **Unity Plugin**: v0.118.6
+  **Unity Plugin**: v0.120.0
 </Info>
 
-<Card title="Download Unity Plugin v0.118.6" icon="down" horizontal href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.118.6/com.bezi.sidekick-0.118.6.tgz">
+<Card title="Download Unity Plugin v0.120.0" icon="down" horizontal href="https://github.com/bezi3d/bezi-unity-plugin-releases/releases/download/v0.120.0/com.bezi.sidekick-0.120.0.tgz">
 </Card>
+
+<Update label="10/07/2026" description="">
+  ## Run terminal commands on your computer
+
+  **NEW:**
+
+  - Shell tool to run terminal commands on your computer in Agent Mode
+    - Optional Auto Mode for Bezi agent and subagents (general and custom)
+    - Examples of how to use it: manage Git workflows, build and test your project, automate file operations, and run local development tools
+
+  **Usability improvements**
+
+  - Bezi can describe and inspect the contents of DLLs in Unity projects
+  - Bezi works with Plans more freely in Agent mode
+  - Bezi can duplicate game objects
+  - Prompts that only have attachments (images, files) can be submitted without text
+
+  **Bug fixes**
+
+  - Hanging submissions can be cancelled more reliably
+  - Fixed support for Unity 6.7 beta
+  - Fixed a bug where subagents might time out if they work longer than 10 minutes
+  - Fixed a bug where parallel creation of pages would create multiple folder copies
+
+  **Unreal Early Access**
+
+  - **Usability improvements**
+    - Improved Blueprint Re-layout implementation: Now Bezi properly uses re-route nodes to re-route wires around other nodes. Bezi now is also able to use Blueprint functions to break down complex graphs.
+      - Note: Bezi still applies the re-layout to the entire BP even if some parts were not modified. This is a known issue and will be fixed in the next release.
+    - Further improved performance of large action batches: Now BNezi does not slow down even if it is running a action script with +5000 actions
+    - Reduced memory usage when large action batches are running
+  - **Bug fixes**
+    - Fixed a crash that could happen when Bezi stops PIE after interacting with World referenced objects (like GameState)
+</Update>
 
 <Update label="09/29/2026" description="">
   ## Custom Subagents

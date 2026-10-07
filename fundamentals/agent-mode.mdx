@@ -4,7 +4,7 @@ title: "Agent Mode"
 
 Agent Mode automatically implements changes directly in-editor. Bezi has complete access to the engines' editors. 
 
-Generally speaking, if you can do something in the Editor, Bezi Agent Mode can do it for you. 
+Generally speaking, if you can do something in the Editor, Bezi Agent Mode can do it for you through 
 
 Bezi doesn't use MCP to connect and implement editor changes, as this method gives people unreliable results, inefficient token usage, and high maintenance burdens. Bezi's Editor integrations are customized per engine to provide more accurate, reliable results.
 
@@ -18,6 +18,17 @@ Agent Mode is capable of doing nearly anything a human can do in-engine. It auto
 - **Code:** create or modify C++, C#, Unity scripts, etc. 
 
 When you prompt Bezi in Agent Mode, actions are auto-deployed. If the task requires an action that doesn't exist yet, you may be prompted to create a reusable [Custom Action](/fundamentals/custom-actions). 
+
+### Shell Tool
+
+Agent Mode can run terminal commands on your computer, including through [general and custom subagents](https://docs.bezi.com/fundamentals/subagents). Commands run from the connected project’s directory. They can be used to manage Git workflows, build and test your project, automate file operations, or run local development tools.
+
+When a command requires approval, review it in the thread before allowing it to run. Commands normally run in a project sandbox; running outside the sandbox always requires your approval.
+
+Open **Settings → Tools or Advanced → Shell Tool** to view the shell Bezi uses and configure:
+
+- **Auto Mode:** Off by default. Enable it to run terminal commands automatically. Commands flagged for review still require approval.
+- **Show command output:** Show terminal output on command cards.
 
 ## Using Agent Mode
 
