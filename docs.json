@@ -17,7 +17,6 @@
             "group": "Start here",
             "pages": [
               "get-started/welcome",
-              "what-bezi-can-do",
               "get-started/quickstart",
               "fundamentals/workspaces",
               "fundamentals/team-workspaces",
