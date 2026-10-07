@@ -29,6 +29,16 @@ title: "Changelog"
   **Bug fixes**
 
   - Hanging submissions can be cancelled more reliably
+
+  **Unreal Early Access**
+
+  - **Usability improvements**
+    - Improved Blueprint Re-layout implementation: Now Bezi properly uses re-route nodes to re-route wires around other nodes. Bezi now is also able to use Blueprint functions to break down complex graphs.
+      - Note: Bezi still applies the re-layout to the entire BP even if some parts were not modified. This is a known issue and will be fixed in the next release.
+    - Further improved performance of large action batches: Now BNezi does not slow down even if it is running a action script with +5000 actions
+    - Reduced memory usage when large action batches are running
+  - **Bug fixes**
+    - Fixed a crash that could happen when Bezi stops PIE after interacting with World referenced objects (like GameState)
 </Update>
 
 <Update label="09/29/2026" description="">
