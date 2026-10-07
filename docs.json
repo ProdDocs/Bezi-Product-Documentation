@@ -65,8 +65,7 @@
           {
             "group": "Get the best results",
             "pages": [
-              "fundamentals/prompting",
-              "choose-your-approach"
+              "fundamentals/prompting"
             ]
           },
           {
