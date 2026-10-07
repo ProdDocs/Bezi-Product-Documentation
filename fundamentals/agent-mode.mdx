@@ -62,6 +62,17 @@ Bezi agent suggestions can exist in three states. Once you decide to keep or und
 
 If you accidentally keep something you want undone, you use restore checkpoint or version history to revert back to a previous state.
 
+## Shell Tool
+
+Bezi can run terminal commands on your computer in Agent Mode, including through [general and custom subagents](https://docs.bezi.com/fundamentals/subagents). Commands run from the connected project’s directory—for example, to manage Git workflows, build and test your project, automate file operations, or run local development tools.
+
+When a command requires approval, review it in the thread before allowing it to run. Commands normally run in a project sandbox; running outside the sandbox always requires your approval.
+
+Open **Settings → Tools or Advanced → Shell Tool** to view the shell Bezi uses and configure:
+
+- **Auto Mode:** Off by default. Enable it to run eligible terminal commands automatically. Commands flagged for review still require approval.
+- **Show command output:** Show terminal output on command cards.
+
 ## Restore Checkpoint
 
 Restore Checkpoint reverts the project back to an earlier state, erasing all kept changes made after that point. **Restore Checkpoint does not revert suggestions to an undecided state.** It permanently erases all code additions and modifications Bezi.
