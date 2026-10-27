@@ -3,12 +3,38 @@ title: "Changelog"
 ---
 
 <Info>
-  **App:** v1.40.0
+  **App:** v1.41.0
 
-  **Unity Plugin**: v0.122.4
+  **Unity Plugin**: v0.128.1
 
-  **Unreal Engine Plugin:** v0.13.1
+  **Unreal Engine Plugin:** v0.13.3
 </Info>
+
+<Update label="10/27/2026" description="">
+  **NEW:** 
+
+  - [Unity] Bezi can now manage and kick off builds using actions
+  - [Unity] Bezi can now work with Shader Graph, Post Processing, and other nested assets using actions
+  - Credit Bundles can now be offered to teams. Teams that need more credits than their plan includes can now get a prepaid block of credits through our team. Bundle credits are used after your plan credits and before on-demand, carry over month to month until they expire, and show up on your Usage page and in the desktop account view.
+  - Added Gemini 4 Argon as a featured model with low, medium (default), and high thinking levels
+
+   **Usability improvements** 
+
+  - Auto Mode is now enabled by default. With Auto Mode enabled, tools and actions that required human approval will be auto-approved if they are judged to be safe. You can opt-out in the Advanced Settings menu.
+  - Auto Mode can now auto-approve more tools and actions, including Custom Actions and Execute C#.
+  - Improved narrow connections settings layout
+  - The Usage page now shows your on-demand credit total alongside your plan credits.
+  - The credit usage bar no longer overflows or hides segments when you hit your limit.
+  - `createOrUpdateSerializedObject` merged into `createOrUpdateAsset` (`ScriptableObject` sub-assets now supported).
+
+   **Bug fixes** 
+
+  - Addressed cases where a thread would stop auto-scrolling mid response
+  - Fixed loading of screenshots in old thread action components
+  - Addresses cases of tooltips appearing in top left of the Bezi window
+  - Fixed an issue where newly added blueprint nodes might end up in the middle of a graph if that graph was under a comment (and other layout issues).
+  - Fixed an issue where Bezi could not find C++ files in a project that was converted from a blueprint project to a C++ project
+</Update>
 
 <Update label="10/20/2026" description="">
   **NEW:**
