@@ -15,7 +15,7 @@ Bezi doesn't use MCP to connect and implement editor changes, as this method giv
 Agent Mode is capable of doing nearly anything a human can do in-engine. It automatically deploys Actions and/or code to complete any type of task. Examples include:
 
 - **Actions**: create, update, and organize scenes, editor objects, Blueprints, prefabs, etc.
-- **Code:** create or modify C++, C#, Unity scripts, etc. 
+- **Code:** create or modify C++ and C# scripts, etc. 
 
 When you prompt Bezi in Agent Mode, actions are auto-deployed. If the task requires an action that doesn't exist yet, you may be prompted to create a reusable [Custom Action](/fundamentals/custom-actions). 
 
@@ -42,8 +42,8 @@ Agent Mode will auto-implement all edits so you can view and test them in-engine
 
 ## Preview Agent suggestions
 
-1. Agent makes suggestions and auto-implements in Unity
-2. Click back to Unity: test the suggestions in-action
+1. Agent makes suggestions and auto-implements in your engine
+2. Click back to the editor: test the suggestions in-action
 3. Return to Bezi: keep or undo undecided suggestions
 4. Continue working
 
@@ -64,7 +64,7 @@ Bezi agent suggestions can exist in three states. Once you decide to keep or und
   </Accordion>
 
   <Accordion title="Undone">
-    When Agent suggestions are undone, all the Bezi related work in Unity will be removed. New additions will be deleted and edits will be reverted. 
+    When Agent suggestions are undone, all the Bezi related work in your project will be removed. New additions will be deleted and edits will be reverted. 
 
     - Select `Undo` or `Undo All` as soon as you decide you don't want a suggestion - undecided suggestions are at higher risk of being indirectly kept
     - Rejecting an Agent suggestion in-thread will revert it to its previous undecided version

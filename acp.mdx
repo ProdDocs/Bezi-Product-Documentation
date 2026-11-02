@@ -13,7 +13,7 @@ ACP provides a communication channel between an IDE (Visual Studio, Rider, etc.)
 The Bezi ACP client connects your IDE to Bezi running on the same machine. When you send a prompt from the IDE:
 
 - The **prompt, @-mentions, and attachments** are passed to Bezi
-- Bezi does the actual execution work in Unity, working in whatever **workspace and project is open in the Bezi app**
+- Bezi does the actual execution work in your engine (Unity or Unreal Engine), working in whatever **workspace and project is open in the Bezi app**
 - Results stream back into your IDE
 - Start a **new chat session** in the IDE to begin a new thread in Bezi (follow standard best practice, one chat/thread per task, when using ACP)
 
@@ -43,7 +43,7 @@ _Important: Keep the Bezi App open and running while you work!_
 
 ACP covers most of Bezi, but a few App-only features aren't available in the IDE:
 
-- **You cannot pin game objects** from the IDE
+- **You cannot pin game objects or actors** from the IDE
 - **Rich previews of pages/plans**; diffs to your edited pages/plans will be rendered, but the final content and rich preview menus won’t
 - **Accepting / rejecting checkpoints**; if you need to revert edits made in the current thread, **open that thread in Bezi** to revert to a previous point
 
