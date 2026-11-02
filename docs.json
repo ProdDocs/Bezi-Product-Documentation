@@ -73,7 +73,7 @@
             "pages": [
               "use-cases/create-ui",
               "use-cases/prototype-iterate",
-              "use-cases/unity-tools",
+              "use-cases/create-tools",
               "use-cases/debug",
               "use-cases/documentation",
               "use-cases/tutorials"
@@ -186,11 +186,7 @@
       "source": "bezi/product/pages-folders",
       "destination": "context/pages"
     },
-     {
-      "source": "bezi/use-cases/custom-tools",
-      "destination": "use-cases/unity-tools"
-    },
-     {
+    {
       "source": "bezi/use-cases/prototype-iterate",
       "destination": "use-cases/prototype-iterate"
     },
@@ -229,6 +225,14 @@
     {
       "source": "bezi/product/enhanced-code-intelligence",
       "destination": "more/enhanced-code-intelligence"
+    },
+    {
+      "source": "/use-cases/unity-tools",
+      "destination": "/use-cases/create-tools"
+    },
+    {
+      "source": "/bezi/use-cases/custom-tools",
+      "destination": "/use-cases/create-tools"
     }
   ],
   "footer": {
